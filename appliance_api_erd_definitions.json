@@ -58672,20 +58672,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -97965,6 +97965,21 @@
       "type": "u8",
       "offset": 0,
       "size": 1
+    }]
+  }, {
+    "name": "Suction Temperature",
+    "id": "0x710c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Current suction temperature in degrees F x 10.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 100
+    },
+    "data": [{
+      "name": "Suction temperature",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
     }]
   }, {
     "name": "Outdoor Coil Liquid temperature",

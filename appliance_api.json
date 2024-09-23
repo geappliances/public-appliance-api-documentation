@@ -4968,7 +4968,8 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x7108", "name": "Indoor Coil Vapor Temperature", "length": 2 }
+                { "erd": "0x7108", "name": "Indoor Coil Vapor Temperature", "length": 2 },
+                { "erd": "0x710C", "name": "Suction Temperature", "length": 2 }
               ]
             },
             {
