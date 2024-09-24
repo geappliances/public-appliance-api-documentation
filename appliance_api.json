@@ -1067,6 +1067,38 @@
                 { "erd": "0x2180", "name": "Delay Start Duration Request", "length": 4 },
                 { "erd": "0x2181", "name": "Delay Start Duration Allowable", "length": 6 }
               ]
+            },
+            {
+              "mask": "0x00200000",
+              "name": "Fiber Led Journey",
+              "description": "The fiber led journey maps user selected fiber, fabric, and treatment selections to a remote cycle using the following ERDs:\n- 0x220A Current Fiber Led Journey Selection.\n- 0x220B Fiber Led Journey Selection Request.\n- 0x2210 FLJ Favorite Selection Data 00.\n- 0x2211 FLJ Favorite Selection Data 01.\n- 0x2212 FLJ Favorite Selection Data 02.\n- 0x2213 FLJ Favorite Selection Data 03.\n- 0x2214 FLJ Favorite Selection Data 04.\n- 0x2215 FLJ Favorite Selection Data 05.\n- 0x2216 FLJ Favorite Selection Data 06.\n- 0x2217 FLJ Favorite Selection Data 07.\n- 0x2218 FLJ Favorite Selection Data 08.\n- 0x2219 FLJ Favorite Selection Data 09.\n- 0x221A FLJ Favorite Selection Data 10.\n- 0x221B FLJ Favorite Selection Data 11.\n- 0x221C FLJ Favorite Selection Data 12.\n- 0x221D FLJ Favorite Selection Data 13.\n- 0x221E FLJ Favorite Selection Data 14.\n- 0x221F FLJ Favorite Selection Data 15.\n- 0x2220 FLJ Favorite Selection Data Request.\n- 0x2221 FLJ Favorite Selection Data Request Status.\n- 0x2222 FLJ Favorites Ordering Method Status.\n- 0x2223 FLJ Favorites Ordering Method Request.\n- 0x2224 FLJ Favorite Order Status.\n- 0x2225 FLJ Favorite Order Request.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x220A", "name": "Current Fiber Led Journey Selection", "length": 22 },
+                { "erd": "0x220B", "name": "Fiber Led Journey Selection Request", "length": 22 },
+                { "erd": "0x2210", "name": "FLJ Favorite Selection Data 00", "length": 154 },
+                { "erd": "0x2211", "name": "FLJ Favorite Selection Data 01", "length": 154 },
+                { "erd": "0x2212", "name": "FLJ Favorite Selection Data 02", "length": 154 },
+                { "erd": "0x2213", "name": "FLJ Favorite Selection Data 03", "length": 154 },
+                { "erd": "0x2214", "name": "FLJ Favorite Selection Data 04", "length": 154 },
+                { "erd": "0x2215", "name": "FLJ Favorite Selection Data 05", "length": 154 },
+                { "erd": "0x2216", "name": "FLJ Favorite Selection Data 06", "length": 154 },
+                { "erd": "0x2217", "name": "FLJ Favorite Selection Data 07", "length": 154 },
+                { "erd": "0x2218", "name": "FLJ Favorite Selection Data 08", "length": 154 },
+                { "erd": "0x2219", "name": "FLJ Favorite Selection Data 09", "length": 154 },
+                { "erd": "0x221A", "name": "FLJ Favorite Selection Data 10", "length": 154 },
+                { "erd": "0x221B", "name": "FLJ Favorite Selection Data 11", "length": 154 },
+                { "erd": "0x221C", "name": "FLJ Favorite Selection Data 12", "length": 154 },
+                { "erd": "0x221D", "name": "FLJ Favorite Selection Data 13", "length": 154 },
+                { "erd": "0x221E", "name": "FLJ Favorite Selection Data 14", "length": 154 },
+                { "erd": "0x221F", "name": "FLJ Favorite Selection Data 15", "length": 154 },
+                { "erd": "0x2220", "name": "FLJ Favorite Selection Data Request", "length": 154 },
+                { "erd": "0x2221", "name": "FLJ Favorite Selection Data Request Status", "length": 4 },
+                { "erd": "0x2222", "name": "FLJ Favorites Ordering Method Status", "length": 1 },
+                { "erd": "0x2223", "name": "FLJ Favorites Ordering Method Request", "length": 1 },
+                { "erd": "0x2224", "name": "FLJ Favorite Order Status", "length": 16 },
+                { "erd": "0x2225", "name": "FLJ Favorite Order Request", "length": 16 }
+              ]
             }
           ]
         }
@@ -1814,6 +1846,38 @@
               "required": [
                 { "erd": "0x207A", "name": "Sanitize Option Selection", "length": 1 },
                 { "erd": "0x207B", "name": "Sanitize Option Request", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000004",
+              "name": "Fiber Led Journey",
+              "description": "The fiber led journey maps user selected fiber, fabric, and treatment selections to a remote cycle using the following ERDs:\n- 0x220A Current Fiber Led Journey Selection.\n- 0x220B Fiber Led Journey Selection Request.\n- 0x2210 FLJ Favorite Selection Data 00.\n- 0x2211 FLJ Favorite Selection Data 01.\n- 0x2212 FLJ Favorite Selection Data 02.\n- 0x2213 FLJ Favorite Selection Data 03.\n- 0x2214 FLJ Favorite Selection Data 04.\n- 0x2215 FLJ Favorite Selection Data 05.\n- 0x2216 FLJ Favorite Selection Data 06.\n- 0x2217 FLJ Favorite Selection Data 07.\n- 0x2218 FLJ Favorite Selection Data 08.\n- 0x2219 FLJ Favorite Selection Data 09.\n- 0x221A FLJ Favorite Selection Data 10.\n- 0x221B FLJ Favorite Selection Data 11.\n- 0x221C FLJ Favorite Selection Data 12.\n- 0x221D FLJ Favorite Selection Data 13.\n- 0x221E FLJ Favorite Selection Data 14.\n- 0x221F FLJ Favorite Selection Data 15.\n- 0x2220 FLJ Favorite Selection Data Request.\n- 0x2221 FLJ Favorite Selection Data Request Status.\n- 0x2222 FLJ Favorites Ordering Method Status.\n- 0x2223 FLJ Favorites Ordering Method Request.\n- 0x2224 FLJ Favorite Order Status.\n- 0x2225 FLJ Favorite Order Request.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x220A", "name": "Current Fiber Led Journey Selection", "length": 22 },
+                { "erd": "0x220B", "name": "Fiber Led Journey Selection Request", "length": 22 },
+                { "erd": "0x2210", "name": "FLJ Favorite Selection Data 00", "length": 154 },
+                { "erd": "0x2211", "name": "FLJ Favorite Selection Data 01", "length": 154 },
+                { "erd": "0x2212", "name": "FLJ Favorite Selection Data 02", "length": 154 },
+                { "erd": "0x2213", "name": "FLJ Favorite Selection Data 03", "length": 154 },
+                { "erd": "0x2214", "name": "FLJ Favorite Selection Data 04", "length": 154 },
+                { "erd": "0x2215", "name": "FLJ Favorite Selection Data 05", "length": 154 },
+                { "erd": "0x2216", "name": "FLJ Favorite Selection Data 06", "length": 154 },
+                { "erd": "0x2217", "name": "FLJ Favorite Selection Data 07", "length": 154 },
+                { "erd": "0x2218", "name": "FLJ Favorite Selection Data 08", "length": 154 },
+                { "erd": "0x2219", "name": "FLJ Favorite Selection Data 09", "length": 154 },
+                { "erd": "0x221A", "name": "FLJ Favorite Selection Data 10", "length": 154 },
+                { "erd": "0x221B", "name": "FLJ Favorite Selection Data 11", "length": 154 },
+                { "erd": "0x221C", "name": "FLJ Favorite Selection Data 12", "length": 154 },
+                { "erd": "0x221D", "name": "FLJ Favorite Selection Data 13", "length": 154 },
+                { "erd": "0x221E", "name": "FLJ Favorite Selection Data 14", "length": 154 },
+                { "erd": "0x221F", "name": "FLJ Favorite Selection Data 15", "length": 154 },
+                { "erd": "0x2220", "name": "FLJ Favorite Selection Data Request", "length": 154 },
+                { "erd": "0x2221", "name": "FLJ Favorite Selection Data Request Status", "length": 4 },
+                { "erd": "0x2222", "name": "FLJ Favorites Ordering Method Status", "length": 1 },
+                { "erd": "0x2223", "name": "FLJ Favorites Ordering Method Request", "length": 1 },
+                { "erd": "0x2224", "name": "FLJ Favorite Order Status", "length": 16 },
+                { "erd": "0x2225", "name": "FLJ Favorite Order Request", "length": 16 }
               ]
             }
           ]
@@ -8346,6 +8410,38 @@
               "required": [
                 { "erd": "0x215B", "name": "Load Item Count", "length": 1 },
                 { "erd": "0x215C", "name": "Load Item Count Set Request", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000100",
+              "name": "Fiber Led Journey",
+              "description": "The fiber led journey maps user selected fiber, fabric, and treatment selections to a remote cycle using the following ERDs:\n- 0x220A Current Fiber Led Journey Selection.\n- 0x220B Fiber Led Journey Selection Request.\n- 0x2210 FLJ Favorite Selection Data 00.\n- 0x2211 FLJ Favorite Selection Data 01.\n- 0x2212 FLJ Favorite Selection Data 02.\n- 0x2213 FLJ Favorite Selection Data 03.\n- 0x2214 FLJ Favorite Selection Data 04.\n- 0x2215 FLJ Favorite Selection Data 05.\n- 0x2216 FLJ Favorite Selection Data 06.\n- 0x2217 FLJ Favorite Selection Data 07.\n- 0x2218 FLJ Favorite Selection Data 08.\n- 0x2219 FLJ Favorite Selection Data 09.\n- 0x221A FLJ Favorite Selection Data 10.\n- 0x221B FLJ Favorite Selection Data 11.\n- 0x221C FLJ Favorite Selection Data 12.\n- 0x221D FLJ Favorite Selection Data 13.\n- 0x221E FLJ Favorite Selection Data 14.\n- 0x221F FLJ Favorite Selection Data 15.\n- 0x2220 FLJ Favorite Selection Data Request.\n- 0x2221 FLJ Favorite Selection Data Request Status.\n- 0x2222 FLJ Favorites Ordering Method Status.\n- 0x2223 FLJ Favorites Ordering Method Request.\n- 0x2224 FLJ Favorite Order Status.\n- 0x2225 FLJ Favorite Order Request.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x220A", "name": "Current Fiber Led Journey Selection", "length": 22 },
+                { "erd": "0x220B", "name": "Fiber Led Journey Selection Request", "length": 22 },
+                { "erd": "0x2210", "name": "FLJ Favorite Selection Data 00", "length": 154 },
+                { "erd": "0x2211", "name": "FLJ Favorite Selection Data 01", "length": 154 },
+                { "erd": "0x2212", "name": "FLJ Favorite Selection Data 02", "length": 154 },
+                { "erd": "0x2213", "name": "FLJ Favorite Selection Data 03", "length": 154 },
+                { "erd": "0x2214", "name": "FLJ Favorite Selection Data 04", "length": 154 },
+                { "erd": "0x2215", "name": "FLJ Favorite Selection Data 05", "length": 154 },
+                { "erd": "0x2216", "name": "FLJ Favorite Selection Data 06", "length": 154 },
+                { "erd": "0x2217", "name": "FLJ Favorite Selection Data 07", "length": 154 },
+                { "erd": "0x2218", "name": "FLJ Favorite Selection Data 08", "length": 154 },
+                { "erd": "0x2219", "name": "FLJ Favorite Selection Data 09", "length": 154 },
+                { "erd": "0x221A", "name": "FLJ Favorite Selection Data 10", "length": 154 },
+                { "erd": "0x221B", "name": "FLJ Favorite Selection Data 11", "length": 154 },
+                { "erd": "0x221C", "name": "FLJ Favorite Selection Data 12", "length": 154 },
+                { "erd": "0x221D", "name": "FLJ Favorite Selection Data 13", "length": 154 },
+                { "erd": "0x221E", "name": "FLJ Favorite Selection Data 14", "length": 154 },
+                { "erd": "0x221F", "name": "FLJ Favorite Selection Data 15", "length": 154 },
+                { "erd": "0x2220", "name": "FLJ Favorite Selection Data Request", "length": 154 },
+                { "erd": "0x2221", "name": "FLJ Favorite Selection Data Request Status", "length": 4 },
+                { "erd": "0x2222", "name": "FLJ Favorites Ordering Method Status", "length": 1 },
+                { "erd": "0x2223", "name": "FLJ Favorites Ordering Method Request", "length": 1 },
+                { "erd": "0x2224", "name": "FLJ Favorite Order Status", "length": 16 },
+                { "erd": "0x2225", "name": "FLJ Favorite Order Request", "length": 16 }
               ]
             }
           ]
