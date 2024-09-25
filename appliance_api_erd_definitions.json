@@ -12354,6 +12354,94 @@
       "size": 1
     }]
   }, {
+    "name": "Freezer Evaporator Fan Control",
+    "id": "0x12a8",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the freezer evaporator fan control type and target PWM or RPM.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Control Type",
+      "type": "enum",
+      "values": {
+        "0": "Open Loop",
+        "1": "Closed Loop"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "PWM percent or target RPM",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Freezer Evaporator Fan Actual RPM",
+    "id": "0x12a9",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the actual RPM from the freezer evaporator fan feedback.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Actual RPM from freezer evaporator fan feedback",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Condensor Fan Control",
+    "id": "0x12aa",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the condensor fan control type and target PWM or RPM.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Control Type",
+      "type": "enum",
+      "values": {
+        "0": "Open Loop",
+        "1": "Closed Loop"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "PWM percent or target RPM",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Condensor Fan Actual RPM",
+    "id": "0x12ab",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the actual RPM from the condensor fan feedback.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Actual RPM from the condensor fan feedback",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Damper Heater Percent Duty Cycle",
     "id": "0x12ac",
     "operations": ["read", "publish", "subscribe"],
@@ -68273,20 +68361,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
@@ -106021,8 +106109,9 @@
       "type": "enum",
       "values": {
         "0": "Not provisioned",
-        "1": "Provisioned and Online",
-        "2": "Provisioned but Offline"
+        "1": "Provisioned and Unknown",
+        "2": "Provisioned and Online",
+        "3": "Provisioned but Offline"
       },
       "offset": 8,
       "size": 1
@@ -106077,69 +106166,9 @@
       "offset": 18,
       "size": 1
     }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[9]",
+      "name": "Wireless Sensor Data.Padding",
       "type": "u8",
       "offset": 19,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[10]",
-      "type": "u8",
-      "offset": 20,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[11]",
-      "type": "u8",
-      "offset": 21,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[12]",
-      "type": "u8",
-      "offset": 22,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[13]",
-      "type": "u8",
-      "offset": 23,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[14]",
-      "type": "u8",
-      "offset": 24,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[15]",
-      "type": "u8",
-      "offset": 25,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[16]",
-      "type": "u8",
-      "offset": 26,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[17]",
-      "type": "u8",
-      "offset": 27,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[18]",
-      "type": "u8",
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[19]",
-      "type": "u8",
-      "offset": 29,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[20]",
-      "type": "u8",
-      "offset": 30,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[21]",
-      "type": "u8",
-      "offset": 31,
       "size": 1
     }]
   }, {
@@ -106195,8 +106224,9 @@
       "type": "enum",
       "values": {
         "0": "Not provisioned",
-        "1": "Provisioned and Online",
-        "2": "Provisioned but Offline"
+        "1": "Provisioned and Unknown",
+        "2": "Provisioned and Online",
+        "3": "Provisioned but Offline"
       },
       "offset": 8,
       "size": 1
@@ -106251,69 +106281,9 @@
       "offset": 18,
       "size": 1
     }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[9]",
+      "name": "Wireless Sensor Data.Padding",
       "type": "u8",
       "offset": 19,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[10]",
-      "type": "u8",
-      "offset": 20,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[11]",
-      "type": "u8",
-      "offset": 21,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[12]",
-      "type": "u8",
-      "offset": 22,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[13]",
-      "type": "u8",
-      "offset": 23,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[14]",
-      "type": "u8",
-      "offset": 24,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[15]",
-      "type": "u8",
-      "offset": 25,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[16]",
-      "type": "u8",
-      "offset": 26,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[17]",
-      "type": "u8",
-      "offset": 27,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[18]",
-      "type": "u8",
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[19]",
-      "type": "u8",
-      "offset": 29,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[20]",
-      "type": "u8",
-      "offset": 30,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[21]",
-      "type": "u8",
-      "offset": 31,
       "size": 1
     }]
   }, {
@@ -106369,8 +106339,9 @@
       "type": "enum",
       "values": {
         "0": "Not provisioned",
-        "1": "Provisioned and Online",
-        "2": "Provisioned but Offline"
+        "1": "Provisioned and Unknown",
+        "2": "Provisioned and Online",
+        "3": "Provisioned but Offline"
       },
       "offset": 8,
       "size": 1
@@ -106425,69 +106396,9 @@
       "offset": 18,
       "size": 1
     }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[9]",
+      "name": "Wireless Sensor Data.Padding",
       "type": "u8",
       "offset": 19,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[10]",
-      "type": "u8",
-      "offset": 20,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[11]",
-      "type": "u8",
-      "offset": 21,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[12]",
-      "type": "u8",
-      "offset": 22,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[13]",
-      "type": "u8",
-      "offset": 23,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[14]",
-      "type": "u8",
-      "offset": 24,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[15]",
-      "type": "u8",
-      "offset": 25,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[16]",
-      "type": "u8",
-      "offset": 26,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[17]",
-      "type": "u8",
-      "offset": 27,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[18]",
-      "type": "u8",
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[19]",
-      "type": "u8",
-      "offset": 29,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[20]",
-      "type": "u8",
-      "offset": 30,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[21]",
-      "type": "u8",
-      "offset": 31,
       "size": 1
     }]
   }, {
@@ -106543,8 +106454,9 @@
       "type": "enum",
       "values": {
         "0": "Not provisioned",
-        "1": "Provisioned and Online",
-        "2": "Provisioned but Offline"
+        "1": "Provisioned and Unknown",
+        "2": "Provisioned and Online",
+        "3": "Provisioned but Offline"
       },
       "offset": 8,
       "size": 1
@@ -106599,69 +106511,9 @@
       "offset": 18,
       "size": 1
     }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[9]",
+      "name": "Wireless Sensor Data.Padding",
       "type": "u8",
       "offset": 19,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[10]",
-      "type": "u8",
-      "offset": 20,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[11]",
-      "type": "u8",
-      "offset": 21,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[12]",
-      "type": "u8",
-      "offset": 22,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[13]",
-      "type": "u8",
-      "offset": 23,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[14]",
-      "type": "u8",
-      "offset": 24,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[15]",
-      "type": "u8",
-      "offset": 25,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[16]",
-      "type": "u8",
-      "offset": 26,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[17]",
-      "type": "u8",
-      "offset": 27,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[18]",
-      "type": "u8",
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[19]",
-      "type": "u8",
-      "offset": 29,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[20]",
-      "type": "u8",
-      "offset": 30,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[21]",
-      "type": "u8",
-      "offset": 31,
       "size": 1
     }]
   }, {
@@ -106717,8 +106569,9 @@
       "type": "enum",
       "values": {
         "0": "Not provisioned",
-        "1": "Provisioned and Online",
-        "2": "Provisioned but Offline"
+        "1": "Provisioned and Unknown",
+        "2": "Provisioned and Online",
+        "3": "Provisioned but Offline"
       },
       "offset": 8,
       "size": 1
@@ -106773,69 +106626,9 @@
       "offset": 18,
       "size": 1
     }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[9]",
+      "name": "Wireless Sensor Data.Padding",
       "type": "u8",
       "offset": 19,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[10]",
-      "type": "u8",
-      "offset": 20,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[11]",
-      "type": "u8",
-      "offset": 21,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[12]",
-      "type": "u8",
-      "offset": 22,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[13]",
-      "type": "u8",
-      "offset": 23,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[14]",
-      "type": "u8",
-      "offset": 24,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[15]",
-      "type": "u8",
-      "offset": 25,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[16]",
-      "type": "u8",
-      "offset": 26,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[17]",
-      "type": "u8",
-      "offset": 27,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[18]",
-      "type": "u8",
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[19]",
-      "type": "u8",
-      "offset": 29,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[20]",
-      "type": "u8",
-      "offset": 30,
-      "size": 1
-    }, {
-      "name": "Wireless Sensor Data.Sensor Data Payload[21]",
-      "type": "u8",
-      "offset": 31,
       "size": 1
     }]
   }, {

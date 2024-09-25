@@ -2978,6 +2978,26 @@
                 { "erd": "0x12D2", "name": "Sound Event Request", "length": 4 },
                 { "erd": "0x12D3", "name": "Sound Event Status", "length": 4 }
               ]
+            },
+            {
+              "mask": "0x00000800",
+              "name": "Freezer Evaporator Fan",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x12A8", "name": "Freezer Evaporator Fan Control", "length": 4 },
+                { "erd": "0x12A9", "name": "Freezer Evaporator Fan Actual RPM", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00001000",
+              "name": "Condensor Fan",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x12AA", "name": "Condensor Fan Control", "length": 4 },
+                { "erd": "0x12AB", "name": "Condensor Fan Actual RPM", "length": 2 }
+              ]
             }
           ]
         }
@@ -9497,11 +9517,11 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x6280", "name": "Wireless Sensor Data - Sensor 0", "length": 32 },
-                { "erd": "0x6281", "name": "Wireless Sensor Data - Sensor 1", "length": 32 },
-                { "erd": "0x6282", "name": "Wireless Sensor Data - Sensor 2", "length": 32 },
-                { "erd": "0x6283", "name": "Wireless Sensor Data - Sensor 3", "length": 32 },
-                { "erd": "0x6284", "name": "Wireless Sensor Data - Sensor 4", "length": 32 },
+                { "erd": "0x6280", "name": "Wireless Sensor Data - Sensor 0", "length": 20 },
+                { "erd": "0x6281", "name": "Wireless Sensor Data - Sensor 1", "length": 20 },
+                { "erd": "0x6282", "name": "Wireless Sensor Data - Sensor 2", "length": 20 },
+                { "erd": "0x6283", "name": "Wireless Sensor Data - Sensor 3", "length": 20 },
+                { "erd": "0x6284", "name": "Wireless Sensor Data - Sensor 4", "length": 20 },
                 { "erd": "0x628A", "name": "Sensor Provision Request", "length": 4 },
                 { "erd": "0x628B", "name": "Sensor Provision Result", "length": 9 },
                 { "erd": "0x628C", "name": "Sensor Removal Request", "length": 7 },
