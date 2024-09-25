@@ -12472,6 +12472,102 @@
       "size": 2
     }]
   }, {
+    "name": "Defrost Timer Value in Seconds",
+    "id": "0x12ae",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the current accumulated time in seconds since the last defrost.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Actual accumulated time in seconds since the last defrost",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Defrost target time in minutes between defrosts",
+    "id": "0x12af",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the time between consecutive defrosts in minutes.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Defrost target time in minutes between defrosts",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Defrost Heater On Time in Minutes",
+    "id": "0x12b0",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read how long the defrost heater was on during the last defrost operation.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Defrost Heater On Time in Minutes",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Abnormal Defrost Flag is Set",
+    "id": "0x12b1",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The abnormal defrost flag is currently set",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Abnormal Defrost Flag is Set",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Defrost State",
+    "id": "0x12b2",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Current defrost state of the cooling system.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Defrost State",
+      "type": "enum",
+      "values": {
+        "0": "Idle",
+        "1": "Prechill Prep",
+        "2": "Prechill",
+        "3": "Heater On",
+        "4": "Dwell",
+        "5": "Post Dwell",
+        "6": "Disabled"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Defrost Heater State is On",
+    "id": "0x12b3",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Returns true when the defrtost heater is on",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Defrost Heater is On",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Sound Event Request",
     "id": "0x12d2",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -68361,20 +68457,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1

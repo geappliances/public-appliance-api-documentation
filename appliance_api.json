@@ -2998,6 +2998,20 @@
                 { "erd": "0x12AA", "name": "Condensor Fan Control", "length": 4 },
                 { "erd": "0x12AB", "name": "Condensor Fan Actual RPM", "length": 2 }
               ]
+            },
+            {
+              "mask": "0x00002000",
+              "name": "Defrost Data",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x12AE", "name": "Defrost Timer Value in Seconds", "length": 4 },
+                { "erd": "0x12AF", "name": "Defrost target time in minutes between defrosts", "length": 2 },
+                { "erd": "0x12B0", "name": "Defrost Heater On Time in Minutes", "length": 1 },
+                { "erd": "0x12B1", "name": "Abnormal Defrost Flag is Set", "length": 1 },
+                { "erd": "0x12B2", "name": "Defrost State", "length": 1 },
+                { "erd": "0x12B3", "name": "Defrost Heater State is On", "length": 1 }
+              ]
             }
           ]
         }
