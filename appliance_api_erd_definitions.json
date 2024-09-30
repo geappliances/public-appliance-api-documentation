@@ -68532,20 +68532,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -105498,6 +105498,20 @@
       },
       "offset": 0,
       "size": 1
+    }]
+  }, {
+    "name": "Downgrade Count",
+    "id": "0x603c",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Counter that specifies the number of Appliance OTA Downgrades that can be performed.\nThis ERD is used to support Repetitive Appliance OTA Tests that loop between 2 eAUI Versions.\nThe Downgrades will only be allowed while in the Field Test Environment.\nThe WIFI Module will decrement the counter as the downgrades are performed.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "downgrades",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
     }]
   }, {
     "name": "Bluetooth Low Energy Master Network Status",

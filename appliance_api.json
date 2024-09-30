@@ -9555,6 +9555,15 @@
                 { "erd": "0x628D", "name": "Sensor Removal Result", "length": 3 },
                 { "erd": "0x628F", "name": "Sensor Removal All Result", "length": 2 }
               ]
+            },
+            {
+              "mask": "0x00000004",
+              "name": "Test Mode",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x603C", "name": "Downgrade Count", "length": 2 }
+              ]
             }
           ]
         }
