@@ -12568,6 +12568,81 @@
       "size": 1
     }]
   }, {
+    "name": "Fresh Food Adjusted Setpoint (Degrees Fx100)",
+    "id": "0x12b4",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the fresh food adjusted setpoint in degrees Fx100",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Fresh Food Adjusted Setpoint (Degrees Fx100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Fresh Food Resolved Setpoint (Degrees Fx100)",
+    "id": "0x12b5",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the fresh food resolved setpoint in degrees Fx100",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Fresh Food Resolved Setpoint (Degrees Fx100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Fresh Food Shift (Degrees Fx100)",
+    "id": "0x12b6",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the fresh food shift value in degrees Fx100",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Fresh Food Shift (Degrees Fx100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Fresh Food Cabinet Offset (Degrees Fx100)",
+    "id": "0x12b7",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the fresh food cabinet offset value in degrees Fx100",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Fresh Food Cabinet Offset (Degrees Fx100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Fresh Food High Ambient Offset (Degrees Fx100)",
+    "id": "0x12b8",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the fresh food high ambient offset value in degrees Fx100",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Fresh Food High Ambient Offset (Degrees Fx100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Sound Event Request",
     "id": "0x12d2",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -68457,20 +68532,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1

@@ -3012,6 +3012,19 @@
                 { "erd": "0x12B2", "name": "Defrost State", "length": 1 },
                 { "erd": "0x12B3", "name": "Defrost Heater State is On", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00004000",
+              "name": "Adjusted Fresh Food Setpoint Calculation Data",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x12B4", "name": "Fresh Food Adjusted Setpoint (Degrees Fx100)", "length": 2 },
+                { "erd": "0x12B5", "name": "Fresh Food Resolved Setpoint (Degrees Fx100)", "length": 2 },
+                { "erd": "0x12B6", "name": "Fresh Food Shift (Degrees Fx100)", "length": 2 },
+                { "erd": "0x12B7", "name": "Fresh Food Cabinet Offset (Degrees Fx100)", "length": 2 },
+                { "erd": "0x12B8", "name": "Fresh Food High Ambient Offset (Degrees Fx100)", "length": 2 }
+              ]
             }
           ]
         }
