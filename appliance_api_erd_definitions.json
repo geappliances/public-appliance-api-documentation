@@ -9122,7 +9122,7 @@
     "name": "Dispense Request",
     "id": "0x1208",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "Used to request cold water dispensing operation. This request needs to be repeated less than every 1.5 seconds",
+    "description": "Used to request dispensing operation.",
     "updateClass": {
       "type": "event"
     },
@@ -9186,7 +9186,7 @@
     "name": "Dispense Request Status",
     "id": "0x1209",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Used to read the cold water dispensing operation after ERD 1208 is written. ERD 1208 should be set to 0xFF when response is generated.",
+    "description": "Used to read the dispensing operation after ERD 1208 is written.",
     "updateClass": {
       "type": "event"
     },
@@ -9236,7 +9236,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "padding",
+      "name": "Sequence ID",
       "type": "u8",
       "offset": 3,
       "size": 1
@@ -68532,20 +68532,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
