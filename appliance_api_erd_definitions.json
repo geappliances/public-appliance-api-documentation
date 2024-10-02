@@ -60071,7 +60071,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "Specifies the dish washer operation mode.",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Operating Mode",
@@ -60104,7 +60104,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "Remind user to do indicated action.",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Clean Filter",
@@ -60158,7 +60158,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "Specifies how many times the door has been opened for the life of the machine.",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Door Count",
@@ -60390,7 +60390,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "Indicates the status of cycle.",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "CycleStatus",
@@ -61440,7 +61440,8 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The water temperature in Fahrenheit",
     "updateClass": {
-      "type": "legacy"
+      "type": "periodic",
+      "periodInMsec": 1000
     },
     "data": [{
       "name": "Water temperature in Fahrenheit",
@@ -61468,7 +61469,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The door status of the dishwasher",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Door Status",
@@ -61555,7 +61556,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The current drain pump speed expressed as a percentage",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Drain Pump Speed percentage",
@@ -61569,7 +61570,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The current state of the water valve",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Water Valve State",
@@ -61611,7 +61612,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The current circulation pump speed expressed as a percentage",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Circ Pump Speed percentage",
@@ -61625,7 +61626,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The current state of the heater relay",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Heater Relay State",
@@ -61858,7 +61859,8 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The calculated hue score for the current cycle.",
     "updateClass": {
-      "type": "legacy"
+      "type": "periodic",
+      "periodInMsec": 1000
     },
     "data": [{
       "name": "Hue Score",
@@ -62537,7 +62539,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "This is the feature configuration enabled on the appliance",
     "updateClass": {
-      "type": "legacy"
+      "type": "static"
     },
     "data": [{
       "name": "uiCycles",
@@ -62938,12 +62940,12 @@
       "size": 1
     }]
   }, {
-    "name": "Reminder Tub 1",
+    "name": "Tub1 1 Reminder",
     "id": "0x3203",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Remind user to do indicated action.",
+    "description": "For 2nd entity Dishwasher: Remind user to do indicated action.",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Clean Filter",
@@ -62997,7 +62999,7 @@
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "Remote Control Commands",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Remote Control Command",
@@ -63239,12 +63241,12 @@
       "size": 1
     }]
   }, {
-    "name": "Cycle Indication Tub 1",
+    "name": "Tub 1 Cycle Indication",
     "id": "0x320e",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Indicates the status of cycle.",
+    "description": "For 2nd entity Dishwasher: Indicates the status of cycle.",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "CycleStatus",
@@ -66503,18 +66505,19 @@
       "size": 8
     }]
   }, {
-    "name": "Water Temperature Tub 1",
+    "name": "Tub1 Water Temperature",
     "id": "0x3235",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The water temperature in Fahrenheit",
+    "description": "For 2nd entity Dishwasher: The water temperature in Fahrenheit",
     "updateClass": {
-      "type": "legacy"
+      "type": "periodic",
+      "periodInMsec": 1000
     },
     "data": [{
       "name": "Water temperature in Fahrenheit",
-      "type": "u16",
+      "type": "u8",
       "offset": 0,
-      "size": 2
+      "size": 1
     }]
   }, {
     "name": "Average Turbidity Tub 1",
@@ -66531,12 +66534,12 @@
       "size": 2
     }]
   }, {
-    "name": "Dishwasher Door Status Tub 1",
+    "name": "Tub 1 Dishwasher Door Status",
     "id": "0x3237",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The door status of the dishwasher",
+    "description": "For 2nd entity Dishwasher: The door status of the dishwasher",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Door Status",
@@ -66544,18 +66547,19 @@
       "values": {
         "0": "Open",
         "1": "Closed",
-        "2": "Unknown"
+        "2": "Invalid",
+        "3": "Init"
       },
       "offset": 0,
       "size": 1
     }]
   }, {
-    "name": "Drain Pump Speed Percentage Tub 1",
+    "name": "Tub 1 Drain Pump Speed Percentage",
     "id": "0x323e",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The current drain pump speed expressed as a percentage",
+    "description": "For 2nd entity Dishwasher: The current drain pump speed expressed as a percentage",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Drain Pump Speed percentage",
@@ -66564,12 +66568,12 @@
       "size": 1
     }]
   }, {
-    "name": "Circ Pump Speed Percentage Tub 1",
+    "name": "Tub 1 Circ Pump Speed Percentage",
     "id": "0x3245",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The current circulation pump speed expressed as a percentage",
+    "description": "For 2nd entity Dishwasher: The current circulation pump speed expressed as a percentage",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Circ Pump Speed percentage",
@@ -68532,20 +68536,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
