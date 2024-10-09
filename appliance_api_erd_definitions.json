@@ -2412,6 +2412,76 @@
       "size": 1
     }]
   }, {
+    "name": "Battery Level",
+    "id": "0x0910",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Current battery level as a percentage of full charge.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Battery Level",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Battery Is Charging",
+    "id": "0x0911",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Current battery charge state. True if charging, false if not charging.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Battery Is Charging",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Appliance Is Plugged Into Wall",
+    "id": "0x0912",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Specifies whether an appliance is plugged into a wall outlet. Relevant for battery-powered appliances.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Appliance Is Plugged Into Wall",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Battery Temperature",
+    "id": "0x0913",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Current battery temperature in degrees Fahrenheit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Battery Temperature",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Battery Health",
+    "id": "0x0914",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Current battery health (capacity) as a percentage of original capacity.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Battery Health",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Temperature Alerts",
     "id": "0x1003",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -68536,20 +68606,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1

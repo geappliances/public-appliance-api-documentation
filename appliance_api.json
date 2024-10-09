@@ -10068,6 +10068,34 @@
         }
       }
     },
+    "772": {
+      "name": "Battery",
+      "description": "",
+      "featureType": 772,
+      "versions": {
+        "1": {
+          "description": "",
+          "required": [
+
+          ],
+          "features": [
+            {
+              "mask": "0x00000001",
+              "name": "Foundation",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x0910", "name": "Battery Level", "length": 1 },
+                { "erd": "0x0911", "name": "Battery Is Charging", "length": 1 },
+                { "erd": "0x0912", "name": "Appliance Is Plugged Into Wall", "length": 1 },
+                { "erd": "0x0913", "name": "Battery Temperature", "length": 2 },
+                { "erd": "0x0914", "name": "Battery Health", "length": 1 }
+              ]
+            }
+          ]
+        }
+      }
+    },
     "1024": {
       "name": "Software Diagnostics",
       "description": "",
