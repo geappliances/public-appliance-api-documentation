@@ -2729,7 +2729,7 @@
                 { "erd": "0x125C", "name": "Fresh Food Door 2 Status", "length": 1 },
                 { "erd": "0x1279", "name": "Fresh Food Door 2 Opening Counts", "length": 4 },
                 { "erd": "0x127B", "name": "Total Fresh Food Doors Open Time In Seconds", "length": 4 },
-                { "erd": "0x1289", "name": "Total Food Door 2 Open Time In Seconds", "length": 4 }
+                { "erd": "0x1289", "name": "Total Fresh Food Door 2 Open Time In Seconds", "length": 4 }
               ]
             },
             {
@@ -2826,7 +2826,7 @@
                 { "erd": "0x125C", "name": "Fresh Food Door 2 Status", "length": 1 },
                 { "erd": "0x1279", "name": "Fresh Food Door 2 Opening Counts", "length": 4 },
                 { "erd": "0x127B", "name": "Total Fresh Food Doors Open Time In Seconds", "length": 4 },
-                { "erd": "0x1289", "name": "Total Food Door 2 Open Time In Seconds", "length": 4 }
+                { "erd": "0x1289", "name": "Total Fresh Food Door 2 Open Time In Seconds", "length": 4 }
               ]
             },
             {

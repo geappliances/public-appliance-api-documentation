@@ -12188,7 +12188,7 @@
       "size": 4
     }]
   }, {
-    "name": "Total Food Door 2 Open Time In Seconds",
+    "name": "Total Fresh Food Door 2 Open Time In Seconds",
     "id": "0x1289",
     "operations": ["read", "publish", "subscribe"],
     "description": "Total time the fresh food door 2 has been open since unit was first powered up",
@@ -68606,20 +68606,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
