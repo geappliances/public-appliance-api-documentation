@@ -67447,6 +67447,175 @@
       "size": 4
     }]
   }, {
+    "name": "Diagnostic Failure counts",
+    "id": "0x4056",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Diagnostic counters, for failure (pre-fault) conditions.\n\nThe various conditions will change the heating method for the current heating cycle\nwhen the failure is set, and at the end of the cycle, the failure is cleared and the\nspecific counter is incremented.\n\nIf a failure does not occur on the next cycle, the counter associated is decremented.\n\nOnce the counter hits the target (generally 5 cycles) the fault is triggered.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "inverterFault",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "inverterHeartbeat",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "fanSpeed",
+      "type": "u8",
+      "offset": 2,
+      "size": 1
+    }, {
+      "name": "lowerElement",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "upperElement",
+      "type": "u8",
+      "offset": 4,
+      "size": 1
+    }, {
+      "name": "t1Drift",
+      "type": "u8",
+      "offset": 5,
+      "size": 1
+    }, {
+      "name": "t2Drift",
+      "type": "u8",
+      "offset": 6,
+      "size": 1
+    }, {
+      "name": "t3aDrift",
+      "type": "u8",
+      "offset": 7,
+      "size": 1
+    }, {
+      "name": "t3bDrift",
+      "type": "u8",
+      "offset": 8,
+      "size": 1
+    }, {
+      "name": "t4Drift",
+      "type": "u8",
+      "offset": 9,
+      "size": 1
+    }, {
+      "name": "t5Drift",
+      "type": "u8",
+      "offset": 10,
+      "size": 1
+    }, {
+      "name": "compressorPowerTooHigh",
+      "type": "u8",
+      "offset": 11,
+      "size": 1
+    }, {
+      "name": "compressorPowerTooLow",
+      "type": "u8",
+      "offset": 12,
+      "size": 1
+    }, {
+      "name": "compressorTempTooHigh",
+      "type": "u8",
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "compressorTempTooLow",
+      "type": "u8",
+      "offset": 14,
+      "size": 1
+    }, {
+      "name": "eevPosition",
+      "type": "u8",
+      "offset": 15,
+      "size": 1
+    }, {
+      "name": "superHeatControl",
+      "type": "u8",
+      "offset": 16,
+      "size": 1
+    }, {
+      "name": "sealedSystemLeak",
+      "type": "u8",
+      "offset": 17,
+      "size": 1
+    }, {
+      "name": "defrost",
+      "type": "u8",
+      "offset": 18,
+      "size": 1
+    }, {
+      "name": "evaporatorFrosted",
+      "type": "u8",
+      "offset": 19,
+      "size": 1
+    }, {
+      "name": "vaporLocked",
+      "type": "u8",
+      "offset": 20,
+      "size": 1
+    }, {
+      "name": "unused[0]",
+      "type": "u8",
+      "offset": 21,
+      "size": 1
+    }, {
+      "name": "unused[1]",
+      "type": "u8",
+      "offset": 22,
+      "size": 1
+    }, {
+      "name": "unused[2]",
+      "type": "u8",
+      "offset": 23,
+      "size": 1
+    }, {
+      "name": "unused[3]",
+      "type": "u8",
+      "offset": 24,
+      "size": 1
+    }, {
+      "name": "unused[4]",
+      "type": "u8",
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "unused[5]",
+      "type": "u8",
+      "offset": 26,
+      "size": 1
+    }, {
+      "name": "unused[6]",
+      "type": "u8",
+      "offset": 27,
+      "size": 1
+    }, {
+      "name": "unused[7]",
+      "type": "u8",
+      "offset": 28,
+      "size": 1
+    }, {
+      "name": "unused[8]",
+      "type": "u8",
+      "offset": 29,
+      "size": 1
+    }, {
+      "name": "unused[9]",
+      "type": "u8",
+      "offset": 30,
+      "size": 1
+    }, {
+      "name": "unused[10]",
+      "type": "u8",
+      "offset": 31,
+      "size": 1
+    }]
+  }, {
     "name": "T1 Temperature",
     "id": "0x405f",
     "operations": ["read", "publish", "subscribe"],
@@ -67671,6 +67840,42 @@
     "description": "The anode replacement alarm is active",
     "updateClass": {
       "type": "legacy"
+    },
+    "data": [{
+      "name": "Mode",
+      "type": "enum",
+      "values": {
+        "0": "Alarm not active",
+        "1": "Alarm active"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Accessory low battery alarm active",
+    "id": "0x4082",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The accessory battery replacement alarm is active",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Mode",
+      "type": "enum",
+      "values": {
+        "0": "Alarm not active",
+        "1": "Alarm active"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Accessory leak detected alarm active",
+    "id": "0x4083",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The accessory leak detector alarm is active",
+    "updateClass": {
+      "type": "event"
     },
     "data": [{
       "name": "Mode",
@@ -68606,20 +68811,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
