@@ -3723,7 +3723,7 @@
             {
               "mask": "0x00000040",
               "name": "Foundation 2",
-              "description": "This is a new simplified Dishwasher Foundation that should be used on new projects.  \nIt removes a few ERDs that are no longer supported and contains only the ERDs supported by all dishwashers",
+              "description": "This is a new simplified Dishwasher Foundation that should be used on new projects.\nIt removes a few ERDs that are no longer supported and contains only the ERDs supported by all dishwashers",
               "dependencies": [],
               "required": [
                 { "erd": "0x3001", "name": "Operating Mode", "length": 1 },
@@ -4577,7 +4577,7 @@
             {
               "mask": "0x00000010",
               "name": "Cycle Count",
-              "description": "For units running cycles, counts how often the target temperature has been satisfied.            ",
+              "description": "For units running cycles, counts how often the target temperature has been satisfied.",
               "dependencies": [],
               "required": [
                 { "erd": "0x7050", "name": "Air Conditioner Cycle Count", "length": 4 }
@@ -4828,7 +4828,7 @@
             {
               "mask": "0x00010000",
               "name": "MultiMode Conflict Reporting",
-              "description": "In a MultiZone system, when two or more of the Indoor units command the Outdoor's compressor to both Heat and Cool simultaneously, a Multi-Mode Conflict can occur.\nFor systems where the compressor's heat/cool algorithm is incapable of intelligent switching, and where no hardware-solution is present, this conflict must be resolved by the End-User. \nThis Reporting Feature enables Clients to retrieve the Multi-mode Conflict Error State.",
+              "description": "In a MultiZone system, when two or more of the Indoor units command the Outdoor's compressor to both Heat and Cool simultaneously, a Multi-Mode Conflict can occur.\nFor systems where the compressor's heat/cool algorithm is incapable of intelligent switching, and where no hardware-solution is present, this conflict must be resolved by the End-User.\nThis Reporting Feature enables Clients to retrieve the Multi-mode Conflict Error State.",
               "dependencies": [],
               "required": [
                 { "erd": "0x7859", "name": "MultiMode Conflict Error", "length": 1 }
@@ -5553,7 +5553,7 @@
             {
               "mask": "0x00080000",
               "name": "Adaptive Smart Dispense and Adjustability Detergent Tank",
-              "description": "Supports the Smart Dispense feature for detergent.\nAble to inject desired amount of detergent for each cycle by\n   1. Adjusting the smart detergent dispense option\n   2. A consumer scanning the detergent product bar code (advanced flow rate adjustement)\nA substance type (Detergent/Softener) required to be set for 0x20C1 and 0x20C2 and they shall always be set to detergent.",
+              "description": "Supports the Smart Dispense feature for detergent.\nAble to inject desired amount of detergent for each cycle by\n  1. Adjusting the smart detergent dispense option\n  2. A consumer scanning the detergent product bar code (advanced flow rate adjustement)\nA substance type (Detergent/Softener) required to be set for 0x20C1 and 0x20C2 and they shall always be set to detergent.",
               "dependencies": [],
               "required": [
                 { "erd": "0x203E", "name": "Bulk Tank Size", "length": 2 },
@@ -5574,7 +5574,7 @@
             {
               "mask": "0x00100000",
               "name": "Adaptive Smart Dispense and Adjustability Softener Tank",
-              "description": "Supports the Smart Dispense feature for softener.\nAble to inject desired amount of softener for each cycle by\n   1. Adjusting the smart softener dispense option\n   2. A consumer scanning the softener product bar code (advanced flow rate adjustement)\nA substance type (Detergent/Softener) required to be set for 0x2143 and 0x2144 and they shall always be set to sofetener.",
+              "description": "Supports the Smart Dispense feature for softener.\nAble to inject desired amount of softener for each cycle by\n  1. Adjusting the smart softener dispense option\n  2. A consumer scanning the softener product bar code (advanced flow rate adjustement)\nA substance type (Detergent/Softener) required to be set for 0x2143 and 0x2144 and they shall always be set to sofetener.",
               "dependencies": [],
               "required": [
                 { "erd": "0x213C", "name": "Softener Bulk Tank Size", "length": 2 },
@@ -6480,7 +6480,7 @@
             {
               "mask": "0x00000002",
               "name": "Energy Reporting",
-              "description": " \nEnables some energy/eco features in the App, such as Instantaneous Power estimates.",
+              "description": "Enables some energy/eco features in the App, such as Instantaneous Power estimates.",
               "dependencies": [],
               "required": [
                 { "erd": "0x7020", "name": "Compressor run time in seconds", "length": 4 },
@@ -6493,7 +6493,7 @@
             {
               "mask": "0x00000004",
               "name": "Pump",
-              "description": " \nEnables connected control over the dehumidifier's pump. Typically used in combination with nonstop mode.",
+              "description": "Enables connected control over the dehumidifier's pump. Typically used in combination with nonstop mode.",
               "dependencies": [],
               "required": [
                 { "erd": "0x7830", "name": "Dehumidifier Pump On/Off State Request", "length": 1 },
@@ -6503,7 +6503,7 @@
             {
               "mask": "0x00000008",
               "name": "Nonstop Mode",
-              "description": " \nEnables nonstop mode, which is typically used when the dehumidifier's drainage line\nis draining into a floor drain or sump rather than the dehumidifier's internal drainage container.",
+              "description": "Enables nonstop mode, which is typically used when the dehumidifier's drainage line\nis draining into a floor drain or sump rather than the dehumidifier's internal drainage container.",
               "dependencies": [],
               "required": [
                 { "erd": "0x7833", "name": "Dehumidifier Nonstop Mode Request", "length": 1 },
@@ -7639,7 +7639,7 @@
             {
               "mask": "0x00000001",
               "name": "Foundation",
-              "description": "Basic connected Central Controller; \nAlerts aka notifications.\nDry Contacts allow some physical, configurable I/O.",
+              "description": "Basic connected Central Controller;\nAlerts aka notifications.\nDry Contacts allow some physical, configurable I/O.",
               "dependencies": [],
               "required": [
                 { "erd": "0x79A4", "name": "Alert Status", "length": 4 },
@@ -7668,7 +7668,7 @@
             {
               "mask": "0x00000008",
               "name": "Indoor Humidity Sensing",
-              "description": "Enable ambient humidity sensing.            \nUseful for enabling room dehumidification.",
+              "description": "Enable ambient humidity sensing.\nUseful for enabling room dehumidification.",
               "dependencies": [],
               "required": [
                 { "erd": "0x7B01", "name": "Current Humidity", "length": 2 }
@@ -7686,7 +7686,7 @@
             {
               "mask": "0x00000020",
               "name": "Duct Free Split Control",
-              "description": "This Central Controller is connected to a DFS Outdoor unit. \nIt is capable of performing local control on a certain number of DFS Indoor units.",
+              "description": "This Central Controller is connected to a DFS Outdoor unit.\nIt is capable of performing local control on a certain number of DFS Indoor units.",
               "dependencies": [],
               "required": [
                 { "erd": "0x79A8", "name": "IDU Control Count", "length": 1 }
@@ -7757,7 +7757,7 @@
             {
               "mask": "0x00001000",
               "name": "Local Scheduling",
-              "description": "Cloud scheduling is always available when the device is connected. \nLocal scheduling can be turned on or off.\nNote that the two do not sync nor transfer data.\nIn fact, Cloud scheduling interferes with Local scheduling but may be preferable in some cases.",
+              "description": "Cloud scheduling is always available when the device is connected.\nLocal scheduling can be turned on or off.\nNote that the two do not sync nor transfer data.\nIn fact, Cloud scheduling interferes with Local scheduling but may be preferable in some cases.",
               "dependencies": [],
               "required": [
                 { "erd": "0x79A2", "name": "Local Schedule Enable Request", "length": 1 },
@@ -7767,7 +7767,7 @@
             {
               "mask": "0x00002000",
               "name": "Unitary System Service Config",
-              "description": "The Air-Handler connected to this unit supports advanced Service Related Configuration.\nThis is a collection of ERDs that enable an experienced technician to customize aspects of \nunit performance.",
+              "description": "The Air-Handler connected to this unit supports advanced Service Related Configuration.\nThis is a collection of ERDs that enable an experienced technician to customize aspects of\nunit performance.",
               "dependencies": [],
               "required": [
                 { "erd": "0x79BA", "name": "Minimum Heating Time allowable range", "length": 3 },
@@ -7794,7 +7794,7 @@
             {
               "mask": "0x00008000",
               "name": "Unitary Compressor Service Config",
-              "description": "The Air-Handler connected to this unit supports advanced Compressor related configuration by Installer or Service.\nThis is a collection of ERDs that enable an experienced technician to customize aspects of \nunit performance specific to the Compressor's behavior.",
+              "description": "The Air-Handler connected to this unit supports advanced Compressor related configuration by Installer or Service.\nThis is a collection of ERDs that enable an experienced technician to customize aspects of\nunit performance specific to the Compressor's behavior.",
               "dependencies": [],
               "required": [
                 { "erd": "0x79AB", "name": "Compressor Minimum Runtime Status", "length": 1 },
@@ -7814,7 +7814,7 @@
             {
               "mask": "0x00010000",
               "name": "Unitary Fan Service Config",
-              "description": "The Air-Handler connected to this unit supports advanced Blower/Fan related configuration by Installer or Service.\nThis is a collection of ERDs that enable an experienced technician to customize aspects of \nunit performance specific to the Blower/Fan behaviors.",
+              "description": "The Air-Handler connected to this unit supports advanced Blower/Fan related configuration by Installer or Service.\nThis is a collection of ERDs that enable an experienced technician to customize aspects of\nunit performance specific to the Blower/Fan behaviors.",
               "dependencies": [],
               "required": [
                 { "erd": "0x79B7", "name": "Indoor Fan Minimum Delay allowable range", "length": 3 },
