@@ -12237,15 +12237,15 @@
       "size": 4
     }]
   }, {
-    "name": "Isolation Water Valve Resolved Vote",
+    "name": "Isolation Water Valve State",
     "id": "0x128c",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The resolved vote for the isolation water valve",
+    "description": "The state for the isolation water valve",
     "updateClass": {
       "type": "event"
     },
     "data": [{
-      "name": "Isolation Water Valve Resolved Vote",
+      "name": "Isolation Water Valve State",
       "type": "bool",
       "offset": 0,
       "size": 1

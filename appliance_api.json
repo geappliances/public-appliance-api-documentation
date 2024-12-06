@@ -3003,11 +3003,11 @@
             },
             {
               "mask": "0x00010000",
-              "name": "Isolation Water Valve Resolved Vote",
+              "name": "Isolation Water Valve State",
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x128C", "name": "Isolation Water Valve Resolved Vote", "length": 1 }
+                { "erd": "0x128C", "name": "Isolation Water Valve State", "length": 1 }
               ]
             },
             {
