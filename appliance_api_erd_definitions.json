@@ -9359,7 +9359,7 @@
       "size": 1
     }]
   }, {
-    "name": "Turbo Cool On Off Request",
+    "name": "Turbo Cool Request",
     "id": "0x120c",
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "Used to request setting turbo cool mode on or off.",
@@ -9373,7 +9373,7 @@
       "size": 1
     }]
   }, {
-    "name": "Turbo Cool On Off Status",
+    "name": "Turbo Cool Status",
     "id": "0x120d",
     "operations": ["read", "publish", "subscribe"],
     "description": "Used to respond to turbo cool on off request.",
@@ -9579,7 +9579,7 @@
       "size": 1
     }]
   }, {
-    "name": "Turbo Freeze On Off Request",
+    "name": "Turbo Freeze Request",
     "id": "0x121a",
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "Used to request setting turbo freeze mode on or off.",
@@ -9593,7 +9593,7 @@
       "size": 1
     }]
   }, {
-    "name": "Turbo Freeze On Off Status",
+    "name": "Turbo Freeze Status",
     "id": "0x121b",
     "operations": ["read", "publish", "subscribe"],
     "description": "Used to respond to turbo freeze on off request.",
