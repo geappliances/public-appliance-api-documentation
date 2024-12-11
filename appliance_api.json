@@ -6161,6 +6161,45 @@
               "required": [
                 { "erd": "0x9135", "name": "Ice Maker Push Notifications", "length": 4 }
               ]
+            },
+            {
+              "mask": "0x00000020",
+              "name": "Filter Usage Details",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9136", "name": "Current Filter Usage", "length": 2 },
+                { "erd": "0x9137", "name": "Filter Expiration Elapsed Time", "length": 2 },
+                { "erd": "0x9138", "name": "Current Filter Type", "length": 1 },
+                { "erd": "0x9139", "name": "Requested Filter Type", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000040",
+              "name": "Descale Elapsed Time",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x913A", "name": "Descale Indication Elapsed Time", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000080",
+              "name": "Sanitize Elapsed Time",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x913B", "name": "Sanitize Indication Elapsed Time", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000100",
+              "name": "Total Compressor Runtime",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x913C", "name": "Total Compressor Runtime", "length": 2 }
+              ]
             }
           ]
         },
@@ -6241,6 +6280,45 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x9135", "name": "Ice Maker Push Notifications", "length": 4 }
+              ]
+            },
+            {
+              "mask": "0x00000100",
+              "name": "Filter Usage Details",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9136", "name": "Current Filter Usage", "length": 2 },
+                { "erd": "0x9137", "name": "Filter Expiration Elapsed Time", "length": 2 },
+                { "erd": "0x9138", "name": "Current Filter Type", "length": 1 },
+                { "erd": "0x9139", "name": "Requested Filter Type", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000200",
+              "name": "Descale Elapsed Time",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x913A", "name": "Descale Indication Elapsed Time", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000400",
+              "name": "Sanitize Elapsed Time",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x913B", "name": "Sanitize Indication Elapsed Time", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000800",
+              "name": "Total Compressor Runtime",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x913C", "name": "Total Compressor Runtime", "length": 2 }
               ]
             }
           ]

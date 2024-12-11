@@ -119725,7 +119725,7 @@
     "name": "Ice Maker Push Notifications",
     "id": "0x9135",
     "operations": ["read", "publish", "subscribe"],
-    "description": "- Byte 0 & 1 - Individual bits set to indicate different push notifications.\n    When setting a notification, only the particular bit must be set,\n    other bits must be masked off to prevent pushing the same notification multiple times.\n\n    * Sanitize Alert - Intended to remind the user to sanitize the appliance.\n\n- Byte 2 & 3 - Bits are set to indicate that the user can enable or disable the corresponding notification in the client.\n    Bits are cleared to indicate the notification is unsupported and hence cannot be enabled or disabled by the user.",
+    "description": "- Byte 0 & 1 - Individual bits set to indicate different push notifications.\n    When setting a notification, only the particular bit must be set,\n    other bits must be masked off to prevent pushing the same notification multiple times.\n\n    * Sanitize Alert - Intended to remind the user to sanitize the appliance.\n    * Water Filter Near Expiration Alert - Intended to remind the user to order a replacement filter.\n    * Clean Air Filter Alert - Intended to remind the user to clean the air filter.\n\n- Byte 2 & 3 - Bits are set to indicate that the user can enable or disable the corresponding notification in the client.\n    Bits are cleared to indicate the notification is unsupported and hence cannot be enabled or disabled by the user.",
     "updateClass": {
       "type": "event"
     },
@@ -119739,11 +119739,29 @@
       "offset": 0,
       "size": 2
     }, {
+      "name": "Water Filter Near Expiration Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Air Filter Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 9,
-        "size": 7
+        "offset": 11,
+        "size": 5
       },
       "offset": 0,
       "size": 2
@@ -119766,11 +119784,29 @@
       "offset": 2,
       "size": 2
     }, {
+      "name": "Water Filter Near Expiration Alert Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Air Filter Alert Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 9,
-        "size": 7
+        "offset": 11,
+        "size": 5
       },
       "offset": 2,
       "size": 2
@@ -119782,6 +119818,114 @@
         "size": 8
       },
       "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Current Filter Usage",
+    "id": "0x9136",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The value represents the percentage of filter life used.\n- 0% indicates a new filter\n- 100% & above indicates an expired filter",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Current Filter Usage (%)",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Filter Expiration Elapsed Time",
+    "id": "0x9137",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "For Ice Maker - The value represents the compressor runtime in hours since the filter expired.\nThe value is reset to 0 when the filter expiration flag is reset.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Filter Expiration Elapsed Time",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Current Filter Type",
+    "id": "0x9138",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The current filter type",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Filter Type",
+      "type": "enum",
+      "values": {
+        "0": "Unknown",
+        "1": "Carbon Filter",
+        "2": "Scale Inhibiting Filter"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Requested Filter Type",
+    "id": "0x9139",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The requested filter type",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Filter Type",
+      "type": "enum",
+      "values": {
+        "0": "Unknown",
+        "1": "Carbon Filter",
+        "2": "Scale Inhibiting Filter"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Descale Indication Elapsed Time",
+    "id": "0x913a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "For Ice Maker - The value represents the compressor runtime in hours since the descale alert was triggered.\nThe value is reset to 0 when the descale indication is reset.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Descale Indication Elapsed Time",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Sanitize Indication Elapsed Time",
+    "id": "0x913b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "For Ice Maker - The value represents the compressor runtime in hours since the sanitize alert was triggered.\nThe value is reset to 0 when the sanitize indication is reset.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Sanitize Indication Elapsed Time",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Total Compressor Runtime",
+    "id": "0x913c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The value represents the total compressor runtime in hours.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Compressor Runtime (hours)",
+      "type": "u16",
+      "offset": 0,
       "size": 2
     }]
   }, {
