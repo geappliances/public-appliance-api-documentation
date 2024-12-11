@@ -2327,7 +2327,19 @@
                 { "erd": "0x1213", "name": "Ice Maker 0 Type Information", "length": 2 },
                 { "erd": "0x1234", "name": "Ice Maker 0 Present", "length": 1 },
                 { "erd": "0x1274", "name": "Icemaker0 Filtered Thermistor Temperature", "length": 2 },
-                { "erd": "0x127E", "name": "Icemaker0 Total Harvest Counts", "length": 4 }
+                { "erd": "0x127E", "name": "Icemaker0 Total Harvest Counts", "length": 4 },
+                { "erd": "0x12BC", "name": "Ice Maker 0 Minimum Freeze Time Count in Minutes", "length": 1 },
+                { "erd": "0x12BD", "name": "Ice Maker 0 Feeler Arm Position", "length": 1 },
+                { "erd": "0x12BE", "name": "Ice Maker 0 Rake Position", "length": 1 },
+                { "erd": "0x12BF", "name": "Ice Maker 0 Freeze Integration Count", "length": 4 },
+                { "erd": "0x12C0", "name": "Ice Maker 0 Rake Motor Resolved Vote", "length": 1 },
+                { "erd": "0x12C1", "name": "Ice Maker 0 Heater Relay Resolved Vote", "length": 1 },
+                { "erd": "0x12C2", "name": "Ice Maker 0 Motor Operation State", "length": 1 },
+                { "erd": "0x12C3", "name": "Ice Maker 0 Motor Action Result", "length": 1 },
+                { "erd": "0x12C4", "name": "Ice Maker 0 Twist Tray Motor Fault", "length": 1 },
+                { "erd": "0x12C5", "name": "Ice Maker 0 Twist Motor Resolved Vote", "length": 1 },
+                { "erd": "0x12C6", "name": "Ice Maker 0 Water Valve Resolved Vote", "length": 1 },
+                { "erd": "0x12C7", "name": "Ice Maker 0 Fill Tube Heater Resolved Vote", "length": 1 }
               ]
             },
             {
