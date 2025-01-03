@@ -426,11 +426,20 @@
               "description": "Models with shutoff valve",
               "dependencies": [],
               "required": [
-                { "erd": "0x4056", "name": "Diagnostic Failure counts", "length": 32 },
                 { "erd": "0x4082", "name": "Accessory low battery alarm active", "length": 1 },
                 { "erd": "0x4083", "name": "Accessory leak detected alarm active", "length": 1 },
                 { "erd": "0x4222", "name": "Shutoff Water Valve Position/State", "length": 1 },
                 { "erd": "0x4223", "name": "Requested Water Valve Position", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00200000",
+              "name": "Heating Diagnostics",
+              "description": "Diagnostic information for heating problems",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x4056", "name": "Diagnostic Failure counts", "length": 32 },
+                { "erd": "0x4058", "name": "Heating Issues", "length": 8 }
               ]
             }
           ]

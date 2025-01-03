@@ -61941,6 +61941,483 @@
       "size": 1
     }]
   }, {
+    "name": "Heating Issues",
+    "id": "0x4058",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Bitmap of active heating issues that change the heat source",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Fault_T2Fail",
+      "type": "bool",
+      "bits": {
+        "offset": 56,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_T1T2VotingFailUsingT1",
+      "type": "bool",
+      "bits": {
+        "offset": 57,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_SabbathKeeperLostComms",
+      "type": "bool",
+      "bits": {
+        "offset": 58,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_WaterTooHotForSabbath",
+      "type": "bool",
+      "bits": {
+        "offset": 59,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Defrosting",
+      "type": "bool",
+      "bits": {
+        "offset": 60,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "PrepareToEnterBootloader",
+      "type": "bool",
+      "bits": {
+        "offset": 61,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_DryTank",
+      "type": "bool",
+      "bits": {
+        "offset": 62,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_ConcurrentLoad",
+      "type": "bool",
+      "bits": {
+        "offset": 63,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "HeatPumpDryTankDetectionActive",
+      "type": "bool",
+      "bits": {
+        "offset": 48,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_UpperElement",
+      "type": "bool",
+      "bits": {
+        "offset": 49,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_UpperElementFail",
+      "type": "bool",
+      "bits": {
+        "offset": 50,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_LowerElement",
+      "type": "bool",
+      "bits": {
+        "offset": 51,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_LowerElementFail",
+      "type": "bool",
+      "bits": {
+        "offset": 52,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_T1Fail",
+      "type": "bool",
+      "bits": {
+        "offset": 53,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_LowLineVoltage",
+      "type": "bool",
+      "bits": {
+        "offset": 54,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_DirtyFilter",
+      "type": "bool",
+      "bits": {
+        "offset": 55,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_T3aDrift",
+      "type": "bool",
+      "bits": {
+        "offset": 40,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_T3aFail",
+      "type": "bool",
+      "bits": {
+        "offset": 41,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_T3bDrift",
+      "type": "bool",
+      "bits": {
+        "offset": 42,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_T3bFail",
+      "type": "bool",
+      "bits": {
+        "offset": 43,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_T4Fail",
+      "type": "bool",
+      "bits": {
+        "offset": 44,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_T5Drift",
+      "type": "bool",
+      "bits": {
+        "offset": 45,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_T5Fail",
+      "type": "bool",
+      "bits": {
+        "offset": 46,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_Fan",
+      "type": "bool",
+      "bits": {
+        "offset": 47,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_FanFail",
+      "type": "bool",
+      "bits": {
+        "offset": 32,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_Inverter",
+      "type": "bool",
+      "bits": {
+        "offset": 33,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_InverterHeartbeat",
+      "type": "bool",
+      "bits": {
+        "offset": 34,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_InverterFail",
+      "type": "bool",
+      "bits": {
+        "offset": 35,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_InverterApiMismatch",
+      "type": "bool",
+      "bits": {
+        "offset": 36,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_LowCompressorPower",
+      "type": "bool",
+      "bits": {
+        "offset": 37,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_HighCompressorPower",
+      "type": "bool",
+      "bits": {
+        "offset": 38,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_HighCompressorDischargeTemp",
+      "type": "bool",
+      "bits": {
+        "offset": 39,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_CompressorFail",
+      "type": "bool",
+      "bits": {
+        "offset": 24,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_Defrost",
+      "type": "bool",
+      "bits": {
+        "offset": 25,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_Defrost",
+      "type": "bool",
+      "bits": {
+        "offset": 26,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_AmbientTemperatureOutOfRange",
+      "type": "bool",
+      "bits": {
+        "offset": 27,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_CondensateSensor",
+      "type": "bool",
+      "bits": {
+        "offset": 28,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_CondensateDrainPan",
+      "type": "bool",
+      "bits": {
+        "offset": 29,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_VaporLocked",
+      "type": "bool",
+      "bits": {
+        "offset": 30,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_VaporLocked",
+      "type": "bool",
+      "bits": {
+        "offset": 31,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_LowCompressorDischargeTemp",
+      "type": "bool",
+      "bits": {
+        "offset": 16,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_LowCompressorDischargeTemp",
+      "type": "bool",
+      "bits": {
+        "offset": 17,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_EvaporatorFrosted",
+      "type": "bool",
+      "bits": {
+        "offset": 18,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_EvaporatorFrosted",
+      "type": "bool",
+      "bits": {
+        "offset": 19,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_SuperHeatControl",
+      "type": "bool",
+      "bits": {
+        "offset": 20,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_SuperHeatControl",
+      "type": "bool",
+      "bits": {
+        "offset": 21,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_EevPositionError",
+      "type": "bool",
+      "bits": {
+        "offset": 22,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_EevPositionError",
+      "type": "bool",
+      "bits": {
+        "offset": 23,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Failure_SealedSystemLeak",
+      "type": "bool",
+      "bits": {
+        "offset": 8,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Fault_SealedSystemLeak",
+      "type": "bool",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "reserved",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 6
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "reserved",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 8
+    }]
+  }, {
     "name": "T1 Temperature",
     "id": "0x405f",
     "operations": ["read", "publish", "subscribe"],
