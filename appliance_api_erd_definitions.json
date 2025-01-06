@@ -62690,12 +62690,72 @@
       "size": 1
     }]
   }, {
+    "name": "Groundwater Temperature",
+    "id": "0x40b8",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The temperature in degrees F x 10.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Temperature",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "T7 Temperature",
     "id": "0x40b9",
     "operations": ["read", "publish", "subscribe"],
     "description": "The temperature in degrees F x 10.",
     "updateClass": {
       "type": "legacy"
+    },
+    "data": [{
+      "name": "Temperature",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "MC CPU Temperature",
+    "id": "0x40ba",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The temperature in degrees F x 10.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Temperature",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "MC Circuit Board Temperature",
+    "id": "0x40bb",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The temperature in degrees F x 10.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Temperature",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "MC Power Connector Temperature",
+    "id": "0x40bc",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The temperature in degrees F x 10.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
     },
     "data": [{
       "name": "Temperature",
@@ -63613,20 +63673,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1

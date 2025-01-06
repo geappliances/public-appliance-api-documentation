@@ -439,7 +439,11 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x4056", "name": "Diagnostic Failure counts", "length": 32 },
-                { "erd": "0x4058", "name": "Heating Issues", "length": 8 }
+                { "erd": "0x4058", "name": "Heating Issues", "length": 8 },
+                { "erd": "0x40B8", "name": "Groundwater Temperature", "length": 2 },
+                { "erd": "0x40BA", "name": "MC CPU Temperature", "length": 2 },
+                { "erd": "0x40BB", "name": "MC Circuit Board Temperature", "length": 2 },
+                { "erd": "0x40BC", "name": "MC Power Connector Temperature", "length": 2 }
               ]
             }
           ]
