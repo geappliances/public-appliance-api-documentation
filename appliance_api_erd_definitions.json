@@ -10047,7 +10047,7 @@
       "offset": 0,
       "size": 16
     }, {
-      "name": "Supported Notifications.Reserved 1",
+      "name": "Supported Notifications.Convertible Compartment Door Opened Alert",
       "type": "bool",
       "bits": {
         "offset": 118,
@@ -10317,7 +10317,7 @@
       "offset": 16,
       "size": 16
     }, {
-      "name": "Notifications.Reserved 1",
+      "name": "Notifications.Convertible Compartment Door Opened Alert",
       "type": "bool",
       "bits": {
         "offset": 118,
@@ -63673,20 +63673,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
