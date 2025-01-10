@@ -54600,7 +54600,8 @@
         "0": "eWashTemp_None",
         "1": "eWashTemp_Boost",
         "2": "eWashTemp_Sani",
-        "3": "eWashTemp_SaniAndBoost"
+        "3": "eWashTemp_SaniAndBoost",
+        "4": "eWashTemp_OnlySani"
       },
       "offset": 4,
       "size": 1
@@ -55028,7 +55029,8 @@
       "values": {
         "0": "No_Operation",
         "1": "Start_Resume_Cycle",
-        "2": "Cancel_Cycle"
+        "2": "Cancel_Cycle",
+        "3": "Pause_Cycle"
       },
       "offset": 0,
       "size": 1
@@ -59219,7 +59221,8 @@
         "0": "eWashTemp_None",
         "1": "eWashTemp_Boost",
         "2": "eWashTemp_Sani",
-        "3": "eWashTemp_SaniAndBoost"
+        "3": "eWashTemp_SaniAndBoost",
+        "4": "eWashTemp_OnlySani"
       },
       "offset": 4,
       "size": 1
@@ -59457,7 +59460,8 @@
       "values": {
         "0": "No_Operation",
         "1": "Start_Resume_Cycle",
-        "2": "Cancel_Cycle"
+        "2": "Cancel_Cycle",
+        "3": "Pause_Cycle"
       },
       "offset": 0,
       "size": 1
