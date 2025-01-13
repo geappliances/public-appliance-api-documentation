@@ -12986,9 +12986,9 @@
     },
     "data": [{
       "name": "Ice Maker 0 Minimum Freeze Time Count in Minutes",
-      "type": "u8",
+      "type": "u16",
       "offset": 0,
-      "size": 1
+      "size": 2
     }]
   }, {
     "name": "Ice Maker 0 Feeler Arm Position",
@@ -13282,6 +13282,221 @@
       },
       "offset": 2,
       "size": 2
+    }]
+  }, {
+    "name": "Ice Maker 1 Minimum Freeze Time Count in Minutes",
+    "id": "0x12d4",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the minutes that the ice maker has been in the freeze state.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Minimum Freeze Time Count in Minutes",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Ice Maker 1 Feeler Arm Position",
+    "id": "0x12d5",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Report the current position of the bucket full feeler arm.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Feeler Arm Position",
+      "type": "enum",
+      "values": {
+        "0": "FeelerArmPositionBucketNotFull",
+        "1": "FeelerArmPositionBucketFull"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Ice Maker 1 Rake Position",
+    "id": "0x12d6",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the current ice maker 1 rake position.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Rake Position",
+      "type": "enum",
+      "values": {
+        "0": "RakePositionHome",
+        "1": "RakePositionNotHome"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Ice Maker 1 Freeze Integration Count",
+    "id": "0x12d7",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the current ice maker 1 calculated freeze integration value.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Ice Maker 1 Freeze Integration Count",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Ice Maker 1 Rake Motor Resolved Vote",
+    "id": "0x12d8",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the current ice maker 1 rake motor vote.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Rake Motor Resolved Vote",
+      "type": "enum",
+      "values": {
+        "0": "RakeMotorStateOff",
+        "1": "RakeMotorStateRun",
+        "2": "RakeMotorStateHoming"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Ice Maker 1 Heater Relay Resolved Vote",
+    "id": "0x12d9",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the current ice maker 1 heater relay vote.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Heater Relay Resolved Vote",
+      "type": "enum",
+      "values": {
+        "0": "HeaterRelayOff",
+        "1": "HeaterRelayOn"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Ice Maker 1 Motor Operation State",
+    "id": "0x12da",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the current ice maker 1 motor operational state.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Motor Operation State",
+      "type": "enum",
+      "values": {
+        "0": "IceMakerMotorOperationStateIdle",
+        "1": "IceMakerMotorOperationStateHomingMakingSureTheTrayIsHome",
+        "2": "IceMakerMotorOperationStateHomingJumpingOutOfHome",
+        "3": "IceMakerMotorOperationStateHomingReadyToLandInHomePosition",
+        "4": "IceMakerMotorOperationStateHarvestCheckingIfBucketIsFull",
+        "5": "IceMakerMotorOperationStateHarvestBucketWasFoundToBeFull",
+        "6": "IceMakerMotorOperationStateHarvestStoppingAtFullTwistPosition",
+        "7": "IceMakerMotorOperationStateHarvestUntwisting",
+        "8": "IceMakerMotorOperationStateHarvestReadyToLandInHomePosition"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Ice Maker 1 Motor Action Result",
+    "id": "0x12db",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the current ice maker 1 motor action.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Motor Action Result",
+      "type": "enum",
+      "values": {
+        "0": "IceMakerMotorActionResultNoAction",
+        "1": "IceMakerMotorActionResultHarvesting",
+        "2": "IceMakerMotorActionResultHarvested",
+        "3": "IceMakerMotorActionResultBucketWasFull",
+        "4": "IceMakerMotorActionResultHoming",
+        "5": "IceMakerMotorActionResultHomed",
+        "6": "IceMakerMotorActionResultMotorError"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Ice Maker 1 Twist Tray Motor Fault",
+    "id": "0x12dc",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Returns true when the twist tray motor has a fault",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Twist Tray Motor Fault Active",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Ice Maker 1 Twist Motor Resolved Vote",
+    "id": "0x12dd",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the current ice maker 1 twist motor vote.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Twist Motor Resolved Vote",
+      "type": "enum",
+      "values": {
+        "0": "IceMakerMotorStateOff",
+        "1": "IceMakerMotorStateRun",
+        "2": "IceMakerMotorStateHoming"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Ice Maker 1 Water Valve Resolved Vote",
+    "id": "0x12de",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the current ice maker 1 water valve vote.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Water Valve Resolved Vote",
+      "type": "enum",
+      "values": {
+        "0": "WaterValveStateOff",
+        "1": "WaterValveStateOn"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Ice Maker 1 Fill Tube Heater Resolved Vote",
+    "id": "0x12df",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the current ice maker 1 fill tube heater duty cycle (0 - 100%).",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 1 Fill Tube Heater Resolved Vote",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
     }]
   }, {
     "name": "Supply Water Tank Level",
