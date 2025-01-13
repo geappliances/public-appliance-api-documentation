@@ -12986,9 +12986,9 @@
     },
     "data": [{
       "name": "Ice Maker 0 Minimum Freeze Time Count in Minutes",
-      "type": "u16",
+      "type": "u8",
       "offset": 0,
-      "size": 2
+      "size": 1
     }]
   }, {
     "name": "Ice Maker 0 Feeler Arm Position",
