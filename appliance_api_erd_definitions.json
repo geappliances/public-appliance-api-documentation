@@ -12986,9 +12986,9 @@
     },
     "data": [{
       "name": "Ice Maker 0 Minimum Freeze Time Count in Minutes",
-      "type": "u8",
+      "type": "u16",
       "offset": 0,
-      "size": 1
+      "size": 2
     }]
   }, {
     "name": "Ice Maker 0 Feeler Arm Position",
@@ -63892,20 +63892,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
@@ -120895,6 +120895,20 @@
     },
     "data": [{
       "name": "Compressor Runtime (hours)",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Time To Descale",
+    "id": "0x913d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The value represents the time elapsed between descale indications.\n- 0% indicates a descale cycle was just executed.\n- 100% & above indicates descale alert triggered.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Time To Descale (%)",
       "type": "u16",
       "offset": 0,
       "size": 2
