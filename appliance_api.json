@@ -2529,7 +2529,19 @@
                 { "erd": "0x1232", "name": "Ice Maker 2 Full Status", "length": 1 },
                 { "erd": "0x1233", "name": "Ice Maker 2 Type Information", "length": 2 },
                 { "erd": "0x1236", "name": "Ice Maker 2 Present", "length": 1 },
-                { "erd": "0x12A2", "name": "Ice Maker 2 Harvest Count", "length": 4 }
+                { "erd": "0x12A2", "name": "Ice Maker 2 Harvest Count", "length": 4 },
+                { "erd": "0x12E0", "name": "Ice Maker 2 Minimum Freeze Time Count in Minutes", "length": 2 },
+                { "erd": "0x12E1", "name": "Ice Maker 2 Feeler Arm Position", "length": 1 },
+                { "erd": "0x12E2", "name": "Ice Maker 2 Rake Position", "length": 1 },
+                { "erd": "0x12E3", "name": "Ice Maker 2 Freeze Integration Count", "length": 4 },
+                { "erd": "0x12E4", "name": "Ice Maker 2 Rake Motor Resolved Vote", "length": 1 },
+                { "erd": "0x12E5", "name": "Ice Maker 2 Heater Relay Resolved Vote", "length": 1 },
+                { "erd": "0x12E6", "name": "Ice Maker 2 Motor Operation State", "length": 1 },
+                { "erd": "0x12E7", "name": "Ice Maker 2 Motor Action Result", "length": 1 },
+                { "erd": "0x12E8", "name": "Ice Maker 2 Twist Tray Motor Fault", "length": 1 },
+                { "erd": "0x12E9", "name": "Ice Maker 2 Twist Motor Resolved Vote", "length": 1 },
+                { "erd": "0x12EA", "name": "Ice Maker 2 Water Valve Resolved Vote", "length": 1 },
+                { "erd": "0x12EB", "name": "Ice Maker 2 Fill Tube Heater Resolved Vote", "length": 1 }
               ]
             },
             {
