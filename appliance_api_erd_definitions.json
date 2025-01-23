@@ -121033,7 +121033,7 @@
       "type": "event"
     },
     "data": [{
-      "name": "Current Filter Usage (%)",
+      "name": "Current Filter Usage (Percent)",
       "type": "u16",
       "offset": 0,
       "size": 2
