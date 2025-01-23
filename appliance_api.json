@@ -1087,7 +1087,7 @@
             {
               "mask": "0x00400000",
               "name": "Dryer Push Notifications and Faults",
-              "description": "This feature enables app to show dryer notifications and fault notifications:\n- 0x222B Dryer Push Notifications.\n- 0x2229 Laundry Appliance Fault Push Notifications.",
+              "description": "This feature enables app to show dryer notifications and fault notifications:\n- 0x2229 Dryer Push Notifications.\n- 0x222B Laundry Appliance Fault Push Notifications.",
               "dependencies": [],
               "required": [
                 { "erd": "0x2229", "name": "Dryer Push Notifications", "length": 8 },
@@ -1845,7 +1845,7 @@
             {
               "mask": "0x00000008",
               "name": "Washer Push Notifications and Faults",
-              "description": "This feature enables app to show washer notifications and fault notifications:\n- 0x222A Washer Push Notifications.\n- 0x2229 Laundry Appliance Fault Push Notifications.",
+              "description": "This feature enables app to show washer notifications and fault notifications:\n- 0x222A Washer Push Notifications.\n- 0x222B Laundry Appliance Fault Push Notifications.",
               "dependencies": [],
               "required": [
                 { "erd": "0x222A", "name": "Washer Push Notifications", "length": 8 },
@@ -8586,7 +8586,7 @@
             {
               "mask": "0x00000200",
               "name": "Cabinet or Closet Push Notifications and Faults",
-              "description": "This feature enables app to show cabinet/closet notifications and fault notifications:\n- 0x2228 Cabinet/Closet Push Notifications.\n- 0x2229 Laundry Appliance Fault Push Notifications.",
+              "description": "This feature enables app to show cabinet/closet notifications and fault notifications:\n- 0x2228 Cabinet/Closet Push Notifications.\n- 0x222B Laundry Appliance Fault Push Notifications.",
               "dependencies": [],
               "required": [
                 { "erd": "0x2228", "name": "Cabinet or Closet Push Notifications", "length": 8 },

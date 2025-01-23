@@ -51804,11 +51804,20 @@
       "offset": 0,
       "size": 4
     }, {
+      "name": "Damp Dry Ready Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 20,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 20,
-        "size": 4
+        "offset": 21,
+        "size": 3
       },
       "offset": 0,
       "size": 4
@@ -51939,11 +51948,20 @@
       "offset": 4,
       "size": 4
     }, {
+      "name": "Damp Dry Ready Notification Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 20,
+        "size": 1
+      },
+      "offset": 4,
+      "size": 4
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 20,
-        "size": 4
+        "offset": 21,
+        "size": 3
       },
       "offset": 4,
       "size": 4
@@ -52339,12 +52357,12 @@
     "name": "Laundry Appliance Fault Push Notifications",
     "id": "0x222b",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This is set to true when any critical fault occurs. When a fault is active, any cycles will be prevented from starting or running.\nByte 0 & 1: Individual bits to be controlled by the firmware when a push notification needs to be sent.\nByte 2 & 3: Notification Supported bits. If a specific feature bit is set to zero, the notification for that feature is NOT supported for a given platform.",
+    "description": "Laundry appliance fault notifications occur when a critical fault is active. When a critical fault is active all cycles will be prevented from starting or running.\nByte 0 & 1: Individual bits to be controlled by the firmware when a push notification needs to be sent.\nByte 2 & 3: Notification Supported bits. If a specific feature bit is set to zero, the notification for that feature is NOT supported for a given platform.",
     "updateClass": {
       "type": "event"
     },
     "data": [{
-      "name": "Appliance Fault Notification Supported",
+      "name": "Appliance Fault Notification",
       "type": "bool",
       "bits": {
         "offset": 8,
