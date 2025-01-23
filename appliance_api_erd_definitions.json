@@ -10470,7 +10470,7 @@
       "type": "event"
     },
     "data": [{
-      "name": "Reason for Inhibiting Dispensing.Water due to refrigerator door open",
+      "name": "Reason for Inhibiting Dispensing.Due to refrigerator door open",
       "type": "bool",
       "bits": {
         "offset": 24,
@@ -10479,7 +10479,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Ice due to refrigerator door open",
+      "name": "Reason for Inhibiting Dispensing.Water due to water filter",
       "type": "bool",
       "bits": {
         "offset": 25,
@@ -10488,7 +10488,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Water due to water filter",
+      "name": "Reason for Inhibiting Dispensing.Ice due to dispensing being disabled or blocked",
       "type": "bool",
       "bits": {
         "offset": 26,
@@ -10497,7 +10497,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Ice due to dispensing being disabled or blocked",
+      "name": "Reason for Inhibiting Dispensing.Water due to dispensing being disabled or blocked",
       "type": "bool",
       "bits": {
         "offset": 27,
@@ -10506,7 +10506,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Water due to dispensing being disabled or blocked",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 28,
@@ -10515,7 +10515,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 3",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 29,
@@ -10524,7 +10524,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 4",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 30,
@@ -10533,7 +10533,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 5",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 31,
@@ -10542,7 +10542,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 6",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 16,
@@ -10551,7 +10551,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 7",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 17,
@@ -10560,7 +10560,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 8",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 18,
@@ -10569,7 +10569,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 9",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 19,
@@ -10578,7 +10578,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 10",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 20,
@@ -10587,7 +10587,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 11",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 21,
@@ -10596,7 +10596,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 12",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 22,
@@ -10605,7 +10605,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 13",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 23,
@@ -10614,7 +10614,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 14",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 8,
@@ -10623,7 +10623,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 15",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 9,
@@ -10632,7 +10632,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 16",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 10,
@@ -10641,7 +10641,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 17",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 11,
@@ -10650,7 +10650,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 18",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 12,
@@ -10659,7 +10659,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 19",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 13,
@@ -10668,7 +10668,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 20",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 14,
@@ -10677,7 +10677,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 21",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 15,
@@ -10686,7 +10686,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 22",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -10695,7 +10695,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 23",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 1,
@@ -10704,7 +10704,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 24",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -10713,7 +10713,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 25",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 3,
@@ -10722,7 +10722,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 26",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 4,
@@ -10731,7 +10731,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 27",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 5,
@@ -10740,7 +10740,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 28",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 6,
@@ -10749,7 +10749,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved 29",
+      "name": "Reason for Inhibiting Dispensing.Reserved",
       "type": "bool",
       "bits": {
         "offset": 7,
