@@ -9882,6 +9882,7 @@
                 { "erd": "0x628B", "name": "Sensor Provision Result", "length": 9 },
                 { "erd": "0x628C", "name": "Sensor Removal Request", "length": 7 },
                 { "erd": "0x628D", "name": "Sensor Removal Result", "length": 3 },
+                { "erd": "0x628E", "name": "Sensor Removal All Request", "length": 1 },
                 { "erd": "0x628F", "name": "Sensor Removal All Result", "length": 2 },
                 { "erd": "0x6110", "name": "Bluetooth Low Energy - Generic Scan Filter 0", "length": 30 },
                 { "erd": "0x6111", "name": "Bluetooth Low Energy - Generic Scan Filter 1", "length": 30 },

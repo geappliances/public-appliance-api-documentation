@@ -64125,20 +64125,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -107804,6 +107804,20 @@
       "name": "Removed slot/index",
       "type": "u8",
       "offset": 2,
+      "size": 1
+    }]
+  }, {
+    "name": "Sensor Removal All Request",
+    "id": "0x628e",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "This is the request to remove all provisioned sensors at once",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Request ID",
+      "type": "u8",
+      "offset": 0,
       "size": 1
     }]
   }, {
