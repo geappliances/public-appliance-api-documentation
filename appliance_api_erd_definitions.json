@@ -121059,7 +121059,8 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "For Ice Maker - The value represents the compressor runtime in hours since the filter expired.\nThe value is reset to 0 when the filter expiration flag is reset.",
     "updateClass": {
-      "type": "event"
+      "type": "periodic",
+      "periodInMsec": 3600000
     },
     "data": [{
       "name": "Filter Expiration Elapsed Time",
@@ -121111,7 +121112,8 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "For Ice Maker - The value represents the compressor runtime in hours since the descale alert was triggered.\nThe value is reset to 0 when the descale indication is reset.",
     "updateClass": {
-      "type": "event"
+      "type": "periodic",
+      "periodInMsec": 3600000
     },
     "data": [{
       "name": "Descale Indication Elapsed Time",
@@ -121125,7 +121127,8 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "For Ice Maker - The value represents the compressor runtime in hours since the sanitize alert was triggered.\nThe value is reset to 0 when the sanitize indication is reset.",
     "updateClass": {
-      "type": "event"
+      "type": "periodic",
+      "periodInMsec": 3600000
     },
     "data": [{
       "name": "Sanitize Indication Elapsed Time",
@@ -121139,7 +121142,8 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The value represents the total compressor runtime in hours.",
     "updateClass": {
-      "type": "event"
+      "type": "periodic",
+      "periodInMsec": 3600000
     },
     "data": [{
       "name": "Compressor Runtime (hours)",
