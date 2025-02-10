@@ -5719,6 +5719,17 @@
                 { "erd": "0x20DC", "name": "Cycle Function Current", "length": 2 },
                 { "erd": "0x20DE", "name": "Cycle Function Request", "length": 2 }
               ]
+            },
+            {
+              "mask": "0x20000000",
+              "name": "Remote Pet Hair Removal Option",
+              "description": " This is a GEA feature that follows the [Multi-Level Client Writeable Options](https://github.com/geappliances/documentation.erd-specification/blob/master/docs/clothes_washer/v1/multi_level_client_writeable_options.md) documentation with the following considerations:\n- 0x2230 Pet Hair Removal Option is the `Option ERD`.\n- 0x2231 Pet Hair Removal Option Request is the `Option Request ERD`.\n- 0x2232 Pet Hair Removal Option is Client Writeable is the `Option is Client Writeable ERD`.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x2230", "name": "Pet Hair Removal Option", "length": 1 },
+                { "erd": "0x2231", "name": "Pet Hair Removal Option Request", "length": 1 },
+                { "erd": "0x2232", "name": "Pet Hair Removal Option Is In Client Writable State", "length": 1 }
+              ]
             }
           ]
         }

@@ -52418,6 +52418,62 @@
       "size": 2
     }]
   }, {
+    "name": "Pet Hair Removal Option",
+    "id": "0x2230",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This feature reads the actual Pet Hair Removal Option value.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Pet Hair Removal Option Status",
+      "type": "enum",
+      "values": {
+        "0": "Off",
+        "1": "15 Minutes",
+        "2": "30 Minutes",
+        "3": "45 Minutes",
+        "4": "60 Minutes"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Pet Hair Removal Option Request",
+    "id": "0x2231",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This ERD requests a change in the Pet Hair Removal Option.\n- After being written, this ERD value is reset to 0xFF.\n- If the request is granted, the current Pet Hair Removal Option is reflected in 0x2230.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Pet Hair Removal Option Status",
+      "type": "enum",
+      "values": {
+        "0": "Off",
+        "1": "15 Minutes",
+        "2": "30 Minutes",
+        "3": "45 Minutes",
+        "4": "60 Minutes"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Pet Hair Removal Option Is In Client Writable State",
+    "id": "0x2232",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Indicates if the Pet Hair Removal Option can be written once the cycle is running.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Pet Hair Removal Option Is Client Writable State",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Cycle Status",
     "id": "0x3000",
     "operations": ["read", "publish", "subscribe"],
