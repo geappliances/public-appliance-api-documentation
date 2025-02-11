@@ -64182,20 +64182,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -65686,7 +65686,9 @@
         "181": "Pastry Plus",
         "182": "Pastry Plus Rapid Preheat",
         "183": "Pizza",
-        "184": "Defrost"
+        "184": "Defrost",
+        "185": "Dynamic Broil",
+        "186": "Toast"
       },
       "offset": 0,
       "size": 1
@@ -65859,7 +65861,9 @@
         "108": "Pastry Plus Preheat",
         "109": "Pastry Plus Rapid Preheat",
         "110": "Pizza",
-        "111": "Defrost"
+        "111": "Defrost",
+        "112": "Dynamic Broil",
+        "113": "Toast"
       },
       "offset": 0,
       "size": 1
@@ -71154,7 +71158,9 @@
         "181": "Pastry Plus",
         "182": "Pastry Plus Rapid Preheat",
         "183": "Pizza",
-        "184": "Defrost"
+        "184": "Defrost",
+        "185": "Dynamic Broil",
+        "186": "Toast"
       },
       "offset": 0,
       "size": 1
@@ -71327,7 +71333,9 @@
         "108": "Pastry Plus Preheat",
         "109": "Pastry Plus Rapid Preheat",
         "110": "Pizza",
-        "111": "Defrost"
+        "111": "Defrost",
+        "112": "Dynamic Broil",
+        "113": "Toast"
       },
       "offset": 0,
       "size": 1
