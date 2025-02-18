@@ -10057,7 +10057,7 @@
       "offset": 0,
       "size": 16
     }, {
-      "name": "Supported Notifications.Reserved 2",
+      "name": "Supported Notifications.Bottle Chill Alarm Alert",
       "type": "bool",
       "bits": {
         "offset": 119,
@@ -10327,7 +10327,7 @@
       "offset": 16,
       "size": 16
     }, {
-      "name": "Notifications.Reserved 2",
+      "name": "Notifications.Bottle Chill Alarm Alert",
       "type": "bool",
       "bits": {
         "offset": 119,
@@ -64182,20 +64182,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
