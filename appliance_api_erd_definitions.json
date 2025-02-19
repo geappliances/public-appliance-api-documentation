@@ -13717,6 +13717,34 @@
       "size": 1
     }]
   }, {
+    "name": "Fridge Focus Camera Enable Request",
+    "id": "0x12ec",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Request to enable or disable the Fridge Focus camera.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Fridge Focus Camera Enable Status",
+    "id": "0x12ed",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Fridge Focus camera is enabled",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Supply Water Tank Level",
     "id": "0x1300",
     "operations": ["read", "publish", "subscribe"],

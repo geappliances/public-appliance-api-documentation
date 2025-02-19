@@ -3069,6 +3069,16 @@
                 { "erd": "0x12BA", "name": "Variable Cube Size Request", "length": 1 },
                 { "erd": "0x12BB", "name": "Variable Cube Size Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00040000",
+              "name": "Fridge Focus Camera Enable",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x12EC", "name": "Fridge Focus Camera Enable Request", "length": 1 },
+                { "erd": "0x12ED", "name": "Fridge Focus Camera Enable Status", "length": 1 }
+              ]
             }
           ]
         }
