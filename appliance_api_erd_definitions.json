@@ -52471,7 +52471,7 @@
   }, {
     "name": "Pet Hair Removal Option Request",
     "id": "0x2231",
-    "operations": ["read", "publish", "subscribe"],
+    "operations": ["read", "write", "publish", "subscribe"],
     "description": "This ERD requests a change in the Pet Hair Removal Option.\n- After being written, this ERD value is reset to 0xFF.\n- If the request is granted, the current Pet Hair Removal Option is reflected in 0x2230.",
     "updateClass": {
       "type": "event"
