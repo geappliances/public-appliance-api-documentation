@@ -3738,6 +3738,10 @@
         "0": "Freezer",
         "1": "Refrigerator",
         "2": "Chiller",
+        "3": "Soft Freeze",
+        "10": "Fruit and Vegetables",
+        "11": "Beverage",
+        "12": "Meat and Seafood",
         "255": "Not Used"
       },
       "offset": 3,
@@ -3764,6 +3768,10 @@
         "0": "Freezer",
         "1": "Refrigerator",
         "2": "Chiller",
+        "3": "Soft Freeze",
+        "10": "Fruit and Vegetables",
+        "11": "Beverage",
+        "12": "Meat and Seafood",
         "255": "Not Used"
       },
       "offset": 7,
@@ -3790,6 +3798,10 @@
         "0": "Freezer",
         "1": "Refrigerator",
         "2": "Chiller",
+        "3": "Soft Freeze",
+        "10": "Fruit and Vegetables",
+        "11": "Beverage",
+        "12": "Meat and Seafood",
         "255": "Not Used"
       },
       "offset": 11,
@@ -3816,6 +3828,10 @@
         "0": "Freezer",
         "1": "Refrigerator",
         "2": "Chiller",
+        "3": "Soft Freeze",
+        "10": "Fruit and Vegetables",
+        "11": "Beverage",
+        "12": "Meat and Seafood",
         "255": "Not Used"
       },
       "offset": 15,
