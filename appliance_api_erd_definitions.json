@@ -173,6 +173,7 @@
         "52": "Central AC",
         "53": "Soft Starter",
         "54": "Hearth Pizza Oven",
+        "55": "Sourdough Starter",
         "255": "Unknown"
       },
       "offset": 0,
@@ -623,7 +624,8 @@
         "10": "Haier FPA",
         "11": "Adora",
         "12": "Allied",
-        "13": "Lennox"
+        "13": "Lennox",
+        "14": "FirstBuild"
       },
       "offset": 0,
       "size": 1
