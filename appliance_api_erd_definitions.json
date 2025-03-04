@@ -12617,7 +12617,7 @@
     "name": "RFID Filter Unique Identifier",
     "id": "0x12a7",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The unique identifier for the current RFID water filter",
+    "description": "The unique identifier for the current water filter. Will be all zeros in a non-RFID system.",
     "updateClass": {
       "type": "event"
     },
