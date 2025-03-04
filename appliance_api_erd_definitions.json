@@ -121203,7 +121203,7 @@
   }, {
     "name": "Requested Filter Type",
     "id": "0x9139",
-    "operations": ["read", "publish", "subscribe"],
+    "operations": ["read", "write", "publish", "subscribe"],
     "description": "The requested filter type",
     "updateClass": {
       "type": "event"
