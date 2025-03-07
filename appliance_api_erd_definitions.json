@@ -67956,6 +67956,34 @@
       "size": 1
     }]
   }, {
+    "name": "Upper Oven Do Not Stop Cook Mode On Timer Expiration Request",
+    "id": "0x511a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Requests whether the cook mode should end when the timer expires in the upper oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Upper Oven Do Not Stop Cook Mode On Timer Expiration Request",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Upper Oven Do Not Stop Cook Mode On Timer Expiration Status",
+    "id": "0x511b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Specifies whether the cook mode should end when the timer expires in the upper oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Upper Oven Do Not Stop Cook Mode On Timer Expiration Status",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Upper Cavity Cook Recipe Status",
     "id": "0x5120",
     "operations": ["read", "publish", "subscribe"],
@@ -73386,6 +73414,34 @@
       "name": "Active",
       "type": "bool",
       "offset": 37,
+      "size": 1
+    }]
+  }, {
+    "name": "Lower Oven Do Not Stop Cook Mode On Timer Expiration Request",
+    "id": "0x521a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Requests whether the cook mode should end when the timer expires in the lower oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Lower Oven Do Not Stop Cook Mode On Timer Expiration Request",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Lower Oven Do Not Stop Cook Mode On Timer Expiration Status",
+    "id": "0x521b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Specifies whether the cook mode should end when the timer expires in the lower oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Lower Oven Do Not Stop Cook Mode On Timer Expiration Status",
+      "type": "bool",
+      "offset": 0,
       "size": 1
     }]
   }, {
