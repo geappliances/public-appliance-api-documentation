@@ -55143,7 +55143,8 @@
         "0": "DisplayType_None",
         "1": "DisplayType_7Segment",
         "2": "DisplayType_13Segment",
-        "3": "DisplayType_LCD"
+        "3": "DisplayType_LCD",
+        "4": "DisplayType_HighResColorLCD"
       },
       "offset": 3,
       "size": 1
@@ -59764,7 +59765,8 @@
         "0": "DisplayType_None",
         "1": "DisplayType_7Segment",
         "2": "DisplayType_13Segment",
-        "3": "DisplayType_LCD"
+        "3": "DisplayType_LCD",
+        "4": "DisplayType_HighResColorLCD"
       },
       "offset": 3,
       "size": 1
