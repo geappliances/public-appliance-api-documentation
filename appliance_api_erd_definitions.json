@@ -67960,7 +67960,7 @@
   }, {
     "name": "Upper Oven Do Not Stop Cook Mode On Timer Expiration Request",
     "id": "0x511a",
-    "operations": ["read", "publish", "subscribe"],
+    "operations": ["read", "write", "publish", "subscribe"],
     "description": "Requests whether the cook mode should end when the timer expires in the upper oven.",
     "updateClass": {
       "type": "event"
@@ -73421,7 +73421,7 @@
   }, {
     "name": "Lower Oven Do Not Stop Cook Mode On Timer Expiration Request",
     "id": "0x521a",
-    "operations": ["read", "publish", "subscribe"],
+    "operations": ["read", "write", "publish", "subscribe"],
     "description": "Requests whether the cook mode should end when the timer expires in the lower oven.",
     "updateClass": {
       "type": "event"
