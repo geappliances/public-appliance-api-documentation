@@ -3078,6 +3078,16 @@
                 { "erd": "0x12EC", "name": "Fridge Focus Camera Enable Request", "length": 1 },
                 { "erd": "0x12ED", "name": "Fridge Focus Camera Enable Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00080000",
+              "name": "Precise Fill Operation Control",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x12EE", "name": "Precise Fill Operation Request", "length": 6 },
+                { "erd": "0x12EF", "name": "Precise Fill Operation Status", "length": 6 }
+              ]
             }
           ]
         }

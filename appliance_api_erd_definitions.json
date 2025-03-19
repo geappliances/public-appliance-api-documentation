@@ -13764,6 +13764,74 @@
       "size": 1
     }]
   }, {
+    "name": "Precise Fill Operation Request",
+    "id": "0x12ee",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to request the precise fill on operation",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Session ID",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Precise Fill Active",
+      "type": "bool",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Request Hands Free",
+      "type": "bool",
+      "offset": 2,
+      "size": 1
+    }, {
+      "name": "Padding",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Precise Fill request in ounces x 100",
+      "type": "u16",
+      "offset": 4,
+      "size": 2
+    }]
+  }, {
+    "name": "Precise Fill Operation Status",
+    "id": "0x12ef",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the precise fill on status",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Session ID",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Precise Fill Active",
+      "type": "bool",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Request Hands Free",
+      "type": "bool",
+      "offset": 2,
+      "size": 1
+    }, {
+      "name": "Padding",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Precise Fill request in ounces x 100",
+      "type": "u16",
+      "offset": 4,
+      "size": 2
+    }]
+  }, {
     "name": "Supply Water Tank Level",
     "id": "0x1300",
     "operations": ["read", "publish", "subscribe"],
@@ -64098,20 +64166,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
