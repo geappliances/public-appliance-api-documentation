@@ -50736,20 +50736,101 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reserved 1",
+      "name": "Max Time Reached Notification",
       "type": "bool",
       "bits": {
         "offset": 30,
-        "size": 2
+        "size": 1
       },
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reserved 2",
+      "name": "Door Open Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 31,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Room Temp Low Notification",
       "type": "bool",
       "bits": {
         "offset": 16,
-        "size": 8
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Room Temp High Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 17,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Invalid Connection Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 18,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Fit Rack Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 19,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Water Tank Full Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 20,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Check Filters Reminder Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 21,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Cooling Down Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 22,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Low Airflow Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 23,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Crease Free Active Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 8,
+        "size": 1
       },
       "offset": 0,
       "size": 4
@@ -50757,8 +50838,8 @@
       "name": "Reserved 3",
       "type": "bool",
       "bits": {
-        "offset": 8,
-        "size": 8
+        "offset": 9,
+        "size": 7
       },
       "offset": 0,
       "size": 4
@@ -50835,20 +50916,101 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reserved 1",
+      "name": "Max Time Reached Notification",
       "type": "bool",
       "bits": {
         "offset": 30,
-        "size": 2
+        "size": 1
       },
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reserved 2",
+      "name": "Door Open Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 31,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Room Temp Low Notification",
       "type": "bool",
       "bits": {
         "offset": 16,
-        "size": 8
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Room Temp High Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 17,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Invalid Connection Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 18,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Fit Rack Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 19,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Water Tank Full Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 20,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Check Filters Reminder Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 21,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Cooling Down Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 22,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Low Airflow Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 23,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Crease Free Active Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 8,
+        "size": 1
       },
       "offset": 0,
       "size": 4
@@ -50856,8 +51018,8 @@
       "name": "Reserved 3",
       "type": "bool",
       "bits": {
-        "offset": 8,
-        "size": 8
+        "offset": 9,
+        "size": 7
       },
       "offset": 0,
       "size": 4
@@ -51715,303 +51877,6 @@
       "bits": {
         "offset": 19,
         "size": 5
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 8,
-        "size": 8
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 0,
-        "size": 8
-      },
-      "offset": 4,
-      "size": 4
-    }]
-  }, {
-    "name": "Dryer Push Notifications",
-    "id": "0x2229",
-    "operations": ["read", "publish", "subscribe"],
-    "description": "Byte 0, 1, 2 & 3: Individual bits to be controlled by the firmware when a push notification needs to be sent.\n                  All bits must be cleared at the beginning of a cycle.\nByte 4, 5, 6 & 7: Notification Supported bits. If a specific feature bit is set to zero, the notification for that feature is NOT supported for a given platform.",
-    "updateClass": {
-      "type": "event"
-    },
-    "data": [{
-      "name": "Max Time Reached Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 24,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Door Open Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 25,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Room Temp Low Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 26,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Room Temp High Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 27,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Invalid Connection Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 28,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Fit Rack Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 29,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Water Tank Full Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 30,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Check Filters Reminder Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 31,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Cooling Down Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 16,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Low Airflow Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 17,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Cycle Complete Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 18,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Delayed Cycle Started Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 19,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Damp Dry Ready Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 20,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 21,
-        "size": 3
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 8,
-        "size": 8
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 0,
-        "size": 8
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Max Time Reached Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 24,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Door Open Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 25,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Room Temp Low Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 26,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Room Temp High Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 27,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Invalid Connection Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 28,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Fit Rack Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 29,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Water Tank Full Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 30,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Check Filters Reminder Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 31,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Cooling Down Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 16,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Low Airflow Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 17,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Cycle Complete Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 18,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Delayed Cycle Started Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 19,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Damp Dry Ready Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 20,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 21,
-        "size": 3
       },
       "offset": 4,
       "size": 4
@@ -64233,20 +64098,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1

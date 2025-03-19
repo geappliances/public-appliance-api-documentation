@@ -1086,11 +1086,10 @@
             },
             {
               "mask": "0x00400000",
-              "name": "Dryer Push Notifications and Faults",
-              "description": "This feature enables app to show dryer notifications and fault notifications:\n- 0x2229 Dryer Push Notifications.\n- 0x222B Laundry Appliance Fault Push Notifications.",
+              "name": "Dryer Faults",
+              "description": "This feature enables app to show dryer fault notifications:\n- 0x222B Laundry Appliance Fault Push Notifications.",
               "dependencies": [],
               "required": [
-                { "erd": "0x2229", "name": "Dryer Push Notifications", "length": 8 },
                 { "erd": "0x222B", "name": "Laundry Appliance Fault Push Notifications", "length": 4 }
               ]
             }
