@@ -11838,6 +11838,48 @@
       "size": 1
     }]
   }, {
+    "name": "Recess Light Resolved Brightness Status",
+    "id": "0x1268",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The resolved recess light brightness level percentage.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Recess Light Resolved Brightness Status (0 - 100)",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Recess Light SBC Brightness Request",
+    "id": "0x1269",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Request from the SBC to set the light level for dispenser light to a value between 0 and 100 percent.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Recess Light SBC Brightness Requested (0 - 100)",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Recess Light SBC Brightness Status",
+    "id": "0x126a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The response to an SBC recess light brightness level percentage request with the actual percentage setting.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Recess Light SBC Requested Brightness Status (0 - 100)",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Fresh Food Compartment Filtered Temperature",
     "id": "0x126f",
     "operations": ["read", "publish", "subscribe"],
@@ -12500,7 +12542,7 @@
       "size": 2
     }]
   }, {
-    "name": "Recess Light Brightness Level Request",
+    "name": "Recess Light User Brightness Level Request",
     "id": "0x129e",
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "Request to set the light level for dispenser light to a value between 0 and 100 percent.",
@@ -12514,7 +12556,7 @@
       "size": 1
     }]
   }, {
-    "name": "Recess Light Brightness Level Setting",
+    "name": "Recess Light User Brightness Level Setting",
     "id": "0x129f",
     "operations": ["read", "publish", "subscribe"],
     "description": "The response to a recess light brightness level percentage request with the actual percentage setting.",

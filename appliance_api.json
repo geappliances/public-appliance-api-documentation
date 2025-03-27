@@ -2691,8 +2691,8 @@
               "required": [
                 { "erd": "0x1255", "name": "Kitchen Illumination Feature Enable Request", "length": 1 },
                 { "erd": "0x1256", "name": "Kitchen Illumination Feature Enable Status", "length": 1 },
-                { "erd": "0x129E", "name": "Recess Light Brightness Level Request", "length": 1 },
-                { "erd": "0x129F", "name": "Recess Light Brightness Level Setting", "length": 1 }
+                { "erd": "0x129E", "name": "Recess Light User Brightness Level Request", "length": 1 },
+                { "erd": "0x129F", "name": "Recess Light User Brightness Level Setting", "length": 1 }
               ]
             },
             {
@@ -3087,6 +3087,17 @@
               "required": [
                 { "erd": "0x12EE", "name": "Precise Fill Operation Request", "length": 6 },
                 { "erd": "0x12EF", "name": "Precise Fill Operation Status", "length": 6 }
+              ]
+            },
+            {
+              "mask": "0x00100000",
+              "name": "Recess Light Brightness Control",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1268", "name": "Recess Light Resolved Brightness Status", "length": 1 },
+                { "erd": "0x1269", "name": "Recess Light SBC Brightness Request", "length": 1 },
+                { "erd": "0x126A", "name": "Recess Light SBC Brightness Status", "length": 1 }
               ]
             }
           ]
