@@ -8785,6 +8785,17 @@
                 { "erd": "0x2228", "name": "Cabinet or Closet Push Notifications", "length": 8 },
                 { "erd": "0x222B", "name": "Laundry Appliance Fault Push Notifications", "length": 4 }
               ]
+            },
+            {
+              "mask": "0x00000400",
+              "name": "Control Lock Option",
+              "description": "This feature follows the [Option with Bitmapped Allowables](https://github.com/geappliances/documentation.erd-specification/blob/master/docs/clothes_dryer/option_bitmap_allowables.md)\ndocumentation with the following considerations:\n- 0x2083 Control Lock Option Selection (Option ERD)\n- 0x2084 Control Lock Option Request (Option Request ERD)\n- 0x2085 Control Lock Option Allowables (Options Allowed Bitmap ERD)",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x2083", "name": "Control Lock Option Selection", "length": 1 },
+                { "erd": "0x2084", "name": "Control Lock Option Request", "length": 1 },
+                { "erd": "0x2085", "name": "Control Lock Option Allowables", "length": 2 }
+              ]
             }
           ]
         },
