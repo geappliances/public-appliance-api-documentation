@@ -12673,6 +12673,20 @@
       "size": 1
     }]
   }, {
+    "name": "Number of Feature Pan Setting Changes",
+    "id": "0x125e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The count of the number of times the Feature Pan temperature setting has changed.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Number of Feature Pan Setting Changes",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Barcode Scanner Feature Request",
     "id": "0x125f",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -12849,6 +12863,34 @@
       "type": "u8",
       "offset": 0,
       "size": 1
+    }]
+  }, {
+    "name": "Maximum Feature Pan User Temperature Setting",
+    "id": "0x126b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The maximum temperature that the Feature Pan has been set to in degreesFx100.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Maximum Feature Pan User Temperature Setting (Degrees Fx100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Minimum Feature Pan User Temperature Setting",
+    "id": "0x126c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The minimum temperature that the Feature Pan has been set to in degreesFx100.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Minimum Feature Pan User Temperature Setting (Degrees Fx100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
     }]
   }, {
     "name": "Fresh Food Compartment Filtered Temperature",
@@ -118390,7 +118432,8 @@
         "1": "Light",
         "2": "Medium",
         "3": "Dark",
-        "4": "Gold"
+        "4": "Gold",
+        "5": "Iced Coffee"
       },
       "offset": 0,
       "size": 1
@@ -118456,11 +118499,24 @@
       "offset": 0,
       "size": 1
     }, {
+      "name": "Iced Coffee",
+      "type": "enum",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "values": {
+        "0": "Not supported",
+        "1": "Supported"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 4,
-        "size": 4
+        "offset": 5,
+        "size": 3
       },
       "offset": 0,
       "size": 1
@@ -118495,7 +118551,8 @@
         "1": "Light",
         "2": "Medium",
         "3": "Dark",
-        "4": "Gold"
+        "4": "Gold",
+        "5": "Iced Coffee"
       },
       "offset": 0,
       "size": 1
@@ -118709,7 +118766,8 @@
         "1": "Light",
         "2": "Medium",
         "3": "Dark",
-        "4": "Gold"
+        "4": "Gold",
+        "5": "Iced Coffee"
       },
       "offset": 0,
       "size": 1

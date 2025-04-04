@@ -2562,7 +2562,10 @@
                 { "erd": "0x123F", "name": "Feature Pan Mode 1 Status", "length": 2 },
                 { "erd": "0x1240", "name": "Feature Pan Mode 1 Setpoint Range Data", "length": 8 },
                 { "erd": "0x1253", "name": "Feature Pan Current Mode Request", "length": 4 },
-                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 }
+                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 },
+                { "erd": "0x125E", "name": "Number of Feature Pan Setting Changes", "length": 2 },
+                { "erd": "0x126B", "name": "Maximum Feature Pan User Temperature Setting", "length": 2 },
+                { "erd": "0x126C", "name": "Minimum Feature Pan User Temperature Setting", "length": 2 }
               ]
             },
             {
@@ -2574,7 +2577,10 @@
                 { "erd": "0x1242", "name": "Feature Pan Mode 2 Status", "length": 2 },
                 { "erd": "0x1243", "name": "Feature Pan Mode 2 Setpoint Range Data", "length": 8 },
                 { "erd": "0x1253", "name": "Feature Pan Current Mode Request", "length": 4 },
-                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 }
+                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 },
+                { "erd": "0x125E", "name": "Number of Feature Pan Setting Changes", "length": 2 },
+                { "erd": "0x126B", "name": "Maximum Feature Pan User Temperature Setting", "length": 2 },
+                { "erd": "0x126C", "name": "Minimum Feature Pan User Temperature Setting", "length": 2 }
               ]
             },
             {
@@ -2586,7 +2592,10 @@
                 { "erd": "0x1245", "name": "Feature Pan Mode 3 Status", "length": 2 },
                 { "erd": "0x1246", "name": "Feature Pan Mode 3 Setpoint Range Data", "length": 8 },
                 { "erd": "0x1253", "name": "Feature Pan Current Mode Request", "length": 4 },
-                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 }
+                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 },
+                { "erd": "0x125E", "name": "Number of Feature Pan Setting Changes", "length": 2 },
+                { "erd": "0x126B", "name": "Maximum Feature Pan User Temperature Setting", "length": 2 },
+                { "erd": "0x126C", "name": "Minimum Feature Pan User Temperature Setting", "length": 2 }
               ]
             },
             {
@@ -2598,7 +2607,10 @@
                 { "erd": "0x1248", "name": "Feature Pan Mode 4 Status", "length": 2 },
                 { "erd": "0x1249", "name": "Feature Pan Mode 4 Setpoint Range Data", "length": 8 },
                 { "erd": "0x1253", "name": "Feature Pan Current Mode Request", "length": 4 },
-                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 }
+                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 },
+                { "erd": "0x125E", "name": "Number of Feature Pan Setting Changes", "length": 2 },
+                { "erd": "0x126B", "name": "Maximum Feature Pan User Temperature Setting", "length": 2 },
+                { "erd": "0x126C", "name": "Minimum Feature Pan User Temperature Setting", "length": 2 }
               ]
             },
             {
@@ -2610,7 +2622,10 @@
                 { "erd": "0x124B", "name": "Feature Pan Mode 5 Status", "length": 2 },
                 { "erd": "0x124C", "name": "Feature Pan Mode 5 Setpoint Range Data", "length": 8 },
                 { "erd": "0x1253", "name": "Feature Pan Current Mode Request", "length": 4 },
-                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 }
+                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 },
+                { "erd": "0x125E", "name": "Number of Feature Pan Setting Changes", "length": 2 },
+                { "erd": "0x126B", "name": "Maximum Feature Pan User Temperature Setting", "length": 2 },
+                { "erd": "0x126C", "name": "Minimum Feature Pan User Temperature Setting", "length": 2 }
               ]
             },
             {
@@ -2622,7 +2637,10 @@
                 { "erd": "0x124E", "name": "Feature Pan Mode 6 Status", "length": 2 },
                 { "erd": "0x124F", "name": "Feature Pan Mode 6 Setpoint Range Data", "length": 8 },
                 { "erd": "0x1253", "name": "Feature Pan Current Mode Request", "length": 4 },
-                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 }
+                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 },
+                { "erd": "0x125E", "name": "Number of Feature Pan Setting Changes", "length": 2 },
+                { "erd": "0x126B", "name": "Maximum Feature Pan User Temperature Setting", "length": 2 },
+                { "erd": "0x126C", "name": "Minimum Feature Pan User Temperature Setting", "length": 2 }
               ]
             },
             {
@@ -2634,7 +2652,10 @@
                 { "erd": "0x1251", "name": "Feature Pan Mode 7 Status", "length": 2 },
                 { "erd": "0x1252", "name": "Feature Pan Mode 7 Setpoint Range Data", "length": 8 },
                 { "erd": "0x1253", "name": "Feature Pan Current Mode Request", "length": 4 },
-                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 }
+                { "erd": "0x1254", "name": "Feature Pan Current Mode Status", "length": 4 },
+                { "erd": "0x125E", "name": "Number of Feature Pan Setting Changes", "length": 2 },
+                { "erd": "0x126B", "name": "Maximum Feature Pan User Temperature Setting", "length": 2 },
+                { "erd": "0x126C", "name": "Minimum Feature Pan User Temperature Setting", "length": 2 }
               ]
             },
             {
