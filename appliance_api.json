@@ -4929,6 +4929,146 @@
         }
       }
     },
+    "16": {
+      "name": "Home Water Filter",
+      "description": "",
+      "featureType": 16,
+      "versions": {
+        "1": {
+          "description": "",
+          "required": [
+
+          ],
+          "features": [
+            {
+              "mask": "0x00000001",
+              "name": "Foundation",
+              "description": "",
+              "dependencies": [],
+              "required": [
+
+              ]
+            },
+            {
+              "mask": "0x00000002",
+              "name": "Water Valve",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x115F", "name": "POE Water Valve Position/State", "length": 1 },
+                { "erd": "0x1167", "name": "Requested Water Valve Position", "length": 1 },
+                { "erd": "0x115E", "name": "Water Valve State Machine State", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000004",
+              "name": "Manual Override",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1168", "name": "Valve Manual Override Status", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000008",
+              "name": "Filter Expiration Limits",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1165", "name": "Water Filter Expiration Limits", "length": 8 }
+              ]
+            },
+            {
+              "mask": "0x00000010",
+              "name": "Continuous Flow Time Limits",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x116A", "name": "Continuous Flow Time Limits", "length": 6 }
+              ]
+            },
+            {
+              "mask": "0x00000020",
+              "name": "Leak Detection",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x116E", "name": "Leak Validity Confirmation", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000040",
+              "name": "Flow Meter",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1160", "name": "POE Water Flow Rate", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000080",
+              "name": "Water Usage",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1161", "name": "Water Usage", "length": 4 },
+                { "erd": "0x116D", "name": "Daily Water Usage", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000100",
+              "name": "Filter Status",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1164", "name": "Water Filter Status Details", "length": 12 }
+              ]
+            },
+            {
+              "mask": "0x00000200",
+              "name": "Reset Water Filter",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1166", "name": "Water Filter Reset Request", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000400",
+              "name": "Water Auto shutoff",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1173", "name": "Allow Auto Water Valve Shut Off Request", "length": 1 },
+                { "erd": "0x1174", "name": "Allow Auto Water Valve Shut Off Status", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000800",
+              "name": "Water Filter Alerts Legacy",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1162", "name": "Daily Water Usage Update Alert", "length": 1 },
+                { "erd": "0x1163", "name": "Water Filter Expiration Alert", "length": 1 },
+                { "erd": "0x1169", "name": "Continuous Flow Alert", "length": 1 },
+                { "erd": "0x116B", "name": "Low Temperature Alert", "length": 1 },
+                { "erd": "0x116C", "name": "System Fault Alert", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00001000",
+              "name": "Notifications",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1175", "name": "Home Water Filter Notification", "length": 32 }
+              ]
+            }
+          ]
+        }
+      }
+    },
     "18": {
       "name": "Delivery Box",
       "description": "",

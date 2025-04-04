@@ -8730,6 +8730,400 @@
       "size": 1
     }]
   }, {
+    "name": "Water Valve State Machine State",
+    "id": "0x115e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The enumerated state of the Water Valve state machine.  Indicates Bypass, Closed, Open, Manual Override, Fault, or actively driving.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Water Valve State Machine State",
+      "type": "enum",
+      "values": {
+        "0": "Bypass",
+        "1": "Closed",
+        "2": "Open",
+        "3": "Manual Override",
+        "4": "Driving",
+        "5": "Fault",
+        "6": "Invalid/Reset"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "POE Water Valve Position/State",
+    "id": "0x115f",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The enumerated position/state of the Water Valve.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Water Valve Position/State",
+      "type": "enum",
+      "values": {
+        "0": "Bypass",
+        "1": "Closed",
+        "2": "Open",
+        "3": "Transition"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "POE Water Flow Rate",
+    "id": "0x1160",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Water Flow Rate in GallonsX100/Minute.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Water Valve Flow Rate GallonsX100/Minute",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Water Usage",
+    "id": "0x1161",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Aggregate Water Usage Gallons.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Water Usage Gallons",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Daily Water Usage Update Alert",
+    "id": "0x1162",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Flag set to indicate it is time to poll for the daily water usage.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Daily Water Usage Update Alert",
+      "type": "enum",
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Water Filter Expiration Alert",
+    "id": "0x1163",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Flag set on water filter expiration.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Water Filter",
+      "type": "enum",
+      "values": {
+        "0": "Good",
+        "1": "Expired"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Water Filter Status Details",
+    "id": "0x1164",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Details on water filter used to determine expiration.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Percentage Remaining",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Gallons to Expiration",
+      "type": "i32",
+      "offset": 4,
+      "size": 4
+    }, {
+      "name": "Days to Expiration",
+      "type": "i32",
+      "offset": 8,
+      "size": 4
+    }]
+  }, {
+    "name": "Water Filter Expiration Limits",
+    "id": "0x1165",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Limits for Gallons and Days for water filter to expire. Countdown begins here at reset.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Initial Gallons to Expiration",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Initial Days to Expiration",
+      "type": "u32",
+      "offset": 4,
+      "size": 4
+    }]
+  }, {
+    "name": "Water Filter Reset Request",
+    "id": "0x1166",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Set to trigger water filter reset.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Water Filter Reset Request",
+      "type": "enum",
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Requested Water Valve Position",
+    "id": "0x1167",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Command to move water valve to given state.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Water Valve Position Request",
+      "type": "enum",
+      "values": {
+        "0": "Bypass",
+        "1": "Closed",
+        "2": "Open/Filtered"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Valve Manual Override Status",
+    "id": "0x1168",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Indicates valve is in manual override state.  Must be cleared before a valve position command accepted.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Manual Override",
+      "type": "enum",
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Continuous Flow Alert",
+    "id": "0x1169",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to indicate a continuous flow status has been detected.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Low Limit Continuous Flow",
+      "type": "enum",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Medium Limit Continuous Flow",
+      "type": "enum",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "High Limit Continuous Flow",
+      "type": "enum",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Continuous Flow Time Limits",
+    "id": "0x116a",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Limits applied to low, medium, and high continuous flow alerts.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Low Limit Minutes",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Medium Limit Minutes",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "High Limit Minutes",
+      "type": "u16",
+      "offset": 4,
+      "size": 2
+    }]
+  }, {
+    "name": "Low Temperature Alert",
+    "id": "0x116b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Alert indicating low temperature condition sensed",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Low Temperature Alert",
+      "type": "enum",
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "System Fault Alert",
+    "id": "0x116c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Alert indicating system fault.  Details are bit-mapped.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Flow Meter",
+      "type": "enum",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Water Valve Motor",
+      "type": "enum",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Thermistor",
+      "type": "enum",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Daily Water Usage",
+    "id": "0x116d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Daily Water Usage in gallons.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Daily Water Usage (gallons)",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Leak Validity Confirmation",
+    "id": "0x116e",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "User feedback indicating that Leak Alert was valid/invalid.  Reset to Inactive by control after time.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Water Valve Position Request",
+      "type": "enum",
+      "values": {
+        "0": "Leak Confirmation Inactive",
+        "1": "Leak Invalid/Rejected",
+        "2": "Leak Valid/Confirmed"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Unlock Request",
     "id": "0x116f",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -9072,6 +9466,583 @@
       },
       "offset": 0,
       "size": 4
+    }]
+  }, {
+    "name": "Allow Auto Water Valve Shut Off Request",
+    "id": "0x1173",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to request allowing automatic water valve shut off when an issue is detected.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Allowed",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Allow Auto Water Valve Shut Off Status",
+    "id": "0x1174",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read if automatic water valve shut off is allowed when an issue is detected.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Allowed",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Home Water Filter Notification",
+    "id": "0x1175",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Bit Mapped Home Water Filter Alert Notifications",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Supported Notifications.Daily Water Usage Update Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 120,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Water Filter Expiration Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 121,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Low Limit Continuous Flow Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 122,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Medium Limit Continuous Flow Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 123,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.High Limit Continuous Flow Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 124,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Freezer Temperature Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 125,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Flow Meter Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 126,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Water Valve Motor Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 127,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Thermistor Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 112,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 1",
+      "type": "bool",
+      "bits": {
+        "offset": 113,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 2",
+      "type": "bool",
+      "bits": {
+        "offset": 114,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 3",
+      "type": "bool",
+      "bits": {
+        "offset": 115,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 4",
+      "type": "bool",
+      "bits": {
+        "offset": 116,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 5",
+      "type": "bool",
+      "bits": {
+        "offset": 117,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 6",
+      "type": "bool",
+      "bits": {
+        "offset": 118,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 7",
+      "type": "bool",
+      "bits": {
+        "offset": 119,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 8",
+      "type": "u8",
+      "bits": {
+        "offset": 104,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 9",
+      "type": "u8",
+      "bits": {
+        "offset": 96,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 10",
+      "type": "u8",
+      "bits": {
+        "offset": 88,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 11",
+      "type": "u8",
+      "bits": {
+        "offset": 80,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 12",
+      "type": "u8",
+      "bits": {
+        "offset": 72,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 13",
+      "type": "u8",
+      "bits": {
+        "offset": 64,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 14",
+      "type": "u8",
+      "bits": {
+        "offset": 56,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 15",
+      "type": "u8",
+      "bits": {
+        "offset": 48,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 16",
+      "type": "u8",
+      "bits": {
+        "offset": 40,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 17",
+      "type": "u8",
+      "bits": {
+        "offset": 32,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 18",
+      "type": "u8",
+      "bits": {
+        "offset": 24,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 19",
+      "type": "u8",
+      "bits": {
+        "offset": 16,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 20",
+      "type": "u8",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Reserved 21",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Notifications.Daily Water Usage Update Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 120,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Water Filter Expiration Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 121,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Low Limit Continuous Flow Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 122,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Medium Limit Continuous Flow Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 123,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.High Limit Continuous Flow Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 124,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Freezer Temperature Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 125,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Flow Meter Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 126,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Water Valve Motor Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 127,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Thermistor Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 112,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 1",
+      "type": "bool",
+      "bits": {
+        "offset": 113,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 2",
+      "type": "bool",
+      "bits": {
+        "offset": 114,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 3",
+      "type": "bool",
+      "bits": {
+        "offset": 115,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 4",
+      "type": "bool",
+      "bits": {
+        "offset": 116,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 5",
+      "type": "bool",
+      "bits": {
+        "offset": 117,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 6",
+      "type": "bool",
+      "bits": {
+        "offset": 118,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 7",
+      "type": "bool",
+      "bits": {
+        "offset": 119,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 8",
+      "type": "u8",
+      "bits": {
+        "offset": 104,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 9",
+      "type": "u8",
+      "bits": {
+        "offset": 96,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 10",
+      "type": "u8",
+      "bits": {
+        "offset": 88,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 11",
+      "type": "u8",
+      "bits": {
+        "offset": 80,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 12",
+      "type": "u8",
+      "bits": {
+        "offset": 72,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 13",
+      "type": "u8",
+      "bits": {
+        "offset": 64,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 14",
+      "type": "u8",
+      "bits": {
+        "offset": 56,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 15",
+      "type": "u8",
+      "bits": {
+        "offset": 48,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 16",
+      "type": "u8",
+      "bits": {
+        "offset": 40,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 17",
+      "type": "u8",
+      "bits": {
+        "offset": 32,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 18",
+      "type": "u8",
+      "bits": {
+        "offset": 24,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 19",
+      "type": "u8",
+      "bits": {
+        "offset": 16,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 20",
+      "type": "u8",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Reserved 21",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 16,
+      "size": 16
     }]
   }, {
     "name": "Fresh Food Setpoint Request",
@@ -64232,20 +65203,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
