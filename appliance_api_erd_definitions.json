@@ -118390,8 +118390,7 @@
         "1": "Light",
         "2": "Medium",
         "3": "Dark",
-        "4": "Gold",
-        "5": "Iced Coffee"
+        "4": "Gold"
       },
       "offset": 0,
       "size": 1
@@ -118457,24 +118456,11 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Iced Coffee",
-      "type": "enum",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "values": {
-        "0": "Not supported",
-        "1": "Supported"
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 5,
-        "size": 3
+        "offset": 4,
+        "size": 4
       },
       "offset": 0,
       "size": 1
@@ -118509,8 +118495,7 @@
         "1": "Light",
         "2": "Medium",
         "3": "Dark",
-        "4": "Gold",
-        "5": "Iced Coffee"
+        "4": "Gold"
       },
       "offset": 0,
       "size": 1
@@ -118724,8 +118709,7 @@
         "1": "Light",
         "2": "Medium",
         "3": "Dark",
-        "4": "Gold",
-        "5": "Iced Coffee"
+        "4": "Gold"
       },
       "offset": 0,
       "size": 1
