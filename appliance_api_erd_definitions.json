@@ -64996,20 +64996,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -118390,7 +118390,8 @@
         "1": "Light",
         "2": "Medium",
         "3": "Dark",
-        "4": "Gold"
+        "4": "Gold",
+        "5": "Iced Coffee"
       },
       "offset": 0,
       "size": 1
@@ -118456,11 +118457,24 @@
       "offset": 0,
       "size": 1
     }, {
+      "name": "Iced Coffee",
+      "type": "enum",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "values": {
+        "0": "Not supported",
+        "1": "Supported"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 4,
-        "size": 4
+        "offset": 5,
+        "size": 3
       },
       "offset": 0,
       "size": 1
@@ -118495,7 +118509,8 @@
         "1": "Light",
         "2": "Medium",
         "3": "Dark",
-        "4": "Gold"
+        "4": "Gold",
+        "5": "Iced Coffee"
       },
       "offset": 0,
       "size": 1
@@ -118709,7 +118724,8 @@
         "1": "Light",
         "2": "Medium",
         "3": "Dark",
-        "4": "Gold"
+        "4": "Gold",
+        "5": "Iced Coffee"
       },
       "offset": 0,
       "size": 1
@@ -121091,6 +121107,54 @@
         "1": "Grind and Brew"
       },
       "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Delay Start Status",
+    "id": "0x905d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Delay Start Status:\n* Delay Start Enabled: Indicates if the delay start feature is enabled.\n* Time of Day (24-Hour Format): The time of the day at which the feature starts.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Delay Start Enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Hours: Time of Day (24-Hour Format)",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Minutes: Time of Day",
+      "type": "u8",
+      "offset": 2,
+      "size": 1
+    }]
+  }, {
+    "name": "Delay Start Request",
+    "id": "0x905e",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Delay Start Request:\n* Delay Start Enabled: Requests delay start feature enable/disable.\n* Time of Day (24-Hour Format): The time of the day at which the feature starts.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Delay Start Enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Hours: Time of Day (24-Hour Format)",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Minutes: Time of Day",
+      "type": "u8",
+      "offset": 2,
       "size": 1
     }]
   }, {

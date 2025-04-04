@@ -6166,6 +6166,16 @@
                 { "erd": "0x901A", "name": "Coffee Brewer Start Descale", "length": 1 },
                 { "erd": "0x901B", "name": "Coffee Brewer Cancel Descale", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00000080",
+              "name": "Delay Start",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x905D", "name": "Delay Start Status", "length": 3 },
+                { "erd": "0x905E", "name": "Delay Start Request", "length": 3 }
+              ]
             }
           ]
         },
@@ -6338,6 +6348,16 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x905C", "name": "Coffee Maker Model", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00020000",
+              "name": "Delay Start",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x905D", "name": "Delay Start Status", "length": 3 },
+                { "erd": "0x905E", "name": "Delay Start Request", "length": 3 }
               ]
             }
           ]
