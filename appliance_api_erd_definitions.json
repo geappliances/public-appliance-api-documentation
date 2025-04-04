@@ -46505,11 +46505,38 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "Reserved",
+      "name": "Temperature Low Notification",
       "type": "bool",
       "bits": {
         "offset": 13,
-        "size": 3
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Door Open Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 14,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Water Tank Not Detected Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 15,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Check Filter Reminder Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
       },
       "offset": 0,
       "size": 2
@@ -46517,8 +46544,8 @@
       "name": "Reserved",
       "type": "bool",
       "bits": {
-        "offset": 0,
-        "size": 8
+        "offset": 1,
+        "size": 7
       },
       "offset": 0,
       "size": 2
@@ -46568,11 +46595,38 @@
       "offset": 2,
       "size": 2
     }, {
-      "name": "Reserved",
+      "name": "Temperature Low Notification Supported",
       "type": "bool",
       "bits": {
         "offset": 13,
-        "size": 3
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Door Open Notification Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 14,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Water Tank Not Detected Notification Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 15,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Check Filter Reminder Notification Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
       },
       "offset": 2,
       "size": 2
@@ -46580,8 +46634,8 @@
       "name": "Reserved",
       "type": "bool",
       "bits": {
-        "offset": 0,
-        "size": 8
+        "offset": 1,
+        "size": 7
       },
       "offset": 2,
       "size": 2
@@ -52722,267 +52776,6 @@
       },
       "offset": 0,
       "size": 1
-    }]
-  }, {
-    "name": "Cabinet or Closet Push Notifications",
-    "id": "0x2228",
-    "operations": ["read", "publish", "subscribe"],
-    "description": "Byte 0, 1, 2 & 3: Individual bits to be controlled by the firmware when a push notification needs to be sent.\n                  All bits must be cleared at the beginning of a cycle.\nByte 4, 5, 6 & 7: Notification Supported bits. If a specific feature bit is set to zero, the notification for that feature is NOT supported for a given platform.",
-    "updateClass": {
-      "type": "event"
-    },
-    "data": [{
-      "name": "Pump Filter Blocked Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 24,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Temperature Low Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 25,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Temperature High Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 26,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Check Steam Tank Reminder Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 27,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Door Open Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 28,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Water Tank Not Detected Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 29,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Water Tank Full Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 30,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Water Tank Empty Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 31,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Check Filter Reminder Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 16,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Cycle Complete Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 17,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Delayed Cycle Started Notification",
-      "type": "bool",
-      "bits": {
-        "offset": 18,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 19,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 8,
-        "size": 8
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 0,
-        "size": 8
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "Pump Filter Blocked Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 24,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Temperature Low Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 25,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Temperature High Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 26,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Check Steam Tank Reminder Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 27,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Door Open Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 28,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Water Tank Not Detected Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 29,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Water Tank Full Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 30,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Water Tank Empty Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 31,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Check Filter Reminder Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 16,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Cycle Complete Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 17,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Delayed Cycle Started Notification Supported",
-      "type": "bool",
-      "bits": {
-        "offset": 18,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 19,
-        "size": 5
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 8,
-        "size": 8
-      },
-      "offset": 4,
-      "size": 4
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 0,
-        "size": 8
-      },
-      "offset": 4,
-      "size": 4
     }]
   }, {
     "name": "Washer Push Notifications",
@@ -65203,20 +64996,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1

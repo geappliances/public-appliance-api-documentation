@@ -8778,11 +8778,10 @@
             },
             {
               "mask": "0x00000200",
-              "name": "Cabinet or Closet Push Notifications and Faults",
-              "description": "This feature enables app to show cabinet/closet notifications and fault notifications:\n- 0x2228 Cabinet/Closet Push Notifications.\n- 0x222B Laundry Appliance Fault Push Notifications.",
+              "name": "Cabinet or Closet Fault Notifications",
+              "description": "This feature enables app to show cabinet/closet fault notifications:\n- 0x222B Laundry Appliance Fault Push Notifications.",
               "dependencies": [],
               "required": [
-                { "erd": "0x2228", "name": "Cabinet or Closet Push Notifications", "length": 8 },
                 { "erd": "0x222B", "name": "Laundry Appliance Fault Push Notifications", "length": 4 }
               ]
             },
