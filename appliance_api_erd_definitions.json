@@ -10240,7 +10240,9 @@
         "13": "Stopped due to Autofill target removed",
         "14": "Stopped due to Autofill no water movement",
         "15": "Stopped due to Autofill no water target detected",
-        "16": "Stopped due to Autofill EMI detected"
+        "16": "Stopped due to Autofill EMI detected",
+        "17": "Stopped due to Autofill water full",
+        "18": "Flow meter error"
       },
       "offset": 3,
       "size": 1
@@ -10299,7 +10301,9 @@
         "13": "Stopped due to Autofill target removed",
         "14": "Stopped due to Autofill no water movement",
         "15": "Stopped due to Autofill no water target detected",
-        "16": "Stopped due to Autofill EMI detected"
+        "16": "Stopped due to Autofill EMI detected",
+        "17": "Stopped due to Autofill water full",
+        "18": "Flow meter error"
       },
       "offset": 2,
       "size": 1
@@ -65038,20 +65042,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
