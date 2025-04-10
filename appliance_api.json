@@ -6197,6 +6197,15 @@
                 { "erd": "0x905D", "name": "Delay Start Status", "length": 3 },
                 { "erd": "0x905E", "name": "Delay Start Request", "length": 3 }
               ]
+            },
+            {
+              "mask": "0x00000100",
+              "name": "Model Configuration",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x905C", "name": "Coffee Maker Model", "length": 1 }
+              ]
             }
           ]
         },
