@@ -6206,6 +6206,29 @@
               "required": [
                 { "erd": "0x905C", "name": "Coffee Maker Model", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00000200",
+              "name": "Three Favorite Brews",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9054", "name": "Coffee Brewer Favorite Brew 1 Current Settings", "length": 12 },
+                { "erd": "0x9055", "name": "Coffee Brewer Favorite Brew 1 Request Settings", "length": 12 },
+                { "erd": "0x9056", "name": "Coffee Brewer Favorite Brew 2 Current Settings", "length": 12 },
+                { "erd": "0x9057", "name": "Coffee Brewer Favorite Brew 2 Request Settings", "length": 12 },
+                { "erd": "0x9058", "name": "Coffee Brewer Favorite Brew 3 Current Settings", "length": 12 },
+                { "erd": "0x9059", "name": "Coffee Brewer Favorite Brew 3 Request Settings", "length": 12 }
+              ]
+            },
+            {
+              "mask": "0x00000400",
+              "name": "Supported Features",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x905F", "name": "Coffee Brewer Supported Features v1", "length": 2 }
+              ]
             }
           ]
         },

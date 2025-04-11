@@ -65042,20 +65042,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -121204,6 +121204,114 @@
       "type": "u8",
       "offset": 2,
       "size": 1
+    }]
+  }, {
+    "name": "Coffee Brewer Supported Features v1",
+    "id": "0x905f",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The features supported for the particular Coffee Maker.\nThis particular ERD is used for the v1 API and is structurally different from ERD 905B used in the v2 API.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Supported Features.Display Numeric Strength",
+      "type": "bool",
+      "bits": {
+        "offset": 8,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Temperature Edit Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Volume Edit Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Volume Cups Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 11,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Single Serve (oz) Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 12,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Grinder Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 13,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Grind Time Delta Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 14,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Bloom Dwell Time Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 15,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Bloom Pump Time Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Favorites Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Supported Features.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
+      "offset": 0,
+      "size": 2
     }]
   }, {
     "name": "Ice Maker Status",
