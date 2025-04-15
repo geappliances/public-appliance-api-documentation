@@ -65070,20 +65070,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -68821,6 +68821,58 @@
       "type": "bool",
       "offset": 0,
       "size": 1
+    }]
+  }, {
+    "name": "Upper Oven Cook Time Add Or Subtract Request",
+    "id": "0x511c",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Requests to add or subtract cook time in the upper oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Request ID",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Upper Oven Cook Time Add Or Subtract Request",
+      "type": "i16",
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Upper Oven Cook Time Add Or Subtract Status",
+    "id": "0x511d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Status of cook time addition or subtraction in the upper oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Request ID accepted",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Upper Oven Cook Time Total Duration",
+    "id": "0x511e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Cook time total duration in the upper oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Upper Oven Cook Time Total Duration",
+      "type": "i32",
+      "offset": 0,
+      "size": 4
     }]
   }, {
     "name": "Upper Cavity Cook Recipe Status",
@@ -74282,6 +74334,58 @@
       "type": "bool",
       "offset": 0,
       "size": 1
+    }]
+  }, {
+    "name": "Lower Oven Cook Time Add Or Subtract Request",
+    "id": "0x521c",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Requests to add or subtract cook time in the lower oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Request ID",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Lower Oven Cook Time Add Or Subtract Request",
+      "type": "i16",
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Lower Oven Cook Time Add Or Subtract Status",
+    "id": "0x521d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Status of cook time addition or subtraction in the lower oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Request ID accepted",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Lower Oven Cook Time Total Duration",
+    "id": "0x521e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Cook time total duration in the lower oven.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Lower Oven Cook Time Total Duration",
+      "type": "i32",
+      "offset": 0,
+      "size": 4
     }]
   }, {
     "name": "Lower Cavity Cook Recipe Status",

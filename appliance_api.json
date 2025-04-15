@@ -4612,14 +4612,20 @@
             },
             {
               "mask": "0x20000000",
-              "name": "Cook Timer Elapse Action Toggle",
-              "description": "Indicates whether the cook mode should stop when the cook timer expires.",
+              "name": "Flex Cook Timer",
+              "description": "Indicates that the appliance supports flex cook timer features: Cook Timer Elapse Action Toggle, Cook Time Add or Subtract, and Cook Time Total Duration",
               "dependencies": [],
               "required": [
                 { "erd": "0x511A", "name": "Upper Oven Do Not Stop Cook Mode On Timer Expiration Request", "length": 1 },
                 { "erd": "0x511B", "name": "Upper Oven Do Not Stop Cook Mode On Timer Expiration Status", "length": 1 },
+                { "erd": "0x511C", "name": "Upper Oven Cook Time Add Or Subtract Request", "length": 4 },
+                { "erd": "0x511D", "name": "Upper Oven Cook Time Add Or Subtract Status", "length": 1 },
+                { "erd": "0x511E", "name": "Upper Oven Cook Time Total Duration", "length": 4 },
                 { "erd": "0x521A", "name": "Lower Oven Do Not Stop Cook Mode On Timer Expiration Request", "length": 1 },
-                { "erd": "0x521B", "name": "Lower Oven Do Not Stop Cook Mode On Timer Expiration Status", "length": 1 }
+                { "erd": "0x521B", "name": "Lower Oven Do Not Stop Cook Mode On Timer Expiration Status", "length": 1 },
+                { "erd": "0x521C", "name": "Lower Oven Cook Time Add Or Subtract Request", "length": 4 },
+                { "erd": "0x521D", "name": "Lower Oven Cook Time Add Or Subtract Status", "length": 1 },
+                { "erd": "0x521E", "name": "Lower Oven Cook Time Total Duration", "length": 4 }
               ]
             }
           ]
