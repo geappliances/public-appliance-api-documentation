@@ -1850,6 +1850,20 @@
                 { "erd": "0x222A", "name": "Washer Push Notifications", "length": 8 },
                 { "erd": "0x222B", "name": "Laundry Appliance Fault Push Notifications", "length": 4 }
               ]
+            },
+            {
+              "mask": "0x00000010",
+              "name": "Flexible Dispensing",
+              "description": "This feature enables configuration and monitoring of liquid tanks used to dispense detergent or softener.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x222C", "name": "Flexible Dispensing Tank 1 Configuration Status", "length": 2 },
+                { "erd": "0x222D", "name": "Flexible Dispensing Tank 1 Configuration Request", "length": 2 },
+                { "erd": "0x222E", "name": "Flexible Dispensing Tank 2 Configuration Status", "length": 2 },
+                { "erd": "0x222F", "name": "Flexible Dispensing Tank 2 Configuration Request", "length": 2 },
+                { "erd": "0x2233", "name": "Flexible Dispensing Tank 1 Level", "length": 1 },
+                { "erd": "0x2234", "name": "Flexible Dispensing Tank 2 Level", "length": 1 }
+              ]
             }
           ]
         }

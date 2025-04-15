@@ -53284,6 +53284,134 @@
       "size": 2
     }]
   }, {
+    "name": "Flexible Dispensing Tank 1 Configuration Status",
+    "id": "0x222c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Current configuration (liquid type and dose) of dispensing tanks.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Tank Configuration.Liquid Type",
+      "type": "enum",
+      "values": {
+        "0": "Not Set",
+        "1": "Detergent 1",
+        "2": "Detergent 2",
+        "3": "Softener"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Tank Configuration.Liquid Dose",
+      "type": "enum",
+      "values": {
+        "0": "Default",
+        "1": "Min",
+        "2": "Low",
+        "3": "High",
+        "4": "Max"
+      },
+      "offset": 1,
+      "size": 1
+    }]
+  }, {
+    "name": "Flexible Dispensing Tank 1 Configuration Request",
+    "id": "0x222d",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Sets current configuration (liquid type and dose) of dispensing tanks.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Tank Configuration.Liquid Type",
+      "type": "enum",
+      "values": {
+        "0": "Not Set",
+        "1": "Detergent 1",
+        "2": "Detergent 2",
+        "3": "Softener"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Tank Configuration.Liquid Dose",
+      "type": "enum",
+      "values": {
+        "0": "Default",
+        "1": "Min",
+        "2": "Low",
+        "3": "High",
+        "4": "Max"
+      },
+      "offset": 1,
+      "size": 1
+    }]
+  }, {
+    "name": "Flexible Dispensing Tank 2 Configuration Status",
+    "id": "0x222e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Current configuration (liquid type and dose) of dispensing tanks.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Tank Configuration.Liquid Type",
+      "type": "enum",
+      "values": {
+        "0": "Not Set",
+        "1": "Detergent 1",
+        "2": "Detergent 2",
+        "3": "Softener"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Tank Configuration.Liquid Dose",
+      "type": "enum",
+      "values": {
+        "0": "Default",
+        "1": "Min",
+        "2": "Low",
+        "3": "High",
+        "4": "Max"
+      },
+      "offset": 1,
+      "size": 1
+    }]
+  }, {
+    "name": "Flexible Dispensing Tank 2 Configuration Request",
+    "id": "0x222f",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Sets current configuration (liquid type and dose) of dispensing tanks.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Tank Configuration.Liquid Type",
+      "type": "enum",
+      "values": {
+        "0": "Not Set",
+        "1": "Detergent 1",
+        "2": "Detergent 2",
+        "3": "Softener"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Tank Configuration.Liquid Dose",
+      "type": "enum",
+      "values": {
+        "0": "Default",
+        "1": "Min",
+        "2": "Low",
+        "3": "High",
+        "4": "Max"
+      },
+      "offset": 1,
+      "size": 1
+    }]
+  }, {
     "name": "Pet Hair Removal Option",
     "id": "0x2230",
     "operations": ["read", "publish", "subscribe"],
@@ -53336,6 +53464,42 @@
     "data": [{
       "name": "Pet Hair Removal Option Is Client Writable State",
       "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Flexible Dispensing Tank 1 Level",
+    "id": "0x2233",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Liquid level of dispensing tank",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Tank Level",
+      "type": "enum",
+      "values": {
+        "0": "Unknown",
+        "1": "Low"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Flexible Dispensing Tank 2 Level",
+    "id": "0x2234",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Liquid level of dispensing tank",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Tank Level",
+      "type": "enum",
+      "values": {
+        "0": "Unknown",
+        "1": "Low"
+      },
       "offset": 0,
       "size": 1
     }]
