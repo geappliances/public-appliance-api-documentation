@@ -6937,6 +6937,34 @@
       "size": 1
     }]
   }, {
+    "name": "Eco Mode Request",
+    "id": "0x1076",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Sets eco mode state",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "On",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Eco Mode Status",
+    "id": "0x1077",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports eco mode state",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "On",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Last Service Code",
     "id": "0x1100",
     "operations": ["read", "publish", "subscribe"],

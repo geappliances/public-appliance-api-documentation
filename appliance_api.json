@@ -9274,6 +9274,16 @@
                 { "erd": "0x1068", "name": "Light Mode Control Desired Middle Compartment", "length": 1 },
                 { "erd": "0x1069", "name": "Light Mode Control Configuration Middle Compartment", "length": 8 }
               ]
+            },
+            {
+              "mask": "0x00020000",
+              "name": "Eco Mode Control",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1076", "name": "Eco Mode Request", "length": 1 },
+                { "erd": "0x1077", "name": "Eco Mode Status", "length": 1 }
+              ]
             }
           ]
         }
