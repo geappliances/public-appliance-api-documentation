@@ -14371,6 +14371,48 @@
       "size": 2
     }]
   }, {
+    "name": "Dispense Water Valve Open Time in Seconds",
+    "id": "0x12cd",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The total time the dispense water valve has been open in seconds since initial power up.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Dispense Water Valve Open Time in Seconds",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Cubed Ice Dispense Time In Seconds",
+    "id": "0x12ce",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The total time cubed ice has been dispensed in seconds since initial power up.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Cubed Ice Dispense Time In Seconds",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Crushed Ice Dispense Time In Seconds",
+    "id": "0x12cf",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The total time crushed ice has been dispensed in seconds since initial power up.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Crushed Ice Dispense Time In Seconds",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
     "name": "Sound Event Request",
     "id": "0x12d2",
     "operations": ["read", "write", "publish", "subscribe"],

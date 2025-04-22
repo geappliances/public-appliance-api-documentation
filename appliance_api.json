@@ -2235,7 +2235,8 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x1281", "name": "Water Dispense Counts", "length": 4 }
+                { "erd": "0x1281", "name": "Water Dispense Counts", "length": 4 },
+                { "erd": "0x12CD", "name": "Dispense Water Valve Open Time in Seconds", "length": 4 }
               ]
             },
             {
@@ -2244,7 +2245,8 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x1280", "name": "Crushed Ice Dispense Counts", "length": 4 }
+                { "erd": "0x1280", "name": "Crushed Ice Dispense Counts", "length": 4 },
+                { "erd": "0x12CF", "name": "Crushed Ice Dispense Time In Seconds", "length": 4 }
               ]
             },
             {
@@ -2253,7 +2255,8 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x127F", "name": "Cubed Ice Dispense Counts", "length": 4 }
+                { "erd": "0x127F", "name": "Cubed Ice Dispense Counts", "length": 4 },
+                { "erd": "0x12CE", "name": "Cubed Ice Dispense Time In Seconds", "length": 4 }
               ]
             },
             {
