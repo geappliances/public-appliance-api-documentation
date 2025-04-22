@@ -12925,6 +12925,34 @@
       "size": 2
     }]
   }, {
+    "name": "Water Filter Days Used",
+    "id": "0x126d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of days since the current water filter was installed.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Water Filter Days Used",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Water Filter Remaining Volume in Ouncesx100",
+    "id": "0x126e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The volume of water that can be dispensed before the filter expires.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Water Filter Remaining Volume in Ouncesx100",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
     "name": "Fresh Food Compartment Filtered Temperature",
     "id": "0x126f",
     "operations": ["read", "publish", "subscribe"],

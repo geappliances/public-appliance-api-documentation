@@ -2334,7 +2334,9 @@
                 { "erd": "0x1238", "name": "Water Filter Usage Since Expiration", "length": 4 },
                 { "erd": "0x12A3", "name": "Water Filter Volume Usage in Ounces (x100)", "length": 4 },
                 { "erd": "0x12A5", "name": "Water Filter Reset Count", "length": 1 },
-                { "erd": "0x12A7", "name": "RFID Filter Unique Identifier", "length": 8 }
+                { "erd": "0x12A7", "name": "RFID Filter Unique Identifier", "length": 8 },
+                { "erd": "0x126D", "name": "Water Filter Days Used", "length": 2 },
+                { "erd": "0x126E", "name": "Water Filter Remaining Volume in Ouncesx100", "length": 4 }
               ]
             },
             {
