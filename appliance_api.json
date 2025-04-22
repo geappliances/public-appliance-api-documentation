@@ -2964,7 +2964,9 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x1276", "name": "Compressor Status", "length": 1 },
-                { "erd": "0x12A0", "name": "Compressor Speed in Hz", "length": 2 }
+                { "erd": "0x12A0", "name": "Compressor Speed in Hz", "length": 2 },
+                { "erd": "0x12CB", "name": "Average Percent Compressor On Time", "length": 1 },
+                { "erd": "0x12CC", "name": "Average Compressor On Off Cycle Time in Minutes", "length": 2 }
               ]
             },
             {

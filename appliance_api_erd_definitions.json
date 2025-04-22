@@ -14343,6 +14343,34 @@
       "size": 4
     }]
   }, {
+    "name": "Average Percent Compressor On Time",
+    "id": "0x12cb",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average percentage of time the compressor is on per cycle over all cycles.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Average Percent Compressor On Time",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Average Compressor On Off Cycle Time in Minutes",
+    "id": "0x12cc",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average compressor on off cycle time over all cycles.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Average Compressor On Off Cycle Time in Minutes",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Sound Event Request",
     "id": "0x12d2",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -65276,20 +65304,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
