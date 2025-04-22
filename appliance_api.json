@@ -2213,7 +2213,10 @@
                 { "erd": "0x1204", "name": "Freezer Setpoint Range Data", "length": 3 },
                 { "erd": "0x1205", "name": "Freezer Setpoint Status", "length": 1 },
                 { "erd": "0x1270", "name": "Freezer Compartment Filtered Temperature", "length": 2 },
-                { "erd": "0x1271", "name": "Freezer Evaporator Filtered Thermistor Temperature", "length": 2 }
+                { "erd": "0x1271", "name": "Freezer Evaporator Filtered Thermistor Temperature", "length": 2 },
+                { "erd": "0x12C8", "name": "Freezer Cooling Time Short Average in Seconds", "length": 4 },
+                { "erd": "0x12C9", "name": "Freezer Cooling Time Medium Average in Seconds", "length": 4 },
+                { "erd": "0x12CA", "name": "Freezer Cooling Time Long Average in Seconds", "length": 4 }
               ]
             },
             {

@@ -14301,6 +14301,48 @@
       "size": 1
     }]
   }, {
+    "name": "Freezer Cooling Time Short Average in Seconds",
+    "id": "0x12c8",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average time that the system is in freezer cooling mode in seconds over the last 5 cycles",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Freezer Cooling Time Short Average in Seconds",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Freezer Cooling Time Medium Average in Seconds",
+    "id": "0x12c9",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average time that the system is in freezer cooling mode in seconds over the last 100 cycles",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Freezer Cooling Time Medium Average in Seconds",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Freezer Cooling Time Long Average in Seconds",
+    "id": "0x12ca",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average time that the system is in freezer cooling mode in seconds over all cycles",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Freezer Cooling Time Long Average in Seconds",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
     "name": "Sound Event Request",
     "id": "0x12d2",
     "operations": ["read", "write", "publish", "subscribe"],
