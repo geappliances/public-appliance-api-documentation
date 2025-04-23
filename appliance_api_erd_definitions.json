@@ -96335,11 +96335,20 @@
       "offset": 0,
       "size": 8
     }, {
-      "name": "Reserved 1",
+      "name": "Blower Blocked Notification",
       "type": "bool",
       "bits": {
         "offset": 59,
-        "size": 5
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Reserved 1",
+      "type": "bool",
+      "bits": {
+        "offset": 60,
+        "size": 4
       },
       "offset": 0,
       "size": 8
@@ -96662,11 +96671,20 @@
       "offset": 0,
       "size": 8
     }, {
-      "name": "Reserved 1",
+      "name": "Blower Blocked Notification",
       "type": "bool",
       "bits": {
         "offset": 59,
-        "size": 5
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Reserved 1",
+      "type": "bool",
+      "bits": {
+        "offset": 60,
+        "size": 4
       },
       "offset": 0,
       "size": 8
