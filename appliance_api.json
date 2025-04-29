@@ -3144,6 +3144,16 @@
                 { "erd": "0x1269", "name": "Recess Light SBC Brightness Request", "length": 1 },
                 { "erd": "0x126A", "name": "Recess Light SBC Brightness Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00200000",
+              "name": "User Setting Request Counter",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x128D", "name": "Dispenser Control Lock Count", "length": 2 },
+                { "erd": "0x12A4", "name": "Dispenser Light Activation Count", "length": 2 }
+              ]
             }
           ]
         }

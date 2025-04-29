@@ -13388,6 +13388,20 @@
       "size": 1
     }]
   }, {
+    "name": "Dispenser Control Lock Count",
+    "id": "0x128d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of times the control lock on the dispenser has been turned on over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Dispenser Control Lock Count",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Total Single Door Open Time In Seconds",
     "id": "0x128e",
     "operations": ["read", "publish", "subscribe"],
@@ -13699,6 +13713,20 @@
       "type": "u32",
       "offset": 0,
       "size": 4
+    }]
+  }, {
+    "name": "Dispenser Light Activation Count",
+    "id": "0x12a4",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of times the dispenser light has been turned on over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Dispenser Light Activation Count",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
     }]
   }, {
     "name": "Water Filter Reset Count",
