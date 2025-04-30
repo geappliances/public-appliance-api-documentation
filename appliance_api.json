@@ -2410,7 +2410,8 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x120C", "name": "Turbo Cool Request", "length": 1 },
-                { "erd": "0x120D", "name": "Turbo Cool Status", "length": 1 }
+                { "erd": "0x120D", "name": "Turbo Cool Status", "length": 1 },
+                { "erd": "0x12D0", "name": "Turbo Cool Cycles Count", "length": 2 }
               ]
             },
             {
@@ -2420,7 +2421,8 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x121A", "name": "Turbo Freeze Request", "length": 1 },
-                { "erd": "0x121B", "name": "Turbo Freeze Status", "length": 1 }
+                { "erd": "0x121B", "name": "Turbo Freeze Status", "length": 1 },
+                { "erd": "0x12D1", "name": "Turbo Freeze Cycles Count", "length": 2 }
               ]
             },
             {

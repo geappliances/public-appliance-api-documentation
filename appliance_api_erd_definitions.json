@@ -14469,6 +14469,34 @@
       "size": 4
     }]
   }, {
+    "name": "Turbo Cool Cycles Count",
+    "id": "0x12d0",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of turbo cool cycles that have been run over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Turbo Cool Cycles Count",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Turbo Freeze Cycles Count",
+    "id": "0x12d1",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of turbo freeze cycles that have been run over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Turbo Freeze Cycles Count",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Sound Event Request",
     "id": "0x12d2",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -65402,20 +65430,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
