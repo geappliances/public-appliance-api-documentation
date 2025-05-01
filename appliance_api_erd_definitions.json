@@ -10505,7 +10505,9 @@
       "type": "enum",
       "values": {
         "0": "Freezer",
-        "1": "Fresh Food"
+        "1": "Fresh Food",
+        "2": "Upper",
+        "3": "Lower"
       },
       "offset": 1,
       "size": 1
@@ -10598,7 +10600,9 @@
       "type": "enum",
       "values": {
         "0": "Freezer",
-        "1": "Fresh Food"
+        "1": "Fresh Food",
+        "2": "Upper",
+        "3": "Lower"
       },
       "offset": 1,
       "size": 1
@@ -11849,7 +11853,9 @@
       "type": "enum",
       "values": {
         "0": "Freezer",
-        "1": "Fresh Food"
+        "1": "Fresh Food",
+        "2": "Upper",
+        "3": "Lower"
       },
       "offset": 1,
       "size": 1
