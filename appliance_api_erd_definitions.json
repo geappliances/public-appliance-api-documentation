@@ -13629,6 +13629,90 @@
       "size": 2
     }]
   }, {
+    "name": "Total Fresh Food Defrost Counts",
+    "id": "0x1298",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of all fresh food defrosts over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Total Fresh Food Defrost Counts",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Number of Abnormal Fresh Food Defrosts",
+    "id": "0x1299",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of only the abnormal fresh food defrosts over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Number of Abnormal Fresh Food Defrosts",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Total Freezer Defrost Counts",
+    "id": "0x129a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of all freezer defrosts over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Total Freezer Defrost Counts",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Number of Abnormal Freezer Defrosts",
+    "id": "0x129b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of only the abnormal freezer defrosts over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Number of Abnormal Freezer Defrosts",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Total Convertible Compartment Defrost Counts",
+    "id": "0x129c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of all convertible compartment defrosts over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Total Convertible Compartment Defrost Counts",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Number of Abnormal Convertible Compartment Defrosts",
+    "id": "0x129d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of only the abnormal convertible compartment defrosts over the lifetime of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Number of Abnormal Convertible Compartment Defrosts",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Recess Light User Brightness Level Request",
     "id": "0x129e",
     "operations": ["read", "write", "publish", "subscribe"],

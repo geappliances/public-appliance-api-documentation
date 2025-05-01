@@ -3156,6 +3156,36 @@
                 { "erd": "0x128D", "name": "Dispenser Control Lock Count", "length": 2 },
                 { "erd": "0x12A4", "name": "Dispenser Light Activation Count", "length": 2 }
               ]
+            },
+            {
+              "mask": "0x00400000",
+              "name": "Fresh Food Defrost Type",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1298", "name": "Total Fresh Food Defrost Counts", "length": 2 },
+                { "erd": "0x1299", "name": "Number of Abnormal Fresh Food Defrosts", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00800000",
+              "name": "Freezer Defrost Type",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x129A", "name": "Total Freezer Defrost Counts", "length": 2 },
+                { "erd": "0x129B", "name": "Number of Abnormal Freezer Defrosts", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x01000000",
+              "name": "Convertible Compartment Defrost Type",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x129C", "name": "Total Convertible Compartment Defrost Counts", "length": 2 },
+                { "erd": "0x129D", "name": "Number of Abnormal Convertible Compartment Defrosts", "length": 2 }
+              ]
             }
           ]
         }
