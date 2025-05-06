@@ -28784,7 +28784,8 @@
         "2": "Light",
         "3": "Normal",
         "4": "Heavy",
-        "5": "Extra Heavy"
+        "5": "Extra Heavy",
+        "6": "Auto"
       },
       "offset": 0,
       "size": 1
@@ -28806,7 +28807,8 @@
         "2": "Light",
         "3": "Normal",
         "4": "Heavy",
-        "5": "Extra Heavy"
+        "5": "Extra Heavy",
+        "6": "Auto"
       },
       "offset": 0,
       "size": 1
@@ -65520,20 +65522,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
