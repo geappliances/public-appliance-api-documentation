@@ -9613,7 +9613,7 @@
       "offset": 0,
       "size": 16
     }, {
-      "name": "Supported Notifications.Reserved 1",
+      "name": "Supported Notifications.Water Valve Closed Alert",
       "type": "bool",
       "bits": {
         "offset": 113,
@@ -9883,7 +9883,7 @@
       "offset": 16,
       "size": 16
     }, {
-      "name": "Notifications.Reserved 1",
+      "name": "Notifications.Water Valve Closed Alert",
       "type": "bool",
       "bits": {
         "offset": 113,
