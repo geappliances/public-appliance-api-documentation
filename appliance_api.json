@@ -2236,7 +2236,8 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x1281", "name": "Water Dispense Counts", "length": 4 },
-                { "erd": "0x12CD", "name": "Dispense Water Valve Open Time in Seconds", "length": 4 }
+                { "erd": "0x12CD", "name": "Dispense Water Valve Open Time in Seconds", "length": 4 },
+                { "erd": "0x140A", "name": "Average Cold Water Flow Rate", "length": 2 }
               ]
             },
             {
@@ -3004,7 +3005,9 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x1282", "name": "Autofill Dispense Counts", "length": 4 }
+                { "erd": "0x1282", "name": "Autofill Dispense Counts", "length": 4 },
+                { "erd": "0x140B", "name": "Autofill Dispense Volume", "length": 4 },
+                { "erd": "0x140C", "name": "Autofill Dispense Error Counts", "length": 4 }
               ]
             },
             {
