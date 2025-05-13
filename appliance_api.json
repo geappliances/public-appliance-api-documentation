@@ -3186,6 +3186,24 @@
                 { "erd": "0x129C", "name": "Total Convertible Compartment Defrost Counts", "length": 2 },
                 { "erd": "0x129D", "name": "Number of Abnormal Convertible Compartment Defrosts", "length": 2 }
               ]
+            },
+            {
+              "mask": "0x02000000",
+              "name": "Convertible Compartment Temperature data",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x12F1", "name": "Convertible Compartment Filtered Temperature", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x04000000",
+              "name": "Ice Cabinet Temperature data",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x12F1", "name": "Convertible Compartment Filtered Temperature", "length": 2 }
+              ]
             }
           ]
         }

@@ -15205,6 +15205,21 @@
       "size": 2
     }]
   }, {
+    "name": "Convertible Compartment Filtered Temperature",
+    "id": "0x12f1",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the filtered temperature in the convertible compartment",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Convertible Compartment Filtered Temperature (fahrenheit x 100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Supply Water Tank Level",
     "id": "0x1300",
     "operations": ["read", "publish", "subscribe"],
@@ -65522,20 +65537,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
