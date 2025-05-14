@@ -22781,6 +22781,76 @@
       "size": 4
     }]
   }, {
+    "name": "Ice Maker 2 Harvest Fix Counts",
+    "id": "0x1405",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The total times that ice maker 2 has gone into the harvest fix state since initial power up",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 2 Harvest Fix Counts",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Ice Maker 2 Harvest Fault Counts",
+    "id": "0x1406",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The total times that ice maker 2 has gone into the harvest fault state since initial power up",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 2 Harvest Fault Counts",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Ice Maker 2 Freezing Short Time Average",
+    "id": "0x1407",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average time in minutes spent in the freeze state for the last 5 ice making cycles",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 2 Freezing Short Time Average in Minutes",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Ice Maker 2 Freezing Medium Time Average",
+    "id": "0x1408",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average time in minutes spent in the freeze state for the last 100 ice making cycles",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 2 Freezing Medium Time Average in Minutes",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Ice Maker 2 Freezing Long Time Average",
+    "id": "0x1409",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average time in minutes spent in the freeze state for ice making cycles over the life of the unit",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 2 Freezing Long Time Average in Minutes",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
     "name": "Average Cold Water Flow Rate",
     "id": "0x140a",
     "operations": ["read", "publish", "subscribe"],
@@ -65652,20 +65722,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1

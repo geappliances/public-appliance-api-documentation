@@ -2570,7 +2570,12 @@
                 { "erd": "0x12E8", "name": "Ice Maker 2 Twist Tray Motor Fault", "length": 1 },
                 { "erd": "0x12E9", "name": "Ice Maker 2 Twist Motor Resolved Vote", "length": 1 },
                 { "erd": "0x12EA", "name": "Ice Maker 2 Water Valve Resolved Vote", "length": 1 },
-                { "erd": "0x12EB", "name": "Ice Maker 2 Fill Tube Heater Resolved Vote", "length": 1 }
+                { "erd": "0x12EB", "name": "Ice Maker 2 Fill Tube Heater Resolved Vote", "length": 1 },
+                { "erd": "0x1405", "name": "Ice Maker 2 Harvest Fix Counts", "length": 4 },
+                { "erd": "0x1406", "name": "Ice Maker 2 Harvest Fault Counts", "length": 4 },
+                { "erd": "0x1407", "name": "Ice Maker 2 Freezing Short Time Average", "length": 4 },
+                { "erd": "0x1408", "name": "Ice Maker 2 Freezing Medium Time Average", "length": 4 },
+                { "erd": "0x1409", "name": "Ice Maker 2 Freezing Long Time Average", "length": 4 }
               ]
             },
             {
