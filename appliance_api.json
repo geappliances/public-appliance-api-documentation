@@ -6614,6 +6614,15 @@
               "required": [
                 { "erd": "0x913C", "name": "Total Compressor Runtime", "length": 2 }
               ]
+            },
+            {
+              "mask": "0x00000200",
+              "name": "Model Configuration",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9134", "name": "Ice Maker Model", "length": 1 }
+              ]
             }
           ]
         },
