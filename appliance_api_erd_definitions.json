@@ -10995,7 +10995,7 @@
       "offset": 0,
       "size": 16
     }, {
-      "name": "Supported Notifications.Freezer Temperature Alert",
+      "name": "Supported Notifications.Freezer High Temperature Alert",
       "type": "bool",
       "bits": {
         "offset": 125,
@@ -11265,7 +11265,7 @@
       "offset": 16,
       "size": 16
     }, {
-      "name": "Notifications.Freezer Temperature Alert",
+      "name": "Notifications.Freezer High Temperature Alert",
       "type": "bool",
       "bits": {
         "offset": 125,
@@ -15218,6 +15218,76 @@
       "type": "i16",
       "offset": 0,
       "size": 2
+    }]
+  }, {
+    "name": "Ice Maker 0 Harvest Fix Counts",
+    "id": "0x12fb",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The total times that ice maker 0 has gone into the harvest fix state since initial power up.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 0 Harvest Fix Counts",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Ice Maker 0 Harvest Fault Counts",
+    "id": "0x12fc",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The total times that ice maker 0 has gone into the harvest fault state since initial power up.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 0 Harvest Fault Counts",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Ice Maker 0 Freezing Short Time Average",
+    "id": "0x12fd",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average time in minutes spent in the freeze state for the last 5 ice making cycles.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 0 Freezing Short Time Average in Minutes",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Ice Maker 0 Freezing Medium Time Average",
+    "id": "0x12fe",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average time in minutes spent in the freeze state for the last 100 ice making cycles.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 0 Freezing Medium Time Average in Minutes",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Ice Maker 0 Freezing Long Time Average",
+    "id": "0x12ff",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The average time in minutes spent in the freeze state for ice making cycles over the life of the unit.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ice Maker 0 Freezing Long Time Average in Minutes",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
     }]
   }, {
     "name": "Supply Water Tank Level",
@@ -65722,20 +65792,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
