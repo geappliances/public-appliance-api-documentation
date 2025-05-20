@@ -3182,7 +3182,10 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x1298", "name": "Total Fresh Food Defrost Counts", "length": 2 },
-                { "erd": "0x1299", "name": "Number of Abnormal Fresh Food Defrosts", "length": 2 }
+                { "erd": "0x1299", "name": "Number of Abnormal Fresh Food Defrosts", "length": 2 },
+                { "erd": "0x12F3", "name": "Fresh Food Abnormal Defrost Flag is Set", "length": 1 },
+                { "erd": "0x12F4", "name": "Fresh Food Defrost Heater State is On", "length": 1 },
+                { "erd": "0x12F5", "name": "Fresh Food Defrost Heater On Time in Minutes", "length": 1 }
               ]
             },
             {
@@ -3220,7 +3223,7 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x12F1", "name": "Convertible Compartment Filtered Temperature", "length": 2 }
+                { "erd": "0x12F2", "name": "Ice Cabinet Filtered Temperature", "length": 2 }
               ]
             }
           ]

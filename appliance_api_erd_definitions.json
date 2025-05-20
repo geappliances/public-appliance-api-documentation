@@ -14099,7 +14099,7 @@
     "name": "Defrost Heater State is On",
     "id": "0x12b3",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Returns true when the defrtost heater is on",
+    "description": "Returns true when the defrost heater is on",
     "updateClass": {
       "type": "event"
     },
@@ -15218,6 +15218,64 @@
       "type": "i16",
       "offset": 0,
       "size": 2
+    }]
+  }, {
+    "name": "Ice Cabinet Filtered Temperature",
+    "id": "0x12f2",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the filtered temperature in the ice cabinet",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Ice Cabinet Filtered Temperature (fahrenheit x 100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Fresh Food Abnormal Defrost Flag is Set",
+    "id": "0x12f3",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The abnormal fresh food defrost flag is currently set",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Fresh Food Abnormal Defrost Flag is Set",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Fresh Food Defrost Heater State is On",
+    "id": "0x12f4",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Returns true when the fresh food defrost heater is on",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Fresh Food Defrost Heater is On",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Fresh Food Defrost Heater On Time in Minutes",
+    "id": "0x12f5",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read how long the fresh food defrost heater was on during the last defrost operation.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Fresh Food Defrost Heater On Time in Minutes",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
     }]
   }, {
     "name": "Ice Maker 0 Harvest Fix Counts",
@@ -65792,20 +65850,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
