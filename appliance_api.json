@@ -3205,7 +3205,10 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x129C", "name": "Total Convertible Compartment Defrost Counts", "length": 2 },
-                { "erd": "0x129D", "name": "Number of Abnormal Convertible Compartment Defrosts", "length": 2 }
+                { "erd": "0x129D", "name": "Number of Abnormal Convertible Compartment Defrosts", "length": 2 },
+                { "erd": "0x12F6", "name": "Convertible Compartment Abnormal Defrost Flag is Set", "length": 1 },
+                { "erd": "0x12F7", "name": "Convertible Compartment Defrost Heater State is On", "length": 1 },
+                { "erd": "0x12F8", "name": "Convertible Compartment Defrost Heater On Time in Minutes", "length": 1 }
               ]
             },
             {

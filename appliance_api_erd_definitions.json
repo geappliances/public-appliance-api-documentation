@@ -15278,6 +15278,49 @@
       "size": 1
     }]
   }, {
+    "name": "Convertible Compartment Abnormal Defrost Flag is Set",
+    "id": "0x12f6",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The abnormal convertible compartment defrost flag is currently set",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Convertible Compartment Abnormal Defrost Flag is Set",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Convertible Compartment Defrost Heater State is On",
+    "id": "0x12f7",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Returns true when the convertible compartment defrost heater is on",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Convertible Compartment Defrost Heater is On",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Convertible Compartment Defrost Heater On Time in Minutes",
+    "id": "0x12f8",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read how long the convertible compartment defrost heater was on during the last defrost operation.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Convertible Compartment Defrost Heater On Time in Minutes",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Ice Maker 0 Harvest Fix Counts",
     "id": "0x12fb",
     "operations": ["read", "publish", "subscribe"],
