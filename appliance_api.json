@@ -1092,6 +1092,40 @@
               "required": [
                 { "erd": "0x222B", "name": "Laundry Appliance Fault Push Notifications", "length": 4 }
               ]
+            },
+            {
+              "mask": "0x00800000",
+              "name": "Commercial Laundry Common Remote Parameters",
+              "description": "This feature enables configuration of dry times, both base and adjustment/increment drying times.",
+              "dependencies": ["Commercial Laundry Status"],
+              "required": [
+                { "erd": "0x2236", "name": "Commercial Option Id Order", "length": 20 },
+                { "erd": "0x224D", "name": "Commercial Remote Dry Times Request", "length": 20 },
+                { "erd": "0x224E", "name": "Commercial Remote Dry Times Status", "length": 20 },
+                { "erd": "0x224F", "name": "Commercial Remote Dry Time Limits", "length": 40 }
+              ]
+            },
+            {
+              "mask": "0x01000000",
+              "name": "Commercial Laundry Front Load Only Remote Parameters",
+              "description": "This feature enables configuration of several parameters remotely, dry and cooldown temperatures,\ncooldown times, as well as admin mode pin and enabling or disabling of buzzer\nof the commercial front load platform.",
+              "dependencies": ["Commercial Laundry Status", "Commercial Laundry Common Remote Parameters"],
+              "required": [
+                { "erd": "0x2237", "name": "Commercial Remote Admin Mode Pin Request", "length": 2 },
+                { "erd": "0x2238", "name": "Commercial Remote Admin Mode Pin Status", "length": 2 },
+                { "erd": "0x2239", "name": "Commercial Remote Number Of Admin Mode Pin Digits", "length": 1 },
+                { "erd": "0x223A", "name": "Commercial Remote Buzzer Disable Request", "length": 1 },
+                { "erd": "0x223B", "name": "Commercial Remote Buzzer Disable Status", "length": 1 },
+                { "erd": "0x2250", "name": "Commercial Remote Dry Temperature Request", "length": 20 },
+                { "erd": "0x2251", "name": "Commercial Remote Dry Temperature Status", "length": 20 },
+                { "erd": "0x2252", "name": "Commercial Remote Dry Temperature Limits", "length": 40 },
+                { "erd": "0x2253", "name": "Commercial Remote Cooldown Times Request", "length": 10 },
+                { "erd": "0x2254", "name": "Commercial Remote Cooldown Times Status", "length": 10 },
+                { "erd": "0x2255", "name": "Commercial Remote Cooldown Time Limits", "length": 20 },
+                { "erd": "0x2256", "name": "Commercial Remote Cooldown Temperature Request", "length": 20 },
+                { "erd": "0x2257", "name": "Commercial Remote Cooldown Temperature Status", "length": 20 },
+                { "erd": "0x2258", "name": "Commercial Remote Cooldown Temperature Limits", "length": 40 }
+              ]
             }
           ]
         }
@@ -1863,6 +1897,46 @@
                 { "erd": "0x222F", "name": "Flexible Dispensing Tank 2 Configuration Request", "length": 2 },
                 { "erd": "0x2233", "name": "Flexible Dispensing Tank 1 Level", "length": 1 },
                 { "erd": "0x2234", "name": "Flexible Dispensing Tank 2 Level", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000020",
+              "name": "Commercial Laundry Top Load Remote Parameters",
+              "description": "This feature enables configuration of wash times remotely, both base and adjustment agitation times\nof the commercial top load platform.",
+              "dependencies": ["Commercial Laundry Status"],
+              "required": [
+                { "erd": "0x2235", "name": "Commercial Cycle Id Order", "length": 16 },
+                { "erd": "0x223C", "name": "Commercial Remote Wash Times Request", "length": 32 },
+                { "erd": "0x223D", "name": "Commercial Remote Wash Times Status", "length": 32 },
+                { "erd": "0x223E", "name": "Commercial Remote Wash Time Limits", "length": 112 }
+              ]
+            },
+            {
+              "mask": "0x00000040",
+              "name": "Commercial Laundry Front Load Remote Parameters",
+              "description": "This feature enables configuration of several parameters remotely, wash times, wash and rinse water levels,\nnumber of rinses, spin limit option, as well as admin mode pin and enabling or disabling of buzzer\nof the commercial front load platform.",
+              "dependencies": ["Commercial Laundry Status"],
+              "required": [
+                { "erd": "0x2236", "name": "Commercial Option Id Order", "length": 20 },
+                { "erd": "0x2237", "name": "Commercial Remote Admin Mode Pin Request", "length": 2 },
+                { "erd": "0x2238", "name": "Commercial Remote Admin Mode Pin Status", "length": 2 },
+                { "erd": "0x2239", "name": "Commercial Remote Number Of Admin Mode Pin Digits", "length": 1 },
+                { "erd": "0x223A", "name": "Commercial Remote Buzzer Disable Request", "length": 1 },
+                { "erd": "0x223B", "name": "Commercial Remote Buzzer Disable Status", "length": 1 },
+                { "erd": "0x223F", "name": "Commercial Remote Wash Water Level Request", "length": 2 },
+                { "erd": "0x2240", "name": "Commercial Remote Wash Water Level Status", "length": 2 },
+                { "erd": "0x2241", "name": "Commercial Remote Wash Water Level Limits", "length": 4 },
+                { "erd": "0x2242", "name": "Commercial Remote Wash Time In Seconds Request", "length": 2 },
+                { "erd": "0x2243", "name": "Commercial Remote Wash Time In Seconds Status", "length": 2 },
+                { "erd": "0x2244", "name": "Commercial Remote Wash Time Limits", "length": 4 },
+                { "erd": "0x2245", "name": "Commercial Remote Rinse Water Level Request", "length": 2 },
+                { "erd": "0x2246", "name": "Commercial Remote Rinse Water Level Status", "length": 2 },
+                { "erd": "0x2247", "name": "Commercial Remote Rinse Water Level Limits", "length": 4 },
+                { "erd": "0x2248", "name": "Commercial Remote Rinse Number Request", "length": 1 },
+                { "erd": "0x2249", "name": "Commercial Remote Rinse Number Status", "length": 1 },
+                { "erd": "0x224A", "name": "Commercial Remote Rinse Number Limits", "length": 2 },
+                { "erd": "0x224B", "name": "Commercial Remote Spin Limit Option Request", "length": 10 },
+                { "erd": "0x224C", "name": "Commercial Remote Spin Limit Option Status", "length": 10 }
               ]
             }
           ]
