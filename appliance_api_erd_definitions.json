@@ -23067,6 +23067,34 @@
       "size": 4
     }]
   }, {
+    "name": "Power Outage Count",
+    "id": "0x140d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the number of power outages since the unit was initially powered up.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Power Outage Count",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "System Startup Time in Minutes After Last Power Outage",
+    "id": "0x140e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports the time in minutes when the unit was powered up after the last power outage.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "System Startup Time After Last Power Outage (Minutes)",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
     "name": "Machine State",
     "id": "0x2000",
     "operations": ["read", "publish", "subscribe"],

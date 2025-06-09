@@ -3302,6 +3302,16 @@
               "required": [
                 { "erd": "0x12F2", "name": "Ice Cabinet Filtered Temperature", "length": 2 }
               ]
+            },
+            {
+              "mask": "0x08000000",
+              "name": "Power Outage data",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x140D", "name": "Power Outage Count", "length": 4 },
+                { "erd": "0x140E", "name": "System Startup Time in Minutes After Last Power Outage", "length": 4 }
+              ]
             }
           ]
         }
