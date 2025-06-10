@@ -9491,6 +9491,15 @@
                 { "erd": "0x1076", "name": "Eco Mode Request", "length": 1 },
                 { "erd": "0x1077", "name": "Eco Mode Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00040000",
+              "name": "V2 Refrigeration Notifications",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x122E", "name": "V2 Refrigeration Notification", "length": 32 }
+              ]
             }
           ]
         }
