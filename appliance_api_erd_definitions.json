@@ -57653,7 +57653,7 @@
     "name": "Commercial Remote Spin Limit Option Request",
     "id": "0x224b",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "This erd requests a change to the current spin limit options.\nThis erd uses data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF).\nshall be ignored.",
+    "description": "This erd requests a change to the current spin limit options.\nThis erd uses data in the cycle order stated in erd 0x2235.\nUnused entries stated in erd 0x2235 with CycleSelected_NotDefined (0x00)\nshall be ignored.",
     "updateClass": {
       "type": "event"
     },
@@ -57706,13 +57706,43 @@
       "name": "Option n Remote Spin Limit Option[9]",
       "type": "bool",
       "offset": 9,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[10]",
+      "type": "bool",
+      "offset": 10,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[11]",
+      "type": "bool",
+      "offset": 11,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[12]",
+      "type": "bool",
+      "offset": 12,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[13]",
+      "type": "bool",
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[14]",
+      "type": "bool",
+      "offset": 14,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[15]",
+      "type": "bool",
+      "offset": 15,
       "size": 1
     }]
   }, {
     "name": "Commercial Remote Spin Limit Option Status",
     "id": "0x224c",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This erd states the current spin limit options.\nThis erd states data in the cycle order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF).\nshall be populated with 0xFF.",
+    "description": "This erd states the current spin limit options.\nThis erd states data in the cycle order stated in erd 0x2235.\nUnused entries stated in erd 0x2235 with CycleSelected_NotDefined (0x00)\nshall be populated with 0xFF.",
     "updateClass": {
       "type": "event"
     },
@@ -57765,6 +57795,36 @@
       "name": "Option n Remote Spin Limit Option[9]",
       "type": "bool",
       "offset": 9,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[10]",
+      "type": "bool",
+      "offset": 10,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[11]",
+      "type": "bool",
+      "offset": 11,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[12]",
+      "type": "bool",
+      "offset": 12,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[13]",
+      "type": "bool",
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[14]",
+      "type": "bool",
+      "offset": 14,
+      "size": 1
+    }, {
+      "name": "Option n Remote Spin Limit Option[15]",
+      "type": "bool",
+      "offset": 15,
       "size": 1
     }]
   }, {
@@ -70606,20 +70666,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
