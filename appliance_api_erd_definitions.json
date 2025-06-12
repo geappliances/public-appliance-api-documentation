@@ -62458,7 +62458,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -62503,7 +62503,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -62640,7 +62640,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -62685,7 +62685,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -62822,7 +62822,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -62867,7 +62867,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -63004,7 +63004,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -63049,7 +63049,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -63186,7 +63186,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -63231,7 +63231,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -63368,7 +63368,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -63413,7 +63413,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -63550,7 +63550,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -63595,7 +63595,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -63732,7 +63732,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -63777,7 +63777,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -63914,7 +63914,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -63959,7 +63959,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -64096,7 +64096,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -64141,7 +64141,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -66568,7 +66568,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -66613,7 +66613,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -66750,7 +66750,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -66795,7 +66795,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -66932,7 +66932,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -66977,7 +66977,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -67114,7 +67114,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -67159,7 +67159,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -67296,7 +67296,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -67341,7 +67341,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -67478,7 +67478,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -67523,7 +67523,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -67660,7 +67660,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -67705,7 +67705,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -67842,7 +67842,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -67887,7 +67887,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -68024,7 +68024,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -68069,7 +68069,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -68206,7 +68206,7 @@
       "offset": 1,
       "size": 1
     }, {
-      "name": "Options Allowed.reserved0",
+      "name": "Options Allowed.quiet",
       "type": "bool",
       "bits": {
         "offset": 7,
@@ -68251,7 +68251,7 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "Wash Temps Allowed.reserved1",
+      "name": "Wash Temps Allowed.reserved0",
       "type": "u8",
       "bits": {
         "offset": 4,
@@ -70666,20 +70666,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
