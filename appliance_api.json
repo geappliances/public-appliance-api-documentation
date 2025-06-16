@@ -1100,9 +1100,9 @@
               "dependencies": ["Commercial Laundry Status"],
               "required": [
                 { "erd": "0x2236", "name": "Commercial Option Id Order", "length": 20 },
-                { "erd": "0x224D", "name": "Commercial Remote Dry Times Request", "length": 20 },
-                { "erd": "0x224E", "name": "Commercial Remote Dry Times Status", "length": 20 },
-                { "erd": "0x224F", "name": "Commercial Remote Dry Time Limits", "length": 40 }
+                { "erd": "0x224C", "name": "Commercial Remote Dry Times Request", "length": 20 },
+                { "erd": "0x224D", "name": "Commercial Remote Dry Times Status", "length": 20 },
+                { "erd": "0x224E", "name": "Commercial Remote Dry Time Limits", "length": 40 }
               ]
             },
             {
@@ -1116,15 +1116,15 @@
                 { "erd": "0x2239", "name": "Commercial Remote Number Of Admin Mode Pin Digits", "length": 1 },
                 { "erd": "0x223A", "name": "Commercial Remote Buzzer Disable Request", "length": 1 },
                 { "erd": "0x223B", "name": "Commercial Remote Buzzer Disable Status", "length": 1 },
-                { "erd": "0x2250", "name": "Commercial Remote Dry Temperature Request", "length": 20 },
-                { "erd": "0x2251", "name": "Commercial Remote Dry Temperature Status", "length": 20 },
-                { "erd": "0x2252", "name": "Commercial Remote Dry Temperature Limits", "length": 40 },
-                { "erd": "0x2253", "name": "Commercial Remote Cooldown Times Request", "length": 10 },
-                { "erd": "0x2254", "name": "Commercial Remote Cooldown Times Status", "length": 10 },
-                { "erd": "0x2255", "name": "Commercial Remote Cooldown Time Limits", "length": 20 },
-                { "erd": "0x2256", "name": "Commercial Remote Cooldown Temperature Request", "length": 20 },
-                { "erd": "0x2257", "name": "Commercial Remote Cooldown Temperature Status", "length": 20 },
-                { "erd": "0x2258", "name": "Commercial Remote Cooldown Temperature Limits", "length": 40 }
+                { "erd": "0x224F", "name": "Commercial Remote Dry Temperature Request", "length": 20 },
+                { "erd": "0x2250", "name": "Commercial Remote Dry Temperature Status", "length": 20 },
+                { "erd": "0x2251", "name": "Commercial Remote Dry Temperature Limits", "length": 40 },
+                { "erd": "0x2252", "name": "Commercial Remote Cooldown Times Request", "length": 10 },
+                { "erd": "0x2253", "name": "Commercial Remote Cooldown Times Status", "length": 10 },
+                { "erd": "0x2254", "name": "Commercial Remote Cooldown Time Limits", "length": 20 },
+                { "erd": "0x2255", "name": "Commercial Remote Cooldown Temperature Request", "length": 20 },
+                { "erd": "0x2256", "name": "Commercial Remote Cooldown Temperature Status", "length": 20 },
+                { "erd": "0x2257", "name": "Commercial Remote Cooldown Temperature Limits", "length": 40 }
               ]
             }
           ]
@@ -1914,7 +1914,7 @@
             {
               "mask": "0x00000040",
               "name": "Commercial Laundry Front Load Remote Parameters",
-              "description": "This feature enables configuration of several parameters remotely, wash times, wash and rinse water levels,\nnumber of rinses, spin limit option, as well as admin mode pin and enabling or disabling of buzzer\nof the commercial front load platform.",
+              "description": "This feature enables configuration of several parameters remotely, wash times, wash and rinse water levels,\nextra rinse default option, spin limit option, as well as admin mode pin and enabling or disabling of buzzer\nof the commercial front load platform.",
               "dependencies": ["Commercial Laundry Status"],
               "required": [
                 { "erd": "0x2235", "name": "Commercial Cycle Id Order", "length": 16 },
@@ -1932,11 +1932,10 @@
                 { "erd": "0x2245", "name": "Commercial Remote Rinse Water Level Request", "length": 2 },
                 { "erd": "0x2246", "name": "Commercial Remote Rinse Water Level Status", "length": 2 },
                 { "erd": "0x2247", "name": "Commercial Remote Rinse Water Level Limits", "length": 4 },
-                { "erd": "0x2248", "name": "Commercial Remote Rinse Number Request", "length": 1 },
-                { "erd": "0x2249", "name": "Commercial Remote Rinse Number Status", "length": 1 },
-                { "erd": "0x224A", "name": "Commercial Remote Rinse Number Limits", "length": 2 },
-                { "erd": "0x224B", "name": "Commercial Remote Spin Limit Option Request", "length": 16 },
-                { "erd": "0x224C", "name": "Commercial Remote Spin Limit Option Status", "length": 16 }
+                { "erd": "0x2248", "name": "Commercial Remote Extra Rinse Option Deselected By Default Request", "length": 1 },
+                { "erd": "0x2249", "name": "Commercial Remote Extra Rinse Option Deselected By Default Status", "length": 1 },
+                { "erd": "0x224A", "name": "Commercial Remote Spin Limit Option Request", "length": 16 },
+                { "erd": "0x224B", "name": "Commercial Remote Spin Limit Option Status", "length": 16 }
               ]
             }
           ]
@@ -10415,6 +10414,15 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x603C", "name": "Downgrade Count", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000008",
+              "name": "Delayed Appliance OTA Update",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x0105", "name": "Hosted Firmware Status", "length": 1 }
               ]
             }
           ]

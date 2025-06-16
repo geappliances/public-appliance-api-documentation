@@ -645,6 +645,30 @@
       "size": 2
     }]
   }, {
+    "name": "Hosted Firmware Status",
+    "id": "0x0105",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The state of software update that the appliance is in.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Hosted Firmware Status",
+      "type": "enum",
+      "values": {
+        "0": "Idle",
+        "1": "Upgrade",
+        "2": "Image Error",
+        "3": "Write Error",
+        "4": "Downloading",
+        "5": "Appliance Busy",
+        "6": "Incompatible Update",
+        "7": "Delayed Upgrade"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Alexa Registration Request",
     "id": "0x0300",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -57465,7 +57489,7 @@
     "name": "Commercial Remote Wash Water Level Request",
     "id": "0x223f",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "This erd requests a change to the target wash water level for the single cycle of\nCommercial FL Washer.",
+    "description": "This erd requests a change to the target wash water level of all the cycles of\nCommercial FL Washer.",
     "updateClass": {
       "type": "event"
     },
@@ -57479,7 +57503,7 @@
     "name": "Commercial Remote Wash Water Level Status",
     "id": "0x2240",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This erd states the current target wash water level for the single cycle\nof Commercial FL Washer.",
+    "description": "This erd states the current target wash water level of all the cycles of\nof Commercial FL Washer.",
     "updateClass": {
       "type": "event"
     },
@@ -57493,7 +57517,7 @@
     "name": "Commercial Remote Wash Water Level Limits",
     "id": "0x2241",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This erd states the target wash water level limits for the single cycle of\nCommercial FL Washer.",
+    "description": "This erd states the target wash water level limits of all the cycles of\nCommercial FL Washer.",
     "updateClass": {
       "type": "static"
     },
@@ -57512,7 +57536,7 @@
     "name": "Commercial Remote Wash Time In Seconds Request",
     "id": "0x2242",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "This erd requests a change to the target wash time in seconds for the single cycle of Commercial FL Washer.",
+    "description": "This erd requests a change to the target wash time in seconds of all the cycles of Commercial FL Washer.",
     "updateClass": {
       "type": "event"
     },
@@ -57526,7 +57550,7 @@
     "name": "Commercial Remote Wash Time In Seconds Status",
     "id": "0x2243",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This erd the current target wash time in seconds for the single cycle of Commercial FL Washer.",
+    "description": "This erd the current target wash time in seconds of all the cycles of Commercial FL Washer.",
     "updateClass": {
       "type": "event"
     },
@@ -57540,7 +57564,7 @@
     "name": "Commercial Remote Wash Time Limits",
     "id": "0x2244",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This erd states the target wash time limits in seconds for the single cycle of Commercial FL Washer.",
+    "description": "This erd states the target wash time limits in seconds of all the cycles of Commercial FL Washer.",
     "updateClass": {
       "type": "static"
     },
@@ -57559,7 +57583,7 @@
     "name": "Commercial Remote Rinse Water Level Request",
     "id": "0x2245",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "This erd requests a change to the target rinse water level for the single cycle of\nCommercial FL Washer.",
+    "description": "This erd requests a change to the target rinse water level of all the cycles of\nCommercial FL Washer.",
     "updateClass": {
       "type": "event"
     },
@@ -57573,7 +57597,7 @@
     "name": "Commercial Remote Rinse Water Level Status",
     "id": "0x2246",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This erd states the current target rinse water level for the single cycle of\nCommercial FL Washer.",
+    "description": "This erd states the current target rinse water level of all the cycles of\nCommercial FL Washer.",
     "updateClass": {
       "type": "event"
     },
@@ -57587,7 +57611,7 @@
     "name": "Commercial Remote Rinse Water Level Limits",
     "id": "0x2247",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This erd states the target rinse water level limits for the single cycle of\nCommercial FL Washer.",
+    "description": "This erd states the target rinse water level limits of all the cycles of\nCommercial FL Washer.",
     "updateClass": {
       "type": "static"
     },
@@ -57603,55 +57627,36 @@
       "size": 2
     }]
   }, {
-    "name": "Commercial Remote Rinse Number Request",
+    "name": "Commercial Remote Extra Rinse Option Deselected By Default Request",
     "id": "0x2248",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "This erd requests a change to the number of rinses for the single cycle of Commercial\nFL Washer extra rinse option.",
+    "description": "This erd can request to have the extra rinse option deselected by default in all cycles of\nthe Commercial FL Washer extra rinse option.",
     "updateClass": {
       "type": "event"
     },
     "data": [{
-      "name": "Number Of Rinses",
-      "type": "u8",
+      "name": "Extra Rinse Option Deselected",
+      "type": "bool",
       "offset": 0,
       "size": 1
     }]
   }, {
-    "name": "Commercial Remote Rinse Number Status",
+    "name": "Commercial Remote Extra Rinse Option Deselected By Default Status",
     "id": "0x2249",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This erd states the current number of rinses for the single cycle of Commercial\nFL Washer extra rinse option.",
+    "description": "This erd states if the extra rinse option is deselected by default in all cycles of\nthe Commercial FL Washer extra rinse option.",
     "updateClass": {
       "type": "event"
     },
     "data": [{
-      "name": "Number Of Rinses",
-      "type": "u8",
+      "name": "Extra Rinse Option Deselected",
+      "type": "bool",
       "offset": 0,
-      "size": 1
-    }]
-  }, {
-    "name": "Commercial Remote Rinse Number Limits",
-    "id": "0x224a",
-    "operations": ["read", "publish", "subscribe"],
-    "description": "This erd states the number of rinses limits for the single cycle of Commercial\nFL Washer extra rinse option.",
-    "updateClass": {
-      "type": "static"
-    },
-    "data": [{
-      "name": "Minimum Number Of Rinses",
-      "type": "u8",
-      "offset": 0,
-      "size": 1
-    }, {
-      "name": "Maximum Number Of Rinses",
-      "type": "u8",
-      "offset": 1,
       "size": 1
     }]
   }, {
     "name": "Commercial Remote Spin Limit Option Request",
-    "id": "0x224b",
+    "id": "0x224a",
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "This erd requests a change to the current spin limit options.\nThis erd uses data in the cycle order stated in erd 0x2235.\nUnused entries stated in erd 0x2235 with CycleSelected_NotDefined (0x00)\nshall be ignored.",
     "updateClass": {
@@ -57740,7 +57745,7 @@
     }]
   }, {
     "name": "Commercial Remote Spin Limit Option Status",
-    "id": "0x224c",
+    "id": "0x224b",
     "operations": ["read", "publish", "subscribe"],
     "description": "This erd states the current spin limit options.\nThis erd states data in the cycle order stated in erd 0x2235.\nUnused entries stated in erd 0x2235 with CycleSelected_NotDefined (0x00)\nshall be populated with 0xFF.",
     "updateClass": {
@@ -57829,7 +57834,7 @@
     }]
   }, {
     "name": "Commercial Remote Dry Times Request",
-    "id": "0x224d",
+    "id": "0x224c",
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "This erd requests a change to the dry times.\nThis erd uses data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be ignored.",
     "updateClass": {
@@ -57938,7 +57943,7 @@
     }]
   }, {
     "name": "Commercial Remote Dry Times Status",
-    "id": "0x224e",
+    "id": "0x224d",
     "operations": ["read", "publish", "subscribe"],
     "description": "This erd states the current values of the dry times.\nThis erd states data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be populated with 0xFF.",
     "updateClass": {
@@ -58047,7 +58052,7 @@
     }]
   }, {
     "name": "Commercial Remote Dry Time Limits",
-    "id": "0x224f",
+    "id": "0x224e",
     "operations": ["read", "publish", "subscribe"],
     "description": "This erd states the min and max limits of the drying times.\nThis erd states data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be populated with 0xFF.",
     "updateClass": {
@@ -58256,7 +58261,7 @@
     }]
   }, {
     "name": "Commercial Remote Dry Temperature Request",
-    "id": "0x2250",
+    "id": "0x224f",
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "This erd requests a change to the dry temperature.\nThis erd uses data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be ignored.",
     "updateClass": {
@@ -58315,7 +58320,7 @@
     }]
   }, {
     "name": "Commercial Remote Dry Temperature Status",
-    "id": "0x2251",
+    "id": "0x2250",
     "operations": ["read", "publish", "subscribe"],
     "description": "This erd states the current values of the dry temperature.\nThis erd states data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be populated with 0xFF.",
     "updateClass": {
@@ -58374,7 +58379,7 @@
     }]
   }, {
     "name": "Commercial Remote Dry Temperature Limits",
-    "id": "0x2252",
+    "id": "0x2251",
     "operations": ["read", "publish", "subscribe"],
     "description": "This erd states the min and max limits of the drying temperatures.\nThis erd states data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be populated with 0xFF.",
     "updateClass": {
@@ -58483,7 +58488,7 @@
     }]
   }, {
     "name": "Commercial Remote Cooldown Times Request",
-    "id": "0x2253",
+    "id": "0x2252",
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "This erd requests a change to the cooldown times.\nThis erd uses data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be ignored.",
     "updateClass": {
@@ -58542,7 +58547,7 @@
     }]
   }, {
     "name": "Commercial Remote Cooldown Times Status",
-    "id": "0x2254",
+    "id": "0x2253",
     "operations": ["read", "publish", "subscribe"],
     "description": "This erd states the current values of the cooldown times.\nThis erd states data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be populated with 0xFF.",
     "updateClass": {
@@ -58601,7 +58606,7 @@
     }]
   }, {
     "name": "Commercial Remote Cooldown Time Limits",
-    "id": "0x2255",
+    "id": "0x2254",
     "operations": ["read", "publish", "subscribe"],
     "description": "This erd states the min and max limits of the cooldown times.\nThis erd states data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be populated with 0xFF.",
     "updateClass": {
@@ -58710,7 +58715,7 @@
     }]
   }, {
     "name": "Commercial Remote Cooldown Temperature Request",
-    "id": "0x2256",
+    "id": "0x2255",
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "This erd requests a change to the cooldown temperature.\nThis erd uses data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be ignored.",
     "updateClass": {
@@ -58769,7 +58774,7 @@
     }]
   }, {
     "name": "Commercial Remote Cooldown Temperature Status",
-    "id": "0x2257",
+    "id": "0x2256",
     "operations": ["read", "publish", "subscribe"],
     "description": "This erd states the current values of the cooldown temperature.\nThis erd states data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be populated with 0xFF.",
     "updateClass": {
@@ -58828,7 +58833,7 @@
     }]
   }, {
     "name": "Commercial Remote Cooldown Temperature Limits",
-    "id": "0x2258",
+    "id": "0x2257",
     "operations": ["read", "publish", "subscribe"],
     "description": "This erd states the min and max limits of the cooldown temperatures.\nThis erd states data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be populated with 0xFF.",
     "updateClass": {
