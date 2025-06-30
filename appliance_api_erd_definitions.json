@@ -58941,6 +58941,1161 @@
       "size": 2
     }]
   }, {
+    "name": "Mabe - Water Level Selection",
+    "id": "0x2f00",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Water level selected by the user",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Water Level Selection",
+      "type": "enum",
+      "values": {
+        "0": "Auto Sel",
+        "1": "Aqua Saver Sel",
+        "2": "Minimum Sel",
+        "3": "Low Sel",
+        "4": "Mid Sel",
+        "5": "High Sel",
+        "6": "Maximum Sel",
+        "7": "Maximum Iec Sel"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Sensed Water Level Selection",
+    "id": "0x2f01",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Automatic water level sensed",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Sensed Water Level Selection",
+      "type": "enum",
+      "values": {
+        "0": "Auto Sel",
+        "1": "Aqua Saber Sel",
+        "2": "Minimum Sel",
+        "3": "Low Sel",
+        "4": "Mid Sel",
+        "5": "High Sel",
+        "6": "Maximum Sel",
+        "7": "Maximum Iec Sel"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Manual Selection",
+    "id": "0x2f02",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Manual cycle selected by the user",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Manual Selection",
+      "type": "enum",
+      "values": {
+        "0": "STANDARD_SEL",
+        "1": "SOAK_30_MIN_SEL",
+        "2": "SOAK_60_MIN_SEL",
+        "3": "ONLY_WASH_SEL",
+        "4": "ONLY_DEEP_RINSE_SEL",
+        "5": "WASH_RINSE_SEL",
+        "6": "WASH_SPIN_SEL",
+        "7": "RINSE_SPIN_SEL",
+        "8": "DRAIN_N_SPIN_SEL"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Soil Level Selection",
+    "id": "0x2f03",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Soil level selected by the user",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Soil Level Selection",
+      "type": "enum",
+      "values": {
+        "0": "Auto",
+        "1": "Min",
+        "2": "Low",
+        "3": "Mid",
+        "4": "High",
+        "5": "Max"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Temperature Level Selection",
+    "id": "0x2f04",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Temperature level selected by the user",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Temperature Level Selection",
+      "type": "enum",
+      "values": {
+        "0": "Cold Extra",
+        "1": "Cold",
+        "2": "Cold Warm",
+        "3": "Hot Warm",
+        "4": "Hot",
+        "5": "Hot Extra",
+        "6": "Auto",
+        "7": "TapCold",
+        "8": "SelectionMax",
+        "9": "WaterTempMax"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Spin Level Selection",
+    "id": "0x2f05",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Spin level selected by the user",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Spin Level Selection",
+      "type": "enum",
+      "values": {
+        "0": "Spin Auto Sel",
+        "1": "Spin Minimum Sel",
+        "2": "Spin Mid Sel",
+        "3": "Spin High Sel",
+        "4": "Spin Maximum Sel",
+        "5": "Spin Normal",
+        "6": "Spin Pre Dry Sel",
+        "7": "Easy Iron Sel",
+        "8": "NoSpin",
+        "9": "MaxLoadSize"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Washer Options",
+    "id": "0x2f06",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Washer modifiers selected by the user. All features might be added to the product if required by Mabe product plan.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "AquaPlus",
+      "type": "enum",
+      "bits": {
+        "offset": 8,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "EnergySaver",
+      "type": "enum",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Auto Dispenser",
+      "type": "enum",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Dispenser Clean",
+      "type": "enum",
+      "bits": {
+        "offset": 11,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "HE Detergent",
+      "type": "enum",
+      "bits": {
+        "offset": 12,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Hipoalergenic",
+      "type": "enum",
+      "bits": {
+        "offset": 13,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Extra Spin",
+      "type": "enum",
+      "bits": {
+        "offset": 14,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved_1",
+      "type": "enum",
+      "bits": {
+        "offset": 15,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved_2",
+      "type": "enum",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved_3",
+      "type": "enum",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved_4",
+      "type": "enum",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved_5",
+      "type": "enum",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved_6",
+      "type": "enum",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved_7",
+      "type": "enum",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved_8",
+      "type": "enum",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved_9",
+      "type": "enum",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Mabe - Loads Request",
+    "id": "0x2f07",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Enable or disable washer loads",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "TRIACs Request",
+      "type": "enum",
+      "values": {
+        "0": "OFF",
+        "1": "CCW ON",
+        "2": "CC ON"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "TRIAC Control Percent",
+      "type": "u16",
+      "offset": 1,
+      "size": 2
+    }, {
+      "name": "Lid lock Request",
+      "type": "enum",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "values": {
+        "0": "Lid lock",
+        "1": "Lid unlock"
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Mode shifter request",
+      "type": "enum",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "values": {
+        "0": "Go to agitate",
+        "1": "Go to spin"
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Safety Relay Request",
+      "type": "enum",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "values": {
+        "0": "Close",
+        "1": "Open"
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Dispenser Pump Request",
+      "type": "enum",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Valve Relay Request",
+      "type": "enum",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "values": {
+        "0": "Off",
+        "1": "On"
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 5,
+        "size": 3
+      },
+      "offset": 3,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Loads Status",
+    "id": "0x2f08",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Get the washer loads status",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Safety Relay Status",
+      "type": "enum",
+      "bits": {
+        "offset": 48,
+        "size": 8
+      },
+      "values": {
+        "0": "Opened",
+        "1": "Closed",
+        "2": "Process",
+        "3": "Error TRIAC",
+        "4": "Error Relay"
+      },
+      "offset": 0,
+      "size": 7
+    }, {
+      "name": "Line Freq",
+      "type": "enum",
+      "bits": {
+        "offset": 40,
+        "size": 8
+      },
+      "values": {
+        "0": "50Hz",
+        "1": "60Hz",
+        "2": "High AC ()",
+        "3": "Low AC",
+        "4": "Undefined"
+      },
+      "offset": 0,
+      "size": 7
+    }, {
+      "name": "Temperature sensor in Fahrenheit degrees (0 F - 255 F)",
+      "type": "u8",
+      "bits": {
+        "offset": 32,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 7
+    }, {
+      "name": "Door/Lid State",
+      "type": "enum",
+      "bits": {
+        "offset": 24,
+        "size": 8
+      },
+      "values": {
+        "0": "Close",
+        "1": "Open",
+        "2": "Process",
+        "3": "Error"
+      },
+      "offset": 0,
+      "size": 7
+    }, {
+      "name": "Lid/Door Locked",
+      "type": "enum",
+      "bits": {
+        "offset": 16,
+        "size": 8
+      },
+      "values": {
+        "0": "Lid locked",
+        "1": "Lid unlocked",
+        "2": "Process",
+        "3": "Error"
+      },
+      "offset": 0,
+      "size": 7
+    }, {
+      "name": "Mode shifter status",
+      "type": "enum",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "values": {
+        "0": "Agitation",
+        "1": "Spin",
+        "2": "Process",
+        "3": "Error"
+      },
+      "offset": 0,
+      "size": 7
+    }, {
+      "name": "Dispenser Status",
+      "type": "enum",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "values": {
+        "0": "Empty",
+        "1": "Full"
+      },
+      "offset": 0,
+      "size": 7
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 1,
+        "size": 7
+      },
+      "offset": 0,
+      "size": 7
+    }]
+  }, {
+    "name": "Mabe - Failure code",
+    "id": "0x2f09",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the failure code reported by the control board. Once a fault code is detected, the control board is inactive until the restore procedure is performed. Multiple faults are not implemented, Reserved_1 Failure and Reserved_2 Failure are implemented for future growth.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Failure code 1",
+      "type": "enum",
+      "values": {
+        "0": "No failure",
+        "1": "E1 - Speed > 60rpm Lid Lock open",
+        "2": "E2 - Motor Off and speed",
+        "3": "E3 - Motor On and No speed",
+        "4": "E4 - Lid Lock Error",
+        "5": "E5 - Speed > 1000rpms",
+        "6": "E6 - Safety Relay Short",
+        "7": "E7 - Triac Short",
+        "8": "E8 - Overflow",
+        "9": "E9 - No Water Change",
+        "10": "EA - Pressure Sensor Out of Range",
+        "11": "EB - Hose Disconnected",
+        "12": "EC - No Drain",
+        "13": "ED - High Frequency",
+        "14": "EE - Low Frequency",
+        "15": "EF - Bad CRC",
+        "16": "EG - Bad Memory",
+        "17": "EH - Lid switch fail",
+        "18": "EJ - Lid lock stucked",
+        "19": "EL - Safety relay open",
+        "20": "En - Operation relay open",
+        "21": "EP - Pressure Sensor Disconnected",
+        "22": "Er - Pressure Hose blocked",
+        "23": "Et - No parameters",
+        "24": "Eu - Mode shifter disconnected"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved_1 Failure",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Reserved_2 Failure",
+      "type": "u8",
+      "offset": 2,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Cycle Function",
+    "id": "0x2f0a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Describe any cycle phase during a wash process",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Cycle Function",
+      "type": "enum",
+      "values": {
+        "0": "Fill and Index",
+        "1": "Initial Only Fill",
+        "2": "Fill and Agitate Sense Level",
+        "3": "Fill and Agitate",
+        "4": "Only Fill",
+        "5": "Rinse Only Fill",
+        "6": "Rinse Fill and Agitate",
+        "7": "Only Fill Low",
+        "8": "Only Fill Mid",
+        "9": "Only Fill High",
+        "10": "Only Fill Sensed",
+        "11": "Fill Up To Top",
+        "12": "Fill and Index For Spin",
+        "13": "Fill For Only Rinse",
+        "14": "Only Fill Overflow",
+        "15": "Bulky Fill and Index",
+        "16": "Delay",
+        "32": "Doughnut",
+        "33": "Load Sense 1",
+        "34": "Load Sense 2",
+        "35": "Soak",
+        "36": "Intense Wash 1",
+        "37": "Inter Arrangement",
+        "38": "Intense Wash 2",
+        "39": "Arrangement",
+        "40": "Wash Rinse",
+        "41": "Rinse Arrangement",
+        "42": "Load Sense 3",
+        "43": "Index and Recirc",
+        "44": "Initial Arrangement",
+        "45": "Repeat Intense Wash 1",
+        "48": "Shower Rinse",
+        "49": "Second Deep Rinse",
+        "50": "Deep Rinse",
+        "64": "Drain",
+        "65": "Drain Safety",
+        "80": "Inter Steps",
+        "81": "Final Steps",
+        "82": "Ramps",
+        "83": "Spin",
+        "84": "Intermediate Spin",
+        "85": "Safety Inter Spin",
+        "86": "Safety Spin",
+        "87": "Final ramps",
+        "240": "Stage Fill",
+        "241": "Stage Soak",
+        "242": "Stage Wash",
+        "243": "Stage Inter Spin",
+        "244": "Stage Inter Fill",
+        "245": "Stage Rinse",
+        "246": "Stage Final Spin",
+        "247": "Stage End of Cycle"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Run Application State",
+    "id": "0x2f0b",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "This ERD defines the washer machine state while control is in user mode. Machine status could be read or written anytime from a remote device.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Run Application State",
+      "type": "enum",
+      "values": {
+        "0": "Idle",
+        "1": "Start Up",
+        "2": "Standby",
+        "3": "Operation Mode",
+        "4": "Pause",
+        "5": "End of Cycle",
+        "6": "Delay Start",
+        "7": "Critical Fault Mode",
+        "8": "Commissioning"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Main State",
+    "id": "0x2f0c",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Define the control board main state. ERD is writable via GEA bus only.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Main State",
+      "type": "enum",
+      "values": {
+        "0": "Init",
+        "1": "Run App",
+        "2": "Test",
+        "3": "Service",
+        "4": "Fct",
+        "5": "Showroom",
+        "6": "Data Flash Write",
+        "7": "UI Test"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Remote enable",
+    "id": "0x2f0d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the remote enable status",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Remote Enable",
+      "type": "enum",
+      "values": {
+        "0": "Disable",
+        "1": "Enable"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Water Inlet Flow",
+    "id": "0x2f0e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the water inlet flow during a cycle test",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Cold Water Inlet Flow in inH2O/minute",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Hot Water Inlet Flow in inH2O/minute",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Cold Water Inlet Flow in liter/minute",
+      "type": "u16",
+      "offset": 4,
+      "size": 2
+    }, {
+      "name": "Hot Water Inlet Flow in liter/minute",
+      "type": "u16",
+      "offset": 6,
+      "size": 2
+    }]
+  }, {
+    "name": "Mabe - Torque",
+    "id": "0x2f0f",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the transmission torque parameters either agitation and spin mode",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Arc vs Time",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Slowdown time",
+      "type": "u8",
+      "offset": 2,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Agitation supervisor",
+    "id": "0x2f10",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets supervisor variables while agitation process",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Limiter per cycle",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Arc",
+      "type": "u16",
+      "offset": 1,
+      "size": 2
+    }, {
+      "name": "Stroke per minute",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Cycle stage time",
+    "id": "0x2f11",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets time elapsed during each cycle stage. Time is scaled by 10, it is defined in seconds.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Fill Time",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Agitation Time",
+      "type": "u16",
+      "offset": 1,
+      "size": 2
+    }, {
+      "name": "Drain Time",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Spin Time",
+      "type": "u8",
+      "offset": 4,
+      "size": 1
+    }, {
+      "name": "Reserved_1 Time",
+      "type": "u16",
+      "offset": 5,
+      "size": 2
+    }, {
+      "name": "Reserved_2 Time",
+      "type": "u16",
+      "offset": 7,
+      "size": 2
+    }, {
+      "name": "Reserved_3 Time",
+      "type": "u8",
+      "offset": 9,
+      "size": 1
+    }, {
+      "name": "Reserved_4 Time",
+      "type": "u8",
+      "offset": 10,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Drain Flow",
+    "id": "0x2f12",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the drain flow while running a cycle",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Drain Flow in in H2O/minute",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Mabe - Spin supervisor",
+    "id": "0x2f13",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets supervisor variables while spin process",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Jerk counter per cycle",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Jerk value",
+      "type": "u32",
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Jerk limit",
+      "type": "u32",
+      "offset": 5,
+      "size": 4
+    }, {
+      "name": "Sudsing counter per cycle",
+      "type": "u8",
+      "offset": 9,
+      "size": 1
+    }, {
+      "name": "Sensor Hall Failure per cycle",
+      "type": "u8",
+      "offset": 10,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Lid open while Running cycle",
+    "id": "0x2f14",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the times that lid was opened over the previously executed cycle",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Lid open while Running cycle",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Parameter table",
+    "id": "0x2f15",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the parameter table set in control board",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Parameter Table Part Number",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Parameter Table Group",
+      "type": "u8",
+      "offset": 2,
+      "size": 1
+    }, {
+      "name": "Parameter Table Revision",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Remaining Drain Time",
+    "id": "0x2f16",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the remaining drain time",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Remaining drain time",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Mabe - Public Fault Code",
+    "id": "0x2f17",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the parameter table set in control board",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "FaultCloggedDrainActive",
+      "type": "bool",
+      "bits": {
+        "offset": 8,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultPressureSensorLossActive",
+      "type": "bool",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultHeaterActive",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultInvalidTempSensorActive",
+      "type": "bool",
+      "bits": {
+        "offset": 11,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultLidLockActive",
+      "type": "bool",
+      "bits": {
+        "offset": 12,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultMotorActive",
+      "type": "bool",
+      "bits": {
+        "offset": 13,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultOverFlowActive",
+      "type": "bool",
+      "bits": {
+        "offset": 14,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultMotorControlActive",
+      "type": "bool",
+      "bits": {
+        "offset": 15,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultWaterOverheatingActive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultVoltageOutOfRangeActive",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FaultWaterLevelMeasurementActive",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved 1",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved 2",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved 3",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved 4",
+      "type": "bool",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved 5",
+      "type": "bool",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Mabe - Public Doob (Diagonal Out Of Balance) Size",
+    "id": "0x2f18",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the doob (Diagonal Out Of Balance) size",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Public Doob Size",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Cycle Status",
     "id": "0x3000",
     "operations": ["read", "publish", "subscribe"],

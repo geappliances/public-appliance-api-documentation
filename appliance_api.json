@@ -1939,6 +1939,55 @@
               ]
             }
           ]
+        },
+        "4": {
+          "description": "",
+          "required": [
+
+          ],
+          "features": [
+            {
+              "mask": "0x00000001",
+              "name": "Mabe Washer Foundation",
+              "description": "This feature is to provide foundational functionality for Mabe Washers.\nThis feature provides functionality for Mabe Washers using custom erds for following functionality\n- 0x2F00 Mabe - Water Level Selection\n- 0x2F01 Mabe - Sensed Water Level Selection\n- 0x2F02 Mabe - Mabe - Manual Selection\n- 0x2F03 Mabe - Soil Level Selection\n- 0x2F04 Mabe - Temperature Level Selection\n- 0x2F05 Mabe - Spin Level Selection\n- 0x2F06 Mabe - Washer Options\n- 0x2F07 Mabe - Loads Request\n- 0x2F08 Mabe - Loads Status\n- 0x2F09 Mabe - Failure code\n- 0x2F0A Mabe - Cycle Function\n- 0x2F0B Mabe - Run Application State\n- 0x2F0C Mabe - Main State\n- 0x2F0D Mabe - Remote enable\n- 0x2F0E Mabe - Water Inlet Flow\n- 0x2F0F Mabe - Torque\n- 0x2F10 Mabe - Agitation supervisor\n- 0x2F11 Mabe - Cycle stage time\n- 0x2F12 Mabe - Drain Flow\n- 0x2F13 Mabe - Spin supervisor\n- 0x2F14 Mabe - Lid open while Running cycle\n- 0x2F15 Mabe - Parameter table",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x2F00", "name": "Mabe - Water Level Selection", "length": 1 },
+                { "erd": "0x2F01", "name": "Mabe - Sensed Water Level Selection", "length": 1 },
+                { "erd": "0x2F02", "name": "Mabe - Manual Selection", "length": 1 },
+                { "erd": "0x2F03", "name": "Mabe - Soil Level Selection", "length": 1 },
+                { "erd": "0x2F04", "name": "Mabe - Temperature Level Selection", "length": 1 },
+                { "erd": "0x2F05", "name": "Mabe - Spin Level Selection", "length": 1 },
+                { "erd": "0x2F06", "name": "Mabe - Washer Options", "length": 2 },
+                { "erd": "0x2F07", "name": "Mabe - Loads Request", "length": 4 },
+                { "erd": "0x2F08", "name": "Mabe - Loads Status", "length": 7 },
+                { "erd": "0x2F09", "name": "Mabe - Failure code", "length": 3 },
+                { "erd": "0x2F0A", "name": "Mabe - Cycle Function", "length": 1 },
+                { "erd": "0x2F0B", "name": "Mabe - Run Application State", "length": 1 },
+                { "erd": "0x2F0C", "name": "Mabe - Main State", "length": 1 },
+                { "erd": "0x2F0D", "name": "Mabe - Remote enable", "length": 1 },
+                { "erd": "0x2F0E", "name": "Mabe - Water Inlet Flow", "length": 8 },
+                { "erd": "0x2F0F", "name": "Mabe - Torque", "length": 3 },
+                { "erd": "0x2F10", "name": "Mabe - Agitation supervisor", "length": 4 },
+                { "erd": "0x2F11", "name": "Mabe - Cycle stage time", "length": 11 },
+                { "erd": "0x2F12", "name": "Mabe - Drain Flow", "length": 4 },
+                { "erd": "0x2F13", "name": "Mabe - Spin supervisor", "length": 11 },
+                { "erd": "0x2F14", "name": "Mabe - Lid open while Running cycle", "length": 1 },
+                { "erd": "0x2F15", "name": "Mabe - Parameter table", "length": 4 }
+              ]
+            },
+            {
+              "mask": "0x00000010",
+              "name": "Mabe Washer Diagnostics",
+              "description": "This feature allows additional Mabe Washer diagnostics details.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x2F16", "name": "Mabe - Remaining Drain Time", "length": 1 },
+                { "erd": "0x2F17", "name": "Mabe - Public Fault Code", "length": 2 },
+                { "erd": "0x2F18", "name": "Mabe - Public Doob (Diagonal Out Of Balance) Size", "length": 2 }
+              ]
+            }
+          ]
         }
       }
     },
