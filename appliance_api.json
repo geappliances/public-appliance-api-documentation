@@ -3360,6 +3360,16 @@
                 { "erd": "0x140D", "name": "Power Outage Count", "length": 4 },
                 { "erd": "0x140E", "name": "System Startup Time in Minutes After Last Power Outage", "length": 4 }
               ]
+            },
+            {
+              "mask": "0x10000000",
+              "name": "Barcode Scan Recess Light Control",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1415", "name": "Enable Recess Light for Barcode Scan Request", "length": 1 },
+                { "erd": "0x1416", "name": "Enable Recess Light for Barcode Scan Status", "length": 1 }
+              ]
             }
           ]
         }

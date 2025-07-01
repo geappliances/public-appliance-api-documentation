@@ -23119,6 +23119,34 @@
       "size": 4
     }]
   }, {
+    "name": "Enable Recess Light for Barcode Scan Request",
+    "id": "0x1415",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to request that the recess light is on during a barcode scan.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Enable Recess Light for Barcode Scan Status",
+    "id": "0x1416",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to respond to a request that the recess light is on during a barcode scan.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Machine State",
     "id": "0x2000",
     "operations": ["read", "publish", "subscribe"],
