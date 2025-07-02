@@ -76113,8 +76113,8 @@
       "type": "event"
     },
     "data": [{
-      "name": "Upper Oven Cook Time Total Duration",
-      "type": "i32",
+      "name": "Upper Oven Cook Time Total Duration Seconds",
+      "type": "u32",
       "offset": 0,
       "size": 4
     }]
@@ -81626,8 +81626,8 @@
       "type": "event"
     },
     "data": [{
-      "name": "Lower Oven Cook Time Total Duration",
-      "type": "i32",
+      "name": "Lower Oven Cook Time Total Duration Seconds",
+      "type": "u32",
       "offset": 0,
       "size": 4
     }]
