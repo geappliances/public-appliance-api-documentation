@@ -1421,8 +1421,7 @@
               "required": [
                 { "erd": "0x20C0", "name": "Smart Dispense Adjustability Feature Version", "length": 1 },
                 { "erd": "0x20C1", "name": "Smart Dispense Adjustability Request", "length": 3 },
-                { "erd": "0x20C2", "name": "Smart Dispense Adjustability Option", "length": 3 },
-                { "erd": "0x20C3", "name": "Smart Dispense Adjustability Allowables", "length": 2 }
+                { "erd": "0x20C2", "name": "Smart Dispense Adjustability Option", "length": 3 }
               ]
             },
             {
