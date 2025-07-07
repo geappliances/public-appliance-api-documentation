@@ -10727,74 +10727,47 @@
       "name": "Fresh Food Back Light",
       "type": "bool",
       "bits": {
-        "offset": 24,
+        "offset": 0,
         "size": 1
       },
       "offset": 0,
-      "size": 4
+      "size": 1
     }, {
       "name": "Fresh Food Top Light",
       "type": "bool",
       "bits": {
-        "offset": 25,
+        "offset": 1,
         "size": 1
       },
       "offset": 0,
-      "size": 4
+      "size": 1
     }, {
       "name": "Freezer Back Light",
       "type": "bool",
       "bits": {
-        "offset": 26,
+        "offset": 2,
         "size": 1
       },
       "offset": 0,
-      "size": 4
+      "size": 1
     }, {
       "name": "Freezer Top Light",
       "type": "bool",
       "bits": {
-        "offset": 27,
+        "offset": 3,
         "size": 1
       },
       "offset": 0,
-      "size": 4
+      "size": 1
     }, {
       "name": "reserved",
       "type": "u8",
       "bits": {
-        "offset": 28,
+        "offset": 4,
         "size": 4
       },
       "offset": 0,
-      "size": 4
-    }, {
-      "name": "reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 16,
-        "size": 8
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 8,
-        "size": 8
-      },
-      "offset": 0,
-      "size": 4
-    }, {
-      "name": "reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 0,
-        "size": 8
-      },
-      "offset": 0,
-      "size": 4
+      "size": 1
     }]
   }, {
     "name": "Presence Sensing Enable Request",
@@ -13657,6 +13630,16 @@
       "type": "i16",
       "offset": 26,
       "size": 2
+    }, {
+      "name": "Grid Lines.Number of Grid Lines per Dimension",
+      "type": "u8",
+      "offset": 28,
+      "size": 1
+    }, {
+      "name": "Grid Lines.padding",
+      "type": "u8",
+      "offset": 29,
+      "size": 1
     }]
   }, {
     "name": "Total Fresh Food Defrost Counts",
@@ -13912,11 +13895,6 @@
       "name": "RFID Filter Unique Identifier[6]",
       "type": "u8",
       "offset": 6,
-      "size": 1
-    }, {
-      "name": "RFID Filter Unique Identifier[7]",
-      "type": "u8",
-      "offset": 7,
       "size": 1
     }]
   }, {
@@ -14536,9 +14514,9 @@
     },
     "data": [{
       "name": "Average Compressor On Off Cycle Time in Minutes",
-      "type": "u16",
+      "type": "u32",
       "offset": 0,
-      "size": 2
+      "size": 4
     }]
   }, {
     "name": "Dispense Water Valve Open Time in Seconds",
@@ -23056,9 +23034,9 @@
     },
     "data": [{
       "name": "Average Cold Water Flow Rate in ouncesX10/second",
-      "type": "u16",
+      "type": "u8",
       "offset": 0,
-      "size": 2
+      "size": 1
     }]
   }, {
     "name": "Autofill Dispense Volume",
@@ -72215,20 +72193,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
