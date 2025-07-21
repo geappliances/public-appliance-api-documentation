@@ -2388,7 +2388,8 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x1208", "name": "Dispense Request", "length": 6 },
-                { "erd": "0x1209", "name": "Dispense Request Status", "length": 6 }
+                { "erd": "0x1209", "name": "Dispense Request Status", "length": 6 },
+                { "erd": "0x12F0", "name": "Refrigerator Cup Switch Pressed Status", "length": 1 }
               ]
             },
             {
@@ -2398,7 +2399,8 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x1208", "name": "Dispense Request", "length": 6 },
-                { "erd": "0x1209", "name": "Dispense Request Status", "length": 6 }
+                { "erd": "0x1209", "name": "Dispense Request Status", "length": 6 },
+                { "erd": "0x12F0", "name": "Refrigerator Cup Switch Pressed Status", "length": 1 }
               ]
             },
             {
@@ -2408,7 +2410,8 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x1208", "name": "Dispense Request", "length": 6 },
-                { "erd": "0x1209", "name": "Dispense Request Status", "length": 6 }
+                { "erd": "0x1209", "name": "Dispense Request Status", "length": 6 },
+                { "erd": "0x12F0", "name": "Refrigerator Cup Switch Pressed Status", "length": 1 }
               ]
             },
             {

@@ -15207,6 +15207,20 @@
       "size": 2
     }]
   }, {
+    "name": "Refrigerator Cup Switch Pressed Status",
+    "id": "0x12f0",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Dispense cup switch is pressed",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Refrigerator Cup Switch is Pressed",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Convertible Compartment Filtered Temperature",
     "id": "0x12f1",
     "operations": ["read", "publish", "subscribe"],
@@ -72193,20 +72207,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
