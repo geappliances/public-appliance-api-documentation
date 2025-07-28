@@ -3384,6 +3384,16 @@
                 { "erd": "0x1411", "name": "Number of Wake Word Detected Counts", "length": 4 },
                 { "erd": "0x1412", "name": "Maximum SBC Volume Ever Setting", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x40000000",
+              "name": "Fridge Focus Data and Settings",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x141B", "name": "Fridge Focus Enable Video Debug Request", "length": 1 },
+                { "erd": "0x141C", "name": "Fridge Focus Enable Video Debug Status", "length": 1 }
+              ]
             }
           ]
         }

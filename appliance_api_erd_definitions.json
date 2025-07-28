@@ -23201,6 +23201,34 @@
       "size": 1
     }]
   }, {
+    "name": "Fridge Focus Enable Video Debug Request",
+    "id": "0x141b",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Request to enable or disable video debugging for Fridge Focus feature.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Fridge Focus Enable Video Debug Status",
+    "id": "0x141c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Fridge Focus video debugging is enabled",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Machine State",
     "id": "0x2000",
     "operations": ["read", "publish", "subscribe"],
