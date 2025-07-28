@@ -23113,6 +23113,66 @@
       "size": 4
     }]
   }, {
+    "name": "Fridge Focus Images Count",
+    "id": "0x140f",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of Fridge Focus images uploaded by the SBC.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 43200000
+    },
+    "data": [{
+      "name": "Number of Fridge Focus Images Uploaded",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Barcodes Scanned Count",
+    "id": "0x1410",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of barcodes scanned by the SBC.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 43200000
+    },
+    "data": [{
+      "name": "Total Number of Barcodes Scanned",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Number of Wake Word Detected Counts",
+    "id": "0x1411",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number times the wake word has been detected.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 43200000
+    },
+    "data": [{
+      "name": "Wake Word Detected Counts",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Maximum SBC Volume Ever Setting",
+    "id": "0x1412",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The maximum volume that the SBC speakers have ever been set to.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 43200000
+    },
+    "data": [{
+      "name": "Maximum SBC Volume Setting",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Enable Recess Light for Barcode Scan Request",
     "id": "0x1415",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -72209,20 +72269,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
