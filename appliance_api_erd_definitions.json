@@ -11534,7 +11534,7 @@
       "offset": 0,
       "size": 4
     }, {
-      "name": "Reason for Inhibiting Dispensing.Reserved",
+      "name": "Reason for Inhibiting Dispensing.Due to flow meter error",
       "type": "bool",
       "bits": {
         "offset": 28,
