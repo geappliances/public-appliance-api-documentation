@@ -60711,7 +60711,8 @@
         "14": "CSM",
         "15": "Wifi Binding",
         "16": "Rinse Aid Level Selection",
-        "17": "Sabbath Mode"
+        "17": "Sabbath Mode",
+        "18": "Delay Pause"
       },
       "offset": 0,
       "size": 1
@@ -67665,7 +67666,8 @@
         "14": "CSM",
         "15": "Wifi Binding",
         "16": "Rinse Aid Level Selection",
-        "17": "Sabbath Mode"
+        "17": "Sabbath Mode",
+        "18": "Delay Pause"
       },
       "offset": 0,
       "size": 1
