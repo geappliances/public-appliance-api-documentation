@@ -11210,7 +11210,8 @@
               "required": [
                 { "erd": "0x7049", "name": "Capacity in BTU/h", "length": 1 },
                 { "erd": "0x7900", "name": "ODU DIP Switch Status", "length": 8 },
-                { "erd": "0x7901", "name": "ODU Dip Switch Settings", "length": 8 }
+                { "erd": "0x7901", "name": "ODU Dip Switch Settings", "length": 8 },
+                { "erd": "0x790D", "name": "High and Low Pressure switch status", "length": 2 }
               ]
             },
             {
@@ -11260,6 +11261,25 @@
               "required": [
                 { "erd": "0x7914", "name": "Defrost status and control", "length": 1 },
                 { "erd": "0x7930", "name": "Defrost Interval Minimum Time Setting and Counter and Compressor Stop Minimum Time Setting and Counter", "length": 6 }
+              ]
+            },
+            {
+              "mask": "0x00000080",
+              "name": "Outdoor Fan Count",
+              "description": "Information about the number of fans on an outdoor unit.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x712F", "name": "Outdoor Fan Count", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000100",
+              "name": "Outdoor Fan 2 Supported",
+              "description": "Information about the outdoor unit's second fan speed and target speed.",
+              "dependencies": ["Outdoor Fan Count"],
+              "required": [
+                { "erd": "0x7136", "name": "Outdoor Fan 2 Speed", "length": 2 },
+                { "erd": "0x7137", "name": "Outdoor Fan 2 Target Speed", "length": 2 }
               ]
             }
           ]

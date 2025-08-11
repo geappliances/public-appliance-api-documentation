@@ -117218,6 +117218,20 @@
       "size": 1
     }]
   }, {
+    "name": "Outdoor Fan Count",
+    "id": "0x712f",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Outdoor Fan Count.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Count",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Inside fan speed",
     "id": "0x7130",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -117301,6 +117315,36 @@
     },
     "data": [{
       "name": "Outside fan PWM value",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Outdoor Fan 2 Speed",
+    "id": "0x7136",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Outdoor Fan 2 Speed.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 10000
+    },
+    "data": [{
+      "name": "Outside fan speed",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Outdoor Fan 2 Target Speed",
+    "id": "0x7137",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Outdoor Fan 2 Target Speed.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 10000
+    },
+    "data": [{
+      "name": "Outside target fan speed",
       "type": "u16",
       "offset": 0,
       "size": 2
@@ -122185,6 +122229,33 @@
       "type": "u16",
       "offset": 0,
       "size": 2
+    }]
+  }, {
+    "name": "High and Low Pressure switch status",
+    "id": "0x790d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "High and Low pressure switch status on ODU.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "High Pressure Switch Status",
+      "type": "enum",
+      "values": {
+        "0": "Pressure Switch open",
+        "1": "Pressure Switch closed"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Low Pressure Switch Status",
+      "type": "enum",
+      "values": {
+        "0": "Pressure Switch open",
+        "1": "Pressure Switch closed"
+      },
+      "offset": 1,
+      "size": 1
     }]
   }, {
     "name": "ODU Gas Pipe temperatures (Tc1 - A,B,C,D,E)",
