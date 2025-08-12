@@ -63784,8 +63784,8 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Error State",
-      "type": "u8",
+      "name": "Error Active",
+      "type": "bool",
       "offset": 1,
       "size": 1
     }]
