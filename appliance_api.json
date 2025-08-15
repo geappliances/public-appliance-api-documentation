@@ -1948,9 +1948,18 @@
             {
               "mask": "0x00000001",
               "name": "Mabe Washer Foundation",
-              "description": "This feature is to provide foundational functionality for Mabe Washers.\nThis feature provides functionality for Mabe Washers using custom erds for following functionality\n- 0x2F00 Mabe - Water Level Selection\n- 0x2F01 Mabe - Sensed Water Level Selection\n- 0x2F02 Mabe - Mabe - Manual Selection\n- 0x2F03 Mabe - Soil Level Selection\n- 0x2F04 Mabe - Temperature Level Selection\n- 0x2F05 Mabe - Spin Level Selection\n- 0x2F06 Mabe - Washer Options\n- 0x2F07 Mabe - Loads Request\n- 0x2F08 Mabe - Loads Status\n- 0x2F09 Mabe - Failure code\n- 0x2F0A Mabe - Cycle Function\n- 0x2F0B Mabe - Run Application State\n- 0x2F0C Mabe - Main State\n- 0x2F0D Mabe - Remote enable\n- 0x2F0E Mabe - Water Inlet Flow\n- 0x2F0F Mabe - Torque\n- 0x2F10 Mabe - Agitation supervisor\n- 0x2F11 Mabe - Cycle stage time\n- 0x2F12 Mabe - Drain Flow\n- 0x2F13 Mabe - Spin supervisor\n- 0x2F14 Mabe - Lid open while Running cycle\n- 0x2F15 Mabe - Parameter table",
+              "description": "This feature is to provide foundational functionality for Mabe Washers.\nThis feature provides functionality for Mabe Washers using custom erds for following functionality\n- 0x0004 Control User Interface Locked\n- 0x000E Line Input Voltage\n- 0x0034 System Current\n- 0x202B Drive Motor Target Basket Speedd\n- 0x202C Control User Interface Locked\n- 0x202D Actual Basket Speed\n- 0x2026 Drain Pump Actual State\n- 0x2031 Max Water Level\n- 0x2043 Water Temperature Thermistor\n- 0x2F00 Mabe - Water Level Selection\n- 0x2F01 Mabe - Sensed Water Level Selection\n- 0x2F02 Mabe - Mabe - Manual Selection\n- 0x2F03 Mabe - Soil Level Selection\n- 0x2F04 Mabe - Temperature Level Selection\n- 0x2F05 Mabe - Spin Level Selection\n- 0x2F06 Mabe - Washer Options\n- 0x2F07 Mabe - Loads Request\n- 0x2F08 Mabe - Loads Status\n- 0x2F09 Mabe - Failure code\n- 0x2F0A Mabe - Cycle Function\n- 0x2F0B Mabe - Run Application State\n- 0x2F0C Mabe - Main State\n- 0x2F0D Mabe - Remote enable\n- 0x2F0E Mabe - Water Inlet Flow\n- 0x2F0F Mabe - Torque\n- 0x2F10 Mabe - Agitation supervisor\n- 0x2F11 Mabe - Cycle stage time\n- 0x2F12 Mabe - Drain Flow\n- 0x2F13 Mabe - Spin supervisor\n- 0x2F14 Mabe - Lid open while Running cycle\n- 0x2F15 Mabe - Parameter table",
               "dependencies": [],
               "required": [
+                { "erd": "0x0004", "name": "Control User Interface Locked", "length": 1 },
+                { "erd": "0x000E", "name": "Line Input Voltage", "length": 2 },
+                { "erd": "0x0034", "name": "System Current", "length": 2 },
+                { "erd": "0x202B", "name": "Drive Motor Target Basket Speed", "length": 2 },
+                { "erd": "0x202C", "name": "Actual Basket Speed", "length": 2 },
+                { "erd": "0x202D", "name": "Water Valves Actual State", "length": 1 },
+                { "erd": "0x2026", "name": "Drain Pump Actual State", "length": 1 },
+                { "erd": "0x2031", "name": "Max Water Level", "length": 4 },
+                { "erd": "0x2043", "name": "Water Temperature Thermistor", "length": 2 },
                 { "erd": "0x2F00", "name": "Mabe - Water Level Selection", "length": 1 },
                 { "erd": "0x2F01", "name": "Mabe - Sensed Water Level Selection", "length": 1 },
                 { "erd": "0x2F02", "name": "Mabe - Manual Selection", "length": 1 },
@@ -1983,7 +1992,10 @@
               "required": [
                 { "erd": "0x2F16", "name": "Mabe - Remaining Drain Time", "length": 1 },
                 { "erd": "0x2F17", "name": "Mabe - Public Fault Code", "length": 2 },
-                { "erd": "0x2F18", "name": "Mabe - Public Doob (Diagonal Out Of Balance) Size", "length": 2 }
+                { "erd": "0x2F18", "name": "Mabe - Public Doob (Diagonal Out Of Balance) Size", "length": 2 },
+                { "erd": "0x2F19", "name": "Mabe - Public Oob (Out Of Balance) Size", "length": 2 },
+                { "erd": "0x2F1A", "name": "Short Cycle Option", "length": 1 },
+                { "erd": "0x2F1B", "name": "Short Cycle Option Request", "length": 1 }
               ]
             }
           ]

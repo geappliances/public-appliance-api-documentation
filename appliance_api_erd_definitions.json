@@ -219,6 +219,20 @@
       "size": 1
     }]
   }, {
+    "name": "Line Input Voltage",
+    "id": "0x000e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The Line Input voltage in hundredths",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Line Input Voltage Volts x 100 (volts)",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Ready to Enter Boot Loader",
     "id": "0x0030",
     "operations": ["read", "publish", "subscribe"],
@@ -251,6 +265,20 @@
       "type": "u8",
       "offset": 0,
       "size": 1
+    }]
+  }, {
+    "name": "System Current",
+    "id": "0x0034",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The current draw of the system.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "System Current AMPS x 100 (amps)",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
     }]
   }, {
     "name": "Personality (32-bit)",
@@ -24017,6 +24045,20 @@
       "size": 1
     }]
   }, {
+    "name": "Drive Motor Target Basket Speed",
+    "id": "0x202b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The target basket speed in RPM. Positive target indicates clockwise, negative target indicates counter clockwise.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Target basket speed in RPM (rpm)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Actual Basket Speed",
     "id": "0x202c",
     "operations": ["read", "publish", "subscribe"],
@@ -24029,6 +24071,101 @@
       "type": "u16",
       "offset": 0,
       "size": 2
+    }]
+  }, {
+    "name": "Water Valves Actual State",
+    "id": "0x202d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The states of all the water valves in the system.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Primary Hot Valve State",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Primary Cold Valve State",
+      "type": "u8",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Valve 3 State",
+      "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Valve 4 State",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Valve 5 State",
+      "type": "u8",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Valve 6 State",
+      "type": "u8",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Valve 7 State",
+      "type": "u8",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Valve 8 State",
+      "type": "u8",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Max Water Level",
+    "id": "0x2031",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The maximum water level seen in the system since ERD reset.  ERD is 0 on initial creation and is stored in nonvolatile memory.  If the ERD is never reset externally it represents the max water level seen for the life of the system.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Max Water Level Inches of water x 1000 (inches)",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
     }]
   }, {
     "name": "Smart Dispense Usage Profile Record Small",
@@ -60565,6 +60702,57 @@
       "type": "u16",
       "offset": 0,
       "size": 2
+    }]
+  }, {
+    "name": "Mabe - Public Oob (Out Of Balance) Size",
+    "id": "0x2f19",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Gets the oob (Out Of Balance) size",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Public Oob Size",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Short Cycle Option",
+    "id": "0x2f1a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The current short cycle option value.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Short Cycle Option",
+      "type": "enum",
+      "values": {
+        "0": "Disable",
+        "1": "Enable"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Short Cycle Option Request",
+    "id": "0x2f1b",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Request a change of the Short Cycle option. This feature will modify wash cycle time.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Short Cycle Option",
+      "type": "enum",
+      "values": {
+        "0": "Disable",
+        "1": "Enable"
+      },
+      "offset": 0,
+      "size": 1
     }]
   }, {
     "name": "Cycle Status",
