@@ -6805,6 +6805,16 @@
               "required": [
                 { "erd": "0x9134", "name": "Ice Maker Model", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00000400",
+              "name": "Multicolored Light",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x913E", "name": "Light Color Status", "length": 4 },
+                { "erd": "0x913F", "name": "Light Color Request", "length": 4 }
+              ]
             }
           ]
         },
@@ -6925,6 +6935,16 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x913C", "name": "Total Compressor Runtime", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00001000",
+              "name": "Multicolored Light",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x913E", "name": "Light Color Status", "length": 4 },
+                { "erd": "0x913F", "name": "Light Color Request", "length": 4 }
               ]
             }
           ]

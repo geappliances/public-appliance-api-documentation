@@ -129777,6 +129777,64 @@
       "size": 2
     }]
   }, {
+    "name": "Light Color Status",
+    "id": "0x913e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Light Color Status:\n* Intensity: The brightness level of the light. 0 indicates Light Off.\n* Red: The intensity of the red color component (0-255).\n* Green: The intensity of the green color component (0-255).\n* Blue: The intensity of the blue color component (0-255).",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Intensity Percentage (0-100)",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Red (0-255)",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Green (0-255)",
+      "type": "u8",
+      "offset": 2,
+      "size": 1
+    }, {
+      "name": "Blue (0-255)",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }]
+  }, {
+    "name": "Light Color Request",
+    "id": "0x913f",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Light Color Request:\n* Intensity: The brightness level of the light. 0 indicates Light Off.\n* Red: The intensity of the red color component (0-255).\n* Green: The intensity of the green color component (0-255).\n* Blue: The intensity of the blue color component (0-255).",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Intensity Percentage (0-100)",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Red (0-255)",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Green (0-255)",
+      "type": "u8",
+      "offset": 2,
+      "size": 1
+    }, {
+      "name": "Blue (0-255)",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }]
+  }, {
     "name": "Toaster Oven Supported Cook Modes",
     "id": "0x9200",
     "operations": ["read", "publish", "subscribe"],
