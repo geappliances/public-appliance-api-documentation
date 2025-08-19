@@ -47327,11 +47327,20 @@
       "offset": 0,
       "size": 2
     }, {
+      "name": "Clean v2 Foam Filter Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 4,
-        "size": 4
+        "offset": 5,
+        "size": 3
       },
       "offset": 0,
       "size": 2
@@ -47444,11 +47453,20 @@
       "offset": 2,
       "size": 2
     }, {
+      "name": "Clean v2 Foam Filter Notification Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 4,
-        "size": 4
+        "offset": 5,
+        "size": 3
       },
       "offset": 2,
       "size": 2
