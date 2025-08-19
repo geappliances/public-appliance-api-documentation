@@ -23660,7 +23660,8 @@
       "type": "enum",
       "values": {
         "0": "Unlocked",
-        "1": "Locked"
+        "1": "Locked",
+        "2": "Failure"
       },
       "offset": 0,
       "size": 1
