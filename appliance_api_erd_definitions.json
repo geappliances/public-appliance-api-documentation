@@ -72487,20 +72487,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
@@ -74168,7 +74168,9 @@
         "110": "Pizza",
         "111": "Defrost",
         "112": "Dynamic Broil",
-        "113": "Toast"
+        "113": "Toast",
+        "114": "Pizza Preheat",
+        "115": "Proofing Preheat"
       },
       "offset": 0,
       "size": 1
@@ -79720,7 +79722,9 @@
         "110": "Pizza",
         "111": "Defrost",
         "112": "Dynamic Broil",
-        "113": "Toast"
+        "113": "Toast",
+        "114": "Pizza Preheat",
+        "115": "Proofing Preheat"
       },
       "offset": 0,
       "size": 1
