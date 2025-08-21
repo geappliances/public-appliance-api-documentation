@@ -62332,12 +62332,12 @@
     "name": "Water Volume",
     "id": "0x3039",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The current water volume in tenths of a gallon",
+    "description": "The current water volume in hundredths of a gallon",
     "updateClass": {
       "type": "legacy"
     },
     "data": [{
-      "name": "Water Volume (1/10 Gallons)",
+      "name": "Water Volume (1/100 Gallons)",
       "type": "u8",
       "offset": 0,
       "size": 1
@@ -72506,20 +72506,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
