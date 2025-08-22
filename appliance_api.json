@@ -11315,6 +11315,15 @@
               ]
             }
           ]
+        },
+        "2": {
+          "description": "This is an extension of v1, not intended to be used as stand-alone",
+          "required": [
+
+          ],
+          "features": [
+
+          ]
         }
       }
     }
