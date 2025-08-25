@@ -29572,7 +29572,7 @@
     "name": "Smart Dispense Adjustability Feature Version",
     "id": "0x20c0",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Feature version of Smart dispense adjustability.\nBucket configuration for each version listed on:\nhttps://wca-mobile-brand-content-prd.brillion.geappliances.com/apps/smarthq/US/en-US/laundry/DetergentType.json",
+    "description": "Feature version of Smart dispense adjustability.\nBucket configuration for each version listed on:\nhttps://github.com/geappliances/mobile.brand-content/blob/prd/apps/smarthq/US/en-US/laundry/DetergentType.json",
     "updateClass": {
       "type": "static"
     },
@@ -32172,7 +32172,7 @@
     "name": "Downloadable Cycle Feature Version",
     "id": "0x20d7",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Feature version of the downloadable cycles\n\nNotes\n- https://wca-mobile-brand-content-prd.brillion.geappliances.com/apps/smarthq/US/en-US/DownloadedCycles.json,\ncontains the text descriptions for each downloadable cycle to be used in SmartHQ.\n- The version number is the index in the above file to locate the list of cycles and descriptions.",
+    "description": "Feature version of the downloadable cycles\n\nNotes\n- https://github.com/geappliances/mobile.brand-content/blob/prd/apps/smarthq/US/en-US/laundry/DownloadedCycles.json,\ncontains the text descriptions for each downloadable cycle to be used in SmartHQ.\n- The version number is the index in the above file to locate the list of cycles and descriptions.",
     "updateClass": {
       "type": "static"
     },
@@ -32200,7 +32200,7 @@
     "name": "Flex Dispense Feature Version",
     "id": "0x20d9",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Feature version ERD is used to allow diffent bucket mapping across models so a given detergent can be mapped to bucket 3 for feature version 1 while the same detergent can be mapped to bucket 1 for feature version 2.\nClients shall read feature version from appliance and use it as a key to identify the correct mapping according [this](https://wca-mobile-brand-content-prd.brillion.geappliances.com/apps/smarthq/US/en-US/FlexDispense.json) configuration.",
+    "description": "Feature version ERD is used to allow diffent bucket mapping across models so a given detergent can be mapped to bucket 3 for feature version 1 while the same detergent can be mapped to bucket 1 for feature version 2.\nClients shall read feature version from appliance and use it as a key to identify the correct mapping according [this](https://github.com/geappliances/mobile.brand-content/blob/prd/apps/smarthq/US/en-US/laundry/SoftenerType.json) configuration.",
     "updateClass": {
       "type": "static"
     },
@@ -44630,7 +44630,7 @@
     "name": "Smart Softener Dispense Adjustability Feature Version",
     "id": "0x2142",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Feature version of Smart softener dispense adjustability.\nBucket configuration for each version listed on:\nhttps://wca-mobile-brand-content-prd.brillion.geappliances.com/apps/smarthq/US/en-US/laundry/SoftenerType.json",
+    "description": "Feature version of Smart softener dispense adjustability.\nBucket configuration for each version listed on:\nhttps://github.com/geappliances/mobile.brand-content/blob/prd/apps/smarthq/US/en-US/laundry/SoftenerType.json",
     "updateClass": {
       "type": "event"
     },
@@ -72506,20 +72506,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
