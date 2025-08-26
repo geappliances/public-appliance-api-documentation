@@ -3404,7 +3404,9 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x141B", "name": "Fridge Focus Enable Video Debug Request", "length": 1 },
-                { "erd": "0x141C", "name": "Fridge Focus Enable Video Debug Status", "length": 1 }
+                { "erd": "0x141C", "name": "Fridge Focus Enable Video Debug Status", "length": 1 },
+                { "erd": "0x141D", "name": "Fridge Focus - False Positive Protection Request", "length": 4 },
+                { "erd": "0x141E", "name": "Fridge Focus - False Positive Protection Status", "length": 4 }
               ]
             }
           ]

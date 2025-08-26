@@ -23260,6 +23260,168 @@
       "size": 1
     }]
   }, {
+    "name": "Fridge Focus - False Positive Protection Request",
+    "id": "0x141d",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to request different video filters to clean up the Fridge Focus picture.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Video Filter.Exclusion Zone Filter",
+      "type": "bool",
+      "bits": {
+        "offset": 24,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.Min Frame Gate",
+      "type": "bool",
+      "bits": {
+        "offset": 25,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.Consecutive Frame Gate",
+      "type": "bool",
+      "bits": {
+        "offset": 26,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.Rolling Window Fuzzy Filter",
+      "type": "bool",
+      "bits": {
+        "offset": 27,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 28,
+        "size": 4
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 16,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Fridge Focus - False Positive Protection Status",
+    "id": "0x141e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to require different video filters to clean up the Fridge Focus picture.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Video Filter.Exclusion Zone Filter",
+      "type": "bool",
+      "bits": {
+        "offset": 24,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.Min Frame Gate",
+      "type": "bool",
+      "bits": {
+        "offset": 25,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.Consecutive Frame Gate",
+      "type": "bool",
+      "bits": {
+        "offset": 26,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.Rolling Window Fuzzy Filter",
+      "type": "bool",
+      "bits": {
+        "offset": 27,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 28,
+        "size": 4
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 16,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Video Filter.reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
     "name": "Machine State",
     "id": "0x2000",
     "operations": ["read", "publish", "subscribe"],
@@ -72509,20 +72671,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
