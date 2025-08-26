@@ -636,7 +636,7 @@
       "type": "legacy"
     },
     "data": [{
-      "name": "Appliance Type",
+      "name": "Brand ID",
       "type": "enum",
       "values": {
         "0": "Unknown",
