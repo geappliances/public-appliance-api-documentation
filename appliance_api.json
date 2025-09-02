@@ -4915,6 +4915,24 @@
                 { "erd": "0x521D", "name": "Lower Oven Cook Time Add Or Subtract Status", "length": 1 },
                 { "erd": "0x521E", "name": "Lower Oven Cook Time Total Duration", "length": 4 }
               ]
+            },
+            {
+              "mask": "0x40000000",
+              "name": "Microphone Supported",
+              "description": "Indicates that the appliance supports a microphone",
+              "dependencies": [],
+              "required": [
+
+              ]
+            },
+            {
+              "mask": "0x80000000",
+              "name": "Enhanced Speaker Supported",
+              "description": "Indicates that the appliance supports the enhanced speaker",
+              "dependencies": [],
+              "required": [
+
+              ]
             }
           ]
         }
