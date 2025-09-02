@@ -23232,6 +23232,62 @@
       "size": 1
     }]
   }, {
+    "name": "Fridge Focus Active Stage",
+    "id": "0x1417",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to report the stage that the fridge focus process is currently in for debug purposes.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Fridge Focus Active Stage",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Fridge Focus Active Session ID",
+    "id": "0x1418",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to report the ID for the current fridge focus session currently running.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Fridge Focus Active Session ID (Last byte Null Terminator)",
+      "type": "string",
+      "offset": 0,
+      "size": 37
+    }]
+  }, {
+    "name": "Fridge Focus Total Bytes Expected to be Uploaded",
+    "id": "0x1419",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to report the total number of bytes that expect to be uploaded for the fridge focus video data file.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Fridge Focus Total Bytes to Upload",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Fridge Focus Actual Number of Bytes Uploaded",
+    "id": "0x141a",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to report the actual number of bytes that were uploaded for the fridge focus video data file.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Fridge Focus Actual Bytes Uploaded",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
     "name": "Fridge Focus Enable Video Debug Request",
     "id": "0x141b",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -72671,20 +72727,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
