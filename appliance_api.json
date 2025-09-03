@@ -2841,7 +2841,9 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x1070", "name": "Precise Fill Request", "length": 2 },
-                { "erd": "0x1071", "name": "Precise Fill Dispenser Status", "length": 4 }
+                { "erd": "0x1071", "name": "Precise Fill Dispenser Status", "length": 4 },
+                { "erd": "0x12F9", "name": "Total Precise Fill Dispense Counts", "length": 4 },
+                { "erd": "0x12FA", "name": "Total Precise Fill Dispense Volume in Ounces", "length": 4 }
               ]
             },
             {

@@ -15370,6 +15370,36 @@
       "size": 1
     }]
   }, {
+    "name": "Total Precise Fill Dispense Counts",
+    "id": "0x12f9",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The total number of precise fill dispense operations.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 43200000
+    },
+    "data": [{
+      "name": "Total Precise Fill Dispense Counts",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
+    "name": "Total Precise Fill Dispense Volume in Ounces",
+    "id": "0x12fa",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The total volume of water that has been dispensed by the precise fill operation.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 43200000
+    },
+    "data": [{
+      "name": "Total Precise Fill Dispense Volume in Ounces",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }]
+  }, {
     "name": "Ice Maker 0 Harvest Fix Counts",
     "id": "0x12fb",
     "operations": ["read", "publish", "subscribe"],
@@ -72727,20 +72757,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
