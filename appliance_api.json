@@ -4941,6 +4941,23 @@
               ]
             }
           ]
+        },
+        "3": {
+          "description": "This is designed to act as overflow for version 2 and is not a standalone version",
+          "required": [
+
+          ],
+          "features": [
+            {
+              "mask": "0x00000001",
+              "name": "UI misconfiguration detection",
+              "description": "",
+              "dependencies": [],
+              "required": [
+
+              ]
+            }
+          ]
         }
       }
     },
