@@ -9442,6 +9442,39 @@
         }
       }
     },
+    "55": {
+      "name": "Sourdough Starter",
+      "description": "",
+      "featureType": 55,
+      "versions": {
+        "1": {
+          "description": "",
+          "required": [
+
+          ],
+          "features": [
+            {
+              "mask": "0x00000001",
+              "name": "Foundation",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9500", "name": "Sourdough Starter Status", "length": 28 }
+              ]
+            },
+            {
+              "mask": "0x00000002",
+              "name": "Ambient Temperature Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9501", "name": "Ambient Temperature", "length": 1 }
+              ]
+            }
+          ]
+        }
+      }
+    },
     "259": {
       "name": "FPA Refrigerator",
       "description": "",

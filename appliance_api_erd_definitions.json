@@ -139520,6 +139520,158 @@
       "size": 1
     }]
   }, {
+    "name": "Sourdough Starter Status",
+    "id": "0x9500",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Sourdough Starter Status:\n* Mode: The current operating mode of the sourdough starter feature.\n* State: The current state of the sourdough starter process.\n\nData Applicable only in Auto Mode:\n* Goal Amount (grams): The target amount of starter to be produced in grams (User Input).\n* Goal Day: The day of the week when the user expects the starter to be ready (User Input).\n* Goal Time HR, Min: The Time of Day (24-hour format) when the user expects the starter to be ready (User Input).\n* Time Since Complete (Minutes): The time elapsed since the Auto mode was last completed.\n\nData Applicable only in By Ratio Mode:\n* Starter Ratio: The ratio of starter in the mixture (User Input).\n* Flour Ratio: The ratio of flour in the mixture (User Input).\n* Water Ratio: The ratio of water in the mixture (User Input).\n\nData Applicable only in By Mass Mode:\n* Flour Mass (grams): The mass of flour used in grams (User Input).\n* Water Mass (grams): The mass of water used in grams (User Input).\n\nData Applicable only in By Ratio Mode and By Mass Mode:\n* Feeding Frequency (Minutes): The frequency at which feedings occur, in minutes (User Input).\n* Time To Crock Full (Minutes): Estimated time until the crock is full, in minutes.\n* Current Starter Mass (grams): The current mass of the starter in grams.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Mode",
+      "type": "enum",
+      "values": {
+        "0": "Unknown",
+        "1": "Off",
+        "2": "Auto",
+        "3": "By Ratio",
+        "4": "By Mass"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "State",
+      "type": "enum",
+      "values": {
+        "0": "Unknown",
+        "1": "Off",
+        "2": "In Progress",
+        "3": "Paused",
+        "4": "Complete"
+      },
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Goal Amount (grams)",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Goal Day",
+      "type": "enum",
+      "values": {
+        "0": "Unknown",
+        "1": "Sunday",
+        "2": "Monday",
+        "3": "Tuesday",
+        "4": "Wednesday",
+        "5": "Thursday",
+        "6": "Friday",
+        "7": "Saturday"
+      },
+      "offset": 4,
+      "size": 1
+    }, {
+      "name": "Goal Time HR: Time of Day (24 - Hour Format)",
+      "type": "u8",
+      "offset": 5,
+      "size": 1
+    }, {
+      "name": "Goal Time Min: Time of Day (0 - 60 Minutes)",
+      "type": "u8",
+      "offset": 6,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "offset": 7,
+      "size": 1
+    }, {
+      "name": "Time Since Complete (Minutes)",
+      "type": "u16",
+      "offset": 8,
+      "size": 2
+    }, {
+      "name": "Starter Ratio",
+      "type": "u8",
+      "offset": 10,
+      "size": 1
+    }, {
+      "name": "Flour Ratio",
+      "type": "u8",
+      "offset": 11,
+      "size": 1
+    }, {
+      "name": "Water Ratio",
+      "type": "u8",
+      "offset": 12,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Flour Mass (grams)",
+      "type": "u16",
+      "offset": 14,
+      "size": 2
+    }, {
+      "name": "Water Mass (grams)",
+      "type": "u16",
+      "offset": 16,
+      "size": 2
+    }, {
+      "name": "Feeding Frequency (Minutes)",
+      "type": "u16",
+      "offset": 18,
+      "size": 2
+    }, {
+      "name": "Time To Crock Full (Minutes)",
+      "type": "u16",
+      "offset": 20,
+      "size": 2
+    }, {
+      "name": "Current Starter Mass (grams)",
+      "type": "u16",
+      "offset": 22,
+      "size": 2
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "offset": 24,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "offset": 26,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "offset": 27,
+      "size": 1
+    }]
+  }, {
+    "name": "Ambient Temperature",
+    "id": "0x9501",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The ambient temperature.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Ambient Temperature (F)",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "DSM Override Status",
     "id": "0xd001",
     "operations": ["read", "write", "publish", "subscribe"],
