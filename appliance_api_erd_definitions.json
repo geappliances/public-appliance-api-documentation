@@ -59833,6 +59833,44 @@
       "size": 2
     }]
   }, {
+    "name": "Remote Payment Method Request",
+    "id": "0x2258",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This erd requests a change to the accepted Payment Methods. Default value should be Multi Pay.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Payment Method",
+      "type": "enum",
+      "values": {
+        "0": "MultiPay",
+        "1": "Coin Pay Only",
+        "2": "App Pay Only"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Remote Payment Method Status",
+    "id": "0x2259",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This erd states the currently selected Payment Method type. Default value should be Multi Pay.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Payment Method",
+      "type": "enum",
+      "values": {
+        "0": "MultiPay",
+        "1": "Coin Pay Only",
+        "2": "App Pay Only"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Mabe - Water Level Selection",
     "id": "0x2f00",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -72771,20 +72809,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1

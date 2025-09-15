@@ -1102,7 +1102,9 @@
                 { "erd": "0x2236", "name": "Commercial Option Id Order", "length": 20 },
                 { "erd": "0x224C", "name": "Commercial Remote Dry Times Request", "length": 20 },
                 { "erd": "0x224D", "name": "Commercial Remote Dry Times Status", "length": 20 },
-                { "erd": "0x224E", "name": "Commercial Remote Dry Time Limits", "length": 40 }
+                { "erd": "0x224E", "name": "Commercial Remote Dry Time Limits", "length": 40 },
+                { "erd": "0x2258", "name": "Remote Payment Method Request", "length": 1 },
+                { "erd": "0x2259", "name": "Remote Payment Method Status", "length": 1 }
               ]
             },
             {
@@ -1124,7 +1126,9 @@
                 { "erd": "0x2254", "name": "Commercial Remote Cooldown Time Limits", "length": 20 },
                 { "erd": "0x2255", "name": "Commercial Remote Cooldown Temperature Request", "length": 20 },
                 { "erd": "0x2256", "name": "Commercial Remote Cooldown Temperature Status", "length": 20 },
-                { "erd": "0x2257", "name": "Commercial Remote Cooldown Temperature Limits", "length": 40 }
+                { "erd": "0x2257", "name": "Commercial Remote Cooldown Temperature Limits", "length": 40 },
+                { "erd": "0x2258", "name": "Remote Payment Method Request", "length": 1 },
+                { "erd": "0x2259", "name": "Remote Payment Method Status", "length": 1 }
               ]
             }
           ]
@@ -1907,7 +1911,9 @@
                 { "erd": "0x2235", "name": "Commercial Cycle Id Order", "length": 16 },
                 { "erd": "0x223C", "name": "Commercial Remote Wash Times Request", "length": 32 },
                 { "erd": "0x223D", "name": "Commercial Remote Wash Times Status", "length": 32 },
-                { "erd": "0x223E", "name": "Commercial Remote Wash Time Limits", "length": 112 }
+                { "erd": "0x223E", "name": "Commercial Remote Wash Time Limits", "length": 112 },
+                { "erd": "0x2258", "name": "Remote Payment Method Request", "length": 1 },
+                { "erd": "0x2259", "name": "Remote Payment Method Status", "length": 1 }
               ]
             },
             {
@@ -1934,7 +1940,9 @@
                 { "erd": "0x2248", "name": "Commercial Remote Extra Rinse Option Deselected By Default Request", "length": 1 },
                 { "erd": "0x2249", "name": "Commercial Remote Extra Rinse Option Deselected By Default Status", "length": 1 },
                 { "erd": "0x224A", "name": "Commercial Remote Spin Limit Option Request", "length": 16 },
-                { "erd": "0x224B", "name": "Commercial Remote Spin Limit Option Status", "length": 16 }
+                { "erd": "0x224B", "name": "Commercial Remote Spin Limit Option Status", "length": 16 },
+                { "erd": "0x2258", "name": "Remote Payment Method Request", "length": 1 },
+                { "erd": "0x2259", "name": "Remote Payment Method Status", "length": 1 }
               ]
             }
           ]
