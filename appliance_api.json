@@ -9478,6 +9478,15 @@
               "required": [
                 { "erd": "0x9501", "name": "Ambient Temperature", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00000010",
+              "name": "Sourdough Starter Notifications Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9505", "name": "Sourdough Starter Push Notifications", "length": 4 }
+              ]
             }
           ]
         }

@@ -139724,6 +139724,141 @@
       "size": 1
     }]
   }, {
+    "name": "Sourdough Starter Push Notifications",
+    "id": "0x9505",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "- Byte 0 & 1 - Individual bits set to indicate different push notifications.\n    When setting a notification, only the particular bit must be set,\n    other bits must be masked off to prevent pushing the same notification multiple times.\n\n    * Mode Complete Alert - Intended to indicate mode completion.\n    * Crock Nearly Full Alert - Intended to alert the user that the crock is nearly full.\n    * Crock Full Alert - Intended to alert the user that the crock is full.\n    * Crock Removed Alert - Intended to alert the user that the crock has been removed (The firmware has additional logic, regarding when the notification should be triggered).\n    * Power Loss Alert - Intended to alert the user that a power loss event has occurred.\n\n- Byte 2 & 3 - Bits are set to indicate that the user can enable or disable the corresponding notification in the client.\n    Bits are cleared to indicate the notification is unsupported and hence cannot be enabled or disabled by the user.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Mode Complete Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 8,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Crock Nearly Full Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Crock Full Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Crock Removed Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 11,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Power Loss Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 12,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 13,
+        "size": 3
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Mode Complete Alert Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 8,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Crock Nearly Full Alert Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Crock Full Alert Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Crock Removed Alert Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 11,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Power Loss Alert Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 12,
+        "size": 1
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 13,
+        "size": 3
+      },
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
     "name": "DSM Override Status",
     "id": "0xd001",
     "operations": ["read", "write", "publish", "subscribe"],
