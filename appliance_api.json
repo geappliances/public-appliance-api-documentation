@@ -9480,6 +9480,27 @@
               ]
             },
             {
+              "mask": "0x00000004",
+              "name": "Ambient Temperature Offset Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9502", "name": "Temperature Offset Status", "length": 1 },
+                { "erd": "0x9503", "name": "Temperature Offset Request", "length": 1 },
+                { "erd": "0x9504", "name": "Temperature Offset Limits", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000008",
+              "name": "UI Brightness Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9203", "name": "SDA Current Display Brightness Setting", "length": 1 },
+                { "erd": "0x9204", "name": "SDA Requested Display Brightness Setting", "length": 1 }
+              ]
+            },
+            {
               "mask": "0x00000010",
               "name": "Sourdough Starter Notifications Supported",
               "description": "",

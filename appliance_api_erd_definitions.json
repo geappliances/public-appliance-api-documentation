@@ -72809,20 +72809,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -139721,6 +139721,53 @@
       "name": "Ambient Temperature (F)",
       "type": "u8",
       "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Temperature Offset Status",
+    "id": "0x9502",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The current value of temperature offset setting",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Temperature Offset (signed fahrenheit)",
+      "type": "i8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Temperature Offset Request",
+    "id": "0x9503",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The requested value of temperature offset setting",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Temperature Offset (signed fahrenheit)",
+      "type": "i8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Temperature Offset Limits",
+    "id": "0x9504",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The limits for temperature offset setting",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Minimum Supported Temperature Offset (signed fahrenheit)",
+      "type": "i8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Maximum Supported Temperature Offset (signed fahrenheit)",
+      "type": "i8",
+      "offset": 1,
       "size": 1
     }]
   }, {
