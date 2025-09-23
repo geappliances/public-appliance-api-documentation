@@ -23524,6 +23524,515 @@
       "size": 4
     }]
   }, {
+    "name": "Barcode Scan History",
+    "id": "0x141f",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The data for the last 10 barcodes.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Barcode Scan History[0].Barcode",
+      "type": "string",
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[0].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 16,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[0].Padding",
+      "type": "u8",
+      "offset": 17,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[0].Sequence Number",
+      "type": "u16",
+      "offset": 18,
+      "size": 2
+    }, {
+      "name": "Barcode Scan History[1].Barcode",
+      "type": "string",
+      "offset": 20,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[1].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 36,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[1].Padding",
+      "type": "u8",
+      "offset": 37,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[1].Sequence Number",
+      "type": "u16",
+      "offset": 38,
+      "size": 2
+    }, {
+      "name": "Barcode Scan History[2].Barcode",
+      "type": "string",
+      "offset": 40,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[2].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 56,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[2].Padding",
+      "type": "u8",
+      "offset": 57,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[2].Sequence Number",
+      "type": "u16",
+      "offset": 58,
+      "size": 2
+    }, {
+      "name": "Barcode Scan History[3].Barcode",
+      "type": "string",
+      "offset": 60,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[3].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 76,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[3].Padding",
+      "type": "u8",
+      "offset": 77,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[3].Sequence Number",
+      "type": "u16",
+      "offset": 78,
+      "size": 2
+    }, {
+      "name": "Barcode Scan History[4].Barcode",
+      "type": "string",
+      "offset": 80,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[4].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 96,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[4].Padding",
+      "type": "u8",
+      "offset": 97,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[4].Sequence Number",
+      "type": "u16",
+      "offset": 98,
+      "size": 2
+    }, {
+      "name": "Barcode Scan History[5].Barcode",
+      "type": "string",
+      "offset": 100,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[5].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 116,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[5].Padding",
+      "type": "u8",
+      "offset": 117,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[5].Sequence Number",
+      "type": "u16",
+      "offset": 118,
+      "size": 2
+    }, {
+      "name": "Barcode Scan History[6].Barcode",
+      "type": "string",
+      "offset": 120,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[6].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 136,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[6].Padding",
+      "type": "u8",
+      "offset": 137,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[6].Sequence Number",
+      "type": "u16",
+      "offset": 138,
+      "size": 2
+    }, {
+      "name": "Barcode Scan History[7].Barcode",
+      "type": "string",
+      "offset": 140,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[7].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 156,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[7].Padding",
+      "type": "u8",
+      "offset": 157,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[7].Sequence Number",
+      "type": "u16",
+      "offset": 158,
+      "size": 2
+    }, {
+      "name": "Barcode Scan History[8].Barcode",
+      "type": "string",
+      "offset": 160,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[8].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 176,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[8].Padding",
+      "type": "u8",
+      "offset": 177,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[8].Sequence Number",
+      "type": "u16",
+      "offset": 178,
+      "size": 2
+    }, {
+      "name": "Barcode Scan History[9].Barcode",
+      "type": "string",
+      "offset": 180,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History[9].Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 196,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[9].Padding",
+      "type": "u8",
+      "offset": 197,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History[9].Sequence Number",
+      "type": "u16",
+      "offset": 198,
+      "size": 2
+    }]
+  }, {
     "name": "Secondary Feature Pan Current Mode Request",
     "id": "0x1420",
     "operations": ["read", "write", "publish", "subscribe"],

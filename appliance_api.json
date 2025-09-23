@@ -3404,7 +3404,8 @@
                 { "erd": "0x140F", "name": "Fridge Focus Images Count", "length": 4 },
                 { "erd": "0x1410", "name": "Barcodes Scanned Count", "length": 4 },
                 { "erd": "0x1411", "name": "Number of Wake Word Detected Counts", "length": 4 },
-                { "erd": "0x1412", "name": "Maximum SBC Volume Ever Setting", "length": 1 }
+                { "erd": "0x1412", "name": "Maximum SBC Volume Ever Setting", "length": 1 },
+                { "erd": "0x141F", "name": "Barcode Scan History", "length": 200 }
               ]
             },
             {
