@@ -3424,6 +3424,54 @@
               ]
             }
           ]
+        },
+        "5": {
+          "description": "This is an extension of v2",
+          "required": [
+
+          ],
+          "features": [
+            {
+              "mask": "0x00000001",
+              "name": "Secondary Feature Pan Mode Off",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1420", "name": "Secondary Feature Pan Current Mode Request", "length": 4 },
+                { "erd": "0x1421", "name": "Secondary Feature Pan Current Mode Status", "length": 4 }
+              ]
+            },
+            {
+              "mask": "0x00000002",
+              "name": "Secondary Feature Pan Mode 1",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1420", "name": "Secondary Feature Pan Current Mode Request", "length": 4 },
+                { "erd": "0x1421", "name": "Secondary Feature Pan Current Mode Status", "length": 4 },
+                { "erd": "0x1422", "name": "Secondary Feature Pan Mode 1 Status", "length": 2 },
+                { "erd": "0x1423", "name": "Secondary Feature Pan Mode 1 Setpoint Range Data", "length": 8 },
+                { "erd": "0x1426", "name": "Number of Secondary Feature Pan Setting Changes", "length": 2 },
+                { "erd": "0x1427", "name": "Maximum Secondary Feature Pan User Temperature Setting", "length": 2 },
+                { "erd": "0x1428", "name": "Minimum Secondary Feature Pan User Temperature Setting", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000004",
+              "name": "Secondary Feature Pan Mode 2",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1420", "name": "Secondary Feature Pan Current Mode Request", "length": 4 },
+                { "erd": "0x1421", "name": "Secondary Feature Pan Current Mode Status", "length": 4 },
+                { "erd": "0x1424", "name": "Secondary Feature Pan Mode 2 Status", "length": 2 },
+                { "erd": "0x1423", "name": "Secondary Feature Pan Mode 1 Setpoint Range Data", "length": 8 },
+                { "erd": "0x1426", "name": "Number of Secondary Feature Pan Setting Changes", "length": 2 },
+                { "erd": "0x1427", "name": "Maximum Secondary Feature Pan User Temperature Setting", "length": 2 },
+                { "erd": "0x1428", "name": "Minimum Secondary Feature Pan User Temperature Setting", "length": 2 }
+              ]
+            }
+          ]
         }
       }
     },

@@ -23524,6 +23524,193 @@
       "size": 4
     }]
   }, {
+    "name": "Secondary Feature Pan Current Mode Request",
+    "id": "0x1420",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Request to control the current secondary feature pan mode and temperature in degrees Fahrenheit multiplied by 100.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "activeMode",
+      "type": "enum",
+      "values": {
+        "0": "Off",
+        "1": "Mode 1",
+        "2": "Mode 2",
+        "3": "Mode 3",
+        "4": "Mode 4",
+        "5": "Mode 5",
+        "6": "Mode 6",
+        "7": "Mode 7",
+        "255": "Not Controllable"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "temperature",
+      "type": "i16",
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Secondary Feature Pan Current Mode Status",
+    "id": "0x1421",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Response with the current secondary Feature Pan mode and temperature in degrees Fahrenheit multiplied by 100.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "activeMode",
+      "type": "enum",
+      "values": {
+        "0": "Off",
+        "1": "Mode 1",
+        "2": "Mode 2",
+        "3": "Mode 3",
+        "4": "Mode 4",
+        "5": "Mode 5",
+        "6": "Mode 6",
+        "7": "Mode 7",
+        "255": "Not Controllable"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "temperature",
+      "type": "i16",
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Secondary Feature Pan Mode 1 Status",
+    "id": "0x1422",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Specific temperature where the secondary feature pan mode 1 is set.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "temperature",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Secondary Feature Pan Mode 1 Setpoint Range Data",
+    "id": "0x1423",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the secondary feature pan mode 1 label and setpoint temperature limits.\nData is used to define limits for ERD 0x1422.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Options.Feature Pan Mode 1 Minimum Temperature (fahrenheit x 100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Options.Feature Pan Mode 1 Maximum Temperature (fahrenheit x 100)",
+      "type": "i16",
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Options.Feature Pan Mode 1 default Temperature (fahrenheit x 100)",
+      "type": "i16",
+      "offset": 4,
+      "size": 2
+    }, {
+      "name": "Options.label",
+      "type": "enum",
+      "values": {
+        "0": "Freezer",
+        "1": "Refrigerator",
+        "2": "Chiller",
+        "3": "Soft Freeze",
+        "4": "Meat",
+        "5": "Beverages",
+        "6": "Snacks",
+        "7": "Wine",
+        "8": "Ice Cream",
+        "9": "Drinks",
+        "10": "Produce"
+      },
+      "offset": 6,
+      "size": 1
+    }, {
+      "name": "Options.Reserved",
+      "type": "u8",
+      "offset": 7,
+      "size": 1
+    }]
+  }, {
+    "name": "Secondary Feature Pan Mode 2 Status",
+    "id": "0x1424",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Specific temperature where the secondary feature pan mode 2 is set.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "temperature",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Number of Secondary Feature Pan Setting Changes",
+    "id": "0x1426",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The count of the number of times the secondary feature pan temperature setting has changed.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Number of Feature Pan Setting Changes",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Maximum Secondary Feature Pan User Temperature Setting",
+    "id": "0x1427",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The maximum temperature that the secondary feature pan has been set to in degreesFx100.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Maximum Feature Pan User Temperature Setting (Degrees Fx100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Minimum Secondary Feature Pan User Temperature Setting",
+    "id": "0x1428",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The minimum temperature that the secondary feature pan has been set to in degreesFx100.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Minimum Feature Pan User Temperature Setting (Degrees Fx100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Machine State",
     "id": "0x2000",
     "operations": ["read", "publish", "subscribe"],
