@@ -61664,7 +61664,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "Reserved 1",
+      "name": "FaultVoltageProtectionActive",
       "type": "bool",
       "bits": {
         "offset": 3,
@@ -61673,7 +61673,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "Reserved 2",
+      "name": "Reserved 1",
       "type": "bool",
       "bits": {
         "offset": 4,
@@ -61682,7 +61682,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "Reserved 3",
+      "name": "Reserved 2",
       "type": "bool",
       "bits": {
         "offset": 5,
@@ -61691,7 +61691,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "Reserved 4",
+      "name": "Reserved 3",
       "type": "bool",
       "bits": {
         "offset": 6,
@@ -61700,7 +61700,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "Reserved 5",
+      "name": "Reserved 4",
       "type": "bool",
       "bits": {
         "offset": 7,
