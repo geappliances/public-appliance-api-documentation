@@ -1104,7 +1104,9 @@
                 { "erd": "0x224D", "name": "Commercial Remote Dry Times Status", "length": 20 },
                 { "erd": "0x224E", "name": "Commercial Remote Dry Time Limits", "length": 40 },
                 { "erd": "0x2258", "name": "Remote Payment Method Request", "length": 1 },
-                { "erd": "0x2259", "name": "Remote Payment Method Status", "length": 1 }
+                { "erd": "0x2259", "name": "Remote Payment Method Status", "length": 1 },
+                { "erd": "0x2316", "name": "Commercial Remote Max Drying Times Request", "length": 10 },
+                { "erd": "0x2317", "name": "Commercial Remote Max Drying Times Status", "length": 30 }
               ]
             },
             {

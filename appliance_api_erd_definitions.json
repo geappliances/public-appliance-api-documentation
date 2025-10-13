@@ -54539,6 +54539,224 @@
       "size": 1
     }]
   }, {
+    "name": "Commercial Remote Max Drying Times Request",
+    "id": "0x2316",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "This erd requests a change to the max drying times.\nThis erd uses data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be ignored.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Option n Max Drying Time in Minutes[0]",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[1]",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[2]",
+      "type": "u8",
+      "offset": 2,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[3]",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[4]",
+      "type": "u8",
+      "offset": 4,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[5]",
+      "type": "u8",
+      "offset": 5,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[6]",
+      "type": "u8",
+      "offset": 6,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[7]",
+      "type": "u8",
+      "offset": 7,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[8]",
+      "type": "u8",
+      "offset": 8,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[9]",
+      "type": "u8",
+      "offset": 9,
+      "size": 1
+    }]
+  }, {
+    "name": "Commercial Remote Max Drying Times Status",
+    "id": "0x2317",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This erd states the current values and min and max limits of the max drying times.\nThis erd states data in the option order stated in erd 0x2236.\nUnused entries stated in erd 0x2236 with OptionId_DontCare (0xFF)\nshall be populated with 0xFF.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Option n Max Drying Time in Minutes[0]",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[1]",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[2]",
+      "type": "u8",
+      "offset": 2,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[3]",
+      "type": "u8",
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[4]",
+      "type": "u8",
+      "offset": 4,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[5]",
+      "type": "u8",
+      "offset": 5,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[6]",
+      "type": "u8",
+      "offset": 6,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[7]",
+      "type": "u8",
+      "offset": 7,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[8]",
+      "type": "u8",
+      "offset": 8,
+      "size": 1
+    }, {
+      "name": "Option n Max Drying Time in Minutes[9]",
+      "type": "u8",
+      "offset": 9,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[0]",
+      "type": "u8",
+      "offset": 10,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[1]",
+      "type": "u8",
+      "offset": 11,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[2]",
+      "type": "u8",
+      "offset": 12,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[3]",
+      "type": "u8",
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[4]",
+      "type": "u8",
+      "offset": 14,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[5]",
+      "type": "u8",
+      "offset": 15,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[6]",
+      "type": "u8",
+      "offset": 16,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[7]",
+      "type": "u8",
+      "offset": 17,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[8]",
+      "type": "u8",
+      "offset": 18,
+      "size": 1
+    }, {
+      "name": "Option n Minimum Max Drying Time in Minutes[9]",
+      "type": "u8",
+      "offset": 19,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[0]",
+      "type": "u8",
+      "offset": 20,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[1]",
+      "type": "u8",
+      "offset": 21,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[2]",
+      "type": "u8",
+      "offset": 22,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[3]",
+      "type": "u8",
+      "offset": 23,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[4]",
+      "type": "u8",
+      "offset": 24,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[5]",
+      "type": "u8",
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[6]",
+      "type": "u8",
+      "offset": 26,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[7]",
+      "type": "u8",
+      "offset": 27,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[8]",
+      "type": "u8",
+      "offset": 28,
+      "size": 1
+    }, {
+      "name": "Option n Maximum Max Drying Time in Minutes[9]",
+      "type": "u8",
+      "offset": 29,
+      "size": 1
+    }]
+  }, {
     "name": "Mabe - Water Level Selection",
     "id": "0x2f00",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -67495,20 +67713,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -134137,7 +134355,8 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The ambient temperature.",
     "updateClass": {
-      "type": "event"
+      "type": "periodic",
+      "periodInMsec": 60000
     },
     "data": [{
       "name": "Ambient Temperature (F)",
