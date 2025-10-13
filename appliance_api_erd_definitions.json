@@ -3152,6 +3152,7 @@
         "21": "ZWFX1",
         "22": "MSWF",
         "23": "GSWF",
+        "24": "ZWFE",
         "255": "Feature Unavailable"
       },
       "offset": 0,
@@ -67713,20 +67714,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
@@ -134355,7 +134356,8 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The ambient temperature.",
     "updateClass": {
-      "type": "event"
+      "type": "periodic",
+      "periodInMsec": 60000
     },
     "data": [{
       "name": "Ambient Temperature (F)",
