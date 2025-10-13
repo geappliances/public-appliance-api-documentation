@@ -134355,8 +134355,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "The ambient temperature.",
     "updateClass": {
-      "type": "periodic",
-      "periodInMsec": 60000
+      "type": "event"
     },
     "data": [{
       "name": "Ambient Temperature (F)",
