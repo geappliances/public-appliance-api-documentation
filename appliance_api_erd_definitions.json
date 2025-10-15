@@ -3134,7 +3134,7 @@
         "3": "MWFE",
         "4": "XWF",
         "5": "XWFE",
-        "6": "ZWF",
+        "6": "ZWFE",
         "7": "ZWFUV",
         "8": "ZWFPFAS",
         "9": "ZWFPLUS",
@@ -3152,7 +3152,6 @@
         "21": "ZWFX1",
         "22": "MSWF",
         "23": "GSWF",
-        "24": "ZWFE",
         "255": "Feature Unavailable"
       },
       "offset": 0,
