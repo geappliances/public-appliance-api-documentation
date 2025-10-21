@@ -124831,7 +124831,9 @@
       "values": {
         "0": "Unknown",
         "1": "Carbon Filter",
-        "2": "Scale Inhibiting Filter"
+        "2": "Scale Inhibiting Filter",
+        "3": "Opal Mini: CTO",
+        "4": "Opal Mini: CTO + Scale Inhibiting"
       },
       "offset": 0,
       "size": 1
@@ -124850,7 +124852,9 @@
       "values": {
         "0": "Unknown",
         "1": "Carbon Filter",
-        "2": "Scale Inhibiting Filter"
+        "2": "Scale Inhibiting Filter",
+        "3": "Opal Mini: CTO",
+        "4": "Opal Mini: CTO + Scale Inhibiting"
       },
       "offset": 0,
       "size": 1
