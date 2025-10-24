@@ -55798,7 +55798,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "FaultMotorActive",
+      "name": "MotorFaultTypeAActive",
       "type": "bool",
       "bits": {
         "offset": 13,
@@ -55807,7 +55807,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "FaultOverFlowActive",
+      "name": "MotorFaultTypeBActive",
       "type": "bool",
       "bits": {
         "offset": 14,
@@ -55816,7 +55816,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "FaultMotorControlActive",
+      "name": "MotorFaultTypeCActive",
       "type": "bool",
       "bits": {
         "offset": 15,
@@ -55825,7 +55825,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "FaultWaterOverheatingActive",
+      "name": "FaultOverFlowActive",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -67714,20 +67714,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
