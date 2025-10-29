@@ -5831,6 +5831,25 @@
               "required": [
                 { "erd": "0x905F", "name": "Coffee Brewer Supported Features v1", "length": 2 }
               ]
+            },
+            {
+              "mask": "0x00000800",
+              "name": "Filter Status",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9104", "name": "Ice Maker Filter Status", "length": 1 },
+                { "erd": "0x911D", "name": "Ice Maker Filter Status Reset", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00001000",
+              "name": "Filter Usage",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9136", "name": "Current Filter Usage", "length": 2 }
+              ]
             }
           ]
         },
