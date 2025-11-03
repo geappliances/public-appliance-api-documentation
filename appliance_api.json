@@ -2935,7 +2935,7 @@
                 { "erd": "0x3000", "name": "Cycle Status", "length": 6 },
                 { "erd": "0x3006", "name": "Door Count", "length": 2 },
                 { "erd": "0x301A", "name": "CSM Life Count", "length": 2 },
-                { "erd": "0x301B", "name": "CSM Fault Data", "length": 41 },
+                { "erd": "0x301B", "name": "CSM Fault Data", "length": 44 },
                 { "erd": "0x301E", "name": "Dispense Count", "length": 2 },
                 { "erd": "0x3020", "name": "Dishwasher Usage Profile", "length": 32 },
                 { "erd": "0x3035", "name": "Water Temperature", "length": 1 },

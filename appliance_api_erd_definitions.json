@@ -57335,6 +57335,21 @@
       "type": "u8",
       "offset": 40,
       "size": 1
+    }, {
+      "name": "padding",
+      "type": "u8",
+      "offset": 41,
+      "size": 1
+    }, {
+      "name": "padding",
+      "type": "u8",
+      "offset": 42,
+      "size": 1
+    }, {
+      "name": "padding",
+      "type": "u8",
+      "offset": 43,
+      "size": 1
     }]
   }, {
     "name": "Cycle Names",
