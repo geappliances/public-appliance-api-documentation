@@ -42876,7 +42876,9 @@
       "values": {
         "0": "Unknown",
         "1": "Electric",
-        "2": "Gas"
+        "2": "Gas",
+        "3": "Heat Pump",
+        "4": "Condenser"
       },
       "offset": 0,
       "size": 1
@@ -67729,20 +67731,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
