@@ -18191,6 +18191,20 @@
       "size": 4
     }]
   }, {
+    "name": "SBC Request To Power Off Barcode Scanner",
+    "id": "0x142c",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used by the SBC to request powering the barcode scanner off",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Barcode Scanner Power Disabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Machine State",
     "id": "0x2000",
     "operations": ["read", "publish", "subscribe"],

@@ -2464,7 +2464,8 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x1263", "name": "Barcode Scanner Device Power Request", "length": 1 },
-                { "erd": "0x1264", "name": "Barcode Scanner Device Power Status", "length": 1 }
+                { "erd": "0x1264", "name": "Barcode Scanner Device Power Status", "length": 1 },
+                { "erd": "0x142C", "name": "SBC Request To Power Off Barcode Scanner", "length": 1 }
               ]
             },
             {
