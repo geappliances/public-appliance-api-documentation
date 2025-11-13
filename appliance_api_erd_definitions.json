@@ -9713,11 +9713,29 @@
       "offset": 0,
       "size": 16
     }, {
+      "name": "Supported Notifications.Secondary Drawer Temperature Met Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 104,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Secondary Convertible Compartment Door Opened Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 105,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
       "name": "Supported Notifications.Reserved 3",
       "type": "u8",
       "bits": {
-        "offset": 104,
-        "size": 8
+        "offset": 106,
+        "size": 6
       },
       "offset": 0,
       "size": 16
@@ -9983,11 +10001,29 @@
       "offset": 16,
       "size": 16
     }, {
+      "name": "Notifications.Secondary Drawer Temperature Met Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 104,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Secondary Convertible Compartment Door Opened Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 105,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
       "name": "Notifications.Reserved 3",
       "type": "u8",
       "bits": {
-        "offset": 104,
-        "size": 8
+        "offset": 106,
+        "size": 6
       },
       "offset": 16,
       "size": 16
@@ -67834,20 +67870,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
