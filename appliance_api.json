@@ -8748,6 +8748,30 @@
         }
       }
     },
+    "56": {
+      "name": "Thermostat",
+      "description": "",
+      "featureType": 56,
+      "versions": {
+        "1": {
+          "description": "",
+          "required": [
+
+          ],
+          "features": [
+            {
+              "mask": "0x00000002",
+              "name": "Ambient Temperature Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x7104", "name": "Processed Inside ambient temperature", "length": 2 }
+              ]
+            }
+          ]
+        }
+      }
+    },
     "259": {
       "name": "FPA Refrigerator",
       "description": "",
