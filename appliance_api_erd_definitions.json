@@ -3474,6 +3474,7 @@
       "name": "Application ID",
       "type": "enum",
       "values": {
+        "0": "Image ID exceeds 255",
         "6": "AP5 (Eagle) model",
         "10": "Fridge Model",
         "11": "Freezer Model",
