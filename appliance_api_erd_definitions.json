@@ -59427,6 +59427,34 @@
       "size": 1
     }]
   }, {
+    "name": "Auto Lid Down Setting",
+    "id": "0x320c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This setting controls whether the drawer lids will open after a cycle has completed \nor remain closed.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Auto lid down enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Auto Lid Down Request",
+    "id": "0x320d",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Request whether the drawer lids will open after a cycle has completed or remain closed.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Auto lid down enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Tub 1 Cycle Indication",
     "id": "0x320e",
     "operations": ["read", "publish", "subscribe"],
@@ -62759,6 +62787,34 @@
       },
       "offset": 0,
       "size": 8
+    }]
+  }, {
+    "name": "Default to Eco Cycle Setting",
+    "id": "0x3231",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This setting controls whether the product will default to running Eco cycle (for EU\nenergy compliance), or the last selected cycle. Must default to enabled for \nEU products.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Default to Eco cycle enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Default to Eco Cycle Request",
+    "id": "0x3232",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Request for whether the product will default to running Eco cycle, or the last selected cycle.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Default to Eco cycle enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
     }]
   }, {
     "name": "Tub1 Water Temperature",
