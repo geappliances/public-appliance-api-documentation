@@ -134827,6 +134827,20 @@
       "size": 2
     }]
   }, {
+    "name": "Crock Present",
+    "id": "0x9509",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Crock Presence Status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Crock Present",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "DSM Override Status",
     "id": "0xd001",
     "operations": ["read", "write", "publish", "subscribe"],

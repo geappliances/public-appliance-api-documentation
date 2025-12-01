@@ -8770,6 +8770,15 @@
               "required": [
                 { "erd": "0x9508", "name": "Time Until Next Feed", "length": 4 }
               ]
+            },
+            {
+              "mask": "0x00000100",
+              "name": "Crock Detection Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9509", "name": "Crock Present", "length": 1 }
+              ]
             }
           ]
         }
