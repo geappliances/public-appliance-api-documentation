@@ -8702,7 +8702,7 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x9500", "name": "Sourdough Starter Status", "length": 32 }
+                { "erd": "0x9500", "name": "Sourdough Starter Status", "length": 26 }
               ]
             },
             {
@@ -8742,6 +8742,33 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x9505", "name": "Sourdough Starter Push Notifications", "length": 4 }
+              ]
+            },
+            {
+              "mask": "0x00000020",
+              "name": "Time Since Complete Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9506", "name": "Time Since Complete", "length": 4 }
+              ]
+            },
+            {
+              "mask": "0x00000040",
+              "name": "Time To Crock Full Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9507", "name": "Time To Crock Full", "length": 4 }
+              ]
+            },
+            {
+              "mask": "0x00000080",
+              "name": "Time Until Next Feed Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9508", "name": "Time Until Next Feed", "length": 4 }
               ]
             }
           ]

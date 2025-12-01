@@ -18297,6 +18297,7 @@
         "11": "Prewash",
         "12": "Soil Sensing",
         "13": "Unlocking",
+        "14": "Color Detection",
         "128": "Drying",
         "129": "Mist Steam",
         "130": "Cool Down",
@@ -48928,6 +48929,7 @@
         "11": "Prewash",
         "12": "Soil Sensing",
         "13": "Unlocking",
+        "14": "Color Detection",
         "128": "Drying",
         "129": "Mist Steam",
         "130": "Cool Down",
@@ -134417,10 +134419,9 @@
     "name": "Sourdough Starter Status",
     "id": "0x9500",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Sourdough Starter Status:\n* Mode: The current operating mode of the sourdough starter feature.\n* State: The current state of the sourdough starter process.\n\nData Applicable only in Auto Mode:\n* Goal Amount (grams): The target amount of starter to be produced in grams (User Input).\n* Goal Day: The day of the week when the user expects the starter to be ready (User Input).\n* Goal Time HR, Min: The Time of Day (24-hour format) when the user expects the starter to be ready (User Input).\n* Time Since Complete (Minutes): The time elapsed since the Auto mode was last completed.\n\nData Applicable only in By Ratio Mode:\n* Starter Ratio: The ratio of starter in the mixture (User Input).\n* Flour Ratio: The ratio of flour in the mixture (User Input).\n* Water Ratio: The ratio of water in the mixture (User Input).\n\nData Applicable only in By Mass Mode:\n* Flour Mass (grams): The mass of flour used in grams (User Input).\n* Water Mass (grams): The mass of water used in grams (User Input).\n\nData Applicable only in By Ratio Mode and By Mass Mode:\n* Feeding Frequency (Minutes): The frequency at which feedings occur, in minutes (User Input).\n* Time To Crock Full (Minutes): Estimated time until the crock is full, in minutes.\n* Current Starter Mass (grams): The current mass of the starter in grams.",
+    "description": "Sourdough Starter Status:\n* Mode: The current operating mode of the sourdough starter feature.\n* State: The current state of the sourdough starter process.\n\nData Applicable only in Auto Mode:\n* Goal Amount (grams): The target amount of starter to be produced in grams (User Input).\n* Goal Day: The day of the week when the user expects the starter to be ready (User Input).\n* Goal Time HR, Min: The Time of Day (24-hour format) when the user expects the starter to be ready (User Input).\n\nData Applicable only in By Ratio Mode:\n* Starter Ratio: The ratio of starter in the mixture (User Input).\n* Flour Ratio: The ratio of flour in the mixture (User Input).\n* Water Ratio: The ratio of water in the mixture (User Input).\n\nData Applicable only in By Mass Mode:\n* Flour Mass (grams): The mass of flour used in grams (User Input).\n* Water Mass (grams): The mass of water used in grams (User Input).\n\nData Applicable only in By Ratio Mode and By Mass Mode:\n* Feeding Frequency (Minutes): The frequency at which feedings occur, in minutes (User Input).\n* Current Starter Mass (grams): The current mass of the starter in grams.",
     "updateClass": {
-      "type": "periodic",
-      "periodInMsec": 600000
+      "type": "event"
     },
     "data": [{
       "name": "Mode",
@@ -134442,7 +134443,8 @@
         "1": "Off",
         "2": "In Progress",
         "3": "Paused",
-        "4": "Complete"
+        "4": "Complete",
+        "5": "Feeding"
       },
       "offset": 1,
       "size": 1
@@ -134482,89 +134484,74 @@
       "offset": 7,
       "size": 1
     }, {
-      "name": "Time Since Complete (Minutes)",
-      "type": "u16",
-      "offset": 8,
-      "size": 2
-    }, {
       "name": "Starter Ratio",
       "type": "u8",
-      "offset": 10,
+      "offset": 8,
       "size": 1
     }, {
       "name": "Flour Ratio",
       "type": "u8",
-      "offset": 11,
+      "offset": 9,
       "size": 1
     }, {
       "name": "Water Ratio",
       "type": "u8",
-      "offset": 12,
+      "offset": 10,
       "size": 1
     }, {
       "name": "Reserved",
       "type": "u8",
-      "offset": 13,
+      "offset": 11,
       "size": 1
     }, {
       "name": "Flour Mass (grams)",
       "type": "u16",
-      "offset": 14,
+      "offset": 12,
       "size": 2
     }, {
       "name": "Water Mass (grams)",
       "type": "u16",
-      "offset": 16,
+      "offset": 14,
       "size": 2
     }, {
       "name": "Feeding Frequency (Minutes)",
       "type": "u16",
-      "offset": 18,
-      "size": 2
-    }, {
-      "name": "Time To Crock Full (Minutes)",
-      "type": "u16",
-      "offset": 20,
+      "offset": 16,
       "size": 2
     }, {
       "name": "Current Starter Mass (grams)",
       "type": "u16",
+      "offset": 18,
+      "size": 2
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "offset": 20,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "offset": 21,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
       "offset": 22,
-      "size": 2
+      "size": 1
     }, {
-      "name": "Time Until Next Feed (Minutes)",
-      "type": "u16",
+      "name": "Reserved",
+      "type": "u8",
+      "offset": 23,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
       "offset": 24,
-      "size": 2
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "offset": 26,
       "size": 1
     }, {
       "name": "Reserved",
       "type": "u8",
-      "offset": 27,
-      "size": 1
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "offset": 29,
-      "size": 1
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "offset": 30,
-      "size": 1
-    }, {
-      "name": "Reserved",
-      "type": "u8",
-      "offset": 31,
+      "offset": 25,
       "size": 1
     }]
   }, {
@@ -134761,6 +134748,81 @@
         "offset": 0,
         "size": 8
       },
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Time Since Complete",
+    "id": "0x9506",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Time Since Complete (Minutes): The time elapsed since the Auto mode was last completed.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Timer Active",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Time Since Complete (Minutes)",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Time To Crock Full",
+    "id": "0x9507",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Time To Crock Full (Minutes): Estimated time until the crock is full. Applicable in By Ratio Mode and By Mass Mode.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Timer Active",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Time To Crock Full (Minutes)",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Time Until Next Feed",
+    "id": "0x9508",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Time Until Next Feed (Minutes): Estimated time until the next feed. Applicable in By Ratio Mode and By Mass Mode.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Timer Active",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Time Until Next Feed (Minutes)",
+      "type": "u16",
       "offset": 2,
       "size": 2
     }]
