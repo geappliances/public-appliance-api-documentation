@@ -698,6 +698,20 @@
       "size": 1
     }]
   }, {
+    "name": "Camera Configuration Personality",
+    "id": "0x0117",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "A personality number that corresponds to a list of camera parameters that are used to optimize the camera stream for the specific characteristics of the appliance unit.\nThe personalities are defined here: https://github.com/geappliances/android.appliance-camera-parametric.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Camera configuration personality",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Alexa Registration Request",
     "id": "0x0300",
     "operations": ["read", "write", "publish", "subscribe"],

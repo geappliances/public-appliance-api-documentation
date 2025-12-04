@@ -10166,6 +10166,15 @@
               "required": [
                 { "erd": "0x0900", "name": "Sign of Life", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00000002",
+              "name": "Camera Configuration Personality",
+              "description": "A personality number that corresponds to a list of camera parameters that are used to optimize the camera stream for the specific characteristics of the appliance unit.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x0117", "name": "Camera Configuration Personality", "length": 2 }
+              ]
             }
           ]
         }
