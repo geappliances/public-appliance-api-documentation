@@ -59629,7 +59629,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -59751,8 +59752,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -59811,7 +59834,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -59933,8 +59957,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -59993,7 +60039,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -60115,8 +60162,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -60175,7 +60244,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -60297,8 +60367,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -60357,7 +60449,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -60479,8 +60572,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -60539,7 +60654,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -60661,8 +60777,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -60721,7 +60859,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -60843,8 +60982,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -60903,7 +61064,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -61025,8 +61187,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -61085,7 +61269,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -61207,8 +61392,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -61267,7 +61474,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -61389,8 +61597,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -63093,11 +63323,20 @@
       "offset": 0,
       "size": 2
     }, {
+      "name": "Gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 13,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
       "name": "Reserved 1",
       "type": "u8",
       "bits": {
-        "offset": 13,
-        "size": 3
+        "offset": 14,
+        "size": 2
       },
       "offset": 0,
       "size": 2
@@ -63165,11 +63404,182 @@
       "offset": 0,
       "size": 2
     }, {
+      "name": "Gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 13,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
       "name": "Reserved 1",
       "type": "u8",
       "bits": {
+        "offset": 14,
+        "size": 2
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved 2",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Dishwasher Cycle Modifier Actual Tub 1",
+    "id": "0x3252",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Actual state of modifiers currently set on the product for tub 1, see 0x3250",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "½ Load",
+      "type": "bool",
+      "bits": {
+        "offset": 8,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Quiet",
+      "type": "bool",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Sanitize",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Dry+",
+      "type": "bool",
+      "bits": {
+        "offset": 11,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 12,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Gentle",
+      "type": "bool",
+      "bits": {
         "offset": 13,
-        "size": 3
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved 1",
+      "type": "u8",
+      "bits": {
+        "offset": 14,
+        "size": 2
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved 2",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Dishwasher Cycle Modifier Requested Tub 1",
+    "id": "0x3253",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Requested state of the cycle modifiers for Tub 1, see 0x3250",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "½ Load",
+      "type": "bool",
+      "bits": {
+        "offset": 8,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Quiet",
+      "type": "bool",
+      "bits": {
+        "offset": 9,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Sanitize",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Dry+",
+      "type": "bool",
+      "bits": {
+        "offset": 11,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 12,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 13,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Reserved 1",
+      "type": "u8",
+      "bits": {
+        "offset": 14,
+        "size": 2
       },
       "offset": 0,
       "size": 2
@@ -63777,7 +64187,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -63899,8 +64310,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -63959,7 +64392,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -64081,8 +64515,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -64141,7 +64597,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -64263,8 +64720,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -64323,7 +64802,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -64445,8 +64925,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -64505,7 +65007,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -64627,8 +65130,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -64687,7 +65212,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -64809,8 +65335,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -64869,7 +65417,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -64991,8 +65540,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -65051,7 +65622,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -65173,8 +65745,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -65233,7 +65827,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -65355,8 +65950,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]
@@ -65415,7 +66032,8 @@
         "40": "CycleNames_HydroSave",
         "41": "CycleNames_Quiet",
         "42": "CycleNames_Dishwasher_Cleaning",
-        "43": "CycleNames_Quiet2"
+        "43": "CycleNames_Quiet2",
+        "44": "CycleNames_Hygiene"
       },
       "offset": 0,
       "size": 1
@@ -65537,8 +66155,30 @@
       "offset": 2,
       "size": 1
     }, {
-      "name": "reserved2",
+      "name": "Options Allowed 2.intensive",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.gentle",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
+      "name": "Options Allowed 2.reserved1",
       "type": "u8",
+      "bits": {
+        "offset": 2,
+        "size": 6
+      },
       "offset": 3,
       "size": 1
     }]

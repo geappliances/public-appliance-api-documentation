@@ -9389,6 +9389,26 @@
                 { "erd": "0x322C", "name": "Custom Cycle Index Request", "length": 1 },
                 { "erd": "0x322D", "name": "Custom Cycle Index Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x20000000",
+              "name": "Tub 0 Cycle Modifiers",
+              "description": "Modifiers that can be applied to cycles in Tub 0",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x3250", "name": "Dishwasher Cycle Modifier Actual", "length": 2 },
+                { "erd": "0x3251", "name": "Dishwasher Cycle Modifier Requested", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x40000000",
+              "name": "Tub 1 Cycle Modifiers",
+              "description": "Modifiers that can be applied to cycles in Tub 1",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x3252", "name": "Dishwasher Cycle Modifier Actual Tub 1", "length": 2 },
+                { "erd": "0x3253", "name": "Dishwasher Cycle Modifier Requested Tub 1", "length": 2 }
+              ]
             }
           ]
         }
