@@ -9746,11 +9746,29 @@
       "offset": 0,
       "size": 16
     }, {
+      "name": "Supported Notifications.Water Tank Low Level Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 106,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Water Tank Water Refresh Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 107,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
       "name": "Supported Notifications.Reserved 3",
       "type": "u8",
       "bits": {
-        "offset": 106,
-        "size": 6
+        "offset": 108,
+        "size": 4
       },
       "offset": 0,
       "size": 16
@@ -10034,11 +10052,29 @@
       "offset": 16,
       "size": 16
     }, {
+      "name": "Notifications.Water Tank Low Level Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 106,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Water Tank Water Refresh Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 107,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
       "name": "Notifications.Reserved 3",
       "type": "u8",
       "bits": {
-        "offset": 106,
-        "size": 6
+        "offset": 108,
+        "size": 4
       },
       "offset": 16,
       "size": 16
@@ -68603,20 +68639,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
