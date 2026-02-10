@@ -9768,11 +9768,29 @@
       "offset": 0,
       "size": 16
     }, {
+      "name": "Supported Notifications.Primary Feature Pan High Temperature Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 108,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Supported Notifications.Secondary Feature Pan High Temperature Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 109,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 16
+    }, {
       "name": "Supported Notifications.Reserved 3",
       "type": "u8",
       "bits": {
-        "offset": 108,
-        "size": 4
+        "offset": 110,
+        "size": 2
       },
       "offset": 0,
       "size": 16
@@ -10074,11 +10092,29 @@
       "offset": 16,
       "size": 16
     }, {
+      "name": "Notifications.Primary Feature Pan High Temperature Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 108,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
+      "name": "Notifications.Secondary Feature Pan High Temperature Alert",
+      "type": "bool",
+      "bits": {
+        "offset": 109,
+        "size": 1
+      },
+      "offset": 16,
+      "size": 16
+    }, {
       "name": "Notifications.Reserved 3",
       "type": "u8",
       "bits": {
-        "offset": 108,
-        "size": 4
+        "offset": 110,
+        "size": 2
       },
       "offset": 16,
       "size": 16
@@ -68643,20 +68679,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
