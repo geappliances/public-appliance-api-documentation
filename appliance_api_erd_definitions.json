@@ -50050,7 +50050,8 @@
       "type": "enum",
       "values": {
         "0": "Unknown",
-        "1": "Low"
+        "1": "Low",
+        "2": "Empty"
       },
       "offset": 0,
       "size": 1
@@ -50068,7 +50069,8 @@
       "type": "enum",
       "values": {
         "0": "Unknown",
-        "1": "Low"
+        "1": "Low",
+        "2": "Empty"
       },
       "offset": 0,
       "size": 1
@@ -68679,20 +68681,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
