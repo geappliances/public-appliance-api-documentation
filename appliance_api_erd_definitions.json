@@ -125636,7 +125636,7 @@
     "name": "Ice Maker Model",
     "id": "0x9134",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The value represents the model configuration for the ice maker. Some of the key differences that impact software are as follows:\n- New Power Boards have a lower baud rate (19200) compared to the Legacy Power Boards (230400).\n- The difference between Opal 2.0 and Opal 2.5 is the addition of Sanitize Indication on the Opal 2.5.\n- Opal 2.1 & 2.6 have new power boards and are updated versions of Opal 2.0 and 2.5 respectively the key difference being the addition of a Filter Button and Water Level Sensor at the bottom reservoir.\n- The Opal Mini is smaller in dimension. The Water reservoir is on the top, Accessories like the water tank, filter, etc are not compatible with previous models.",
+    "description": "The value represents the model configuration for the ice maker. Some of the key differences that impact software are as follows:\n- New Power Boards have a lower baud rate (19200) compared to the Legacy Power Boards (230400).\n- The difference between Opal 2.0 and Opal 2.5 is the addition of Sanitize Indication on the Opal 2.5.\n- Opal 2.1 & 2.6 have new power boards and are updated versions of Opal 2.0 and 2.5 respectively the key difference being the addition of a Filter Button and Water Level Sensor at the bottom reservoir.\n- The Opal Mini is smaller in dimension. The Water reservoir is on the top, Accessories like the water tank, filter, etc are not compatible with previous models.\n- The Opal Clear is designed to make clear ice.",
     "updateClass": {
       "type": "static"
     },
@@ -125652,7 +125652,8 @@
         "5": "Opal 2.5 New Power Board",
         "6": "Opal 2.1",
         "7": "Opal 2.6",
-        "8": "Opal Mini"
+        "8": "Opal Mini",
+        "9": "Opal Clear"
       },
       "offset": 0,
       "size": 1
