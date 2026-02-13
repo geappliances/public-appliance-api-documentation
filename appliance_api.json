@@ -4168,6 +4168,16 @@
               "required": [
 
               ]
+            },
+            {
+              "mask": "0x00000002",
+              "name": "Enhanced Sabbath Manual Mode",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x5302", "name": "Manual Enhanced Sabbath Schedule Selected", "length": 1 },
+                { "erd": "0x5303", "name": "Time Of Day Synced With UI", "length": 1 }
+              ]
             }
           ]
         }

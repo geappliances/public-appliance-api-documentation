@@ -68681,20 +68681,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -81086,6 +81086,48 @@
         "255": "Invalid"
       },
       "offset": 22,
+      "size": 1
+    }]
+  }, {
+    "name": "Manual Enhanced Sabbath Schedule Selected",
+    "id": "0x5302",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The user selected sabbath schedule when in the enhanced sabbath manual modes",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Manual Enhanced Sabbath Schedule Selected",
+      "type": "enum",
+      "values": {
+        "0": "None",
+        "1": "SabbathDefault",
+        "2": "SabbathHoliday",
+        "3": "SabbathHolidayHoliday",
+        "4": "HolidaySabbath",
+        "5": "HolidayHolidaySabbath",
+        "6": "Sabbath24hWarm",
+        "7": "Sabbath48hWarm",
+        "8": "Sabbath72hWarm",
+        "9": "Sabbath4hWarm",
+        "10": "Sabbath8hWarm",
+        "11": "Sabbath12hWarm"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Time Of Day Synced With UI",
+    "id": "0x5303",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Indicates whether the Time of Day has been synced with the UI",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Time Of Day Synced With UI",
+      "type": "bool",
+      "offset": 0,
       "size": 1
     }]
   }, {
