@@ -4175,8 +4175,29 @@
               "description": "",
               "dependencies": [],
               "required": [
+                { "erd": "0x502E", "name": "Enhanced Sabbath State", "length": 1 },
+                { "erd": "0x5031", "name": "Enhanced Sabbath Warmness Setting Request", "length": 1 },
+                { "erd": "0x5032", "name": "Enhanced Sabbath Warmness Setting Status", "length": 1 },
                 { "erd": "0x5302", "name": "Manual Enhanced Sabbath Schedule Selected", "length": 1 },
                 { "erd": "0x5303", "name": "Time Of Day Synced With UI", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000004",
+              "name": "Upper Local Available Cook Modes",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x521C", "name": "Lower Oven Cook Time Add Or Subtract Request", "length": 4 }
+              ]
+            },
+            {
+              "mask": "0x00000008",
+              "name": "Lower Local Available Cook Modes",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x522C", "name": "Local Available Cook Modes Cavity 2", "length": 8 }
               ]
             }
           ]
@@ -9032,6 +9053,16 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x122E", "name": "V2 Refrigeration Notification", "length": 32 }
+              ]
+            },
+            {
+              "mask": "0x00080000",
+              "name": "Ambient Temperature and Humidity",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1078", "name": "Ambient Thermistor Temperature (Kelvin)", "length": 2 },
+                { "erd": "0x1273", "name": "Ambient Humidity Percent", "length": 2 }
               ]
             }
           ]

@@ -6915,6 +6915,21 @@
       "size": 1
     }]
   }, {
+    "name": "Ambient Thermistor Temperature (Kelvin)",
+    "id": "0x1078",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the ambient thermistor temperature",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Ambient Filtered Thermistor Temperature (Kelvin x 32)",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Last Service Code",
     "id": "0x1100",
     "operations": ["read", "publish", "subscribe"],
@@ -10464,6 +10479,21 @@
       "type": "u8",
       "offset": 0,
       "size": 1
+    }]
+  }, {
+    "name": "Ambient Humidity Percent",
+    "id": "0x1273",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the ambient humidity percentage",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 60000
+    },
+    "data": [{
+      "name": "Ambient Humidity Percent (percent x 100)",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
     }]
   }, {
     "name": "Fresh Food Door 2 Opening Counts",
@@ -68681,20 +68711,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -80975,6 +81005,429 @@
       "type": "u8",
       "offset": 149,
       "size": 1
+    }]
+  }, {
+    "name": "Local Available Cook Modes Cavity 2",
+    "id": "0x522c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "A bitmask representing the raw cook modes that are actually available\n   in the cooking engine on the appliance.\n   See also 0x5113.lua/0x5213.lua, which is remote available cook modes, representing the\n   cook modes that are available to the app with additional bits for cook timer and probe\n   availability. ",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Bake",
+      "type": "u8",
+      "bits": {
+        "offset": 56,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Broil",
+      "type": "u8",
+      "bits": {
+        "offset": 57,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Self Clean",
+      "type": "u8",
+      "bits": {
+        "offset": 58,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Steam Clean",
+      "type": "u8",
+      "bits": {
+        "offset": 59,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Convection Bake",
+      "type": "u8",
+      "bits": {
+        "offset": 60,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Convection Bake Multi",
+      "type": "u8",
+      "bits": {
+        "offset": 61,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Convection Roast",
+      "type": "u8",
+      "bits": {
+        "offset": 62,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Convection Broil",
+      "type": "u8",
+      "bits": {
+        "offset": 63,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Warm",
+      "type": "u8",
+      "bits": {
+        "offset": 48,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Proof",
+      "type": "u8",
+      "bits": {
+        "offset": 49,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Sabbath Bake",
+      "type": "u8",
+      "bits": {
+        "offset": 50,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Frozen Snacks",
+      "type": "u8",
+      "bits": {
+        "offset": 51,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Frozen Pizza",
+      "type": "u8",
+      "bits": {
+        "offset": 52,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Frozen Snacks Multi",
+      "type": "u8",
+      "bits": {
+        "offset": 53,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Frozen Pizza Multi",
+      "type": "u8",
+      "bits": {
+        "offset": 54,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Baked Goods",
+      "type": "u8",
+      "bits": {
+        "offset": 55,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 6",
+      "type": "u8",
+      "bits": {
+        "offset": 40,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 7",
+      "type": "u8",
+      "bits": {
+        "offset": 41,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 8",
+      "type": "u8",
+      "bits": {
+        "offset": 42,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 9",
+      "type": "u8",
+      "bits": {
+        "offset": 43,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 10",
+      "type": "u8",
+      "bits": {
+        "offset": 44,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 11",
+      "type": "u8",
+      "bits": {
+        "offset": 45,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 12",
+      "type": "u8",
+      "bits": {
+        "offset": 46,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 13",
+      "type": "u8",
+      "bits": {
+        "offset": 47,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 14",
+      "type": "u8",
+      "bits": {
+        "offset": 32,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 15",
+      "type": "u8",
+      "bits": {
+        "offset": 33,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 16",
+      "type": "u8",
+      "bits": {
+        "offset": 34,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 17",
+      "type": "u8",
+      "bits": {
+        "offset": 35,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 18",
+      "type": "u8",
+      "bits": {
+        "offset": 36,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 19",
+      "type": "u8",
+      "bits": {
+        "offset": 37,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 20",
+      "type": "u8",
+      "bits": {
+        "offset": 38,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 21",
+      "type": "u8",
+      "bits": {
+        "offset": 39,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 22",
+      "type": "u8",
+      "bits": {
+        "offset": 24,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 23",
+      "type": "u8",
+      "bits": {
+        "offset": 25,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Special 24",
+      "type": "u8",
+      "bits": {
+        "offset": 26,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Enhanced Sabbath Warm",
+      "type": "u8",
+      "bits": {
+        "offset": 27,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Holiday Bake",
+      "type": "u8",
+      "bits": {
+        "offset": 28,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Holiday Warm",
+      "type": "u8",
+      "bits": {
+        "offset": 29,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Steam Bake",
+      "type": "u8",
+      "bits": {
+        "offset": 30,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Air Fry",
+      "type": "u8",
+      "bits": {
+        "offset": 31,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Dehydrate",
+      "type": "u8",
+      "bits": {
+        "offset": 16,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Crisp",
+      "type": "u8",
+      "bits": {
+        "offset": 17,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Reheat",
+      "type": "u8",
+      "bits": {
+        "offset": 18,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Reserved 1",
+      "type": "u8",
+      "bits": {
+        "offset": 19,
+        "size": 5
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Reserved 2",
+      "type": "u8",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 8
+    }, {
+      "name": "Reserved 3",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 0,
+      "size": 8
     }]
   }, {
     "name": "Lower Cavity Current Cycle Stage",
