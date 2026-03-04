@@ -816,18 +816,18 @@
       "size": 2
     }]
   }, {
-    "name": "Matter Device Identify Time Request",
+    "name": "Matter Device Identify Mode Request",
     "id": "0x0402",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Requested time (in seconds) for device to enter identify mode.",
+    "description": "Request for device to enter/exit identify mode.",
     "updateClass": {
       "type": "event"
     },
     "data": [{
-      "name": "Identify Time Request",
-      "type": "u16",
+      "name": "Identify Mode",
+      "type": "bool",
       "offset": 0,
-      "size": 2
+      "size": 1
     }]
   }, {
     "name": "Matter Device On-Off Request",
@@ -842,12 +842,17 @@
       "type": "bool",
       "offset": 0,
       "size": 1
+    }, {
+      "name": "RequestId",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
     }]
   }, {
     "name": "Matter Device On-Off State",
     "id": "0x0411",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The panel/display on-off status of a Matter device.",
+    "description": "The on-off status of a Matter device.",
     "updateClass": {
       "type": "event"
     },
@@ -855,6 +860,11 @@
       "name": "On-Off State",
       "type": "bool",
       "offset": 0,
+      "size": 1
+    }, {
+      "name": "RequestId",
+      "type": "u8",
+      "offset": 1,
       "size": 1
     }]
   }, {
@@ -68711,20 +68721,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
