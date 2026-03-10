@@ -58305,6 +58305,31 @@
       "size": 1
     }]
   }, {
+    "name": "Analog Door Latch AD Counts",
+    "id": "0x3088",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Reports average ADC for each door state",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 5184000000
+    },
+    "data": [{
+      "name": "Door Open Average ADC",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Door Closed Average ADC",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Door Invalid Average ADC",
+      "type": "u16",
+      "offset": 4,
+      "size": 2
+    }]
+  }, {
     "name": "Turbidity Calibration Value",
     "id": "0x3100",
     "operations": ["read", "publish", "subscribe"],
@@ -68722,20 +68747,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1

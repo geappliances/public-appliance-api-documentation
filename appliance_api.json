@@ -3356,6 +3356,15 @@
               "required": [
                 { "erd": "0x301C", "name": "Cycle Names", "length": 20 }
               ]
+            },
+            {
+              "mask": "0x00000200",
+              "name": "Analog Door Latch AD Counts",
+              "description": "This ERD provides the average ADC readings for each of the door states.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x3088", "name": "Analog Door Latch AD Counts", "length": 6 }
+              ]
             }
           ]
         }
