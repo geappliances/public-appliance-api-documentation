@@ -3491,7 +3491,9 @@
         "24": "F&P RB60 Platform",
         "25": "Double Under Counter Convertible Drawer",
         "26": "F&P 905 Platform",
-        "27": "Single Cabinet Fresh Food With Deli Pan Under Counter"
+        "27": "Single Cabinet Fresh Food With Deli Pan Under Counter",
+        "28": "Haier HRF590 Platform",
+        "29": "Haier HRF650 SBS Platform"
       },
       "offset": 0,
       "size": 1
@@ -68747,20 +68749,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
