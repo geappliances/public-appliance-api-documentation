@@ -4197,7 +4197,7 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x521C", "name": "Lower Oven Cook Time Add Or Subtract Request", "length": 4 }
+                { "erd": "0x512C", "name": "Local Available Cook Modes Cavity 1", "length": 8 }
               ]
             },
             {
