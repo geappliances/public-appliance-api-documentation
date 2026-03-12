@@ -9288,6 +9288,54 @@
       "size": 16
     }]
   }, {
+    "name": "Water Filter 1 Status Details",
+    "id": "0x1176",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Details on water filter 1 used to determine expiration.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Percentage Remaining",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Gallons to Expiration",
+      "type": "i32",
+      "offset": 4,
+      "size": 4
+    }, {
+      "name": "Days to Expiration",
+      "type": "i32",
+      "offset": 8,
+      "size": 4
+    }]
+  }, {
+    "name": "Water Filter 2 Status Details",
+    "id": "0x1177",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Details on water filter 2 used to determine expiration.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Percentage Remaining",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Gallons to Expiration",
+      "type": "i32",
+      "offset": 4,
+      "size": 4
+    }, {
+      "name": "Days to Expiration",
+      "type": "i32",
+      "offset": 8,
+      "size": 4
+    }]
+  }, {
     "name": "Home Water Filter Platform",
     "id": "0x1178",
     "operations": ["read", "publish", "subscribe"],
@@ -68768,20 +68816,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1

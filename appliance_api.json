@@ -4780,6 +4780,24 @@
               ]
             },
             {
+              "mask": "0x00002000",
+              "name": "Filter 1 Status",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1176", "name": "Water Filter 1 Status Details", "length": 12 }
+              ]
+            },
+            {
+              "mask": "0x00004000",
+              "name": "Filter 2 Status",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1177", "name": "Water Filter 2 Status Details", "length": 12 }
+              ]
+            },
+            {
               "mask": "0x00008000",
               "name": "Home Water Filter Platform",
               "description": "",
