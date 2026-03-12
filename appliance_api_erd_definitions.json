@@ -9288,6 +9288,25 @@
       "size": 16
     }]
   }, {
+    "name": "Home Water Filter Platform",
+    "id": "0x1178",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The platform type for the home water filter.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Home Water Filter Platform",
+      "type": "enum",
+      "values": {
+        "0": "POE",
+        "1": "POU",
+        "2": "RO"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Turbo Cool Request",
     "id": "0x120c",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -68749,20 +68768,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1

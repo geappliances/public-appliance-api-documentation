@@ -4778,6 +4778,15 @@
               "required": [
                 { "erd": "0x1175", "name": "Home Water Filter Notification", "length": 32 }
               ]
+            },
+            {
+              "mask": "0x00008000",
+              "name": "Home Water Filter Platform",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1178", "name": "Home Water Filter Platform", "length": 1 }
+              ]
             }
           ]
         }
