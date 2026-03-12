@@ -8837,7 +8837,7 @@
       "offset": 0,
       "size": 16
     }, {
-      "name": "Supported Notifications.Reserved 2",
+      "name": "Supported Notifications.Water Filter 1 Expiration Alert",
       "type": "bool",
       "bits": {
         "offset": 114,
@@ -8846,7 +8846,7 @@
       "offset": 0,
       "size": 16
     }, {
-      "name": "Supported Notifications.Reserved 3",
+      "name": "Supported Notifications.Water Filter 2 Expiration Alert",
       "type": "bool",
       "bits": {
         "offset": 115,
@@ -8855,7 +8855,7 @@
       "offset": 0,
       "size": 16
     }, {
-      "name": "Supported Notifications.Reserved 4",
+      "name": "Supported Notifications.Leak Detected Alert",
       "type": "bool",
       "bits": {
         "offset": 116,
@@ -9107,7 +9107,7 @@
       "offset": 16,
       "size": 16
     }, {
-      "name": "Notifications.Reserved 2",
+      "name": "Notifications.Water Filter 1 Expiration Alert",
       "type": "bool",
       "bits": {
         "offset": 114,
@@ -9116,7 +9116,7 @@
       "offset": 16,
       "size": 16
     }, {
-      "name": "Notifications.Reserved 3",
+      "name": "Notifications.Water Filter 2 Expiration Alert",
       "type": "bool",
       "bits": {
         "offset": 115,
@@ -9125,7 +9125,7 @@
       "offset": 16,
       "size": 16
     }, {
-      "name": "Notifications.Reserved 4",
+      "name": "Notifications.Leak Detected Alert",
       "type": "bool",
       "bits": {
         "offset": 116,
