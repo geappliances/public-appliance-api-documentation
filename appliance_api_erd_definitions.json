@@ -9355,6 +9355,132 @@
       "size": 1
     }]
   }, {
+    "name": "Home Water Filter 0 Type Information",
+    "id": "0x1179",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to publish home water filter 0 type and mounting location.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Type",
+      "type": "enum",
+      "values": {
+        "0": "POE 13 in",
+        "1": "POE 20 in",
+        "2": "POE 10 in",
+        "3": "RO Carbon Filter",
+        "4": "Reverse Osmosis",
+        "5": "RO Remineralization",
+        "6": "RO Pre Filter",
+        "7": "RO Post Filter",
+        "8": "POU Bluetooth",
+        "9": "POU Single Stage",
+        "10": "POU Dual Stage",
+        "11": "POU High Flow",
+        "12": "In Line Filter",
+        "13": "Five Year Filter",
+        "14": "Shower Filter",
+        "15": "Antiscale"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Location",
+      "type": "enum",
+      "values": {
+        "0": "Bottom",
+        "1": "Middle",
+        "2": "Upper"
+      },
+      "offset": 1,
+      "size": 1
+    }]
+  }, {
+    "name": "Home Water Filter 1 Type Information",
+    "id": "0x117a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to publish home water filter 1 type and mounting location.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Type",
+      "type": "enum",
+      "values": {
+        "0": "POE 13 in",
+        "1": "POE 20 in",
+        "2": "POE 10 in",
+        "3": "RO Carbon Filter",
+        "4": "Reverse Osmosis",
+        "5": "RO Remineralization",
+        "6": "RO Pre Filter",
+        "7": "RO Post Filter",
+        "8": "POU Bluetooth",
+        "9": "POU Single Stage",
+        "10": "POU Dual Stage",
+        "11": "POU High Flow",
+        "12": "In Line Filter",
+        "13": "Five Year Filter",
+        "14": "Shower Filter",
+        "15": "Antiscale"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Location",
+      "type": "enum",
+      "values": {
+        "0": "Bottom",
+        "1": "Middle",
+        "2": "Upper"
+      },
+      "offset": 1,
+      "size": 1
+    }]
+  }, {
+    "name": "Home Water Filter 2 Type Information",
+    "id": "0x117b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to publish home water filter 2 type and mounting location.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Type",
+      "type": "enum",
+      "values": {
+        "0": "POE 13 in",
+        "1": "POE 20 in",
+        "2": "POE 10 in",
+        "3": "RO Carbon Filter",
+        "4": "Reverse Osmosis",
+        "5": "RO Remineralization",
+        "6": "RO Pre Filter",
+        "7": "RO Post Filter",
+        "8": "POU Bluetooth",
+        "9": "POU Single Stage",
+        "10": "POU Dual Stage",
+        "11": "POU High Flow",
+        "12": "In Line Filter",
+        "13": "Five Year Filter",
+        "14": "Shower Filter",
+        "15": "Antiscale"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Location",
+      "type": "enum",
+      "values": {
+        "0": "Bottom",
+        "1": "Middle",
+        "2": "Upper"
+      },
+      "offset": 1,
+      "size": 1
+    }]
+  }, {
     "name": "Turbo Cool Request",
     "id": "0x120c",
     "operations": ["read", "write", "publish", "subscribe"],

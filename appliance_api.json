@@ -4735,7 +4735,8 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x1164", "name": "Water Filter Status Details", "length": 12 }
+                { "erd": "0x1164", "name": "Water Filter Status Details", "length": 12 },
+                { "erd": "0x1179", "name": "Home Water Filter 0 Type Information", "length": 2 }
               ]
             },
             {
@@ -4785,7 +4786,8 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x1176", "name": "Water Filter 1 Status Details", "length": 12 }
+                { "erd": "0x1176", "name": "Water Filter 1 Status Details", "length": 12 },
+                { "erd": "0x117A", "name": "Home Water Filter 1 Type Information", "length": 2 }
               ]
             },
             {
@@ -4794,7 +4796,8 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x1177", "name": "Water Filter 2 Status Details", "length": 12 }
+                { "erd": "0x1177", "name": "Water Filter 2 Status Details", "length": 12 },
+                { "erd": "0x117B", "name": "Home Water Filter 2 Type Information", "length": 2 }
               ]
             },
             {
