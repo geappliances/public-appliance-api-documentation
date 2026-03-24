@@ -3836,7 +3836,7 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x5120", "name": "Upper Cavity Cook Recipe Status", "length": 48 },
+                { "erd": "0x5120", "name": "Upper Cavity Cook Recipe Status", "length": 36 },
                 { "erd": "0x5121", "name": "Upper Cavity Cook Recipe Request", "length": 80 },
                 { "erd": "0x5122", "name": "Upper Cavity Index", "length": 2 },
                 { "erd": "0x5124", "name": "Upper Cavity Cook Recipe Stage 1", "length": 150 },
@@ -3852,7 +3852,7 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x5220", "name": "Lower Cavity Cook Recipe Status", "length": 48 },
+                { "erd": "0x5220", "name": "Lower Cavity Cook Recipe Status", "length": 36 },
                 { "erd": "0x5221", "name": "Lower Cavity Cook Recipe Request", "length": 80 },
                 { "erd": "0x5222", "name": "Lower Cavity Index ", "length": 2 },
                 { "erd": "0x5224", "name": "Lower Cavity Cook Recipe Stage 1", "length": 150 },
