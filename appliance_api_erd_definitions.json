@@ -8324,11 +8324,24 @@
       "offset": 0,
       "size": 1
     }, {
+      "name": "CapTouch",
+      "type": "enum",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "values": {
+        "0": "Clear",
+        "1": "Set"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 3,
-        "size": 5
+        "offset": 4,
+        "size": 4
       },
       "offset": 0,
       "size": 1
@@ -8864,7 +8877,7 @@
       "offset": 0,
       "size": 16
     }, {
-      "name": "Supported Notifications.Reserved 5",
+      "name": "Supported Notifications.CapTouch Alert",
       "type": "bool",
       "bits": {
         "offset": 117,
@@ -9134,7 +9147,7 @@
       "offset": 16,
       "size": 16
     }, {
-      "name": "Notifications.Reserved 5",
+      "name": "Notifications.CapTouch Alert",
       "type": "bool",
       "bits": {
         "offset": 117,
