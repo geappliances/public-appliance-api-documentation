@@ -10088,6 +10088,27 @@
               "required": [
                 { "erd": "0x0105", "name": "Hosted Firmware Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00000010",
+              "name": "Voice Diagnostics",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x630B", "name": "Voice Diagnostics - Wake Word and Command Counts", "length": 8 },
+                { "erd": "0x630C", "name": "Voice Diagnostics - Total Android Platform Voice Command Activations", "length": 20 },
+                { "erd": "0x630D", "name": "Voice Diagnostics - Total Appliance Specific Voice Command Activations", "length": 20 }
+              ]
+            },
+            {
+              "mask": "0x00000020",
+              "name": "Remote Voice Enablement",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x630E", "name": "Voice Feature Enable Request", "length": 1 },
+                { "erd": "0x630F", "name": "Voice Features Enable Status", "length": 1 }
+              ]
             }
           ]
         }

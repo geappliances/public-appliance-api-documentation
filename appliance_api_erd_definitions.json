@@ -113631,6 +113631,174 @@
       "size": 1
     }]
   }, {
+    "name": "Voice Diagnostics - Wake Word and Command Counts",
+    "id": "0x630b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This ERD contains a running count of the total times the wake word was activated as well as the total times a successful command was initiated. These values roll over once they hit their max value and are not cleared otherwise.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 43200000
+    },
+    "data": [{
+      "name": "Wake Word Initiated Counts",
+      "type": "u32",
+      "offset": 0,
+      "size": 4
+    }, {
+      "name": "Succesful Command Counts",
+      "type": "u32",
+      "offset": 4,
+      "size": 4
+    }]
+  }, {
+    "name": "Voice Diagnostics - Total Android Platform Voice Command Activations",
+    "id": "0x630c",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This ERD contains a running count of the total times a successful command was initiated. These values roll over once they hit their max value and are not cleared otherwise.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 43200000
+    },
+    "data": [{
+      "name": "Shopping List Add Command Counts",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Shopping List Remove Command Counts",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Timer Start Command Counts",
+      "type": "u16",
+      "offset": 4,
+      "size": 2
+    }, {
+      "name": "Timer Stop Command Counts",
+      "type": "u16",
+      "offset": 6,
+      "size": 2
+    }, {
+      "name": "Timer Pause Command Counts",
+      "type": "u16",
+      "offset": 8,
+      "size": 2
+    }, {
+      "name": "Timer Resume Command Counts",
+      "type": "u16",
+      "offset": 10,
+      "size": 2
+    }, {
+      "name": "Timer Add Command Counts",
+      "type": "u16",
+      "offset": 12,
+      "size": 2
+    }, {
+      "name": "Timer Subtract Command Counts",
+      "type": "u16",
+      "offset": 14,
+      "size": 2
+    }, {
+      "name": "Timer Change Command Counts",
+      "type": "u16",
+      "offset": 16,
+      "size": 2
+    }, {
+      "name": "Undefined",
+      "type": "u16",
+      "offset": 18,
+      "size": 2
+    }]
+  }, {
+    "name": "Voice Diagnostics - Total Appliance Specific Voice Command Activations",
+    "id": "0x630d",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This ERD contains a running count of the total times a successful command was initiated. These values roll over once they hit their max value and are not cleared otherwise.",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 43200000
+    },
+    "data": [{
+      "name": "Appliance Specific Command Counts[0]",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Appliance Specific Command Counts[1]",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Appliance Specific Command Counts[2]",
+      "type": "u16",
+      "offset": 4,
+      "size": 2
+    }, {
+      "name": "Appliance Specific Command Counts[3]",
+      "type": "u16",
+      "offset": 6,
+      "size": 2
+    }, {
+      "name": "Appliance Specific Command Counts[4]",
+      "type": "u16",
+      "offset": 8,
+      "size": 2
+    }, {
+      "name": "Appliance Specific Command Counts[5]",
+      "type": "u16",
+      "offset": 10,
+      "size": 2
+    }, {
+      "name": "Appliance Specific Command Counts[6]",
+      "type": "u16",
+      "offset": 12,
+      "size": 2
+    }, {
+      "name": "Appliance Specific Command Counts[7]",
+      "type": "u16",
+      "offset": 14,
+      "size": 2
+    }, {
+      "name": "Appliance Specific Command Counts[8]",
+      "type": "u16",
+      "offset": 16,
+      "size": 2
+    }, {
+      "name": "Appliance Specific Command Counts[9]",
+      "type": "u16",
+      "offset": 18,
+      "size": 2
+    }]
+  }, {
+    "name": "Voice Feature Enable Request",
+    "id": "0x630e",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "This is used to enable the local voice control feature on appliances",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Voice Feature Enable",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Voice Features Enable Status",
+    "id": "0x630f",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This is used to enable the local voice control feature on appliances",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Voice Feature Enable",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "System Mode",
     "id": "0x7000",
     "operations": ["read", "write", "publish", "subscribe"],
