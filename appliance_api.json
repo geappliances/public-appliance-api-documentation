@@ -4726,7 +4726,8 @@
               "dependencies": [],
               "required": [
                 { "erd": "0x1161", "name": "Water Usage", "length": 4 },
-                { "erd": "0x116D", "name": "Daily Water Usage", "length": 2 }
+                { "erd": "0x116D", "name": "Daily Water Usage", "length": 2 },
+                { "erd": "0x1162", "name": "Daily Water Usage Update Alert", "length": 1 }
               ]
             },
             {
@@ -4764,7 +4765,6 @@
               "description": "",
               "dependencies": [],
               "required": [
-                { "erd": "0x1162", "name": "Daily Water Usage Update Alert", "length": 1 },
                 { "erd": "0x1163", "name": "Water Filter Expiration Alert", "length": 1 },
                 { "erd": "0x1169", "name": "Continuous Flow Alert", "length": 1 },
                 { "erd": "0x116B", "name": "Low Temperature Alert", "length": 1 },
