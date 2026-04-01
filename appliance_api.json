@@ -9453,7 +9453,7 @@
             {
               "mask": "0x08000000",
               "name": "Default to Eco Cycle Setting",
-              "description": "This setting controls whether the product will default to running Eco cycle (for EU \nenergy compliance), or the last selected cycle.  Must default to enabled for EU \nproducts. ERD 0x3231 provides the current setting, and ERD 0x3232 allows setting\nthis preference from the app.",
+              "description": "This setting controls whether the product will default to running Eco cycle (for EU\nenergy compliance), or the last selected cycle.  Must default to enabled for EU\nproducts. ERD 0x3231 provides the current setting, and ERD 0x3232 allows setting\nthis preference from the app.",
               "dependencies": [],
               "required": [
                 { "erd": "0x3231", "name": "Default to Eco Cycle Setting", "length": 1 },
@@ -9463,7 +9463,7 @@
             {
               "mask": "0x10000000",
               "name": "Custom Cycle",
-              "description": "These ERDs allow selection of which cycle is associated with te Custom cycle\noption on the product. ERD 0x322C requests the cycle index to be used for Custom \ncycle, and ERD 0x322D reflects the current status of the setting.  This setting \napplies to both tubs of a double-tub product.",
+              "description": "These ERDs allow selection of which cycle is associated with te Custom cycle\noption on the product. ERD 0x322C requests the cycle index to be used for Custom\ncycle, and ERD 0x322D reflects the current status of the setting.  This setting\napplies to both tubs of a double-tub product.",
               "dependencies": [],
               "required": [
                 { "erd": "0x322C", "name": "Custom Cycle Index Request", "length": 1 },
