@@ -66794,7 +66794,7 @@
       "type": "legacy"
     },
     "data": [{
-      "name": "Temperature",
+      "name": "Hours Remaining",
       "type": "u16",
       "offset": 0,
       "size": 2
@@ -66944,12 +66944,12 @@
     "name": "Tank size",
     "id": "0x4041",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Indication of tank size in gallons",
+    "description": "Indication of tank size in gallons, reports 0 for tankless models",
     "updateClass": {
       "type": "legacy"
     },
     "data": [{
-      "name": "Mode",
+      "name": "Tank Size in Gallons",
       "type": "u8",
       "offset": 0,
       "size": 1
