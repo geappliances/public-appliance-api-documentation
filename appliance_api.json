@@ -10109,6 +10109,15 @@
                 { "erd": "0x630E", "name": "Voice Feature Enable Request", "length": 1 },
                 { "erd": "0x630F", "name": "Voice Features Enable Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00000040",
+              "name": "Network State Indication",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x6003", "name": "Wireless Connection State", "length": 1 }
+              ]
             }
           ]
         }

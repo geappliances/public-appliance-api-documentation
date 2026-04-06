@@ -68955,20 +68955,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
@@ -106874,6 +106874,30 @@
       "bits": {
         "offset": 1,
         "size": 7
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Wireless Connection State",
+    "id": "0x6003",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Specifies whether wireless module is connected or not.",
+    "updateClass": {
+      "type": "legacy"
+    },
+    "data": [{
+      "name": "Connection State",
+      "type": "enum",
+      "values": {
+        "0": "Off",
+        "1": "Commissioning Mode",
+        "2": "Connecting",
+        "3": "Connected",
+        "4": "Connected but Off",
+        "5": "Scanning (deprecated)",
+        "6": "Reconnecting",
+        "255": "Invalid"
       },
       "offset": 0,
       "size": 1
