@@ -127178,6 +127178,34 @@
       "size": 1
     }]
   }, {
+    "name": "Water Level Tone Setting Current State",
+    "id": "0x9140",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The current state of the water level tone setting. 0 = off, 1 = on",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Water Level Tone On",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Water Level Tone Setting Requested State",
+    "id": "0x9141",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The requested state of the water level tone setting. 0 = off, 1 = on",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Water Level Tone On",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Toaster Oven Supported Cook Modes",
     "id": "0x9200",
     "operations": ["read", "publish", "subscribe"],

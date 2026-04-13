@@ -6227,6 +6227,16 @@
                 { "erd": "0x913E", "name": "Light Color Status", "length": 4 },
                 { "erd": "0x913F", "name": "Light Color Request", "length": 4 }
               ]
+            },
+            {
+              "mask": "0x00000800",
+              "name": "Water Level Tone Setting Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9140", "name": "Water Level Tone Setting Current State", "length": 1 },
+                { "erd": "0x9141", "name": "Water Level Tone Setting Requested State", "length": 1 }
+              ]
             }
           ]
         },
@@ -6357,6 +6367,16 @@
               "required": [
                 { "erd": "0x913E", "name": "Light Color Status", "length": 4 },
                 { "erd": "0x913F", "name": "Light Color Request", "length": 4 }
+              ]
+            },
+            {
+              "mask": "0x00002000",
+              "name": "Water Level Tone Setting Supported",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9140", "name": "Water Level Tone Setting Current State", "length": 1 },
+                { "erd": "0x9141", "name": "Water Level Tone Setting Requested State", "length": 1 }
               ]
             }
           ]
