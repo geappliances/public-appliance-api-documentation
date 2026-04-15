@@ -2486,7 +2486,7 @@
   }, {
     "name": "Number of Sound Level Settings",
     "id": "0x0904",
-    "operations": ["read", "write", "publish", "subscribe"],
+    "operations": ["read", "publish", "subscribe"],
     "description": "Maximum sound level setting",
     "updateClass": {
       "type": "static"
