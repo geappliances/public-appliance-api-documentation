@@ -59342,11 +59342,20 @@
       "offset": 13,
       "size": 1
     }, {
+      "name": "Features Enabled 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 13,
+      "size": 1
+    }, {
       "name": "Features Enabled 2.reserved",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 13,
       "size": 1
@@ -60123,11 +60132,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -60329,11 +60347,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -60535,11 +60562,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -60741,11 +60777,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -60947,11 +60992,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -61153,11 +61207,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -61359,11 +61422,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -61565,11 +61637,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -61771,11 +61852,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -61977,11 +62067,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -63694,11 +63793,20 @@
       "offset": 0,
       "size": 2
     }, {
+      "name": "Fast",
+      "type": "bool",
+      "bits": {
+        "offset": 14,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
       "name": "Reserved 1",
       "type": "u8",
       "bits": {
-        "offset": 14,
-        "size": 2
+        "offset": 15,
+        "size": 1
       },
       "offset": 0,
       "size": 2
@@ -63775,11 +63883,20 @@
       "offset": 0,
       "size": 2
     }, {
+      "name": "Fast",
+      "type": "bool",
+      "bits": {
+        "offset": 14,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
       "name": "Reserved 1",
       "type": "u8",
       "bits": {
-        "offset": 14,
-        "size": 2
+        "offset": 15,
+        "size": 1
       },
       "offset": 0,
       "size": 2
@@ -63856,11 +63973,20 @@
       "offset": 0,
       "size": 2
     }, {
+      "name": "Fast",
+      "type": "bool",
+      "bits": {
+        "offset": 14,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
       "name": "Reserved 1",
       "type": "u8",
       "bits": {
-        "offset": 14,
-        "size": 2
+        "offset": 15,
+        "size": 1
       },
       "offset": 0,
       "size": 2
@@ -63937,11 +64063,20 @@
       "offset": 0,
       "size": 2
     }, {
+      "name": "Fast",
+      "type": "bool",
+      "bits": {
+        "offset": 14,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
       "name": "Reserved 1",
       "type": "u8",
       "bits": {
-        "offset": 14,
-        "size": 2
+        "offset": 15,
+        "size": 1
       },
       "offset": 0,
       "size": 2
@@ -64460,11 +64595,20 @@
       "offset": 13,
       "size": 1
     }, {
+      "name": "Features Enabled 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 13,
+      "size": 1
+    }, {
       "name": "Features Enabled 2.reserved",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 13,
       "size": 1
@@ -64691,11 +64835,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -64897,11 +65050,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -65103,11 +65265,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -65309,11 +65480,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -65515,11 +65695,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -65721,11 +65910,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -65927,11 +66125,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -66133,11 +66340,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -66339,11 +66555,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -66545,11 +66770,20 @@
       "offset": 3,
       "size": 1
     }, {
+      "name": "Options Allowed 2.fast",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 3,
+      "size": 1
+    }, {
       "name": "Options Allowed 2.reserved1",
       "type": "u8",
       "bits": {
-        "offset": 2,
-        "size": 6
+        "offset": 3,
+        "size": 5
       },
       "offset": 3,
       "size": 1
@@ -68955,20 +69189,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
