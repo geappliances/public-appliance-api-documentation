@@ -5083,6 +5083,16 @@
                 { "erd": "0x746C", "name": "Auxiliary 24V Input Status", "length": 5 },
                 { "erd": "0x746D", "name": "Auxiliary 24V Configuration Request", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00008000",
+              "name": "Stratos Heat Source Optimization",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x7472", "name": "Heat Source Optimization Status", "length": 5 },
+                { "erd": "0x7473", "name": "Heat Source Optimization Request", "length": 1 }
+              ]
             }
           ]
         }
@@ -10266,6 +10276,26 @@
               "required": [
                 { "erd": "0x7052", "name": "Energy Conservation Request", "length": 1 },
                 { "erd": "0x7054", "name": "Energy Conservation Status", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000400",
+              "name": "Heat Pump Temperature Lockout",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x746E", "name": "Heat Pump Lockout Temperature Status", "length": 6 },
+                { "erd": "0x746F", "name": "Heat Pump Lockout Temperature Request", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000800",
+              "name": "Input Current Limiting",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x7470", "name": "Input Current Limiting Status", "length": 8 },
+                { "erd": "0x7471", "name": "Input Current Limiting Request", "length": 1 }
               ]
             }
           ]

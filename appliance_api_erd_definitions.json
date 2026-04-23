@@ -116175,7 +116175,8 @@
       "type": "enum",
       "values": {
         "0": "Disabled",
-        "1": "Enabled"
+        "1": "Enabled",
+        "2": "Low"
       },
       "offset": 0,
       "size": 1
@@ -116198,11 +116199,20 @@
       "offset": 1,
       "size": 4
     }, {
+      "name": "Allowed Selections.Low Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 26,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
       "name": "Allowed Selections.Reserved",
       "type": "u8",
       "bits": {
-        "offset": 26,
-        "size": 6
+        "offset": 27,
+        "size": 5
       },
       "offset": 1,
       "size": 4
@@ -116248,6 +116258,7 @@
       "values": {
         "0": "Off",
         "1": "On",
+        "2": "Low",
         "255": "Request Consumed"
       },
       "offset": 0,
@@ -117151,6 +117162,188 @@
       "values": {
         "0": "Central Desk Control",
         "1": "Occupancy Control",
+        "255": "Request Consumed"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Heat Pump Lockout Temperature Status",
+    "id": "0x746e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The device will publish the current Heat Pump Lockout Temperature and the limits for this value",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Heat Pump Lockout Temperature Status.Heat Pump Lockout Temperature in Fahrenheit x 10",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "Heat Pump Lockout Temperature Status.Minimum Allowed Temperature in Fahrenheit x 10",
+      "type": "i16",
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Heat Pump Lockout Temperature Status.Maximum Allowed Temperature in Fahrenheit x 10",
+      "type": "i16",
+      "offset": 4,
+      "size": 2
+    }]
+  }, {
+    "name": "Heat Pump Lockout Temperature Request",
+    "id": "0x746f",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The device will publish the current Heat Pump Lockout Temperature and the limits for this value",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Heat Pump Lockout Temperature in Fahrenheit x 10",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Input Current Limiting Status",
+    "id": "0x7470",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The device will publish the Input Current Limiting feature status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "User Set Input Current Limiting Status",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Resolved Input Current Limiting Status",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Input Current Limiting Allowed Values.Min Input Current Limit",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }, {
+      "name": "Input Current Limiting Allowed Values.Max Input Current Limit",
+      "type": "u16",
+      "offset": 4,
+      "size": 2
+    }, {
+      "name": "Input Current Limiting Allowed Values.Step Size",
+      "type": "u8",
+      "offset": 6,
+      "size": 1
+    }, {
+      "name": "Input Current Limiting Allowed Values.Reserved",
+      "type": "u8",
+      "offset": 7,
+      "size": 1
+    }]
+  }, {
+    "name": "Input Current Limiting Request",
+    "id": "0x7471",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The client will request a change to the Input Current Limiting status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Input Current Limiting Request",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Heat Source Optimization Status",
+    "id": "0x7472",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The device will publish the Heat Source Optimization feature status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Heat Source Optimization Status",
+      "type": "enum",
+      "values": {
+        "0": "Disabled",
+        "1": "Enabled"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Allowed Selections.Disabled Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 24,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Enabled Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 25,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 26,
+        "size": 6
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 16,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }]
+  }, {
+    "name": "Heat Source Optimization Request",
+    "id": "0x7473",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The client will request a change to the Heat Source Optimization status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Heat Source Optimization Request",
+      "type": "enum",
+      "values": {
+        "0": "Off",
+        "1": "On",
         "255": "Request Consumed"
       },
       "offset": 0,
