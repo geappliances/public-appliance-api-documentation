@@ -70062,6 +70062,34 @@
       "size": 1
     }]
   }, {
+    "name": "Cook Cam Image Upload Enabled Setting Request",
+    "id": "0x5053",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "User setting to enable or disable cook cam image uploads to the cloud. User consent is required. Client should request settings updates via this ERD.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Cook Cam Image Upload Setting Enabled Request",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Cook Cam Image Upload Enabled Setting Status",
+    "id": "0x5054",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "User setting to enable or disable cook cam image uploads to the cloud. User consent is required. Use this for checking status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Cook Cam Image Upload Setting Enabled",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "AI Bake Oven Status",
     "id": "0x5060",
     "operations": ["read", "publish", "subscribe"],
