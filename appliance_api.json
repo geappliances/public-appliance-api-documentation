@@ -1132,6 +1132,16 @@
                 { "erd": "0x2258", "name": "Remote Payment Method Request", "length": 1 },
                 { "erd": "0x2259", "name": "Remote Payment Method Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x02000000",
+              "name": "Commercial Free Mode",
+              "description": "This feature allows commercial laundry machines to be used without payment.",
+              "dependencies": ["Commercial Laundry Status", "Commercial Laundry Payment V1 Attributes"],
+              "required": [
+                { "erd": "0x2338", "name": "Commercial Remote Free Mode Request", "length": 1 },
+                { "erd": "0x2339", "name": "Commercial Remote Free Mode Status", "length": 1 }
+              ]
             }
           ]
         }
@@ -2006,6 +2016,16 @@
                 { "erd": "0x2F19", "name": "Mabe - Public Oob (Out Of Balance) Size", "length": 2 },
                 { "erd": "0x2F1A", "name": "Short Cycle Option", "length": 1 },
                 { "erd": "0x2F1B", "name": "Short Cycle Option Request", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000020",
+              "name": "Commercial Free Mode",
+              "description": "This feature allows commercial laundry machines to be used without payment.",
+              "dependencies": ["Commercial Laundry Status", "Commercial Laundry Payment V1 Attributes"],
+              "required": [
+                { "erd": "0x2338", "name": "Commercial Remote Free Mode Request", "length": 1 },
+                { "erd": "0x2339", "name": "Commercial Remote Free Mode Status", "length": 1 }
               ]
             }
           ]

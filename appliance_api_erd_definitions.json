@@ -22539,11 +22539,38 @@
       "offset": 29,
       "size": 1
     }, {
-      "name": "Commercial Laundry Request.Attributes.Reserved 1",
+      "name": "Commercial Laundry Request.Attributes.WashCycleOutOfBalance",
       "type": "bool",
       "bits": {
         "offset": 1,
-        "size": 7
+        "size": 1
+      },
+      "offset": 29,
+      "size": 1
+    }, {
+      "name": "Commercial Laundry Request.Attributes.FreeMode_App",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 29,
+      "size": 1
+    }, {
+      "name": "Commercial Laundry Request.Attributes.FreeMode_NoAppInteraction",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 29,
+      "size": 1
+    }, {
+      "name": "Commercial Laundry Request.Attributes.Reserved 1",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 4
       },
       "offset": 29,
       "size": 1
@@ -39349,7 +39376,25 @@
       "type": "bool",
       "bits": {
         "offset": 0,
-        "size": 6
+        "size": 4
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FreeMode_App",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 2
+    }, {
+      "name": "FreeMode_NoAppInteraction",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
       },
       "offset": 0,
       "size": 2
@@ -55243,6 +55288,44 @@
       "size": 1
     }]
   }, {
+    "name": "Commercial Remote Free Mode Request",
+    "id": "0x2338",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "This erd requests a change to the unit commercial operating mode.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Free Mode",
+      "type": "enum",
+      "values": {
+        "0": "PaidMode",
+        "1": "FreeModeWithNoApp",
+        "2": "FreeModeWithApp"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Commercial Remote Free Mode Status",
+    "id": "0x2339",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "This erd states the unit's current commercial operating mode.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Free Mode",
+      "type": "enum",
+      "values": {
+        "0": "PaidMode",
+        "1": "FreeModeWithNoApp",
+        "2": "FreeModeWithApp"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Mabe - Water Level Selection",
     "id": "0x2f00",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -69189,20 +69272,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
