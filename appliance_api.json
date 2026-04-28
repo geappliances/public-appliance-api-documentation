@@ -4133,6 +4133,7 @@
               "required": [
                 { "erd": "0x504E", "name": "Cook Cam AI Assistant Enabled Request", "length": 1 },
                 { "erd": "0x504F", "name": "Cook Cam AI Assistant Enabled Status", "length": 1 },
+                { "erd": "0x5052", "name": "Cook Cam Image Capture Signal", "length": 1 },
                 { "erd": "0x5053", "name": "Cook Cam Image Upload Enabled Setting Request", "length": 1 },
                 { "erd": "0x5054", "name": "Cook Cam Image Upload Enabled Setting Status", "length": 1 }
               ]

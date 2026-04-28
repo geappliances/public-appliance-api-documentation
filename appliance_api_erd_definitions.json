@@ -69272,20 +69272,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -70058,6 +70058,20 @@
     "data": [{
       "name": "Cook Cam AI Assistant Enabled",
       "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Cook Cam Image Capture Signal",
+    "id": "0x5052",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Signal incremented by the MC to indicate that the UI should capture an image and evaluate.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Advance User Stage Signal",
+      "type": "u8",
       "offset": 0,
       "size": 1
     }]
