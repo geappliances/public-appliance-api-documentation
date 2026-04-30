@@ -22548,7 +22548,7 @@
       "offset": 29,
       "size": 1
     }, {
-      "name": "Commercial Laundry Request.Attributes.FreeMode_App",
+      "name": "Commercial Laundry Request.Attributes.FreeMode_NoAppInteraction",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -22557,7 +22557,7 @@
       "offset": 29,
       "size": 1
     }, {
-      "name": "Commercial Laundry Request.Attributes.FreeMode_NoAppInteraction",
+      "name": "Commercial Laundry Request.Attributes.FreeMode_App",
       "type": "bool",
       "bits": {
         "offset": 3,
@@ -39381,7 +39381,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "FreeMode_App",
+      "name": "FreeMode_NoAppInteraction",
       "type": "bool",
       "bits": {
         "offset": 4,
@@ -39390,7 +39390,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "FreeMode_NoAppInteraction",
+      "name": "FreeMode_App",
       "type": "bool",
       "bits": {
         "offset": 5,
