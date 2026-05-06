@@ -22900,11 +22900,29 @@
       "offset": 29,
       "size": 1
     }, {
-      "name": "Commercial Laundry Status.Attributes.Reserved 1",
+      "name": "Commercial Laundry Status.Attributes.Free Mode No App Interaction",
       "type": "bool",
       "bits": {
         "offset": 2,
-        "size": 6
+        "size": 1
+      },
+      "offset": 29,
+      "size": 1
+    }, {
+      "name": "Commercial Laundry Status.Attributes.Free Mode App",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 29,
+      "size": 1
+    }, {
+      "name": "Commercial Laundry Status.Attributes.Reserved 1",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 4
       },
       "offset": 29,
       "size": 1
