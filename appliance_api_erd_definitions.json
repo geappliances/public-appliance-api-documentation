@@ -67535,7 +67535,7 @@
     "name": "Anode depleted mass",
     "id": "0x404c",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Anode depleted mass",
+    "description": "Anode depleted mass in micrograms",
     "updateClass": {
       "type": "legacy"
     },
