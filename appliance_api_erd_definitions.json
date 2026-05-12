@@ -9678,11 +9678,29 @@
       "offset": 0,
       "size": 1
     }, {
+      "name": "Primary Feature Pan Light",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Secondary Feature Pan Light",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
       "name": "reserved",
       "type": "u8",
       "bits": {
-        "offset": 4,
-        "size": 4
+        "offset": 6,
+        "size": 2
       },
       "offset": 0,
       "size": 1
@@ -60269,7 +60287,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -60484,7 +60505,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -60699,7 +60723,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -60914,7 +60941,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -61129,7 +61159,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -61344,7 +61377,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -61559,7 +61595,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -61774,7 +61813,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -61989,7 +62031,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -62204,7 +62249,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -64972,7 +65020,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -65187,7 +65238,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -65402,7 +65456,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -65617,7 +65674,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -65832,7 +65892,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -66047,7 +66110,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -66262,7 +66328,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -66477,7 +66546,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -66692,7 +66764,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -66907,7 +66982,10 @@
         "42": "CycleNames_Dishwasher_Cleaning",
         "43": "CycleNames_Quiet2",
         "44": "CycleNames_Hygiene",
-        "45": "CycleNames_Plus"
+        "45": "CycleNames_Plus",
+        "46": "CycleNames_Heavy_Duty_Dry",
+        "47": "CycleNames_Everyday_Dry_On",
+        "48": "CycleNames_Everyday_Dry_Off"
       },
       "offset": 0,
       "size": 1
@@ -69466,20 +69544,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
