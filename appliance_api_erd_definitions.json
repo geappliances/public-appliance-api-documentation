@@ -50066,11 +50066,20 @@
       "offset": 0,
       "size": 4
     }, {
+      "name": "Dispenser Open Notification",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 4
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 10,
-        "size": 6
+        "offset": 11,
+        "size": 5
       },
       "offset": 0,
       "size": 4
@@ -50246,11 +50255,20 @@
       "offset": 4,
       "size": 4
     }, {
+      "name": "Dispenser Open Notification Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 10,
+        "size": 1
+      },
+      "offset": 4,
+      "size": 4
+    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
-        "offset": 10,
-        "size": 6
+        "offset": 11,
+        "size": 5
       },
       "offset": 4,
       "size": 4
