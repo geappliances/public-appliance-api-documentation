@@ -18600,6 +18600,100 @@
       "size": 1
     }]
   }, {
+    "name": "Variable Cube Size Setting Data 0",
+    "id": "0x14bd",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to publish the number of cube size settings and the default cube size.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Number of Cube Size Settings",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Cube Size Default Setting",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }]
+  }, {
+    "name": "Variable Cube Size Request 0",
+    "id": "0x14be",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to request the desired ice cube size. Maximum cube size is defined in ERD 14BD",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Variable Cube Size Request",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Variable Cube Size Status 0",
+    "id": "0x14bf",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the cube size setting status after ERD 14BE is written.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Variable Cube Size Status",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Variable Cube Size Setting Data 2",
+    "id": "0x14c0",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to publish the number of cube size settings and the default cube size.",
+    "updateClass": {
+      "type": "static"
+    },
+    "data": [{
+      "name": "Number of Cube Size Settings",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Cube Size Default Setting",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }]
+  }, {
+    "name": "Variable Cube Size Request 2",
+    "id": "0x14c1",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to request the desired ice cube size. Maximum cube size is defined in ERD 14C0",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Variable Cube Size Request",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Variable Cube Size Status 2",
+    "id": "0x14c2",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the cube size setting status after ERD 14C1 is written.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Variable Cube Size Status",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Machine State",
     "id": "0x2000",
     "operations": ["read", "publish", "subscribe"],
@@ -69562,20 +69656,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1

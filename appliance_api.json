@@ -2646,7 +2646,28 @@
 
           ],
           "features": [
-
+            {
+              "mask": "0x00000400",
+              "name": "Variable Cube Size Data 0",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x14BD", "name": "Variable Cube Size Setting Data 0", "length": 2 },
+                { "erd": "0x14BE", "name": "Variable Cube Size Request 0", "length": 1 },
+                { "erd": "0x14BF", "name": "Variable Cube Size Status 0", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000800",
+              "name": "Variable Cube Size Data 2",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x14C0", "name": "Variable Cube Size Setting Data 2", "length": 2 },
+                { "erd": "0x14C1", "name": "Variable Cube Size Request 2", "length": 1 },
+                { "erd": "0x14C2", "name": "Variable Cube Size Status 2", "length": 1 }
+              ]
+            }
           ]
         }
       }
