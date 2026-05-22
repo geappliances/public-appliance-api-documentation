@@ -2678,6 +2678,16 @@
                 { "erd": "0x14C1", "name": "Variable Cube Size Request 2", "length": 1 },
                 { "erd": "0x14C2", "name": "Variable Cube Size Status 2", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00002000",
+              "name": "Dimmable Light 0 Warmth Percentage",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x14C3", "name": "Dimmable Lighting 0 Warmth Percentage Request", "length": 1 },
+                { "erd": "0x14C4", "name": "Dimmable Lighting 0 Warmth Percentage Setting", "length": 1 }
+              ]
             }
           ]
         }
