@@ -18586,6 +18586,65 @@
       "size": 4
     }]
   }, {
+    "name": "Barcode Scan History",
+    "id": "0x141f",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The data for the last scanned barcode.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Barcode Scan History.Barcode",
+      "type": "string",
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Barcode Scan History.Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 16,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History.Maximum Visible Characters",
+      "type": "u8",
+      "offset": 17,
+      "size": 1
+    }, {
+      "name": "Barcode Scan History.Sequence Number",
+      "type": "u16",
+      "offset": 18,
+      "size": 2
+    }]
+  }, {
     "name": "SBC Request To Power Off Barcode Scanner",
     "id": "0x142c",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -18720,6 +18779,83 @@
       "type": "u8",
       "offset": 0,
       "size": 1
+    }]
+  }, {
+    "name": "Scanned Barcode Result",
+    "id": "0x14c8",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The result after a barcode is scanned.\nThis ERD is written to the unit after the barcode scan history ERD 0x141F event is processed by the cloud.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Scanned Barcode Result.Barcode",
+      "type": "string",
+      "offset": 0,
+      "size": 16
+    }, {
+      "name": "Scanned Barcode Result.Type",
+      "type": "enum",
+      "values": {
+        "0": "CodeId1Mappings_Code128",
+        "1": "CodeId1Mappings_Ean8",
+        "2": "CodeId1Mappings_Ean13",
+        "3": "CodeId1Mappings_Issn",
+        "4": "CodeId1Mappings_Issb",
+        "5": "CodeId1Mappings_Upce",
+        "6": "CodeId1Mappings_Upca",
+        "7": "CodeId1Mappings_Interleaved2of5",
+        "8": "CodeId1Mappings_Itf6",
+        "9": "CodeId1Mappings_Itf14",
+        "10": "CodeId1Mappings_Matrix2of5",
+        "11": "CodeId1Mappings_Industrial2of5",
+        "12": "CodeId1Mappings_Code39",
+        "13": "CodeId1Mappings_Codabar",
+        "14": "CodeId1Mappings_Code93",
+        "15": "CodeId1Mappings_Code11",
+        "16": "CodeId1Mappings_Msi_Plessey",
+        "17": "CodeId1Mappings_Rss14",
+        "18": "CodeId1Mappings_Rss14Limited",
+        "19": "CodeId1Mappings_Rss14Expanded",
+        "20": "CodeId1Mappings_Rss14Stacked",
+        "21": "CodeId1Mappings_Pdf417",
+        "22": "CodeId1Mappings_DataMatrix",
+        "23": "CodeId1Mappings_QRCode",
+        "24": "CodeId1Mappings_AztecCode",
+        "25": "CodeId1Mappings_Maxicode",
+        "26": "CodeId1Mappings_MicroPdf417",
+        "27": "CodeId1Mappings_MicroQR"
+      },
+      "offset": 16,
+      "size": 1
+    }, {
+      "name": "Scanned Barcode Result.Maximum Visible Characters",
+      "type": "u8",
+      "offset": 17,
+      "size": 1
+    }, {
+      "name": "Scanned Barcode Result.Sequence Number",
+      "type": "u16",
+      "offset": 18,
+      "size": 2
+    }, {
+      "name": "Scanned Barcode Result.Result",
+      "type": "enum",
+      "values": {
+        "0": "Unknown",
+        "1": "Added to shopping list",
+        "2": "Valid",
+        "3": "Rejected",
+        "4": "Connection Error",
+        "5": "Timeout Error"
+      },
+      "offset": 20,
+      "size": 1
+    }, {
+      "name": "Scanned Barcode Result.Product Title",
+      "type": "string",
+      "offset": 21,
+      "size": 65
     }]
   }, {
     "name": "Machine State",
@@ -69684,20 +69820,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1

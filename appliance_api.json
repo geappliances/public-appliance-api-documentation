@@ -2680,6 +2680,16 @@
               ]
             },
             {
+              "mask": "0x00001000",
+              "name": "Scanned Barcode Result",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x141F", "name": "Barcode Scan History", "length": 20 },
+                { "erd": "0x14C8", "name": "Scanned Barcode Result", "length": 86 }
+              ]
+            },
+            {
               "mask": "0x00002000",
               "name": "Dimmable Light 0 Warmth Percentage",
               "description": "",
