@@ -2698,6 +2698,15 @@
                 { "erd": "0x14C3", "name": "Dimmable Lighting 0 Warmth Percentage Request", "length": 1 },
                 { "erd": "0x14C4", "name": "Dimmable Lighting 0 Warmth Percentage Setting", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00004000",
+              "name": "Secondary Feature Pan Filtered Temperature",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x14C5", "name": "Secondary Feature Pan Filtered Temperature Resolved", "length": 2 }
+              ]
             }
           ]
         }

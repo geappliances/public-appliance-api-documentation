@@ -18781,6 +18781,21 @@
       "size": 1
     }]
   }, {
+    "name": "Secondary Feature Pan Filtered Temperature Resolved",
+    "id": "0x14c5",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report the resolved filtered average temperature from the secondary feature pan",
+    "updateClass": {
+      "type": "periodic",
+      "periodInMsec": 1000
+    },
+    "data": [{
+      "name": "Secondary Feature Pan Filtered Temperature Resolved (fahrenheit x 100)",
+      "type": "i16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Scanned Barcode Result",
     "id": "0x14c8",
     "operations": ["read", "write", "publish", "subscribe"],
