@@ -18796,6 +18796,34 @@
       "size": 2
     }]
   }, {
+    "name": "System Power Off Request",
+    "id": "0x14c6",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Used to request system power state for specific loads",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "System Power Off Request",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "System Power Off Status",
+    "id": "0x14c7",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to report power state of specific system loads",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "System Power Off Status",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Scanned Barcode Result",
     "id": "0x14c8",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -69835,20 +69863,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1

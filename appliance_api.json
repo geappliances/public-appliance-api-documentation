@@ -2707,6 +2707,16 @@
               "required": [
                 { "erd": "0x14C5", "name": "Secondary Feature Pan Filtered Temperature Resolved", "length": 2 }
               ]
+            },
+            {
+              "mask": "0x00008000",
+              "name": "System Power Setting",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x14C6", "name": "System Power Off Request", "length": 1 },
+                { "erd": "0x14C7", "name": "System Power Off Status", "length": 1 }
+              ]
             }
           ]
         }
