@@ -4309,10 +4309,10 @@
               "description": "Indicates that the appliance supports settings for overriding the Enhanced Sabbath schedule and start time.",
               "dependencies": [],
               "required": [
-                { "erd": "0x5304", "name": "Enhanced Sabbath Cooking Override Request", "length": 1 },
-                { "erd": "0x5305", "name": "Enhanced Sabbath Cooking Override Status", "length": 1 },
-                { "erd": "0x5306", "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Request", "length": 1 },
-                { "erd": "0x5307", "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Status", "length": 1 }
+                { "erd": "0x5034", "name": "Enhanced Sabbath Cooking Override Request", "length": 1 },
+                { "erd": "0x5035", "name": "Enhanced Sabbath Cooking Override Status", "length": 1 },
+                { "erd": "0x5036", "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Request", "length": 1 },
+                { "erd": "0x5037", "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Status", "length": 1 }
               ]
             }
           ]

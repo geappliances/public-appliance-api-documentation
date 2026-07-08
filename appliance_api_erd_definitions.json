@@ -70625,6 +70625,88 @@
       "size": 1
     }]
   }, {
+    "name": "Enhanced Sabbath Cooking Override Request",
+    "id": "0x5034",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "User setting for overriding the upcoming Sabbath schedule. Client should request settings updates via this ERD.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enhanced Sabbath Cooking Override",
+      "type": "enum",
+      "values": {
+        "0": "No Holiday Bake",
+        "1": "Terminate Warm In 4 Hours",
+        "2": "Terminate Warm In 8 Hours",
+        "3": "Terminate Warm In 12 Hours",
+        "4": "Terminate Warm In 16 Hours",
+        "5": "Terminate Warm In 20 Hours",
+        "6": "Terminate Warm In 24 Hours",
+        "7": "Terminate Warm In 36 Hours",
+        "8": "Terminate Warm In 48 Hours",
+        "9": "Observe 90 Minutes",
+        "10": "No Override"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Enhanced Sabbath Cooking Override Status",
+    "id": "0x5035",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "User setting for overriding the upcoming Sabbath schedule. Client should use this ERD for checking the status of the setting.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enhanced Sabbath Cooking Override",
+      "type": "enum",
+      "values": {
+        "0": "No Holiday Bake",
+        "1": "Terminate Warm In 4 Hours",
+        "2": "Terminate Warm In 8 Hours",
+        "3": "Terminate Warm In 12 Hours",
+        "4": "Terminate Warm In 16 Hours",
+        "5": "Terminate Warm In 20 Hours",
+        "6": "Terminate Warm In 24 Hours",
+        "7": "Terminate Warm In 36 Hours",
+        "8": "Terminate Warm In 48 Hours",
+        "9": "Observe 90 Minutes",
+        "10": "No Override"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Request",
+    "id": "0x5036",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "User setting to start Sabbath Mode 90 minutes before sunset instead of 18 minutes before. Client should request settings updates via this ERD.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Request",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Status",
+    "id": "0x5037",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "User setting to start Sabbath Mode 90 minutes before sunset instead of 18 minutes before. Client should use this ERD for checking the status of the setting.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Status",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Cook Cam AI Assistant Enabled Request",
     "id": "0x504e",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -83074,88 +83156,6 @@
     },
     "data": [{
       "name": "Time Of Day Synced With UI",
-      "type": "bool",
-      "offset": 0,
-      "size": 1
-    }]
-  }, {
-    "name": "Enhanced Sabbath Cooking Override Request",
-    "id": "0x5304",
-    "operations": ["read", "write", "publish", "subscribe"],
-    "description": "User setting for overriding the upcoming Sabbath schedule. Client should request settings updates via this ERD.",
-    "updateClass": {
-      "type": "event"
-    },
-    "data": [{
-      "name": "Enhanced Sabbath Cooking Override",
-      "type": "enum",
-      "values": {
-        "0": "No Holiday Bake",
-        "1": "Terminate Warm In 4 Hours",
-        "2": "Terminate Warm In 8 Hours",
-        "3": "Terminate Warm In 12 Hours",
-        "4": "Terminate Warm In 16 Hours",
-        "5": "Terminate Warm In 20 Hours",
-        "6": "Terminate Warm In 24 Hours",
-        "7": "Terminate Warm In 36 Hours",
-        "8": "Terminate Warm In 48 Hours",
-        "9": "Observe 90 Minutes",
-        "10": "No Override"
-      },
-      "offset": 0,
-      "size": 1
-    }]
-  }, {
-    "name": "Enhanced Sabbath Cooking Override Status",
-    "id": "0x5305",
-    "operations": ["read", "publish", "subscribe"],
-    "description": "User setting for overriding the upcoming Sabbath schedule. Client should use this ERD for checking the status of the setting.",
-    "updateClass": {
-      "type": "event"
-    },
-    "data": [{
-      "name": "Enhanced Sabbath Cooking Override",
-      "type": "enum",
-      "values": {
-        "0": "No Holiday Bake",
-        "1": "Terminate Warm In 4 Hours",
-        "2": "Terminate Warm In 8 Hours",
-        "3": "Terminate Warm In 12 Hours",
-        "4": "Terminate Warm In 16 Hours",
-        "5": "Terminate Warm In 20 Hours",
-        "6": "Terminate Warm In 24 Hours",
-        "7": "Terminate Warm In 36 Hours",
-        "8": "Terminate Warm In 48 Hours",
-        "9": "Observe 90 Minutes",
-        "10": "No Override"
-      },
-      "offset": 0,
-      "size": 1
-    }]
-  }, {
-    "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Request",
-    "id": "0x5306",
-    "operations": ["read", "write", "publish", "subscribe"],
-    "description": "User setting to start Sabbath Mode 90 minutes before sunset instead of 18 minutes before. Client should request settings updates via this ERD.",
-    "updateClass": {
-      "type": "event"
-    },
-    "data": [{
-      "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Request",
-      "type": "bool",
-      "offset": 0,
-      "size": 1
-    }]
-  }, {
-    "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Status",
-    "id": "0x5307",
-    "operations": ["read", "publish", "subscribe"],
-    "description": "User setting to start Sabbath Mode 90 minutes before sunset instead of 18 minutes before. Client should use this ERD for checking the status of the setting.",
-    "updateClass": {
-      "type": "event"
-    },
-    "data": [{
-      "name": "Enhanced Sabbath Observe 90 Minutes Before Sunset Status",
       "type": "bool",
       "offset": 0,
       "size": 1
