@@ -2040,16 +2040,6 @@
               ]
             },
             {
-              "mask": "0x00000400",
-              "name": "Remote Quick Spin Option",
-              "description": "This is a GEA feature that exists when the SpinLevel button on the UI is replaced with QuickSpin. Enabling QuickSpin means the spin level is `Low`, disabling means it's `Normal`. When this bit is present, other spin levels are not supported.\n- 0x20B8 Spin Level Option Request is the `Option Request ERD`.\n- 0x20B7 Spin Level Option is the `Option ERD`.",
-              "dependencies": [],
-              "required": [
-                { "erd": "0x20B7", "name": "Spin Level Option", "length": 1 },
-                { "erd": "0x20B8", "name": "Spin Level Option Request", "length": 1 }
-              ]
-            },
-            {
               "mask": "0x00000800",
               "name": "Remote Wash2x Option",
               "description": "This is a GEA feature that exists when the Prewash button on the UI is replaced with Wash2x. Enabling Wash2x means that prewash is `enabled`, disabling means it's `disabled`. When this bit is present, Prewash is not supported.\n- 0x205A Prewash Option Request is the `Option Request ERD`.\n- 0x205B Prewash Option is the `Option ERD`.",
