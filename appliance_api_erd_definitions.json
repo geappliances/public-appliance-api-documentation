@@ -55858,6 +55858,48 @@
       "size": 1
     }]
   }, {
+    "name": "Cycle Count Threshold For Self Clean Reminder Request",
+    "id": "0x2349",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The request to configure the cycle count threshold for the Self Clean Reminder.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Requested Cycle Count Threshold For Self Clean Reminder",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Cycle Count Threshold For Self Clean Reminder",
+    "id": "0x234a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of cycles between each reminder to run self clean.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Cycle Count Threshold For Self Clean Reminder",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Cycles Run Since Last Self Clean Cycle",
+    "id": "0x234b",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The number of cycles run since the last self clean cycle.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Cycles Run Since Last Self Clean Cycle",
+      "type": "u8",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Mabe - Water Level Selection",
     "id": "0x2f00",
     "operations": ["read", "write", "publish", "subscribe"],
@@ -69864,20 +69906,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1

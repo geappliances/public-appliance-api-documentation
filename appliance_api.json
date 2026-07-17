@@ -2048,6 +2048,17 @@
                 { "erd": "0x205A", "name": "Prewash Option Request", "length": 1 },
                 { "erd": "0x205B", "name": "Prewash Option", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00001000",
+              "name": "Self Clean Reminder v2",
+              "description": "Self Clean Reminder is used to suggest a Self Clean cycle to a user via the SmartHQ app. It differs from v1 in the following ways:\n- The cycles per reminder is configurable via the SmartHQ app.\n- The current cycles since last self clean is visible via the SmartHQ app.\n- Instead of a dedicated LED, the reminder may be displayed via the Smart Assist LED.\n\n- 0x234A Cycle Count Threshold Request ERD\n- 0x2349 Cycle Count Threshold Status ERD\n- 0x234B Cycle Count Since Last Self Clean Status ERD",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x2349", "name": "Cycle Count Threshold For Self Clean Reminder Request", "length": 1 },
+                { "erd": "0x234A", "name": "Cycle Count Threshold For Self Clean Reminder", "length": 1 },
+                { "erd": "0x234B", "name": "Cycles Run Since Last Self Clean Cycle", "length": 1 }
+              ]
             }
           ]
         }
