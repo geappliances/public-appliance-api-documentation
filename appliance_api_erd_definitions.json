@@ -18660,6 +18660,74 @@
       "size": 1
     }]
   }, {
+    "name": "Fresh Food Evaporator Fan Speed Resolved State",
+    "id": "0x142e",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Indicates the resolved fresh food evaporator fan speed.\n\nEnumeration values are speed levels determined by the personality parametric.\nValues 9-100 are interpretted as an explicit percentage duty cycle vote.\nValues 101-65535 are interpretted as an explicit RPM vote.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Fan Speed",
+      "type": "enum",
+      "values": {
+        "0": "FanSpeed_Off",
+        "1": "FanSpeed_SuperLow",
+        "2": "FanSpeed_On",
+        "3": "FanSpeed_Medium",
+        "4": "FanSpeed_High",
+        "5": "FanSpeed_SuperHigh",
+        "6": "FanSpeed_Service_Low",
+        "7": "FanSpeed_Service_Medium",
+        "8": "FanSpeed_Service_High",
+        "9": "FanSpeed_NumberOfSpeeds"
+      },
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
+    "name": "Fresh Food Evaporator Fan Control",
+    "id": "0x142f",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Used to read the freezer evaporator fan control type and target PWM or RPM.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Control Type",
+      "type": "enum",
+      "values": {
+        "0": "Open Loop",
+        "1": "Closed Loop"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "padding",
+      "type": "u8",
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "PWM percent or target RPM",
+      "type": "u16",
+      "offset": 2,
+      "size": 2
+    }]
+  }, {
+    "name": "Fresh Food Evaporator Fan Actual RPM",
+    "id": "0x1430",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "Indicates the actual RPM value from the fresh food evaporator fan feedback.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Actual RPM",
+      "type": "u16",
+      "offset": 0,
+      "size": 2
+    }]
+  }, {
     "name": "Variable Cube Size Setting Data 0",
     "id": "0x14bd",
     "operations": ["read", "publish", "subscribe"],

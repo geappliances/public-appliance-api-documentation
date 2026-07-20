@@ -2738,6 +2738,17 @@
                 { "erd": "0x14C6", "name": "System Power Off Request", "length": 1 },
                 { "erd": "0x14C7", "name": "System Power Off Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00010000",
+              "name": "Fresh Food Evaporator Fan",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x142E", "name": "Fresh Food Evaporator Fan Speed Resolved State", "length": 2 },
+                { "erd": "0x142F", "name": "Fresh Food Evaporator Fan Control", "length": 4 },
+                { "erd": "0x1430", "name": "Fresh Food Evaporator Fan Actual RPM", "length": 2 }
+              ]
             }
           ]
         }
