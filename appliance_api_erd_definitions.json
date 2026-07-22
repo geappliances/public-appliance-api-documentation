@@ -18674,7 +18674,7 @@
       "values": {
         "0": "FanSpeed_Off",
         "1": "FanSpeed_SuperLow",
-        "2": "FanSpeed_On",
+        "2": "FanSpeed_Low",
         "3": "FanSpeed_Medium",
         "4": "FanSpeed_High",
         "5": "FanSpeed_SuperHigh",
