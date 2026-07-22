@@ -18674,7 +18674,7 @@
       "values": {
         "0": "FanSpeed_Off",
         "1": "FanSpeed_SuperLow",
-        "2": "FanSpeed_Low",
+        "2": "FanSpeed_On",
         "3": "FanSpeed_Medium",
         "4": "FanSpeed_High",
         "5": "FanSpeed_SuperHigh",
@@ -69975,20 +69975,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
