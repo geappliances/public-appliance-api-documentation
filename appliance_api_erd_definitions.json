@@ -18674,7 +18674,7 @@
       "values": {
         "0": "FanSpeed_Off",
         "1": "FanSpeed_SuperLow",
-        "2": "FanSpeed_Low",
+        "2": "FanSpeed_On",
         "3": "FanSpeed_Medium",
         "4": "FanSpeed_High",
         "5": "FanSpeed_SuperHigh",
@@ -69976,20 +69976,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
@@ -128206,7 +128206,7 @@
     "name": "Ice Maker Model",
     "id": "0x9134",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The value represents the model configuration for the ice maker. Some of the key differences that impact software are as follows:\n- New Power Boards have a lower baud rate (19200) compared to the Legacy Power Boards (230400).\n- The difference between Opal 2.0 and Opal 2.5 is the addition of Sanitize Indication on the Opal 2.5.\n- Opal 2.1 & 2.6 have new power boards and are updated versions of Opal 2.0 and 2.5 respectively the key difference being the addition of a Filter Button and Water Level Sensor at the bottom reservoir.\n- The Opal Mini is smaller in dimension. The Water reservoir is on the top, Accessories like the water tank, filter, etc are not compatible with previous models.\n- The Opal Clear is designed to make clear ice.\n- The Opal 1.0 is the connected version of the original one-button Opal.",
+    "description": "The value represents the model configuration for the ice maker. Some of the key differences that impact software are as follows:\n- New Power Boards have a lower baud rate (19200) compared to the Legacy Power Boards (230400).\n- The difference between Opal 2.0 and Opal 2.5 is the addition of Sanitize Indication on the Opal 2.5.\n- Opal 2.1 & 2.6 have new power boards and are updated versions of Opal 2.0 and 2.5 respectively the key difference being the addition of a Filter Button and Water Level Sensor at the bottom reservoir.\n- The Opal Mini is smaller in dimension. The Water reservoir is on the top, Accessories like the water tank, filter, etc are not compatible with previous models.\n- The Opal Clear is designed to make clear ice.\n- The Opal 3.0 is the connected version of the original one-button Opal.\n- The Opal 3.0 Pro Plus is an upgrade to the Opal 2.5.",
     "updateClass": {
       "type": "static"
     },
@@ -128224,7 +128224,8 @@
         "7": "Opal 2.6",
         "8": "Opal Mini",
         "9": "Opal Clear",
-        "10": "Opal 1.0"
+        "10": "Opal 3.0",
+        "11": "Opal 3.0 Pro Plus"
       },
       "offset": 0,
       "size": 1
