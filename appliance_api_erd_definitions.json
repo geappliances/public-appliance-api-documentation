@@ -19327,7 +19327,8 @@
         "8": "Consumer Error Mode",
         "9": "Floor Type Selection Mode",
         "10": "Administrator Mode",
-        "11": "Calibration Mode"
+        "11": "Calibration Mode",
+        "12": "Load Control Mode"
       },
       "offset": 0,
       "size": 1
@@ -69975,20 +69976,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
