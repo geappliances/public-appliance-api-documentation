@@ -9659,6 +9659,34 @@
               ]
             }
           ]
+        },
+        "2": {
+          "description": "",
+          "required": [
+
+          ],
+          "features": [
+            {
+              "mask": "0x00000001",
+              "name": "Tub 0 Control Lock",
+              "description": "Indicates whether the appliance’s lower drawer interface is currently locked and unavailable for user interaction.\nThis Option toggles on and off the feature.ERD 0x3089 allows toggling of this setting from the app and 0x308A stores the state of the ERD.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x3089", "name": "Control Lock Tub 0 Request", "length": 1 },
+                { "erd": "0x308A", "name": "Control Lock Tub 1 Option State", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00000002",
+              "name": "Tub 1 Control Lock",
+              "description": "Indicates whether the appliance’s upper drawer interface is currently locked and unavailable for user interaction.\nThis Option toggles on and off the feature.ERD 0x3489 allows toggling of this setting from the app and 0x348A stores the state of the ERD.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x3489", "name": "Control Lock Tub 1 Request", "length": 1 },
+                { "erd": "0x348A", "name": "Control Lock Tub 1 Option State", "length": 1 }
+              ]
+            }
+          ]
         }
       }
     },

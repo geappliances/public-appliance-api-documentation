@@ -18674,7 +18674,7 @@
       "values": {
         "0": "FanSpeed_Off",
         "1": "FanSpeed_SuperLow",
-        "2": "FanSpeed_Low",
+        "2": "FanSpeed_On",
         "3": "FanSpeed_Medium",
         "4": "FanSpeed_High",
         "5": "FanSpeed_SuperHigh",
@@ -59265,6 +59265,34 @@
       "size": 2
     }]
   }, {
+    "name": "Control Lock Tub 0 Request",
+    "id": "0x3089",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "Requested state of the Tub 0 Control Lock Option",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Control lock Option Requested State",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Control Lock Tub 1 Option State",
+    "id": "0x308a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The current state of the Tub 0 Control Lock Option",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Control lock Option State",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Turbidity Calibration Value",
     "id": "0x3100",
     "operations": ["read", "publish", "subscribe"],
@@ -65086,6 +65114,34 @@
       "size": 1
     }]
   }, {
+    "name": "Control Lock Tub 1 Request",
+    "id": "0x3489",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "For 2nd entity Dishwasher Drawer: The requested state of the control lock function",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Control lock Option Requested State",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "Control Lock Tub 1 Option State",
+    "id": "0x348a",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "For 2nd entity Dishwasher Drawer: The current state of the control lock function",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "Control lock Option State",
+      "type": "bool",
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
     "name": "Tub 1 Dish Feature Configuration",
     "id": "0x3600",
     "operations": ["read", "publish", "subscribe"],
@@ -69976,20 +70032,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
