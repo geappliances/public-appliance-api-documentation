@@ -116221,7 +116221,8 @@
         "38": "Compressor Minimum Off Time",
         "39": "Boost Dehumidify",
         "40": "Humidity Sentinel",
-        "41": "MakeUpAir Fan Circulate"
+        "41": "MakeUpAir Fan Circulate",
+        "42": "Forced Defrost"
       },
       "offset": 0,
       "size": 1
@@ -116279,7 +116280,8 @@
         "38": "Compressor Minimum Off Time",
         "39": "Boost Dehumidify",
         "40": "Humidity Sentinel",
-        "41": "MakeUpAir Fan Circulate"
+        "41": "MakeUpAir Fan Circulate",
+        "42": "Forced Defrost"
       },
       "offset": 0,
       "size": 1
@@ -116337,7 +116339,8 @@
         "38": "Compressor Minimum Off Time",
         "39": "Boost Dehumidify",
         "40": "Humidity Sentinel",
-        "41": "MakeUpAir Fan Circulate"
+        "41": "MakeUpAir Fan Circulate",
+        "42": "Forced Defrost"
       },
       "offset": 0,
       "size": 1
@@ -116395,7 +116398,8 @@
         "38": "Compressor Minimum Off Time",
         "39": "Boost Dehumidify",
         "40": "Humidity Sentinel",
-        "41": "MakeUpAir Fan Circulate"
+        "41": "MakeUpAir Fan Circulate",
+        "42": "Forced Defrost"
       },
       "offset": 0,
       "size": 1
