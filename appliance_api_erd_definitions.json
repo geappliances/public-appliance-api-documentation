@@ -6420,7 +6420,7 @@
     "name": "Hydration Station Total Consumption",
     "id": "0x1060",
     "operations": ["read", "publish", "subscribe"],
-    "description": "Tracks overall water consumption. This is currently the sum of two internal ERDs (Cold Water Usage and Autofill Water Usage).",
+    "description": "Tracks total water consumption. \nFor point-of-use water filters, this ERD tracks the total water consumed. \nFor refrigerators, the value is equal to the Cold Water Usage ERD when AutoFill is not present. When AutoFill is present, the value is calculated as the sum of the Cold Water Usage and AutoFill Water Usage ERDs.",
     "updateClass": {
       "type": "event"
     },

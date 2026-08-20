@@ -4946,6 +4946,15 @@
               "required": [
                 { "erd": "0x1178", "name": "Home Water Filter Platform", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00010000",
+              "name": "Hydration Station",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x1060", "name": "Hydration Station Total Consumption", "length": 4 }
+              ]
             }
           ]
         }
