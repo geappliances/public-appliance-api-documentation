@@ -8932,6 +8932,85 @@
         }
       }
     },
+    "50": {
+      "name": "Smart Plug",
+      "description": "",
+      "featureType": 50,
+      "versions": {
+        "1": {
+          "description": "",
+          "required": [
+
+          ],
+          "features": [
+            {
+              "mask": "0x00000001",
+              "name": "Foundation",
+              "description": "Acts like a basic plug",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x0410", "name": "Matter Device On-Off Request", "length": 2 },
+                { "erd": "0x0402", "name": "Matter Device Identify Mode Request", "length": 1 },
+                { "erd": "0x0411", "name": "Matter Device On-Off State", "length": 2 }
+              ]
+            },
+            {
+              "mask": "0x00000002",
+              "name": "Power and Energy",
+              "description": "Power and Energy Measurement and Reporting",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x0420", "name": "Power Mode", "length": 1 },
+                { "erd": "0x0421", "name": "Matter Active Power", "length": 8 },
+                { "erd": "0x0422", "name": "Matter Active Power Accuracy", "length": 33 },
+                { "erd": "0x0423", "name": "Matter Cumulative Energy", "length": 8 },
+                { "erd": "0x0424", "name": "Matter Cumulative Energy Accuracy", "length": 33 }
+              ]
+            },
+            {
+              "mask": "0x00000004",
+              "name": "Schedule",
+              "description": "Weekly Recurring Schedule",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x0A00", "name": "Weekly Recurring Schedule", "length": 120 }
+              ]
+            },
+            {
+              "mask": "0x00000008",
+              "name": "Mode",
+              "description": "Special Operating Mode",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9600", "name": "Mode Request ERD for Smart Plug", "length": 1 },
+                { "erd": "0x9601", "name": "Mode Status ERD for Smart Plug", "length": 1 },
+                { "erd": "0x9602", "name": "Timer ERD for Smart Plug", "length": 8 },
+                { "erd": "0x9603", "name": "Vacation Mode ERD for Smart Plug", "length": 8 },
+                { "erd": "0x9604", "name": "Always On Mode ERD for Smart Plug", "length": 8 }
+              ]
+            },
+            {
+              "mask": "0x00000010",
+              "name": "Power Outage Notification",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9605", "name": "Power Outage Notification ERD for Smart Plug", "length": 8 }
+              ]
+            },
+            {
+              "mask": "0x00000020",
+              "name": "Over or Under Voltage Notification",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x9606", "name": "Over/Under Voltage Notification ERD for Smart Plug", "length": 12 }
+              ]
+            }
+          ]
+        }
+      }
+    },
     "55": {
       "name": "Sourdough Starter",
       "description": "",
