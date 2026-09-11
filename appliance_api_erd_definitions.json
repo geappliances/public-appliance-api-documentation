@@ -29239,7 +29239,10 @@
         "3": "Soil Based",
         "4": "Acid Based",
         "5": "Beverage",
-        "6": "Oil Based"
+        "6": "Oil Based",
+        "7": "Cosmetics",
+        "8": "Coffee",
+        "9": "Wine"
       },
       "offset": 0,
       "size": 1
@@ -29262,7 +29265,10 @@
         "3": "Soil Based",
         "4": "Acid Based",
         "5": "Beverage",
-        "6": "Oil Based"
+        "6": "Oil Based",
+        "7": "Cosmetics",
+        "8": "Coffee",
+        "9": "Wine"
       },
       "offset": 0,
       "size": 1
@@ -30907,7 +30913,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "Reserved_1",
+      "name": "Cosmetics Allowed",
       "type": "bool",
       "bits": {
         "offset": 15,
@@ -30916,7 +30922,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "Reserved_2",
+      "name": "Coffee Allowed",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -30925,7 +30931,7 @@
       "offset": 0,
       "size": 2
     }, {
-      "name": "Reserved_3",
+      "name": "Wine Allowed",
       "type": "bool",
       "bits": {
         "offset": 1,
