@@ -21762,7 +21762,7 @@
       "values": {
         "0": "FanSpeed_Off",
         "1": "FanSpeed_SuperLow",
-        "2": "FanSpeed_On",
+        "2": "FanSpeed_Low",
         "3": "FanSpeed_Medium",
         "4": "FanSpeed_High",
         "5": "FanSpeed_SuperHigh",
@@ -43332,9 +43332,7 @@
         "2": "Low",
         "3": "Medium",
         "4": "High",
-        "5": "Max",
-        "6": "Medium-Low",
-        "7": "Medium-High"
+        "5": "Max"
       },
       "offset": 0,
       "size": 1
@@ -43356,9 +43354,7 @@
         "2": "Low",
         "3": "Medium",
         "4": "High",
-        "5": "Max",
-        "6": "Medium-Low",
-        "7": "Medium-High"
+        "5": "Max"
       },
       "offset": 0,
       "size": 1
@@ -73396,20 +73392,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Oven Light Auto On During Cycle",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Reserved",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 5
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Oven Light Auto On During Cycle",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 1
       },
       "offset": 0,
       "size": 1
