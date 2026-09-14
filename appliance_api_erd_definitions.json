@@ -28318,7 +28318,7 @@
     "name": "Water Temperature Option",
     "id": "0x20bb",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The current option value for water temperature option.",
+    "description": "The current option value for water temperature option. \nThe order of these options is: \nTap Cold, Cold, Extra Cool, Cool, Colors, Tepid, Warm, Extra Warm, Hot, Extra Hot",
     "updateClass": {
       "type": "event"
     },
@@ -28341,7 +28341,10 @@
         "12": "60°C",
         "13": "70°C",
         "14": "80°C",
-        "15": "90°C"
+        "15": "90°C",
+        "16": "WaterTemp_ExtraCool",
+        "17": "WaterTemp_Tepid",
+        "18": "WaterTemp_ExtraWarm"
       },
       "offset": 0,
       "size": 1
@@ -28373,7 +28376,10 @@
         "12": "60°C",
         "13": "70°C",
         "14": "80°C",
-        "15": "90°C"
+        "15": "90°C",
+        "16": "WaterTemp_ExtraCool",
+        "17": "WaterTemp_Tepid",
+        "18": "WaterTemp_ExtraWarm"
       },
       "offset": 0,
       "size": 1
@@ -43326,7 +43332,9 @@
         "2": "Low",
         "3": "Medium",
         "4": "High",
-        "5": "Max"
+        "5": "Max",
+        "6": "Medium-Low",
+        "7": "Medium-High"
       },
       "offset": 0,
       "size": 1
@@ -43348,7 +43356,9 @@
         "2": "Low",
         "3": "Medium",
         "4": "High",
-        "5": "Max"
+        "5": "Max",
+        "6": "Medium-Low",
+        "7": "Medium-High"
       },
       "offset": 0,
       "size": 1
