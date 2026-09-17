@@ -21762,7 +21762,7 @@
       "values": {
         "0": "FanSpeed_Off",
         "1": "FanSpeed_SuperLow",
-        "2": "FanSpeed_Low",
+        "2": "FanSpeed_On",
         "3": "FanSpeed_Medium",
         "4": "FanSpeed_High",
         "5": "FanSpeed_SuperHigh",
@@ -64114,7 +64114,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -64332,7 +64333,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -64550,7 +64552,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -64768,7 +64771,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -64986,7 +64990,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -65204,7 +65209,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -65422,7 +65428,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -65640,7 +65647,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -65858,7 +65866,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -66076,7 +66085,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -68875,7 +68885,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -69093,7 +69104,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -69311,7 +69323,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -69529,7 +69542,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -69747,7 +69761,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -69965,7 +69980,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -70183,7 +70199,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -70401,7 +70418,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -70619,7 +70637,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -70837,7 +70856,8 @@
         "45": "CycleNames_Plus",
         "46": "CycleNames_Heavy_Duty_Dry",
         "47": "CycleNames_Everyday_Dry_On",
-        "48": "CycleNames_Everyday_Dry_Off"
+        "48": "CycleNames_Everyday_Dry_Off",
+        "49": "CycleNames_45_Minute_Wash"
       },
       "offset": 0,
       "size": 1
@@ -73396,20 +73416,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
