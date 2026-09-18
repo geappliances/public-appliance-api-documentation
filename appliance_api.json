@@ -8973,7 +8973,7 @@
               "description": "Weekly Recurring Schedule",
               "dependencies": [],
               "required": [
-                { "erd": "0x0A00", "name": "Weekly Recurring Schedule", "length": 120 }
+                { "erd": "0x0A00", "name": "Weekly Recurring On/Off Schedule", "length": 90 }
               ]
             },
             {

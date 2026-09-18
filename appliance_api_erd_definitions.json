@@ -3039,7 +3039,7 @@
       "size": 1
     }]
   }, {
-    "name": "Weekly Recurring Schedule",
+    "name": "Weekly Recurring On/Off Schedule",
     "id": "0x0a00",
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "This ERD represents a sequence of weekly recurring schedule for turning the device on/off at specific times.",
@@ -3047,7 +3047,7 @@
       "type": "event"
     },
     "data": [{
-      "name": "Schedule[0].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[0].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -3056,7 +3056,7 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Schedule[0].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[0].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
@@ -3065,7 +3065,7 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Schedule[0].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[0].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -3074,241 +3074,216 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Schedule[0].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
+      "name": "Schedule[0].Unused",
+      "type": "u8",
       "bits": {
         "offset": 3,
-        "size": 1
+        "size": 5
       },
       "offset": 0,
       "size": 1
     }, {
-      "name": "Schedule[0].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[0].Enabled for Sunday",
       "type": "bool",
       "bits": {
-        "offset": 4,
+        "offset": 0,
         "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
-      "name": "Schedule[0].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
-      "name": "Schedule[0].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
-      "name": "Schedule[0].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 0,
-      "size": 1
-    }, {
-      "name": "Schedule[0].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
       },
       "offset": 1,
       "size": 1
     }, {
-      "name": "Schedule[0].Time (minutes from midnight)",
+      "name": "Schedule[0].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Schedule[0].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Schedule[0].Enabled for Wednesday",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Schedule[0].Enabled for Thursday",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Schedule[0].Enabled for Friday",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Schedule[0].Enabled for Saturday",
+      "type": "bool",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Schedule[0].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 1
+    }, {
+      "name": "Schedule[0].On Time (minutes from midnight)",
       "type": "u16",
       "offset": 2,
       "size": 2
     }, {
-      "name": "Schedule[1].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 1
-    }, {
-      "name": "Schedule[1].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 1
-    }, {
-      "name": "Schedule[1].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 1
-    }, {
-      "name": "Schedule[1].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 1
-    }, {
-      "name": "Schedule[1].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 1
-    }, {
-      "name": "Schedule[1].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 1
-    }, {
-      "name": "Schedule[1].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 1
-    }, {
-      "name": "Schedule[1].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 4,
-      "size": 1
-    }, {
-      "name": "Schedule[1].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 5,
-      "size": 1
-    }, {
-      "name": "Schedule[1].Time (minutes from midnight)",
+      "name": "Schedule[0].Off Time (minutes from midnight)",
       "type": "u16",
-      "offset": 6,
+      "offset": 4,
       "size": 2
     }, {
-      "name": "Schedule[2].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[1].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
         "size": 1
       },
-      "offset": 8,
+      "offset": 6,
       "size": 1
     }, {
-      "name": "Schedule[2].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[1].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
         "size": 1
       },
-      "offset": 8,
+      "offset": 6,
       "size": 1
     }, {
-      "name": "Schedule[2].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[1].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
         "size": 1
       },
-      "offset": 8,
+      "offset": 6,
       "size": 1
     }, {
-      "name": "Schedule[2].Days Bitmap.Enabled if schedule is set for Wednesday",
+      "name": "Schedule[1].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
+      },
+      "offset": 6,
+      "size": 1
+    }, {
+      "name": "Schedule[1].Enabled for Sunday",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 7,
+      "size": 1
+    }, {
+      "name": "Schedule[1].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 7,
+      "size": 1
+    }, {
+      "name": "Schedule[1].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 7,
+      "size": 1
+    }, {
+      "name": "Schedule[1].Enabled for Wednesday",
       "type": "bool",
       "bits": {
         "offset": 3,
         "size": 1
       },
-      "offset": 8,
+      "offset": 7,
       "size": 1
     }, {
-      "name": "Schedule[2].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[1].Enabled for Thursday",
       "type": "bool",
       "bits": {
         "offset": 4,
         "size": 1
       },
-      "offset": 8,
+      "offset": 7,
       "size": 1
     }, {
-      "name": "Schedule[2].Days Bitmap.Enabled if schedule is set for Friday",
+      "name": "Schedule[1].Enabled for Friday",
       "type": "bool",
       "bits": {
         "offset": 5,
         "size": 1
       },
-      "offset": 8,
+      "offset": 7,
       "size": 1
     }, {
-      "name": "Schedule[2].Days Bitmap.Enabled if schedule is set for Saturday",
+      "name": "Schedule[1].Enabled for Saturday",
       "type": "bool",
       "bits": {
         "offset": 6,
         "size": 1
       },
-      "offset": 8,
+      "offset": 7,
       "size": 1
     }, {
-      "name": "Schedule[2].Days Bitmap.Unused",
-      "type": "bool",
+      "name": "Schedule[1].Unused",
+      "type": "u8",
       "bits": {
         "offset": 7,
         "size": 1
       },
+      "offset": 7,
+      "size": 1
+    }, {
+      "name": "Schedule[1].On Time (minutes from midnight)",
+      "type": "u16",
       "offset": 8,
-      "size": 1
+      "size": 2
     }, {
-      "name": "Schedule[2].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 9,
-      "size": 1
-    }, {
-      "name": "Schedule[2].Time (minutes from midnight)",
+      "name": "Schedule[1].Off Time (minutes from midnight)",
       "type": "u16",
       "offset": 10,
       "size": 2
     }, {
-      "name": "Schedule[3].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[2].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -3317,7 +3292,7 @@
       "offset": 12,
       "size": 1
     }, {
-      "name": "Schedule[3].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[2].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
@@ -3326,7 +3301,7 @@
       "offset": 12,
       "size": 1
     }, {
-      "name": "Schedule[3].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[2].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -3335,241 +3310,216 @@
       "offset": 12,
       "size": 1
     }, {
-      "name": "Schedule[3].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
+      "name": "Schedule[2].Unused",
+      "type": "u8",
       "bits": {
         "offset": 3,
-        "size": 1
+        "size": 5
       },
       "offset": 12,
       "size": 1
     }, {
-      "name": "Schedule[3].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[2].Enabled for Sunday",
       "type": "bool",
       "bits": {
-        "offset": 4,
+        "offset": 0,
         "size": 1
-      },
-      "offset": 12,
-      "size": 1
-    }, {
-      "name": "Schedule[3].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 12,
-      "size": 1
-    }, {
-      "name": "Schedule[3].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 12,
-      "size": 1
-    }, {
-      "name": "Schedule[3].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 12,
-      "size": 1
-    }, {
-      "name": "Schedule[3].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
       },
       "offset": 13,
       "size": 1
     }, {
-      "name": "Schedule[3].Time (minutes from midnight)",
+      "name": "Schedule[2].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Schedule[2].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Schedule[2].Enabled for Wednesday",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Schedule[2].Enabled for Thursday",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Schedule[2].Enabled for Friday",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Schedule[2].Enabled for Saturday",
+      "type": "bool",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Schedule[2].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 13,
+      "size": 1
+    }, {
+      "name": "Schedule[2].On Time (minutes from midnight)",
       "type": "u16",
       "offset": 14,
       "size": 2
     }, {
-      "name": "Schedule[4].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 16,
-      "size": 1
-    }, {
-      "name": "Schedule[4].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 16,
-      "size": 1
-    }, {
-      "name": "Schedule[4].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 16,
-      "size": 1
-    }, {
-      "name": "Schedule[4].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 16,
-      "size": 1
-    }, {
-      "name": "Schedule[4].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 16,
-      "size": 1
-    }, {
-      "name": "Schedule[4].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 16,
-      "size": 1
-    }, {
-      "name": "Schedule[4].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 16,
-      "size": 1
-    }, {
-      "name": "Schedule[4].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 16,
-      "size": 1
-    }, {
-      "name": "Schedule[4].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 17,
-      "size": 1
-    }, {
-      "name": "Schedule[4].Time (minutes from midnight)",
+      "name": "Schedule[2].Off Time (minutes from midnight)",
       "type": "u16",
-      "offset": 18,
+      "offset": 16,
       "size": 2
     }, {
-      "name": "Schedule[5].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[3].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
         "size": 1
       },
-      "offset": 20,
+      "offset": 18,
       "size": 1
     }, {
-      "name": "Schedule[5].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[3].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
         "size": 1
       },
-      "offset": 20,
+      "offset": 18,
       "size": 1
     }, {
-      "name": "Schedule[5].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[3].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
         "size": 1
       },
-      "offset": 20,
+      "offset": 18,
       "size": 1
     }, {
-      "name": "Schedule[5].Days Bitmap.Enabled if schedule is set for Wednesday",
+      "name": "Schedule[3].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
+      },
+      "offset": 18,
+      "size": 1
+    }, {
+      "name": "Schedule[3].Enabled for Sunday",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 19,
+      "size": 1
+    }, {
+      "name": "Schedule[3].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 19,
+      "size": 1
+    }, {
+      "name": "Schedule[3].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 19,
+      "size": 1
+    }, {
+      "name": "Schedule[3].Enabled for Wednesday",
       "type": "bool",
       "bits": {
         "offset": 3,
         "size": 1
       },
-      "offset": 20,
+      "offset": 19,
       "size": 1
     }, {
-      "name": "Schedule[5].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[3].Enabled for Thursday",
       "type": "bool",
       "bits": {
         "offset": 4,
         "size": 1
       },
-      "offset": 20,
+      "offset": 19,
       "size": 1
     }, {
-      "name": "Schedule[5].Days Bitmap.Enabled if schedule is set for Friday",
+      "name": "Schedule[3].Enabled for Friday",
       "type": "bool",
       "bits": {
         "offset": 5,
         "size": 1
       },
-      "offset": 20,
+      "offset": 19,
       "size": 1
     }, {
-      "name": "Schedule[5].Days Bitmap.Enabled if schedule is set for Saturday",
+      "name": "Schedule[3].Enabled for Saturday",
       "type": "bool",
       "bits": {
         "offset": 6,
         "size": 1
       },
-      "offset": 20,
+      "offset": 19,
       "size": 1
     }, {
-      "name": "Schedule[5].Days Bitmap.Unused",
-      "type": "bool",
+      "name": "Schedule[3].Unused",
+      "type": "u8",
       "bits": {
         "offset": 7,
         "size": 1
       },
+      "offset": 19,
+      "size": 1
+    }, {
+      "name": "Schedule[3].On Time (minutes from midnight)",
+      "type": "u16",
       "offset": 20,
-      "size": 1
+      "size": 2
     }, {
-      "name": "Schedule[5].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 21,
-      "size": 1
-    }, {
-      "name": "Schedule[5].Time (minutes from midnight)",
+      "name": "Schedule[3].Off Time (minutes from midnight)",
       "type": "u16",
       "offset": 22,
       "size": 2
     }, {
-      "name": "Schedule[6].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[4].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -3578,7 +3528,7 @@
       "offset": 24,
       "size": 1
     }, {
-      "name": "Schedule[6].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[4].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
@@ -3587,7 +3537,7 @@
       "offset": 24,
       "size": 1
     }, {
-      "name": "Schedule[6].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[4].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -3596,241 +3546,216 @@
       "offset": 24,
       "size": 1
     }, {
-      "name": "Schedule[6].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
+      "name": "Schedule[4].Unused",
+      "type": "u8",
       "bits": {
         "offset": 3,
-        "size": 1
+        "size": 5
       },
       "offset": 24,
       "size": 1
     }, {
-      "name": "Schedule[6].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[4].Enabled for Sunday",
       "type": "bool",
       "bits": {
-        "offset": 4,
+        "offset": 0,
         "size": 1
-      },
-      "offset": 24,
-      "size": 1
-    }, {
-      "name": "Schedule[6].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 24,
-      "size": 1
-    }, {
-      "name": "Schedule[6].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 24,
-      "size": 1
-    }, {
-      "name": "Schedule[6].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 24,
-      "size": 1
-    }, {
-      "name": "Schedule[6].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
       },
       "offset": 25,
       "size": 1
     }, {
-      "name": "Schedule[6].Time (minutes from midnight)",
+      "name": "Schedule[4].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "Schedule[4].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "Schedule[4].Enabled for Wednesday",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "Schedule[4].Enabled for Thursday",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "Schedule[4].Enabled for Friday",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "Schedule[4].Enabled for Saturday",
+      "type": "bool",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "Schedule[4].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 25,
+      "size": 1
+    }, {
+      "name": "Schedule[4].On Time (minutes from midnight)",
       "type": "u16",
       "offset": 26,
       "size": 2
     }, {
-      "name": "Schedule[7].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Schedule[7].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Schedule[7].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Schedule[7].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Schedule[7].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Schedule[7].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Schedule[7].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Schedule[7].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 28,
-      "size": 1
-    }, {
-      "name": "Schedule[7].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 29,
-      "size": 1
-    }, {
-      "name": "Schedule[7].Time (minutes from midnight)",
+      "name": "Schedule[4].Off Time (minutes from midnight)",
       "type": "u16",
-      "offset": 30,
+      "offset": 28,
       "size": 2
     }, {
-      "name": "Schedule[8].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[5].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
         "size": 1
       },
-      "offset": 32,
+      "offset": 30,
       "size": 1
     }, {
-      "name": "Schedule[8].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[5].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
         "size": 1
       },
-      "offset": 32,
+      "offset": 30,
       "size": 1
     }, {
-      "name": "Schedule[8].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[5].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
         "size": 1
       },
-      "offset": 32,
+      "offset": 30,
       "size": 1
     }, {
-      "name": "Schedule[8].Days Bitmap.Enabled if schedule is set for Wednesday",
+      "name": "Schedule[5].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
+      },
+      "offset": 30,
+      "size": 1
+    }, {
+      "name": "Schedule[5].Enabled for Sunday",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 31,
+      "size": 1
+    }, {
+      "name": "Schedule[5].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 31,
+      "size": 1
+    }, {
+      "name": "Schedule[5].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 31,
+      "size": 1
+    }, {
+      "name": "Schedule[5].Enabled for Wednesday",
       "type": "bool",
       "bits": {
         "offset": 3,
         "size": 1
       },
-      "offset": 32,
+      "offset": 31,
       "size": 1
     }, {
-      "name": "Schedule[8].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[5].Enabled for Thursday",
       "type": "bool",
       "bits": {
         "offset": 4,
         "size": 1
       },
-      "offset": 32,
+      "offset": 31,
       "size": 1
     }, {
-      "name": "Schedule[8].Days Bitmap.Enabled if schedule is set for Friday",
+      "name": "Schedule[5].Enabled for Friday",
       "type": "bool",
       "bits": {
         "offset": 5,
         "size": 1
       },
-      "offset": 32,
+      "offset": 31,
       "size": 1
     }, {
-      "name": "Schedule[8].Days Bitmap.Enabled if schedule is set for Saturday",
+      "name": "Schedule[5].Enabled for Saturday",
       "type": "bool",
       "bits": {
         "offset": 6,
         "size": 1
       },
-      "offset": 32,
+      "offset": 31,
       "size": 1
     }, {
-      "name": "Schedule[8].Days Bitmap.Unused",
-      "type": "bool",
+      "name": "Schedule[5].Unused",
+      "type": "u8",
       "bits": {
         "offset": 7,
         "size": 1
       },
+      "offset": 31,
+      "size": 1
+    }, {
+      "name": "Schedule[5].On Time (minutes from midnight)",
+      "type": "u16",
       "offset": 32,
-      "size": 1
+      "size": 2
     }, {
-      "name": "Schedule[8].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 33,
-      "size": 1
-    }, {
-      "name": "Schedule[8].Time (minutes from midnight)",
+      "name": "Schedule[5].Off Time (minutes from midnight)",
       "type": "u16",
       "offset": 34,
       "size": 2
     }, {
-      "name": "Schedule[9].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[6].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -3839,7 +3764,7 @@
       "offset": 36,
       "size": 1
     }, {
-      "name": "Schedule[9].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[6].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
@@ -3848,7 +3773,7 @@
       "offset": 36,
       "size": 1
     }, {
-      "name": "Schedule[9].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[6].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -3857,241 +3782,216 @@
       "offset": 36,
       "size": 1
     }, {
-      "name": "Schedule[9].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
+      "name": "Schedule[6].Unused",
+      "type": "u8",
       "bits": {
         "offset": 3,
-        "size": 1
+        "size": 5
       },
       "offset": 36,
       "size": 1
     }, {
-      "name": "Schedule[9].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[6].Enabled for Sunday",
       "type": "bool",
       "bits": {
-        "offset": 4,
+        "offset": 0,
         "size": 1
-      },
-      "offset": 36,
-      "size": 1
-    }, {
-      "name": "Schedule[9].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 36,
-      "size": 1
-    }, {
-      "name": "Schedule[9].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 36,
-      "size": 1
-    }, {
-      "name": "Schedule[9].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 36,
-      "size": 1
-    }, {
-      "name": "Schedule[9].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
       },
       "offset": 37,
       "size": 1
     }, {
-      "name": "Schedule[9].Time (minutes from midnight)",
+      "name": "Schedule[6].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 37,
+      "size": 1
+    }, {
+      "name": "Schedule[6].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 37,
+      "size": 1
+    }, {
+      "name": "Schedule[6].Enabled for Wednesday",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 37,
+      "size": 1
+    }, {
+      "name": "Schedule[6].Enabled for Thursday",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 37,
+      "size": 1
+    }, {
+      "name": "Schedule[6].Enabled for Friday",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 37,
+      "size": 1
+    }, {
+      "name": "Schedule[6].Enabled for Saturday",
+      "type": "bool",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 37,
+      "size": 1
+    }, {
+      "name": "Schedule[6].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 37,
+      "size": 1
+    }, {
+      "name": "Schedule[6].On Time (minutes from midnight)",
       "type": "u16",
       "offset": 38,
       "size": 2
     }, {
-      "name": "Schedule[10].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 40,
-      "size": 1
-    }, {
-      "name": "Schedule[10].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 40,
-      "size": 1
-    }, {
-      "name": "Schedule[10].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 40,
-      "size": 1
-    }, {
-      "name": "Schedule[10].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 40,
-      "size": 1
-    }, {
-      "name": "Schedule[10].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 40,
-      "size": 1
-    }, {
-      "name": "Schedule[10].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 40,
-      "size": 1
-    }, {
-      "name": "Schedule[10].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 40,
-      "size": 1
-    }, {
-      "name": "Schedule[10].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 40,
-      "size": 1
-    }, {
-      "name": "Schedule[10].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 41,
-      "size": 1
-    }, {
-      "name": "Schedule[10].Time (minutes from midnight)",
+      "name": "Schedule[6].Off Time (minutes from midnight)",
       "type": "u16",
-      "offset": 42,
+      "offset": 40,
       "size": 2
     }, {
-      "name": "Schedule[11].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[7].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
         "size": 1
       },
-      "offset": 44,
+      "offset": 42,
       "size": 1
     }, {
-      "name": "Schedule[11].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[7].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
         "size": 1
       },
-      "offset": 44,
+      "offset": 42,
       "size": 1
     }, {
-      "name": "Schedule[11].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[7].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
         "size": 1
       },
-      "offset": 44,
+      "offset": 42,
       "size": 1
     }, {
-      "name": "Schedule[11].Days Bitmap.Enabled if schedule is set for Wednesday",
+      "name": "Schedule[7].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
+      },
+      "offset": 42,
+      "size": 1
+    }, {
+      "name": "Schedule[7].Enabled for Sunday",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 43,
+      "size": 1
+    }, {
+      "name": "Schedule[7].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 43,
+      "size": 1
+    }, {
+      "name": "Schedule[7].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 43,
+      "size": 1
+    }, {
+      "name": "Schedule[7].Enabled for Wednesday",
       "type": "bool",
       "bits": {
         "offset": 3,
         "size": 1
       },
-      "offset": 44,
+      "offset": 43,
       "size": 1
     }, {
-      "name": "Schedule[11].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[7].Enabled for Thursday",
       "type": "bool",
       "bits": {
         "offset": 4,
         "size": 1
       },
-      "offset": 44,
+      "offset": 43,
       "size": 1
     }, {
-      "name": "Schedule[11].Days Bitmap.Enabled if schedule is set for Friday",
+      "name": "Schedule[7].Enabled for Friday",
       "type": "bool",
       "bits": {
         "offset": 5,
         "size": 1
       },
-      "offset": 44,
+      "offset": 43,
       "size": 1
     }, {
-      "name": "Schedule[11].Days Bitmap.Enabled if schedule is set for Saturday",
+      "name": "Schedule[7].Enabled for Saturday",
       "type": "bool",
       "bits": {
         "offset": 6,
         "size": 1
       },
-      "offset": 44,
+      "offset": 43,
       "size": 1
     }, {
-      "name": "Schedule[11].Days Bitmap.Unused",
-      "type": "bool",
+      "name": "Schedule[7].Unused",
+      "type": "u8",
       "bits": {
         "offset": 7,
         "size": 1
       },
+      "offset": 43,
+      "size": 1
+    }, {
+      "name": "Schedule[7].On Time (minutes from midnight)",
+      "type": "u16",
       "offset": 44,
-      "size": 1
+      "size": 2
     }, {
-      "name": "Schedule[11].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 45,
-      "size": 1
-    }, {
-      "name": "Schedule[11].Time (minutes from midnight)",
+      "name": "Schedule[7].Off Time (minutes from midnight)",
       "type": "u16",
       "offset": 46,
       "size": 2
     }, {
-      "name": "Schedule[12].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[8].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -4100,7 +4000,7 @@
       "offset": 48,
       "size": 1
     }, {
-      "name": "Schedule[12].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[8].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
@@ -4109,7 +4009,7 @@
       "offset": 48,
       "size": 1
     }, {
-      "name": "Schedule[12].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[8].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -4118,241 +4018,216 @@
       "offset": 48,
       "size": 1
     }, {
-      "name": "Schedule[12].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
+      "name": "Schedule[8].Unused",
+      "type": "u8",
       "bits": {
         "offset": 3,
-        "size": 1
+        "size": 5
       },
       "offset": 48,
       "size": 1
     }, {
-      "name": "Schedule[12].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[8].Enabled for Sunday",
       "type": "bool",
       "bits": {
-        "offset": 4,
+        "offset": 0,
         "size": 1
-      },
-      "offset": 48,
-      "size": 1
-    }, {
-      "name": "Schedule[12].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 48,
-      "size": 1
-    }, {
-      "name": "Schedule[12].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 48,
-      "size": 1
-    }, {
-      "name": "Schedule[12].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 48,
-      "size": 1
-    }, {
-      "name": "Schedule[12].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
       },
       "offset": 49,
       "size": 1
     }, {
-      "name": "Schedule[12].Time (minutes from midnight)",
+      "name": "Schedule[8].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 49,
+      "size": 1
+    }, {
+      "name": "Schedule[8].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 49,
+      "size": 1
+    }, {
+      "name": "Schedule[8].Enabled for Wednesday",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 49,
+      "size": 1
+    }, {
+      "name": "Schedule[8].Enabled for Thursday",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 49,
+      "size": 1
+    }, {
+      "name": "Schedule[8].Enabled for Friday",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 49,
+      "size": 1
+    }, {
+      "name": "Schedule[8].Enabled for Saturday",
+      "type": "bool",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 49,
+      "size": 1
+    }, {
+      "name": "Schedule[8].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 49,
+      "size": 1
+    }, {
+      "name": "Schedule[8].On Time (minutes from midnight)",
       "type": "u16",
       "offset": 50,
       "size": 2
     }, {
-      "name": "Schedule[13].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 52,
-      "size": 1
-    }, {
-      "name": "Schedule[13].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 52,
-      "size": 1
-    }, {
-      "name": "Schedule[13].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 52,
-      "size": 1
-    }, {
-      "name": "Schedule[13].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 52,
-      "size": 1
-    }, {
-      "name": "Schedule[13].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 52,
-      "size": 1
-    }, {
-      "name": "Schedule[13].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 52,
-      "size": 1
-    }, {
-      "name": "Schedule[13].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 52,
-      "size": 1
-    }, {
-      "name": "Schedule[13].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 52,
-      "size": 1
-    }, {
-      "name": "Schedule[13].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 53,
-      "size": 1
-    }, {
-      "name": "Schedule[13].Time (minutes from midnight)",
+      "name": "Schedule[8].Off Time (minutes from midnight)",
       "type": "u16",
-      "offset": 54,
+      "offset": 52,
       "size": 2
     }, {
-      "name": "Schedule[14].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[9].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
         "size": 1
       },
-      "offset": 56,
+      "offset": 54,
       "size": 1
     }, {
-      "name": "Schedule[14].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[9].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
         "size": 1
       },
-      "offset": 56,
+      "offset": 54,
       "size": 1
     }, {
-      "name": "Schedule[14].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[9].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
         "size": 1
       },
-      "offset": 56,
+      "offset": 54,
       "size": 1
     }, {
-      "name": "Schedule[14].Days Bitmap.Enabled if schedule is set for Wednesday",
+      "name": "Schedule[9].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
+      },
+      "offset": 54,
+      "size": 1
+    }, {
+      "name": "Schedule[9].Enabled for Sunday",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 55,
+      "size": 1
+    }, {
+      "name": "Schedule[9].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 55,
+      "size": 1
+    }, {
+      "name": "Schedule[9].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 55,
+      "size": 1
+    }, {
+      "name": "Schedule[9].Enabled for Wednesday",
       "type": "bool",
       "bits": {
         "offset": 3,
         "size": 1
       },
-      "offset": 56,
+      "offset": 55,
       "size": 1
     }, {
-      "name": "Schedule[14].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[9].Enabled for Thursday",
       "type": "bool",
       "bits": {
         "offset": 4,
         "size": 1
       },
-      "offset": 56,
+      "offset": 55,
       "size": 1
     }, {
-      "name": "Schedule[14].Days Bitmap.Enabled if schedule is set for Friday",
+      "name": "Schedule[9].Enabled for Friday",
       "type": "bool",
       "bits": {
         "offset": 5,
         "size": 1
       },
-      "offset": 56,
+      "offset": 55,
       "size": 1
     }, {
-      "name": "Schedule[14].Days Bitmap.Enabled if schedule is set for Saturday",
+      "name": "Schedule[9].Enabled for Saturday",
       "type": "bool",
       "bits": {
         "offset": 6,
         "size": 1
       },
-      "offset": 56,
+      "offset": 55,
       "size": 1
     }, {
-      "name": "Schedule[14].Days Bitmap.Unused",
-      "type": "bool",
+      "name": "Schedule[9].Unused",
+      "type": "u8",
       "bits": {
         "offset": 7,
         "size": 1
       },
+      "offset": 55,
+      "size": 1
+    }, {
+      "name": "Schedule[9].On Time (minutes from midnight)",
+      "type": "u16",
       "offset": 56,
-      "size": 1
+      "size": 2
     }, {
-      "name": "Schedule[14].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 57,
-      "size": 1
-    }, {
-      "name": "Schedule[14].Time (minutes from midnight)",
+      "name": "Schedule[9].Off Time (minutes from midnight)",
       "type": "u16",
       "offset": 58,
       "size": 2
     }, {
-      "name": "Schedule[15].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[10].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -4361,7 +4236,7 @@
       "offset": 60,
       "size": 1
     }, {
-      "name": "Schedule[15].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[10].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
@@ -4370,7 +4245,7 @@
       "offset": 60,
       "size": 1
     }, {
-      "name": "Schedule[15].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[10].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -4379,241 +4254,216 @@
       "offset": 60,
       "size": 1
     }, {
-      "name": "Schedule[15].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
+      "name": "Schedule[10].Unused",
+      "type": "u8",
       "bits": {
         "offset": 3,
-        "size": 1
+        "size": 5
       },
       "offset": 60,
       "size": 1
     }, {
-      "name": "Schedule[15].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[10].Enabled for Sunday",
       "type": "bool",
       "bits": {
-        "offset": 4,
+        "offset": 0,
         "size": 1
-      },
-      "offset": 60,
-      "size": 1
-    }, {
-      "name": "Schedule[15].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 60,
-      "size": 1
-    }, {
-      "name": "Schedule[15].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 60,
-      "size": 1
-    }, {
-      "name": "Schedule[15].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 60,
-      "size": 1
-    }, {
-      "name": "Schedule[15].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
       },
       "offset": 61,
       "size": 1
     }, {
-      "name": "Schedule[15].Time (minutes from midnight)",
+      "name": "Schedule[10].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 61,
+      "size": 1
+    }, {
+      "name": "Schedule[10].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 61,
+      "size": 1
+    }, {
+      "name": "Schedule[10].Enabled for Wednesday",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 61,
+      "size": 1
+    }, {
+      "name": "Schedule[10].Enabled for Thursday",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 61,
+      "size": 1
+    }, {
+      "name": "Schedule[10].Enabled for Friday",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 61,
+      "size": 1
+    }, {
+      "name": "Schedule[10].Enabled for Saturday",
+      "type": "bool",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 61,
+      "size": 1
+    }, {
+      "name": "Schedule[10].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 61,
+      "size": 1
+    }, {
+      "name": "Schedule[10].On Time (minutes from midnight)",
       "type": "u16",
       "offset": 62,
       "size": 2
     }, {
-      "name": "Schedule[16].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 64,
-      "size": 1
-    }, {
-      "name": "Schedule[16].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 64,
-      "size": 1
-    }, {
-      "name": "Schedule[16].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 64,
-      "size": 1
-    }, {
-      "name": "Schedule[16].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 64,
-      "size": 1
-    }, {
-      "name": "Schedule[16].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 64,
-      "size": 1
-    }, {
-      "name": "Schedule[16].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 64,
-      "size": 1
-    }, {
-      "name": "Schedule[16].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 64,
-      "size": 1
-    }, {
-      "name": "Schedule[16].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 64,
-      "size": 1
-    }, {
-      "name": "Schedule[16].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 65,
-      "size": 1
-    }, {
-      "name": "Schedule[16].Time (minutes from midnight)",
+      "name": "Schedule[10].Off Time (minutes from midnight)",
       "type": "u16",
-      "offset": 66,
+      "offset": 64,
       "size": 2
     }, {
-      "name": "Schedule[17].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[11].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
         "size": 1
       },
-      "offset": 68,
+      "offset": 66,
       "size": 1
     }, {
-      "name": "Schedule[17].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[11].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
         "size": 1
       },
-      "offset": 68,
+      "offset": 66,
       "size": 1
     }, {
-      "name": "Schedule[17].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[11].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
         "size": 1
       },
-      "offset": 68,
+      "offset": 66,
       "size": 1
     }, {
-      "name": "Schedule[17].Days Bitmap.Enabled if schedule is set for Wednesday",
+      "name": "Schedule[11].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
+      },
+      "offset": 66,
+      "size": 1
+    }, {
+      "name": "Schedule[11].Enabled for Sunday",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 67,
+      "size": 1
+    }, {
+      "name": "Schedule[11].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 67,
+      "size": 1
+    }, {
+      "name": "Schedule[11].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 67,
+      "size": 1
+    }, {
+      "name": "Schedule[11].Enabled for Wednesday",
       "type": "bool",
       "bits": {
         "offset": 3,
         "size": 1
       },
-      "offset": 68,
+      "offset": 67,
       "size": 1
     }, {
-      "name": "Schedule[17].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[11].Enabled for Thursday",
       "type": "bool",
       "bits": {
         "offset": 4,
         "size": 1
       },
-      "offset": 68,
+      "offset": 67,
       "size": 1
     }, {
-      "name": "Schedule[17].Days Bitmap.Enabled if schedule is set for Friday",
+      "name": "Schedule[11].Enabled for Friday",
       "type": "bool",
       "bits": {
         "offset": 5,
         "size": 1
       },
-      "offset": 68,
+      "offset": 67,
       "size": 1
     }, {
-      "name": "Schedule[17].Days Bitmap.Enabled if schedule is set for Saturday",
+      "name": "Schedule[11].Enabled for Saturday",
       "type": "bool",
       "bits": {
         "offset": 6,
         "size": 1
       },
-      "offset": 68,
+      "offset": 67,
       "size": 1
     }, {
-      "name": "Schedule[17].Days Bitmap.Unused",
-      "type": "bool",
+      "name": "Schedule[11].Unused",
+      "type": "u8",
       "bits": {
         "offset": 7,
         "size": 1
       },
+      "offset": 67,
+      "size": 1
+    }, {
+      "name": "Schedule[11].On Time (minutes from midnight)",
+      "type": "u16",
       "offset": 68,
-      "size": 1
+      "size": 2
     }, {
-      "name": "Schedule[17].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 69,
-      "size": 1
-    }, {
-      "name": "Schedule[17].Time (minutes from midnight)",
+      "name": "Schedule[11].Off Time (minutes from midnight)",
       "type": "u16",
       "offset": 70,
       "size": 2
     }, {
-      "name": "Schedule[18].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[12].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -4622,7 +4472,7 @@
       "offset": 72,
       "size": 1
     }, {
-      "name": "Schedule[18].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[12].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
@@ -4631,7 +4481,7 @@
       "offset": 72,
       "size": 1
     }, {
-      "name": "Schedule[18].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[12].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -4640,241 +4490,216 @@
       "offset": 72,
       "size": 1
     }, {
-      "name": "Schedule[18].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
+      "name": "Schedule[12].Unused",
+      "type": "u8",
       "bits": {
         "offset": 3,
-        "size": 1
+        "size": 5
       },
       "offset": 72,
       "size": 1
     }, {
-      "name": "Schedule[18].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[12].Enabled for Sunday",
       "type": "bool",
       "bits": {
-        "offset": 4,
+        "offset": 0,
         "size": 1
-      },
-      "offset": 72,
-      "size": 1
-    }, {
-      "name": "Schedule[18].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 72,
-      "size": 1
-    }, {
-      "name": "Schedule[18].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 72,
-      "size": 1
-    }, {
-      "name": "Schedule[18].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 72,
-      "size": 1
-    }, {
-      "name": "Schedule[18].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
       },
       "offset": 73,
       "size": 1
     }, {
-      "name": "Schedule[18].Time (minutes from midnight)",
+      "name": "Schedule[12].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 73,
+      "size": 1
+    }, {
+      "name": "Schedule[12].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 73,
+      "size": 1
+    }, {
+      "name": "Schedule[12].Enabled for Wednesday",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 73,
+      "size": 1
+    }, {
+      "name": "Schedule[12].Enabled for Thursday",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 73,
+      "size": 1
+    }, {
+      "name": "Schedule[12].Enabled for Friday",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 73,
+      "size": 1
+    }, {
+      "name": "Schedule[12].Enabled for Saturday",
+      "type": "bool",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 73,
+      "size": 1
+    }, {
+      "name": "Schedule[12].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 73,
+      "size": 1
+    }, {
+      "name": "Schedule[12].On Time (minutes from midnight)",
       "type": "u16",
       "offset": 74,
       "size": 2
     }, {
-      "name": "Schedule[19].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 76,
-      "size": 1
-    }, {
-      "name": "Schedule[19].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 76,
-      "size": 1
-    }, {
-      "name": "Schedule[19].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 76,
-      "size": 1
-    }, {
-      "name": "Schedule[19].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 76,
-      "size": 1
-    }, {
-      "name": "Schedule[19].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 76,
-      "size": 1
-    }, {
-      "name": "Schedule[19].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 76,
-      "size": 1
-    }, {
-      "name": "Schedule[19].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 76,
-      "size": 1
-    }, {
-      "name": "Schedule[19].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 76,
-      "size": 1
-    }, {
-      "name": "Schedule[19].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 77,
-      "size": 1
-    }, {
-      "name": "Schedule[19].Time (minutes from midnight)",
+      "name": "Schedule[12].Off Time (minutes from midnight)",
       "type": "u16",
-      "offset": 78,
+      "offset": 76,
       "size": 2
     }, {
-      "name": "Schedule[20].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[13].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
         "size": 1
       },
-      "offset": 80,
+      "offset": 78,
       "size": 1
     }, {
-      "name": "Schedule[20].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[13].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
         "size": 1
       },
-      "offset": 80,
+      "offset": 78,
       "size": 1
     }, {
-      "name": "Schedule[20].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[13].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
         "size": 1
       },
-      "offset": 80,
+      "offset": 78,
       "size": 1
     }, {
-      "name": "Schedule[20].Days Bitmap.Enabled if schedule is set for Wednesday",
+      "name": "Schedule[13].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
+      },
+      "offset": 78,
+      "size": 1
+    }, {
+      "name": "Schedule[13].Enabled for Sunday",
+      "type": "bool",
+      "bits": {
+        "offset": 0,
+        "size": 1
+      },
+      "offset": 79,
+      "size": 1
+    }, {
+      "name": "Schedule[13].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 79,
+      "size": 1
+    }, {
+      "name": "Schedule[13].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 79,
+      "size": 1
+    }, {
+      "name": "Schedule[13].Enabled for Wednesday",
       "type": "bool",
       "bits": {
         "offset": 3,
         "size": 1
       },
-      "offset": 80,
+      "offset": 79,
       "size": 1
     }, {
-      "name": "Schedule[20].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[13].Enabled for Thursday",
       "type": "bool",
       "bits": {
         "offset": 4,
         "size": 1
       },
-      "offset": 80,
+      "offset": 79,
       "size": 1
     }, {
-      "name": "Schedule[20].Days Bitmap.Enabled if schedule is set for Friday",
+      "name": "Schedule[13].Enabled for Friday",
       "type": "bool",
       "bits": {
         "offset": 5,
         "size": 1
       },
-      "offset": 80,
+      "offset": 79,
       "size": 1
     }, {
-      "name": "Schedule[20].Days Bitmap.Enabled if schedule is set for Saturday",
+      "name": "Schedule[13].Enabled for Saturday",
       "type": "bool",
       "bits": {
         "offset": 6,
         "size": 1
       },
-      "offset": 80,
+      "offset": 79,
       "size": 1
     }, {
-      "name": "Schedule[20].Days Bitmap.Unused",
-      "type": "bool",
+      "name": "Schedule[13].Unused",
+      "type": "u8",
       "bits": {
         "offset": 7,
         "size": 1
       },
+      "offset": 79,
+      "size": 1
+    }, {
+      "name": "Schedule[13].On Time (minutes from midnight)",
+      "type": "u16",
       "offset": 80,
-      "size": 1
+      "size": 2
     }, {
-      "name": "Schedule[20].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 81,
-      "size": 1
-    }, {
-      "name": "Schedule[20].Time (minutes from midnight)",
+      "name": "Schedule[13].Off Time (minutes from midnight)",
       "type": "u16",
       "offset": 82,
       "size": 2
     }, {
-      "name": "Schedule[21].Days Bitmap.Enabled if schedule is set for Sunday",
+      "name": "Schedule[14].Enabled",
       "type": "bool",
       "bits": {
         "offset": 0,
@@ -4883,7 +4708,7 @@
       "offset": 84,
       "size": 1
     }, {
-      "name": "Schedule[21].Days Bitmap.Enabled if schedule is set for Monday",
+      "name": "Schedule[14].On Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 1,
@@ -4892,7 +4717,7 @@
       "offset": 84,
       "size": 1
     }, {
-      "name": "Schedule[21].Days Bitmap.Enabled if schedule is set for Tuesday",
+      "name": "Schedule[14].Off Action Enabled",
       "type": "bool",
       "bits": {
         "offset": 2,
@@ -4901,760 +4726,95 @@
       "offset": 84,
       "size": 1
     }, {
-      "name": "Schedule[21].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
+      "name": "Schedule[14].Unused",
+      "type": "u8",
       "bits": {
         "offset": 3,
-        "size": 1
+        "size": 5
       },
       "offset": 84,
       "size": 1
     }, {
-      "name": "Schedule[21].Days Bitmap.Enabled if schedule is set for Thursday",
+      "name": "Schedule[14].Enabled for Sunday",
       "type": "bool",
       "bits": {
-        "offset": 4,
+        "offset": 0,
         "size": 1
-      },
-      "offset": 84,
-      "size": 1
-    }, {
-      "name": "Schedule[21].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 84,
-      "size": 1
-    }, {
-      "name": "Schedule[21].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 84,
-      "size": 1
-    }, {
-      "name": "Schedule[21].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 84,
-      "size": 1
-    }, {
-      "name": "Schedule[21].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
       },
       "offset": 85,
       "size": 1
     }, {
-      "name": "Schedule[21].Time (minutes from midnight)",
+      "name": "Schedule[14].Enabled for Monday",
+      "type": "bool",
+      "bits": {
+        "offset": 1,
+        "size": 1
+      },
+      "offset": 85,
+      "size": 1
+    }, {
+      "name": "Schedule[14].Enabled for Tuesday",
+      "type": "bool",
+      "bits": {
+        "offset": 2,
+        "size": 1
+      },
+      "offset": 85,
+      "size": 1
+    }, {
+      "name": "Schedule[14].Enabled for Wednesday",
+      "type": "bool",
+      "bits": {
+        "offset": 3,
+        "size": 1
+      },
+      "offset": 85,
+      "size": 1
+    }, {
+      "name": "Schedule[14].Enabled for Thursday",
+      "type": "bool",
+      "bits": {
+        "offset": 4,
+        "size": 1
+      },
+      "offset": 85,
+      "size": 1
+    }, {
+      "name": "Schedule[14].Enabled for Friday",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 85,
+      "size": 1
+    }, {
+      "name": "Schedule[14].Enabled for Saturday",
+      "type": "bool",
+      "bits": {
+        "offset": 6,
+        "size": 1
+      },
+      "offset": 85,
+      "size": 1
+    }, {
+      "name": "Schedule[14].Unused",
+      "type": "u8",
+      "bits": {
+        "offset": 7,
+        "size": 1
+      },
+      "offset": 85,
+      "size": 1
+    }, {
+      "name": "Schedule[14].On Time (minutes from midnight)",
       "type": "u16",
       "offset": 86,
       "size": 2
     }, {
-      "name": "Schedule[22].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 88,
-      "size": 1
-    }, {
-      "name": "Schedule[22].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 88,
-      "size": 1
-    }, {
-      "name": "Schedule[22].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 88,
-      "size": 1
-    }, {
-      "name": "Schedule[22].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 88,
-      "size": 1
-    }, {
-      "name": "Schedule[22].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 88,
-      "size": 1
-    }, {
-      "name": "Schedule[22].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 88,
-      "size": 1
-    }, {
-      "name": "Schedule[22].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 88,
-      "size": 1
-    }, {
-      "name": "Schedule[22].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 88,
-      "size": 1
-    }, {
-      "name": "Schedule[22].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 89,
-      "size": 1
-    }, {
-      "name": "Schedule[22].Time (minutes from midnight)",
+      "name": "Schedule[14].Off Time (minutes from midnight)",
       "type": "u16",
-      "offset": 90,
-      "size": 2
-    }, {
-      "name": "Schedule[23].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 92,
-      "size": 1
-    }, {
-      "name": "Schedule[23].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 92,
-      "size": 1
-    }, {
-      "name": "Schedule[23].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 92,
-      "size": 1
-    }, {
-      "name": "Schedule[23].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 92,
-      "size": 1
-    }, {
-      "name": "Schedule[23].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 92,
-      "size": 1
-    }, {
-      "name": "Schedule[23].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 92,
-      "size": 1
-    }, {
-      "name": "Schedule[23].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 92,
-      "size": 1
-    }, {
-      "name": "Schedule[23].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 92,
-      "size": 1
-    }, {
-      "name": "Schedule[23].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 93,
-      "size": 1
-    }, {
-      "name": "Schedule[23].Time (minutes from midnight)",
-      "type": "u16",
-      "offset": 94,
-      "size": 2
-    }, {
-      "name": "Schedule[24].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 96,
-      "size": 1
-    }, {
-      "name": "Schedule[24].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 96,
-      "size": 1
-    }, {
-      "name": "Schedule[24].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 96,
-      "size": 1
-    }, {
-      "name": "Schedule[24].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 96,
-      "size": 1
-    }, {
-      "name": "Schedule[24].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 96,
-      "size": 1
-    }, {
-      "name": "Schedule[24].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 96,
-      "size": 1
-    }, {
-      "name": "Schedule[24].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 96,
-      "size": 1
-    }, {
-      "name": "Schedule[24].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 96,
-      "size": 1
-    }, {
-      "name": "Schedule[24].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 97,
-      "size": 1
-    }, {
-      "name": "Schedule[24].Time (minutes from midnight)",
-      "type": "u16",
-      "offset": 98,
-      "size": 2
-    }, {
-      "name": "Schedule[25].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 100,
-      "size": 1
-    }, {
-      "name": "Schedule[25].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 100,
-      "size": 1
-    }, {
-      "name": "Schedule[25].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 100,
-      "size": 1
-    }, {
-      "name": "Schedule[25].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 100,
-      "size": 1
-    }, {
-      "name": "Schedule[25].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 100,
-      "size": 1
-    }, {
-      "name": "Schedule[25].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 100,
-      "size": 1
-    }, {
-      "name": "Schedule[25].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 100,
-      "size": 1
-    }, {
-      "name": "Schedule[25].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 100,
-      "size": 1
-    }, {
-      "name": "Schedule[25].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 101,
-      "size": 1
-    }, {
-      "name": "Schedule[25].Time (minutes from midnight)",
-      "type": "u16",
-      "offset": 102,
-      "size": 2
-    }, {
-      "name": "Schedule[26].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 104,
-      "size": 1
-    }, {
-      "name": "Schedule[26].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 104,
-      "size": 1
-    }, {
-      "name": "Schedule[26].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 104,
-      "size": 1
-    }, {
-      "name": "Schedule[26].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 104,
-      "size": 1
-    }, {
-      "name": "Schedule[26].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 104,
-      "size": 1
-    }, {
-      "name": "Schedule[26].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 104,
-      "size": 1
-    }, {
-      "name": "Schedule[26].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 104,
-      "size": 1
-    }, {
-      "name": "Schedule[26].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 104,
-      "size": 1
-    }, {
-      "name": "Schedule[26].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 105,
-      "size": 1
-    }, {
-      "name": "Schedule[26].Time (minutes from midnight)",
-      "type": "u16",
-      "offset": 106,
-      "size": 2
-    }, {
-      "name": "Schedule[27].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 108,
-      "size": 1
-    }, {
-      "name": "Schedule[27].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 108,
-      "size": 1
-    }, {
-      "name": "Schedule[27].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 108,
-      "size": 1
-    }, {
-      "name": "Schedule[27].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 108,
-      "size": 1
-    }, {
-      "name": "Schedule[27].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 108,
-      "size": 1
-    }, {
-      "name": "Schedule[27].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 108,
-      "size": 1
-    }, {
-      "name": "Schedule[27].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 108,
-      "size": 1
-    }, {
-      "name": "Schedule[27].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 108,
-      "size": 1
-    }, {
-      "name": "Schedule[27].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 109,
-      "size": 1
-    }, {
-      "name": "Schedule[27].Time (minutes from midnight)",
-      "type": "u16",
-      "offset": 110,
-      "size": 2
-    }, {
-      "name": "Schedule[28].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 112,
-      "size": 1
-    }, {
-      "name": "Schedule[28].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 112,
-      "size": 1
-    }, {
-      "name": "Schedule[28].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 112,
-      "size": 1
-    }, {
-      "name": "Schedule[28].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 112,
-      "size": 1
-    }, {
-      "name": "Schedule[28].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 112,
-      "size": 1
-    }, {
-      "name": "Schedule[28].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 112,
-      "size": 1
-    }, {
-      "name": "Schedule[28].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 112,
-      "size": 1
-    }, {
-      "name": "Schedule[28].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 112,
-      "size": 1
-    }, {
-      "name": "Schedule[28].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 113,
-      "size": 1
-    }, {
-      "name": "Schedule[28].Time (minutes from midnight)",
-      "type": "u16",
-      "offset": 114,
-      "size": 2
-    }, {
-      "name": "Schedule[29].Days Bitmap.Enabled if schedule is set for Sunday",
-      "type": "bool",
-      "bits": {
-        "offset": 0,
-        "size": 1
-      },
-      "offset": 116,
-      "size": 1
-    }, {
-      "name": "Schedule[29].Days Bitmap.Enabled if schedule is set for Monday",
-      "type": "bool",
-      "bits": {
-        "offset": 1,
-        "size": 1
-      },
-      "offset": 116,
-      "size": 1
-    }, {
-      "name": "Schedule[29].Days Bitmap.Enabled if schedule is set for Tuesday",
-      "type": "bool",
-      "bits": {
-        "offset": 2,
-        "size": 1
-      },
-      "offset": 116,
-      "size": 1
-    }, {
-      "name": "Schedule[29].Days Bitmap.Enabled if schedule is set for Wednesday",
-      "type": "bool",
-      "bits": {
-        "offset": 3,
-        "size": 1
-      },
-      "offset": 116,
-      "size": 1
-    }, {
-      "name": "Schedule[29].Days Bitmap.Enabled if schedule is set for Thursday",
-      "type": "bool",
-      "bits": {
-        "offset": 4,
-        "size": 1
-      },
-      "offset": 116,
-      "size": 1
-    }, {
-      "name": "Schedule[29].Days Bitmap.Enabled if schedule is set for Friday",
-      "type": "bool",
-      "bits": {
-        "offset": 5,
-        "size": 1
-      },
-      "offset": 116,
-      "size": 1
-    }, {
-      "name": "Schedule[29].Days Bitmap.Enabled if schedule is set for Saturday",
-      "type": "bool",
-      "bits": {
-        "offset": 6,
-        "size": 1
-      },
-      "offset": 116,
-      "size": 1
-    }, {
-      "name": "Schedule[29].Days Bitmap.Unused",
-      "type": "bool",
-      "bits": {
-        "offset": 7,
-        "size": 1
-      },
-      "offset": 116,
-      "size": 1
-    }, {
-      "name": "Schedule[29].Action",
-      "type": "enum",
-      "values": {
-        "0": "Turn Off",
-        "1": "Turn On",
-        "255": "Unused"
-      },
-      "offset": 117,
-      "size": 1
-    }, {
-      "name": "Schedule[29].Time (minutes from midnight)",
-      "type": "u16",
-      "offset": 118,
+      "offset": 88,
       "size": 2
     }]
   }, {
