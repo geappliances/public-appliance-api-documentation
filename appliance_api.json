@@ -1956,6 +1956,16 @@
                 { "erd": "0x2258", "name": "Remote Payment Method Request", "length": 1 },
                 { "erd": "0x2259", "name": "Remote Payment Method Status", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00000800",
+              "name": "Cycle Function",
+              "description": "View and change the type of cycle aka \"cycle function\": wash, speed up, refresh, deodorise, sanitise etc.",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x20DC", "name": "Cycle Function Current", "length": 2 },
+                { "erd": "0x20DE", "name": "Cycle Function Request", "length": 2 }
+              ]
             }
           ]
         },
