@@ -20922,7 +20922,7 @@
       "values": {
         "0": "FanSpeed_Off",
         "1": "FanSpeed_SuperLow",
-        "2": "FanSpeed_Low",
+        "2": "FanSpeed_On",
         "3": "FanSpeed_Medium",
         "4": "FanSpeed_High",
         "5": "FanSpeed_SuperHigh",
@@ -63086,7 +63086,7 @@
     "name": "Auto Lid Down Setting",
     "id": "0x320c",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This setting controls whether the drawer lids will open after a cycle has completed \nor remain closed.",
+    "description": "This setting controls whether the drawer lids will open after a cycle has completed\nor remain closed.",
     "updateClass": {
       "type": "event"
     },
@@ -66182,7 +66182,7 @@
     "name": "Dish Favorite Settings Request",
     "id": "0x322e",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "Write to this ERD to store the cycle and options to be recalled by the favorites key \non the dishwasher. The status can be read from ERD 0x322F.\nNote: the bit 'validStoredSettings' indicates if valid settings are present and can be\nrecalled with the favorites key. Setting this to 0 marks the favorite data as invalid.",
+    "description": "Write to this ERD to store the cycle and options to be recalled by the favorites key\non the dishwasher. The status can be read from ERD 0x322F.\nNote: the bit 'validStoredSettings' indicates if valid settings are present and can be\nrecalled with the favorites key. Setting this to 0 marks the favorite data as invalid.",
     "updateClass": {
       "type": "event"
     },
@@ -66818,7 +66818,7 @@
     "name": "Default to Eco Cycle Setting",
     "id": "0x3231",
     "operations": ["read", "publish", "subscribe"],
-    "description": "This setting controls whether the product will default to running Eco cycle (for EU\nenergy compliance), or the last selected cycle. Must default to enabled for \nEU products.",
+    "description": "This setting controls whether the product will default to running Eco cycle (for EU\nenergy compliance), or the last selected cycle. Must default to enabled for\nEU products.",
     "updateClass": {
       "type": "event"
     },
@@ -72576,20 +72576,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
