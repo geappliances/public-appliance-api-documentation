@@ -660,7 +660,8 @@
         "15": "Indiana_1",
         "16": "Indiana_2",
         "17": "Indiana_3",
-        "18": "Indiana_4"
+        "18": "Indiana_4",
+        "19": "Perfect Aire"
       },
       "offset": 0,
       "size": 1
@@ -72580,20 +72581,20 @@
       "offset": 0,
       "size": 1
     }, {
-      "name": "Reserved",
-      "type": "u8",
-      "bits": {
-        "offset": 3,
-        "size": 5
-      },
-      "offset": 0,
-      "size": 1
-    }, {
       "name": "Oven Light Auto On During Cycle",
       "type": "u8",
       "bits": {
         "offset": 3,
         "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 3,
+        "size": 5
       },
       "offset": 0,
       "size": 1
