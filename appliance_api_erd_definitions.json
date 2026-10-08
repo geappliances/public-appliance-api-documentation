@@ -70333,7 +70333,7 @@
     "operations": ["read", "write", "publish", "subscribe"],
     "description": "The user selected mode for the water heater",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Mode",
@@ -70343,7 +70343,8 @@
         "1": "Standard electric",
         "2": "E-heat",
         "3": "HiDemand",
-        "4": "Vacation"
+        "4": "Vacation",
+        "5": "Winter"
       },
       "offset": 0,
       "size": 1
@@ -70509,7 +70510,7 @@
     "operations": ["read", "publish", "subscribe"],
     "description": "Bitfield indicating available modes",
     "updateClass": {
-      "type": "legacy"
+      "type": "event"
     },
     "data": [{
       "name": "Available Modes.Hybrid",
@@ -70557,11 +70558,20 @@
       "offset": 0,
       "size": 1
     }, {
+      "name": "Available Modes.Winter",
+      "type": "bool",
+      "bits": {
+        "offset": 5,
+        "size": 1
+      },
+      "offset": 0,
+      "size": 1
+    }, {
       "name": "Available Modes.Reserved",
       "type": "u8",
       "bits": {
-        "offset": 5,
-        "size": 3
+        "offset": 6,
+        "size": 2
       },
       "offset": 0,
       "size": 1
