@@ -5250,6 +5250,28 @@
                 { "erd": "0x7472", "name": "Heat Source Optimization Status", "length": 5 },
                 { "erd": "0x7473", "name": "Heat Source Optimization Request", "length": 1 }
               ]
+            },
+            {
+              "mask": "0x00010000",
+              "name": "24V Controllable Output",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x7474", "name": "24V Auxiliary Output Mode Status", "length": 5 },
+                { "erd": "0x7475", "name": "24V Auxiliary Output Mode Request", "length": 1 },
+                { "erd": "0x7476", "name": "24V Auxiliary Output Type Status", "length": 5 },
+                { "erd": "0x7477", "name": "24V Auxiliary Output Type Request", "length": 1 }
+              ]
+            },
+            {
+              "mask": "0x00020000",
+              "name": "24V Thermostat Transformer Configuration",
+              "description": "",
+              "dependencies": [],
+              "required": [
+                { "erd": "0x7478", "name": "24V Transformer Configuration Status", "length": 5 },
+                { "erd": "0x7479", "name": "24V Transformer Configuration Request", "length": 1 }
+              ]
             }
           ]
         }

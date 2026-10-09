@@ -120641,7 +120641,8 @@
       "type": "enum",
       "values": {
         "0": "Central Desk Control",
-        "1": "Occupancy Control"
+        "1": "Occupancy Control",
+        "2": "Lockout Control"
       },
       "offset": 0,
       "size": 1
@@ -120664,11 +120665,20 @@
       "offset": 1,
       "size": 4
     }, {
+      "name": "Allowed Selections.Lockout Present",
+      "type": "bool",
+      "bits": {
+        "offset": 26,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
       "name": "Allowed Selections.Reserved",
       "type": "u8",
       "bits": {
-        "offset": 26,
-        "size": 6
+        "offset": 27,
+        "size": 5
       },
       "offset": 1,
       "size": 4
@@ -120714,6 +120724,7 @@
       "values": {
         "0": "Central Desk Control",
         "1": "Occupancy Control",
+        "2": "Lockout Control",
         "255": "Request Consumed"
       },
       "offset": 0,
@@ -120896,6 +120907,290 @@
       "values": {
         "0": "Off",
         "1": "On",
+        "255": "Request Consumed"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "24V Auxiliary Output Mode Status",
+    "id": "0x7474",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The device will publish the 24V Auxiliary Output Mode feature status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "24V Auxiliary Output Mode Status",
+      "type": "enum",
+      "values": {
+        "0": "Off",
+        "1": "External Fan Control"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Allowed Selections.Off Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 24,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.External Fan Control Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 25,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 26,
+        "size": 6
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 16,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }]
+  }, {
+    "name": "24V Auxiliary Output Mode Request",
+    "id": "0x7475",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The client will request a change to the 24V Auxiliary Output Mode status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "24V Auxiliary Output Mode Request",
+      "type": "enum",
+      "values": {
+        "0": "Off",
+        "1": "External Fan Control",
+        "255": "Request Consumed"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "24V Auxiliary Output Type Status",
+    "id": "0x7476",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The device will publish the 24V Auxiliary Output Type feature status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "24V Auxiliary Output Type Status",
+      "type": "enum",
+      "values": {
+        "0": "Normally Open",
+        "1": "Normally Closed"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Allowed Selections.Normally Open Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 24,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Normally Closed Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 25,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 26,
+        "size": 6
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 16,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }]
+  }, {
+    "name": "24V Auxiliary Output Type Request",
+    "id": "0x7477",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The client will request a change to the 24V Auxiliary Output Type status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "24V Auxiliary Output Type Request",
+      "type": "enum",
+      "values": {
+        "0": "Normally Open",
+        "1": "Normally Closed",
+        "255": "Request Consumed"
+      },
+      "offset": 0,
+      "size": 1
+    }]
+  }, {
+    "name": "24V Transformer Configuration Status",
+    "id": "0x7478",
+    "operations": ["read", "publish", "subscribe"],
+    "description": "The device will publish the 24V Transformer Configuration feature status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "24V Transformer Configuration Status",
+      "type": "enum",
+      "values": {
+        "0": "Auto",
+        "1": "Low Input Voltage",
+        "2": "High Input Voltage"
+      },
+      "offset": 0,
+      "size": 1
+    }, {
+      "name": "Allowed Selections.Auto Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 24,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Low Input Voltage Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 25,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.High Input Voltage Supported",
+      "type": "bool",
+      "bits": {
+        "offset": 26,
+        "size": 1
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 27,
+        "size": 5
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 16,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 8,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }, {
+      "name": "Allowed Selections.Reserved",
+      "type": "u8",
+      "bits": {
+        "offset": 0,
+        "size": 8
+      },
+      "offset": 1,
+      "size": 4
+    }]
+  }, {
+    "name": "24V Transformer Configuration Request",
+    "id": "0x7479",
+    "operations": ["read", "write", "publish", "subscribe"],
+    "description": "The client will request a change to the 24V Transformer Configuration status.",
+    "updateClass": {
+      "type": "event"
+    },
+    "data": [{
+      "name": "24V Transformer Configuration Request",
+      "type": "enum",
+      "values": {
+        "0": "Auto",
+        "1": "Low Input Voltage",
+        "2": "High Input Voltage",
         "255": "Request Consumed"
       },
       "offset": 0,
