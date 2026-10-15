@@ -119718,7 +119718,7 @@
     "name": "Constant Fan Status",
     "id": "0x7458",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The device will publish the Constant Fan Status",
+    "description": "This read-only status reports the current constant fan configuration and what selections the unit supports.\n\nClients write requested changes to request ERD 0x7459 and confirm the resulting configuration from this status.",
     "updateClass": {
       "type": "event"
     },
@@ -119800,7 +119800,7 @@
     "name": "Constant Fan Request",
     "id": "0x7459",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "The client will request a change to the Constant Fan status",
+    "description": "This read/write request lets clients remotely change the constant fan configuration.\n\nInvalid requests, as defined by the Allowed Selections bitmap in status ERD 0x7458, are rejected.\n\nConfirm the outcome from status ERD 0x7458, not by reading back this request.\nRequest Consumed (255) is a consumed-request marker, not a selectable configuration.",
     "updateClass": {
       "type": "event"
     },
@@ -120734,7 +120734,7 @@
     "name": "Heat Pump Lockout Temperature Status",
     "id": "0x746e",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The device will publish the current Heat Pump Lockout Temperature and the limits for this value",
+    "description": "This read-only status reports the current heat pump lockout temperature and the unit's allowed minimum and maximum temperatures.\n\nClients write requested changes to request ERD 0x746F and confirm the resulting configuration from this status.",
     "updateClass": {
       "type": "event"
     },
@@ -120758,7 +120758,7 @@
     "name": "Heat Pump Lockout Temperature Request",
     "id": "0x746f",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "The device will publish the current Heat Pump Lockout Temperature and the limits for this value",
+    "description": "This read/write request lets clients remotely change the heat pump lockout temperature.\n\nRequests outside the minimum and maximum temperatures reported by status ERD 0x746E are rejected.\n\nConfirm the outcome from status ERD 0x746E, not by reading back this request.",
     "updateClass": {
       "type": "event"
     },
@@ -120772,7 +120772,7 @@
     "name": "Input Current Limiting Status",
     "id": "0x7470",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The device will publish the Input Current Limiting feature status.",
+    "description": "This read-only status reports the configured and resolved input current limits and the unit's allowed minimum, maximum, and step size.\nResolved Input Current Limiting Status can differ from User Set Input Current Limiting Status.\n\nClients write requested changes to request ERD 0x7471 and confirm the resulting configuration from User Set Input Current Limiting Status.",
     "updateClass": {
       "type": "event"
     },
@@ -120811,7 +120811,7 @@
     "name": "Input Current Limiting Request",
     "id": "0x7471",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "The client will request a change to the Input Current Limiting status.",
+    "description": "This read/write request lets clients remotely change the configured input current limit.\n\nInvalid requests, as defined by the minimum, maximum, and step size in status ERD 0x7470, are rejected.\n\nConfirm the outcome from User Set Input Current Limiting Status in ERD 0x7470, not by reading back this request.",
     "updateClass": {
       "type": "event"
     },
@@ -120825,7 +120825,7 @@
     "name": "Heat Source Optimization Status",
     "id": "0x7472",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The device will publish the Heat Source Optimization feature status.",
+    "description": "This read-only status reports the current heat source optimization configuration and what selections the unit supports.\n\nClients write requested changes to request ERD 0x7473 and confirm the resulting configuration from this status.",
     "updateClass": {
       "type": "event"
     },
@@ -120897,7 +120897,7 @@
     "name": "Heat Source Optimization Request",
     "id": "0x7473",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "The client will request a change to the Heat Source Optimization status.",
+    "description": "This read/write request lets clients remotely change the heat source optimization configuration.\n\nInvalid requests, as defined by the Allowed Selections bitmap in status ERD 0x7472, are rejected.\n\nConfirm the outcome from status ERD 0x7472, not by reading back this request.\nRequest Consumed (255) is a consumed-request marker, not a selectable configuration.",
     "updateClass": {
       "type": "event"
     },
@@ -120916,7 +120916,7 @@
     "name": "24V Auxiliary Output Mode Status",
     "id": "0x7474",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The device will publish the 24V Auxiliary Output Mode feature status.",
+    "description": "This read-only status reports the current 24V auxiliary output mode and what selections the unit supports.\n\nClients write requested changes to request ERD 0x7475 and confirm the resulting mode from this status.",
     "updateClass": {
       "type": "event"
     },
@@ -120988,7 +120988,7 @@
     "name": "24V Auxiliary Output Mode Request",
     "id": "0x7475",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "The client will request a change to the 24V Auxiliary Output Mode status.",
+    "description": "This read/write request lets clients remotely change the 24V auxiliary output mode.\n\nInvalid requests, as defined by the Allowed Selections bitmap in status ERD 0x7474, are rejected.\n\nConfirm the outcome from status ERD 0x7474, not by reading back this request.\nRequest Consumed (255) is a consumed-request marker, not a selectable configuration.",
     "updateClass": {
       "type": "event"
     },
@@ -121007,7 +121007,7 @@
     "name": "24V Auxiliary Output Type Status",
     "id": "0x7476",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The device will publish the 24V Auxiliary Output Type feature status.",
+    "description": "This read-only status reports the current 24V auxiliary output type and what selections the unit supports.\n\nClients write requested changes to request ERD 0x7477 and confirm the resulting type from this status.",
     "updateClass": {
       "type": "event"
     },
@@ -121079,7 +121079,7 @@
     "name": "24V Auxiliary Output Type Request",
     "id": "0x7477",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "The client will request a change to the 24V Auxiliary Output Type status.",
+    "description": "This read/write request lets clients remotely change the 24V auxiliary output type.\n\nInvalid requests, as defined by the Allowed Selections bitmap in status ERD 0x7476, are rejected.\n\nConfirm the outcome from status ERD 0x7476, not by reading back this request.\nRequest Consumed (255) is a consumed-request marker, not a selectable configuration.",
     "updateClass": {
       "type": "event"
     },
@@ -121098,7 +121098,7 @@
     "name": "24V Transformer Configuration Status",
     "id": "0x7478",
     "operations": ["read", "publish", "subscribe"],
-    "description": "The device will publish the 24V Transformer Configuration feature status.",
+    "description": "This read-only status reports the current 24V thermostat transformer configuration and what selections the unit supports.\n\nClients write requested changes to request ERD 0x7479 and confirm the resulting configuration from this status.",
     "updateClass": {
       "type": "event"
     },
@@ -121180,7 +121180,7 @@
     "name": "24V Transformer Configuration Request",
     "id": "0x7479",
     "operations": ["read", "write", "publish", "subscribe"],
-    "description": "The client will request a change to the 24V Transformer Configuration status.",
+    "description": "This read/write request lets clients remotely change the 24V thermostat transformer configuration.\n\nInvalid requests, as defined by the Allowed Selections bitmap in status ERD 0x7478, are rejected.\n\nConfirm the outcome from status ERD 0x7478, not by reading back this request.\nRequest Consumed (255) is a consumed-request marker, not a selectable configuration.",
     "updateClass": {
       "type": "event"
     },
