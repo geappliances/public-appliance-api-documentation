@@ -20923,7 +20923,7 @@
       "values": {
         "0": "FanSpeed_Off",
         "1": "FanSpeed_SuperLow",
-        "2": "FanSpeed_Low",
+        "2": "FanSpeed_On",
         "3": "FanSpeed_Medium",
         "4": "FanSpeed_High",
         "5": "FanSpeed_SuperHigh",
@@ -116694,7 +116694,8 @@
       "values": {
         "0": "BLE Mesh Water Leak Sensor - GEA",
         "1": "BLE Advertise Mode Water Leak Sensor - GEA",
-        "2": "BLE Sous Vide Temperature Sensor - GEA",
+        "2": "BLE Point of Use Water Filter - GEA",
+        "3": "BLE Sous Vide Temperature Sensor - GEA",
         "65535": "Unknown"
       },
       "offset": 6,
@@ -116810,7 +116811,8 @@
       "values": {
         "0": "BLE Mesh Water Leak Sensor - GEA",
         "1": "BLE Advertise Mode Water Leak Sensor - GEA",
-        "2": "BLE Sous Vide Temperature Sensor - GEA",
+        "2": "BLE Point of Use Water Filter - GEA",
+        "3": "BLE Sous Vide Temperature Sensor - GEA",
         "65535": "Unknown"
       },
       "offset": 6,
@@ -116926,7 +116928,8 @@
       "values": {
         "0": "BLE Mesh Water Leak Sensor - GEA",
         "1": "BLE Advertise Mode Water Leak Sensor - GEA",
-        "2": "BLE Sous Vide Temperature Sensor - GEA",
+        "2": "BLE Point of Use Water Filter - GEA",
+        "3": "BLE Sous Vide Temperature Sensor - GEA",
         "65535": "Unknown"
       },
       "offset": 6,
@@ -117042,7 +117045,8 @@
       "values": {
         "0": "BLE Mesh Water Leak Sensor - GEA",
         "1": "BLE Advertise Mode Water Leak Sensor - GEA",
-        "2": "BLE Sous Vide Temperature Sensor - GEA",
+        "2": "BLE Point of Use Water Filter - GEA",
+        "3": "BLE Sous Vide Temperature Sensor - GEA",
         "65535": "Unknown"
       },
       "offset": 6,
@@ -117158,7 +117162,8 @@
       "values": {
         "0": "BLE Mesh Water Leak Sensor - GEA",
         "1": "BLE Advertise Mode Water Leak Sensor - GEA",
-        "2": "BLE Sous Vide Temperature Sensor - GEA",
+        "2": "BLE Point of Use Water Filter - GEA",
+        "3": "BLE Sous Vide Temperature Sensor - GEA",
         "65535": "Unknown"
       },
       "offset": 6,
@@ -117258,7 +117263,8 @@
       "values": {
         "0": "BLE Mesh Water Leak Sensor - GEA",
         "1": "BLE Advertise Mode Water Leak Sensor - GEA",
-        "2": "BLE Sous Vide Temperature Sensor - GEA",
+        "2": "BLE Point of Use Water Filter - GEA",
+        "3": "BLE Sous Vide Temperature Sensor - GEA",
         "65535": "Unknown"
       },
       "offset": 2,
